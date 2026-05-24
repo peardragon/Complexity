@@ -1,0 +1,8 @@
+﻿{
+    "stage":  "01_theory_analytic",
+    "run_name":  "theory_full_rs_alpha0p1",
+    "alpha":  0.1,
+    "lambda_ref":  1,
+    "lambda_shell":  1,
+    "output_csv":  "01_theory/01_theory_analytic/raw_outputs/theory_full_rs_alpha0p1.csv"
+}

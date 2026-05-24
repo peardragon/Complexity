@@ -1,0 +1,28 @@
+{
+  "active_process_ids": [],
+  "backend": "python",
+  "completed": 80,
+  "disk_free_gb": 1263.22,
+  "elapsed": "00:13:40",
+  "elapsed_seconds": 820.1194515228271,
+  "eta": "00:00:00",
+  "eta_seconds": 0.0,
+  "event": "completed",
+  "failed": 0,
+  "percent": 100.0,
+  "rate_units_per_s": 0.09754676571986329,
+  "run_root": "02_dnn/04_sampling/smoke_runs/36_30_30_dense_backend_bakeoff_20260524_145951/raw_outputs/python_8shards_chunk256",
+  "shard_status_count": 8,
+  "timestamp": "2026-05-24T15:15:31+09:00",
+  "total": 80,
+  "worker_return_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ]
+}

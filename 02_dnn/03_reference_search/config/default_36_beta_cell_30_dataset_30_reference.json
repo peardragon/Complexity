@@ -1,0 +1,7 @@
+﻿{
+    "stage":  "03_reference_search",
+    "run_name":  "36_beta_cell_30_dataset_30_reference",
+    "old_run_id":  "9387a214b7dd",
+    "lambda_ref":  1,
+    "references_per_dataset":  30
+}

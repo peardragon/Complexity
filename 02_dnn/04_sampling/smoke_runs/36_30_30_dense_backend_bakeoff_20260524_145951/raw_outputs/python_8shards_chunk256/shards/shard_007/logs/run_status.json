@@ -1,0 +1,20 @@
+{
+  "affinity": {
+    "cpus": [
+      7
+    ],
+    "ok": true
+  },
+  "backend": "python",
+  "completed": 10,
+  "elapsed": "00:09:18",
+  "elapsed_seconds": 558.2909829616547,
+  "event": "completed",
+  "failed": 0,
+  "percent": 100.0,
+  "rate_units_per_s": 0.01791180639700003,
+  "shard_count": 8,
+  "shard_id": 7,
+  "timestamp": "2026-05-24T15:15:09+09:00",
+  "total": 10
+}

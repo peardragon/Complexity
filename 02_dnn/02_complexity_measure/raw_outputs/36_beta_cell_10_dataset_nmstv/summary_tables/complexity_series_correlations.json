@@ -1,0 +1,10 @@
+{
+  "beta_series": {
+    "pearson_C_beta": -0.9285791633619644,
+    "spearman_C_beta": -0.948354796976314
+  },
+  "p_series": {
+    "pearson_C_p": NaN,
+    "spearman_C_p": NaN
+  }
+}

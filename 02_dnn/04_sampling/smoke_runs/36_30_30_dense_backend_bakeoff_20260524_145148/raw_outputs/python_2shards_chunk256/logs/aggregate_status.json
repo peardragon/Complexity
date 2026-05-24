@@ -1,0 +1,22 @@
+{
+  "active_process_ids": [],
+  "backend": "python",
+  "completed": 4,
+  "disk_free_gb": 1263.23,
+  "elapsed": "00:04:14",
+  "elapsed_seconds": 254.96278047561646,
+  "eta": "00:00:00",
+  "eta_seconds": 0.0,
+  "event": "completed",
+  "failed": 0,
+  "percent": 100.0,
+  "rate_units_per_s": 0.01568856439570615,
+  "run_root": "02_dnn/04_sampling/smoke_runs/36_30_30_dense_backend_bakeoff_20260524_145148/raw_outputs/python_2shards_chunk256",
+  "shard_status_count": 2,
+  "timestamp": "2026-05-24T14:56:09+09:00",
+  "total": 4,
+  "worker_return_codes": [
+    0,
+    0
+  ]
+}

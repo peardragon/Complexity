@@ -1,0 +1,241 @@
+{
+  "accepted": false,
+  "backend_recommendation": "python",
+  "equivalence": [
+    {
+      "ci95_high": 0.1131379530828433,
+      "ci95_low": -0.682510077836969,
+      "equivalence_tolerance_abs": 10.18,
+      "mean_diff_julia_minus_python": -0.28468606237706284,
+      "metric": "logZ_inf",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 0.11313795308284191,
+      "ci95_low": -0.6825100778369679,
+      "equivalence_tolerance_abs": 10.18,
+      "mean_diff_julia_minus_python": -0.284686062377063,
+      "metric": "logZ_inf_full",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 0.021382107480809348,
+      "ci95_low": -0.06152330183902796,
+      "equivalence_tolerance_abs": 0.15,
+      "mean_diff_julia_minus_python": -0.020070597179109306,
+      "metric": "ess_frac",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 1.0895034173865767,
+      "ci95_low": -0.2690577256662383,
+      "equivalence_tolerance_abs": 0.08,
+      "mean_diff_julia_minus_python": 0.4102228458601692,
+      "metric": "weighted_ce",
+      "n": 6,
+      "passed": false
+    },
+    {
+      "ci95_high": 0.0004043612568059695,
+      "ci95_low": -0.004440161968685763,
+      "equivalence_tolerance_abs": 0.03,
+      "mean_diff_julia_minus_python": -0.002017900355939897,
+      "metric": "weighted_error",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 0.18756824684017281,
+      "ci95_low": -0.056391389886933194,
+      "equivalence_tolerance_abs": 0.15,
+      "mean_diff_julia_minus_python": 0.0655884284766198,
+      "metric": "weighted_h",
+      "n": 6,
+      "passed": false
+    },
+    {
+      "ci95_high": 0.15522338651707812,
+      "ci95_low": -1.323198005582543,
+      "equivalence_tolerance_abs": 10.18,
+      "mean_diff_julia_minus_python": -0.5839873095327325,
+      "metric": "dlogZ_inf_dr",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 2.7321894746634712e-17,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 2.7321894746634712e-17,
+      "metric": "ce_ref",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 0.0,
+      "metric": "err_ref",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 2.842170943040401e-14,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 2.842170943040401e-14,
+      "metric": "theta_ref_norm",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 7.275957614183426e-12,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 7.275957614183426e-12,
+      "metric": "theta_ref_norm_sq",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 1.7763568394002505e-15,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 1.7763568394002505e-15,
+      "metric": "kappa",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 0.0,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 0.0,
+      "metric": "log_prefactor",
+      "n": 6,
+      "passed": true
+    },
+    {
+      "ci95_high": 1.7763568394002505e-15,
+      "ci95_low": 0.0,
+      "equivalence_tolerance_abs": 1e-07,
+      "mean_diff_julia_minus_python": 1.7763568394002505e-15,
+      "metric": "reference_prior_log_weight",
+      "n": 6,
+      "passed": true
+    }
+  ],
+  "julia_mean_elapsed_seconds": 11.410178666670012,
+  "mean_julia_speedup_vs_python": 0.07528814951028298,
+  "n_samples": 128,
+  "n_units": 6,
+  "python_mean_elapsed_seconds": 0.8605930666672066,
+  "radii": [
+    0.01,
+    0.5,
+    2.5
+  ],
+  "raw_outputs": {
+    "julia": "02_dnn/04_sampling/smoke_runs/36_30_30_dense_julia_parity_20260524_161142/raw_outputs/julia",
+    "python": "02_dnn/04_sampling/smoke_runs/36_30_30_dense_julia_parity_20260524_161142/raw_outputs/python"
+  },
+  "records": 2,
+  "run_root": "02_dnn/04_sampling/smoke_runs/36_30_30_dense_julia_parity_20260524_161142",
+  "timestamp": "2026-05-24T16:12:56+09:00",
+  "unit_timing": [
+    {
+      "beta": 0.05,
+      "dataset_id": 0,
+      "julia_elapsed_seconds": 11.273143000013079,
+      "julia_smc_completed": true,
+      "julia_speedup_vs_python": 0.1500266784525399,
+      "julia_units_per_s": 0.08870640601284308,
+      "n_samples": 128,
+      "python_elapsed_seconds": 1.6912722000124631,
+      "python_smc_completed": true,
+      "python_units_per_s": 0.5912708788050977,
+      "radius": 0.01,
+      "ref_id": 0,
+      "unit_index": 0
+    },
+    {
+      "beta": 0.05,
+      "dataset_id": 0,
+      "julia_elapsed_seconds": 11.27488060000178,
+      "julia_smc_completed": true,
+      "julia_speedup_vs_python": 0.04526337955204846,
+      "julia_units_per_s": 0.08869273524722224,
+      "n_samples": 128,
+      "python_elapsed_seconds": 0.5103392000019085,
+      "python_smc_completed": true,
+      "python_units_per_s": 1.9594810667028133,
+      "radius": 0.5,
+      "ref_id": 0,
+      "unit_index": 1
+    },
+    {
+      "beta": 0.05,
+      "dataset_id": 0,
+      "julia_elapsed_seconds": 11.490559400001075,
+      "julia_smc_completed": true,
+      "julia_speedup_vs_python": 0.08632651078691223,
+      "julia_units_per_s": 0.08702796488741066,
+      "n_samples": 128,
+      "python_elapsed_seconds": 0.9919398999918485,
+      "python_smc_completed": true,
+      "python_units_per_s": 1.0081255931011726,
+      "radius": 2.5,
+      "ref_id": 0,
+      "unit_index": 2
+    },
+    {
+      "beta": 0.05,
+      "dataset_id": 0,
+      "julia_elapsed_seconds": 11.227394000001368,
+      "julia_smc_completed": true,
+      "julia_speedup_vs_python": 0.031807220802917265,
+      "julia_units_per_s": 0.08906786383375145,
+      "n_samples": 128,
+      "python_elapsed_seconds": 0.35711219999939203,
+      "python_smc_completed": true,
+      "python_units_per_s": 2.800240372638354,
+      "radius": 0.01,
+      "ref_id": 1,
+      "unit_index": 3
+    },
+    {
+      "beta": 0.05,
+      "dataset_id": 0,
+      "julia_elapsed_seconds": 11.43022560000827,
+      "julia_smc_completed": true,
+      "julia_speedup_vs_python": 0.0425725105551405,
+      "julia_units_per_s": 0.08748733708276733,
+      "n_samples": 128,
+      "python_elapsed_seconds": 0.4866134000039892,
+      "python_smc_completed": true,
+      "python_units_per_s": 2.0550194466321767,
+      "radius": 0.5,
+      "ref_id": 1,
+      "unit_index": 4
+    },
+    {
+      "beta": 0.05,
+      "dataset_id": 0,
+      "julia_elapsed_seconds": 11.764869399994495,
+      "julia_smc_completed": true,
+      "julia_speedup_vs_python": 0.09573259691213955,
+      "julia_units_per_s": 0.08499881860146002,
+      "n_samples": 128,
+      "python_elapsed_seconds": 1.1262814999936381,
+      "python_smc_completed": true,
+      "python_units_per_s": 0.8878774977708934,
+      "radius": 2.5,
+      "ref_id": 1,
+      "unit_index": 5
+    }
+  ]
+}

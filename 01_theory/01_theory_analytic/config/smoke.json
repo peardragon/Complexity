@@ -1,0 +1,5 @@
+﻿{
+    "stage":  "01_theory_analytic",
+    "smoke":  true,
+    "alpha":  0.1
+}

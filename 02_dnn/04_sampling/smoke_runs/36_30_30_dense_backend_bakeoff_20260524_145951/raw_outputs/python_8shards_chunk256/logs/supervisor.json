@@ -1,0 +1,17 @@
+{
+  "backend": "python",
+  "process_ids": [
+    9148,
+    26832,
+    20452,
+    20064,
+    31644,
+    33224,
+    41516,
+    19760
+  ],
+  "run_root": "02_dnn/04_sampling/smoke_runs/36_30_30_dense_backend_bakeoff_20260524_145951/raw_outputs/python_8shards_chunk256",
+  "shards": 8,
+  "started_at": "2026-05-24T15:01:51+09:00",
+  "total_units": 80
+}

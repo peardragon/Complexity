@@ -1,0 +1,4 @@
+﻿{
+    "stage":  "01_dataset_gen",
+    "smoke":  true
+}

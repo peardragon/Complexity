@@ -1,0 +1,7 @@
+﻿{
+    "stage":  "01_dataset_gen",
+    "retained":  [
+                     "36_beta_cell_10_dataset",
+                     "36_beta_cell_30_dataset"
+                 ]
+}

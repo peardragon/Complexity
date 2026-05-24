@@ -1,0 +1,1010 @@
+[
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.01,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.05,
+      "cell_id": "cell_beta_0p05_p_0p00",
+      "dataset_id": 0,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p05_p_0p00\\dataset_000_seed_001234\\dataset.npz",
+      "dataset_tag": "dataset_000_seed_001234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p05_p_0p00\\dataset_000_seed_001234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20260524
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.05,
+      "cell_id": "cell_beta_0p05_p_0p00",
+      "dataset_id": 0,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p05_p_0p00\\dataset_000_seed_001234\\dataset.npz",
+      "dataset_tag": "dataset_000_seed_001234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p05_p_0p00\\dataset_000_seed_001234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20261533
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 2.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.05,
+      "cell_id": "cell_beta_0p05_p_0p00",
+      "dataset_id": 0,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p05_p_0p00\\dataset_000_seed_001234\\dataset.npz",
+      "dataset_tag": "dataset_000_seed_001234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p05_p_0p00\\dataset_000_seed_001234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20262542
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.01,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.12,
+      "cell_id": "cell_beta_0p12_p_0p00",
+      "dataset_id": 6,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p12_p_0p00\\dataset_006_seed_608234\\dataset.npz",
+      "dataset_tag": "dataset_006_seed_608234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p12_p_0p00\\dataset_006_seed_608234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20263551
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.12,
+      "cell_id": "cell_beta_0p12_p_0p00",
+      "dataset_id": 6,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p12_p_0p00\\dataset_006_seed_608234\\dataset.npz",
+      "dataset_tag": "dataset_006_seed_608234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p12_p_0p00\\dataset_006_seed_608234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20264560
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 2.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.12,
+      "cell_id": "cell_beta_0p12_p_0p00",
+      "dataset_id": 6,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p12_p_0p00\\dataset_006_seed_608234\\dataset.npz",
+      "dataset_tag": "dataset_006_seed_608234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p12_p_0p00\\dataset_006_seed_608234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20265569
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.01,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.19,
+      "cell_id": "cell_beta_0p19_p_0p00",
+      "dataset_id": 12,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p19_p_0p00\\dataset_012_seed_1215234\\dataset.npz",
+      "dataset_tag": "dataset_012_seed_1215234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p19_p_0p00\\dataset_012_seed_1215234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20266578
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.19,
+      "cell_id": "cell_beta_0p19_p_0p00",
+      "dataset_id": 12,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p19_p_0p00\\dataset_012_seed_1215234\\dataset.npz",
+      "dataset_tag": "dataset_012_seed_1215234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p19_p_0p00\\dataset_012_seed_1215234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20267587
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 2.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.19,
+      "cell_id": "cell_beta_0p19_p_0p00",
+      "dataset_id": 12,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p19_p_0p00\\dataset_012_seed_1215234\\dataset.npz",
+      "dataset_tag": "dataset_012_seed_1215234",
+      "ref_id": 0,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p19_p_0p00\\dataset_012_seed_1215234\\width_048\\selected_ref_payloads\\ref_000\\theta.npy"
+    },
+    "seed": 20268596
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.01,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.26,
+      "cell_id": "cell_beta_0p26_p_0p00",
+      "dataset_id": 17,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p26_p_0p00\\dataset_017_seed_1722234\\dataset.npz",
+      "dataset_tag": "dataset_017_seed_1722234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p26_p_0p00\\dataset_017_seed_1722234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20269605
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.26,
+      "cell_id": "cell_beta_0p26_p_0p00",
+      "dataset_id": 17,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p26_p_0p00\\dataset_017_seed_1722234\\dataset.npz",
+      "dataset_tag": "dataset_017_seed_1722234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p26_p_0p00\\dataset_017_seed_1722234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20270614
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 2.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.26,
+      "cell_id": "cell_beta_0p26_p_0p00",
+      "dataset_id": 17,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p26_p_0p00\\dataset_017_seed_1722234\\dataset.npz",
+      "dataset_tag": "dataset_017_seed_1722234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p26_p_0p00\\dataset_017_seed_1722234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20271623
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.01,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.33,
+      "cell_id": "cell_beta_0p33_p_0p00",
+      "dataset_id": 23,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p33_p_0p00\\dataset_023_seed_2329234\\dataset.npz",
+      "dataset_tag": "dataset_023_seed_2329234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p33_p_0p00\\dataset_023_seed_2329234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20272632
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.33,
+      "cell_id": "cell_beta_0p33_p_0p00",
+      "dataset_id": 23,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p33_p_0p00\\dataset_023_seed_2329234\\dataset.npz",
+      "dataset_tag": "dataset_023_seed_2329234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p33_p_0p00\\dataset_023_seed_2329234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20273641
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 2.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.33,
+      "cell_id": "cell_beta_0p33_p_0p00",
+      "dataset_id": 23,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p33_p_0p00\\dataset_023_seed_2329234\\dataset.npz",
+      "dataset_tag": "dataset_023_seed_2329234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p33_p_0p00\\dataset_023_seed_2329234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20274650
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.01,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.4,
+      "cell_id": "cell_beta_0p40_p_0p00",
+      "dataset_id": 29,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p40_p_0p00\\dataset_029_seed_2936234\\dataset.npz",
+      "dataset_tag": "dataset_029_seed_2936234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p40_p_0p00\\dataset_029_seed_2936234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20275659
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 0.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.4,
+      "cell_id": "cell_beta_0p40_p_0p00",
+      "dataset_id": 29,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p40_p_0p00\\dataset_029_seed_2936234\\dataset.npz",
+      "dataset_tag": "dataset_029_seed_2936234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p40_p_0p00\\dataset_029_seed_2936234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20276668
+  },
+  {
+    "force": true,
+    "n_samples": 1024,
+    "params": {
+      "chunk_size": 256,
+      "delta_ce_thresholds": [
+        0.25,
+        0.5,
+        1.0,
+        2.0,
+        4.0
+      ],
+      "device": "cpu",
+      "dtype": "float64",
+      "gamma_ce": 1.0,
+      "h_ladder": [
+        1.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0
+      ],
+      "lambda_reg": 1.0,
+      "radial_derivative_chunk_size": 0,
+      "radial_derivative_enabled": true,
+      "relative_delta_ce_thresholds": [
+        1.0,
+        5.0,
+        10.0,
+        50.0,
+        100.0
+      ],
+      "sampler": "adaptive_ce_smc",
+      "smc_bisection_steps": 32,
+      "smc_max_steps": 120,
+      "smc_mh_sweeps": 1,
+      "smc_min_delta_t": 0.0001,
+      "smc_move_kappa": 0.0,
+      "smc_move_kappa_factor": 80.0,
+      "smc_resample_ess_fraction": 0.75,
+      "smc_resample_every_step": false,
+      "smc_target_cess_fraction": 0.75
+    },
+    "radius": 2.5,
+    "raw_root": "D:\\Complexity\\02_dnn\\04_sampling\\smoke_runs\\36_30_30_dense_julia_parity_20260524_161853\\raw_outputs\\julia\\sample_payloads",
+    "record": {
+      "beta": 0.4,
+      "cell_id": "cell_beta_0p40_p_0p00",
+      "dataset_id": 29,
+      "dataset_path": "D:\\Complexity\\02_dnn\\01_dataset_gen\\raw_outputs\\36_beta_cell_30_dataset\\raw_datasets\\cell_beta_0p40_p_0p00\\dataset_029_seed_2936234\\dataset.npz",
+      "dataset_tag": "dataset_029_seed_2936234",
+      "ref_id": 29,
+      "theta_path": "D:\\Complexity\\02_dnn\\03_reference_search\\raw_outputs\\36_beta_cell_30_dataset_30_reference\\selected_references\\cell_beta_0p40_p_0p00\\dataset_029_seed_2936234\\width_048\\selected_ref_payloads\\ref_029\\theta.npy"
+    },
+    "seed": 20277677
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "completed": 9000,
+  "elapsed": "00:47:18",
+  "elapsed_seconds": 2838.034094810486,
+  "eta": "00:00:00",
+  "eta_seconds": 0.0,
+  "event": "completed",
+  "failed": 0,
+  "label": "sampling",
+  "last_event": {
+    "beta": 0.38,
+    "radius": 0.1,
+    "shard": "dataset_009_seed_934234/ref_009"
+  },
+  "percent": 100.0,
+  "rate_units_per_s": 3.1712092594155354,
+  "timestamp": "2026-05-21T05:05:13+09:00",
+  "total": 9000,
+  "workers": 1
+}

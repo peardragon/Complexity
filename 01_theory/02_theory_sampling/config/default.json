@@ -1,0 +1,9 @@
+﻿{
+    "stage":  "02_theory_sampling",
+    "run_name":  "two_pool_perceptron_alpha0p1_dense_qc_final",
+    "source_final":  "two_pool_perceptron_alpha0p1_dense_qc_full_split_pass_merged",
+    "alpha":  0.1,
+    "lambda_ref":  1,
+    "lambda_shell":  1,
+    "final_sample_units":  16800
+}

@@ -1,0 +1,62 @@
+**/results_raw/**
+!**/results_raw/.gitkeep
+!**/results_raw/runs/.gitkeep
+!**/results_raw/smoke_runs/.gitkeep
+!**/results_summary/**
+!**/results_summary/runs/.gitkeep
+!**/results_summary/smoke_runs/.gitkeep
+
+# In-progress DNN 30/30 runs. Remove these once the full 01/02/03 run set is
+# complete and intentionally promoted.
+02_dnn/01_dataset_gen/d2/results_summary/runs/ea140c05985f/**
+02_dnn/02_complexity_measure/d2/results_summary/runs/5841c6999151/**
+02_dnn/03_reference_search/d2/results_summary/runs/9387a214b7dd/**
+**/__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+julia_env/
+.uv_cache/
+.julia_depot/
+.tmp_jupyter/
+.lh/
+.history/
+*.log
+*.log.stderr
+*.npz
+*.npy
+**/sample_payloads/**
+GIT_HELPER.md
+payloads/
+99_backup/**
+!99_backup/.gitkeep
+99_codex_bin/**
+!99_codex_bin/.gitkeep
+*.tmp
+
+# Promoted raw payloads stay on this workstation. Track configs, code, reports,
+# compact summaries, and figures in Git, but do not put million-file raw payload
+# trees or row-level audit tables into repository history.
+01_theory/02_theory_sampling/raw_outputs/shell_pool/sample_payloads/**
+02_dnn/01_dataset_gen/raw_outputs/**/raw/**
+02_dnn/01_dataset_gen/raw_outputs/**/raw_datasets/**
+02_dnn/02_complexity_measure/raw_outputs/**/raw/**
+02_dnn/03_reference_search/raw_outputs/**/raw/**
+02_dnn/03_reference_search/raw_outputs/**/raw_attempts/**
+02_dnn/03_reference_search/raw_outputs/**/selected_references/**
+02_dnn/04_sampling/raw_outputs/**/raw/**
+02_dnn/04_sampling/raw_outputs/**/sample_payloads/**
+02_dnn/04_sampling/raw_outputs/reference_pool/*/selected_reference_pool/cell_beta_*/**
+02_dnn/04_sampling/raw_outputs/shell_pool/36_beta_cell_30_dataset_30_reference/**
+
+# Dense/sparse shell runs keep very large row-level metadata locally. Compact
+# manifests, summaries, figures, and provenance remain tracked.
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/loss_gap_ratios.csv
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/sample_unit_summary.csv
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/rh_by_ref_radius_h.csv
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/logs/progress.jsonl
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/loss_gap_ratios.csv
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/sample_unit_summary.csv
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/rh_by_ref_radius_h.csv
+02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/logs/progress.jsonl
