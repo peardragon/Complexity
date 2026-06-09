@@ -1,0 +1,9 @@
+{
+  "failed_units": 0,
+  "loss_gap_rows": 121500000,
+  "rh_rows": 48600000,
+  "run_root": "02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense",
+  "summary_root": "02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense/summary_tables",
+  "timestamp": "2026-06-06T18:27:28+09:00",
+  "unit_rows": 8100000
+}

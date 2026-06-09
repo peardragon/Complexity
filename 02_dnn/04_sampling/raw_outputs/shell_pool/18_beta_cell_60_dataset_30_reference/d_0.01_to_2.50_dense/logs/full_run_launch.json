@@ -1,0 +1,38 @@
+{
+  "allowed_physical_gpus": [
+    "2",
+    "3"
+  ],
+  "backend": "python",
+  "chunk_size": 1024,
+  "command": [
+    "/home/bjyong/miniconda3/bin/python",
+    "/home/bjyong/Complexity/local_project/99_codex_bin/parallel_sampling_18_100_30/parallel_sampling.py",
+    "supervise",
+    "--backend",
+    "python",
+    "--config",
+    "/home/bjyong/Complexity/local_project/99_codex_bin/parallel_sampling_18_100_30/config_18_60_dense.yaml",
+    "--manifest",
+    "/home/bjyong/Complexity/local_project/99_codex_bin/parallel_sampling_18_100_30/reference_manifest_18_60_30.csv",
+    "--run-root",
+    "/home/bjyong/Complexity/local_project/02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense",
+    "--shards",
+    "32",
+    "--poll-seconds",
+    "60.0",
+    "--status-every",
+    "25",
+    "--chunk-size",
+    "1024",
+    "--device",
+    "auto"
+  ],
+  "cuda_visible_devices": "2,3",
+  "device": "auto",
+  "pid": 4361,
+  "shards": 32,
+  "stderr": "02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense/logs/supervisor.stderr.log",
+  "stdout": "02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense/logs/supervisor.stdout.log",
+  "timestamp": "2026-06-04T07:33:30+09:00"
+}

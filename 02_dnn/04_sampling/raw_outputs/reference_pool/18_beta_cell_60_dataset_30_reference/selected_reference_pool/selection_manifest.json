@@ -1,0 +1,18 @@
+{
+  "allowed_physical_gpus": [
+    "2",
+    "3"
+  ],
+  "cell_count": 18,
+  "dataset_count": 1080,
+  "finished_at": "2026-05-31T18:00:37+09:00",
+  "payload_materialization_counts": {
+    "copy": 0,
+    "existing": 0,
+    "hardlink": 97200
+  },
+  "run_name": "18_beta_cell_60_dataset_30_reference",
+  "selected_reference_count": 32400,
+  "source_reference_search_root": "02_dnn/03_reference_search/raw_outputs/18_beta_cell_60_dataset_30_reference/selected_references",
+  "target_reference_pool_root": "02_dnn/04_sampling/raw_outputs/reference_pool/18_beta_cell_60_dataset_30_reference/selected_reference_pool"
+}

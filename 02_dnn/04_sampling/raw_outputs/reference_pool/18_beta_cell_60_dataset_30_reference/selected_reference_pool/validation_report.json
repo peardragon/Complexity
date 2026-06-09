@@ -1,0 +1,10 @@
+{
+  "dataset_pool_count": 1080,
+  "expected_dataset_pool_count": 1080,
+  "expected_selected_reference_count": 32400,
+  "first_theta_shape": [
+    2545
+  ],
+  "ok": true,
+  "selected_reference_count": 32400
+}
