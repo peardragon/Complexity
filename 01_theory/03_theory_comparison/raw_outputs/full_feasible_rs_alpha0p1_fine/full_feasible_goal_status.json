@@ -1,0 +1,67 @@
+{
+  "A_eta_diagnostics": [
+    {
+      "branch": "boundary_mixed_eta0",
+      "interior_radius_count_A_gt_1e_minus_4": 0,
+      "interior_radius_count_eta_gt_1e_minus_3": 0,
+      "max_A": 0.0,
+      "max_eta": 0.0,
+      "mean_A": 0.0,
+      "mean_eta": 0.0,
+      "radius_count": 42
+    },
+    {
+      "branch": "full_max_envelope",
+      "interior_radius_count_A_gt_1e_minus_4": 42,
+      "interior_radius_count_eta_gt_1e_minus_3": 42,
+      "max_A": 0.0651922365511097,
+      "max_eta": 0.995,
+      "mean_A": 0.0440866255935805,
+      "mean_eta": 0.9949999999999998,
+      "radius_count": 42
+    },
+    {
+      "branch": "full_mixed_maxQ_min_s_eta",
+      "interior_radius_count_A_gt_1e_minus_4": 0,
+      "interior_radius_count_eta_gt_1e_minus_3": 0,
+      "max_A": 0.0,
+      "max_eta": 0.0,
+      "mean_A": 0.0,
+      "mean_eta": 0.0,
+      "radius_count": 42
+    }
+  ],
+  "baseline_reproduction": {
+    "available": true,
+    "baseline_csv": "01_theory/01_theory_analytic/raw_outputs/theory_full_rs_alpha0p1.csv",
+    "max_abs_phi_rel_diff": 0.0025639745020664684,
+    "pass_1e_minus_3": false,
+    "pass_2e_minus_3": false,
+    "pass_3e_minus_3": true,
+    "rmse_phi_rel_diff": 0.0007680553410447179,
+    "shared_radius_count": 42
+  },
+  "best_by_largest_N": {
+    "N": 320,
+    "branch": "full_max_envelope",
+    "peak_radius_abs_diff": 0.0,
+    "rmse": 0.020471029506922197
+  },
+  "branches": [
+    "boundary_mixed_eta0",
+    "full_max_envelope",
+    "full_mixed_maxQ_min_s_eta"
+  ],
+  "feasible_csv": "01_theory/01_theory_analytic/raw_outputs/theory_full_feasible_rs_alpha0p1_fine.csv",
+  "interpretation": {
+    "best_branch": "full_max_envelope",
+    "best_peak_radius_abs_diff": 0.0,
+    "best_rmse": 0.020471029506922197,
+    "case": "full_mixed_collapses_to_boundary",
+    "full_mixed_max_A": 0.0,
+    "full_mixed_max_eta": 0.0,
+    "largest_N": 320,
+    "message": "The full mixed saddle selected eta approximately zero across the tested radii."
+  },
+  "sampling_csv": "01_theory/02_theory_sampling/raw_outputs/shell_pool/sampling_phi_by_N_alpha0p1.csv"
+}
