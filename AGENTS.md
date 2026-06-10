@@ -2,8 +2,8 @@
 
 ## Active Layout Contract
 
-This repository is organized around the current promoted theory and 3NN
-results. The active tree is intentionally compact:
+This repository is organized around the current promoted theory and 18-beta
+3NN results. The active tree is intentionally compact:
 
 - Root-level retained directories are `.venv`, `01_theory`, `02_dnn`,
   `99_backup`, and `99_codex_bin`.
@@ -39,14 +39,18 @@ Every retained stage has a top-level `smoke_runs/` directory.
   - retained sampling pools:
     `01_theory/02_theory_sampling/raw_outputs/reference_pool/` and
     `01_theory/02_theory_sampling/raw_outputs/shell_pool/`
-- 3NN final:
-  - final proxy source identity:
-    `9_beta_cell_10_dataset_10_reference_1024_sample_per_ref_radius_SMC_pool1_l2top10_lambda1_gamma1`
+- 3NN production final:
+  - public identity: `18_beta_cell_30_dataset_30_reference`
   - active public path prefix:
-    `02_dnn/05_proxy_local_entropy/figures/9_beta_cell_10_dataset_10_reference/`
-  - retained ranges:
-    `d_0.01_to_0.10`, `d_0.10_to_3.00`, `d_0.01_to_2.50_dense`,
-    and `d_0.01_to_2.50_sparse`.
+    `02_dnn/05_proxy_local_entropy/figures/18_beta_cell_30_dataset_30_reference/`
+  - retained range: `d_0.01_to_2.50_dense`
+  - raw shell payload path:
+    `02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense/`
+- 3NN completed extension:
+  - public identity: `18_beta_cell_60_dataset_30_reference`
+  - retained range: `d_0.01_to_2.50_dense`
+  - retained status: compact reference/shell/proxy summaries and figures;
+    theta and row-level shell payloads are not retained in this path.
 
 ## Cleanup Boundary
 

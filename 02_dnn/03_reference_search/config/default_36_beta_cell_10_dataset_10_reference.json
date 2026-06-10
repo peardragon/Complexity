@@ -1,6 +1,0 @@
-﻿{
-    "stage":  "03_reference_search",
-    "run_name":  "36_beta_cell_10_dataset_10_reference",
-    "lambda_ref":  1,
-    "references_per_dataset":  10
-}

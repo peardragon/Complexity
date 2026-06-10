@@ -26,6 +26,7 @@ julia_env/
 *.log.stderr
 *.npz
 *.npy
+*.tmp.*
 **/sample_payloads/**
 GIT_HELPER.md
 payloads/
@@ -34,6 +35,7 @@ payloads/
 99_codex_bin/**
 !99_codex_bin/.gitkeep
 *.tmp
+02_dnn/transfer_archives/**
 
 # Promoted raw payloads stay on this workstation. Track configs, code, reports,
 # compact summaries, and figures in Git, but do not put million-file raw payload

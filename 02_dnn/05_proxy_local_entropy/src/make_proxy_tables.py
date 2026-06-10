@@ -14,15 +14,19 @@ def _write_table(path: Path, rows: list[dict[str, object]], fallback_fields: lis
     save_csv(path, rows, fields)
 
 
-def write_run_report(range_label: str, output_root: Path, *, include_accuracy: bool) -> None:
+def write_run_report_for_range(range_root: Path, output_root: Path, *, include_accuracy: bool) -> None:
+    range_label = range_root.name
+    input_unit_summary = range_root / "summary_tables" / "sample_unit_summary.csv"
+    input_rh_summary = range_root / "summary_tables" / "rh_by_ref_radius_h.csv"
     report = f"""# Proxy local entropy raw_outputs report: {range_label}
 
-이 폴더는 05_proxy_local_entropy figure를 재현하기 위한 proxy summary table을 보관한다.
+This directory stores the compact proxy summary tables used by
+`05_proxy_local_entropy/figures`.
 
 ## Config
 
-- input unit summary: `02_dnn/04_sampling/raw_outputs/shell_pool/9_beta_cell_10_dataset_10_reference/{range_label}/summary_tables/sample_unit_summary.csv`
-- input R-H summary: `02_dnn/04_sampling/raw_outputs/shell_pool/9_beta_cell_10_dataset_10_reference/{range_label}/summary_tables/rh_by_ref_radius_h.csv`
+- input unit summary: `{input_unit_summary.as_posix()}`
+- input R-H summary: `{input_rh_summary.as_posix()}`
 - proxy method: full regularized local entropy view using `logZ_inf_full`, `logZ_inf_stripped`, and `reference_prior_log_weight` from the 04 sampling unit summary
 - regularization fallback: `compute_phi.DEFAULT_LAMBDA_REG=220` only if the full/correction fields are absent
 - q values: 0.5, 0.9, 0.99
@@ -30,15 +34,18 @@ def write_run_report(range_label: str, output_root: Path, *, include_accuracy: b
 
 ## Output files
 
-- `summary_tables/absolute_phi_by_beta_radius.csv`: 04 sampling unit summary에서 beta/radius별 absolute full phi, energy term, area term을 집계한 table이다.
-- `summary_tables/delta_phi_by_beta_radius.csv`: 기준 radius 대비 delta phi와 energy/area split을 beta/radius별로 집계한 table이다.
-- `summary_tables/dphi_dr_by_beta_radius.csv`: radial derivative 관련 proxy quantity를 beta/radius별로 정리한 table이다.
-- `summary_tables/hq_by_beta_radius.csv`: `rh_by_ref_radius_h.csv`에서 q별 H threshold phase map 입력을 만든 table이다.
-- `summary_tables/accuracy_q_by_beta_radius.csv`: sample payload NPZ의 per-sample error/log weight를 다시 읽어 q별 weighted accuracy cutoff를 만든 table이다. 이 table은 `--include-accuracy` 실행 때만 생성한다.
+- `summary_tables/absolute_phi_by_beta_radius.csv`: beta/radius absolute `phi(d)` with full, energetic, stripped, correction, and area terms.
+- `summary_tables/delta_phi_by_beta_radius.csv`: beta/radius `phi(d)-phi(r0)` with the same energy/area split.
+- `summary_tables/dphi_dr_by_beta_radius.csv`: radial derivative proxy quantities by beta/radius.
+- `summary_tables/hq_by_beta_radius.csv`: H-threshold phase-map inputs derived from `rh_by_ref_radius_h.csv`.
+- `summary_tables/accuracy_q_by_beta_radius.csv`: optional weighted accuracy phase-map inputs regenerated from sample payload NPZ files when `--include-accuracy` is used.
 
 ## Reproduction chain
 
-`04_sampling/.../summary_tables/`와 필요 시 `04_sampling/.../sample_payloads/`를 입력으로 이 폴더의 proxy summary tables를 만들고, `05_proxy_local_entropy/figures/`의 local entropy, derivative, phase-map figure가 이 table들을 사용한다.
+`04_sampling/.../summary_tables/` provides the compact shell summaries. When
+accuracy quantiles are requested, `04_sampling/.../sample_payloads/` is also
+read. The resulting tables drive the local entropy, derivative, and phase-map
+figures under `05_proxy_local_entropy/figures/`.
 """
     (output_root / "run_report.md").write_text(report, encoding="utf-8")
 
@@ -82,7 +89,7 @@ def make_tables(range_root: Path, output_root: Path, *, include_accuracy: bool) 
         _write_table(accuracy_path, accuracy_rows, ["q", "beta", "radius", "accuracy_q", "claim"])
         outputs.append(accuracy_path)
 
-    write_run_report(range_root.name, output_root, include_accuracy=include_accuracy)
+    write_run_report_for_range(range_root, output_root, include_accuracy=include_accuracy)
     outputs.append(output_root / "run_report.md")
     return outputs
 

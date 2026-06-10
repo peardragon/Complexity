@@ -1,2 +1,0 @@
-unit_index,beta,dataset_id,ref_id,radius,n_samples,python_elapsed_seconds,julia_elapsed_seconds,python_units_per_s,julia_units_per_s,julia_speedup_vs_python,python_smc_completed,julia_smc_completed
-0,0.05,0,0,0.01,16,1.7103755999996793,11.54927580000367,0.5846669000658028,0.08658551560433618,0.14809375320304807,True,True

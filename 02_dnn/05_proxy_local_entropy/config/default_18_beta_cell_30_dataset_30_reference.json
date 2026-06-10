@@ -1,0 +1,13 @@
+{
+  "run_name": "18_beta_cell_30_dataset_30_reference",
+  "range_label": "d_0.01_to_2.50_dense",
+  "source_run_name": "materialized_active_18_beta_run",
+  "selection_rule": "retained 18 beta cells x 30 datasets",
+  "input_shell_root": "02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense",
+  "output_root": "02_dnn/05_proxy_local_entropy/raw_outputs/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense",
+  "figure_root": "02_dnn/05_proxy_local_entropy/figures/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense",
+  "param_count": 2545,
+  "lambda_reg_fallback": 220.0,
+  "q_values": [0.5, 0.9, 0.99],
+  "accuracy_quantiles_retained": false
+}

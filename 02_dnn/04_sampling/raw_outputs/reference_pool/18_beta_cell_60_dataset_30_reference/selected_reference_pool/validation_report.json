@@ -1,10 +1,10 @@
 {
+  "ok": true,
+  "mode": "summary_only",
   "dataset_pool_count": 1080,
   "expected_dataset_pool_count": 1080,
+  "selected_reference_count": 32400,
   "expected_selected_reference_count": 32400,
-  "first_theta_shape": [
-    2545
-  ],
-  "ok": true,
-  "selected_reference_count": 32400
+  "theta_payloads_retained": false,
+  "note": "Raw theta payloads are not retained in the active 60-dataset summary-only reference pool."
 }

@@ -1,0 +1,30 @@
+stage: 04_sampling.exact_shell_l2_vmf_ce_smc
+method: exact_shell_l2_vmf_adaptive_ce_tempered_smc
+run:
+  name: 18_beta_cell_60_dataset_30_reference
+  range_label: d_0.01_to_2.50_dense
+  retained_status: compact summary tables and figures; row-level shell payloads are not duplicated here
+model:
+  architecture: 2-48-48-1-tanh
+  P: 2545
+upstream:
+  dataset_index: 02_dnn/01_dataset_gen/raw_outputs/18_beta_cell_60_dataset/dataset_index.csv
+  reference_pool_manifest: 02_dnn/04_sampling/raw_outputs/reference_pool/18_beta_cell_60_dataset_30_reference/selected_reference_pool/final_pool1_l2_top30_refs.json
+ensemble:
+  beta_cells: 18
+  datasets_per_beta: 60
+  references_per_dataset: 30
+sampling:
+  radius_range:
+    start: 0.01
+    stop: 2.50
+    step: 0.01
+  samples_per_ref_radius: 1024
+acceptance_snapshot:
+  sampling_rows: 8100000
+  failed_units: 0
+  proxy_rows_per_table_family: 4500
+active_outputs:
+  shell_summary: 02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense/summary_tables
+  proxy_raw: 02_dnn/05_proxy_local_entropy/raw_outputs/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense
+  proxy_figures: 02_dnn/05_proxy_local_entropy/figures/18_beta_cell_60_dataset_30_reference/d_0.01_to_2.50_dense

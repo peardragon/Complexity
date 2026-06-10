@@ -1,0 +1,32 @@
+{
+  "stage": "02_dnn/07_proxy_3D_landscape_for_visualize",
+  "site": {
+    "entrypoint": "figures/proxy_landscape_v9_reviewed_site/index.html",
+    "data_root": "raw_outputs"
+  },
+  "target_measures": {
+    "source_stage": "02_dnn/06_reference_atlas",
+    "identity": "18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense",
+    "copied_to": "raw_outputs/reference_atlas_target_measures/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense",
+    "target_files": [
+      "geometry_summary_beta_aggregate.csv",
+      "geometry_summary_by_beta.csv",
+      "pairwise_metrics.csv",
+      "phi_E_descriptor_by_beta.csv",
+      "reference_eval_auxiliary.json",
+      "representative_datasets_for_figures.csv"
+    ]
+  },
+  "proxy_payload": {
+    "source_archive": "C:/Users/user/Downloads/proxy_landscape_full_curve_fit_site_v9_reviewed.zip",
+    "identity": "proxy_landscape_full_curve_fit_site_v9_reviewed",
+    "copied_to": "raw_outputs/proxy_landscape_v9_reviewed_fit",
+    "payload_file": "plotly_payload_v9.json",
+    "fit_summary_file": "proxy_fit_summary_v9.csv"
+  },
+  "interpretation": {
+    "surface_contract": "Full-curve-matched visual proxy fitted to reference-centered phi_E(d), S_ref, Q_ref, H_CE, and B_CE barrier diagnostics.",
+    "meaningful_addition": "The site displays residuals scaled by target SEM and highlights beta values where upper-tail barrier mismatch is largest.",
+    "limitation": "Q_ref is a high-dimensional angular diagnostic and is not treated as a literal two-dimensional angle."
+  }
+}

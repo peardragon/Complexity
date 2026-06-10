@@ -1,0 +1,35 @@
+{
+  "claim": "S/Q/H/B_lin reference-cloud proxy metrics only; no graph connectivity G_tau was computed.",
+  "dataset_count": 540,
+  "expected_dataset_count": 540,
+  "expected_pairwise_row_count": 234900,
+  "pairwise_columns": [
+    "beta",
+    "dataset_id",
+    "ref_i",
+    "ref_j",
+    "D_ij",
+    "q_ij",
+    "B_CE_ij",
+    "B_err_ij"
+  ],
+  "pairwise_row_count": 234900,
+  "passed": true,
+  "summary_columns": [
+    "beta",
+    "dataset_id",
+    "K",
+    "S_ref",
+    "Q_ref",
+    "H_err",
+    "H_CE",
+    "B_CE_mean",
+    "B_CE_median",
+    "B_CE_q90",
+    "B_err_mean",
+    "B_err_median",
+    "B_err_q90"
+  ],
+  "t_grid_count": 21,
+  "uses_interior_grid_plus_exact_endpoints": true
+}

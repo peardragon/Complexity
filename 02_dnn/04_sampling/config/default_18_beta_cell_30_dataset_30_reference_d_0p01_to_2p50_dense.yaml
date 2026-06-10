@@ -1,0 +1,44 @@
+stage: 04_sampling.exact_shell_l2_vmf_ce_smc
+method: exact_shell_l2_vmf_adaptive_ce_tempered_smc
+run:
+  name: 18_beta_cell_30_dataset_30_reference
+  source_run: materialized_active_18_beta_run
+  range_label: d_0.01_to_2.50_dense
+  selection_rule: retained 18 beta cells x 30 datasets
+model:
+  architecture: 2-48-48-1-tanh
+  P: 2545
+upstream:
+  dataset_index: 02_dnn/01_dataset_gen/raw_outputs/18_beta_cell_30_dataset/dataset_index.csv
+  dataset_raw_root: 02_dnn/01_dataset_gen/raw_outputs/18_beta_cell_30_dataset/raw_datasets
+  reference_pool_manifest: 02_dnn/04_sampling/raw_outputs/reference_pool/18_beta_cell_30_dataset_30_reference/selected_reference_pool/final_pool1_l2_top30_refs.json
+target:
+  gamma_ce: 1.0
+  lambda_reg: 1.0
+ensemble:
+  beta_cells: 18
+  datasets_per_beta: 30
+  references_per_dataset: 30
+sampling:
+  radius_range:
+    start: 0.01
+    stop: 2.50
+    step: 0.01
+  samples_per_ref_radius: 1024
+  proposal: exact_shell_l2_vmf_adaptive_ce_smc
+smc:
+  target_cess_fraction: 0.75
+  resample_ess_fraction: 0.75
+  max_steps: 120
+  min_delta_t: 0.0001
+  bisection_steps: 32
+  mh_sweeps: 1
+  move_kappa_factor: 80.0
+compute:
+  chunk_size: 1024
+  device: auto
+  dtype: float32
+active_outputs:
+  shell_raw: 02_dnn/04_sampling/raw_outputs/shell_pool/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense
+  proxy_raw: 02_dnn/05_proxy_local_entropy/raw_outputs/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense
+  proxy_figures: 02_dnn/05_proxy_local_entropy/figures/18_beta_cell_30_dataset_30_reference/d_0.01_to_2.50_dense
