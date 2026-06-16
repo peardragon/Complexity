@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "broad_failed_rows": 5,
+    "broad_max_radius": 0.08,
+    "derivative_rows": 40,
+    "fig_derivative_exists": true,
+    "fig_phi_exists": true,
+    "microline_failed_rows": 0,
+    "phi_rows": 40
+  },
+  "status": "pass"
+}

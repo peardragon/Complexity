@@ -1,0 +1,18 @@
+{
+  "P": 2461,
+  "bootstrap_sd_gate": 0.012,
+  "clusters": 3,
+  "common_dense_radii": [
+    0.01,
+    0.02,
+    0.03,
+    0.05,
+    0.08
+  ],
+  "ess_gate": 0.04,
+  "output_dir": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/07_reference_family_analysis",
+  "run_root": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500",
+  "selector_size": 30,
+  "skip_function": false,
+  "split_gate": 0.004
+}

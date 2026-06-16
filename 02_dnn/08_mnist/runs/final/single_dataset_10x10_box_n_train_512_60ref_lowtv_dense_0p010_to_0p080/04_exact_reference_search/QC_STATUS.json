@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "all_exact": true,
+    "expected_reference_rows": 60,
+    "reference_rows": 60,
+    "reused_lowtv_references": true,
+    "source_run": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_qcpass_line_4rule_lowtv",
+    "theta_length_all_P": true
+  },
+  "hard_failures": [],
+  "stage": "04_exact_reference_search",
+  "status": "pass",
+  "warnings": []
+}

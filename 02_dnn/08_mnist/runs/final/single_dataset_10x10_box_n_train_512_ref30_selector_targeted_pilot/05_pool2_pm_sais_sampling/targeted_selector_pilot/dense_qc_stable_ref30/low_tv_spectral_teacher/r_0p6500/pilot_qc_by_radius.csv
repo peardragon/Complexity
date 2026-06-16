@@ -1,0 +1,2 @@
+radius,unit_rows,observed_ref_count,pass_count,max_split_logZ_per_P_diff,q05_ess_fraction,mean_elapsed_s,all_observed_pass
+0.65,18,18,18,0.003733770838980891,0.7616760040560959,350.21068942546844,True

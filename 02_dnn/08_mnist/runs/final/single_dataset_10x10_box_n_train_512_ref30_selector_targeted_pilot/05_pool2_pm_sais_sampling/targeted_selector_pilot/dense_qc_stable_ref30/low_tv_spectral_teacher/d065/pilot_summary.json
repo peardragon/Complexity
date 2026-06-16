@@ -1,0 +1,20 @@
+{
+  "all_observed_units_pass": true,
+  "decision": "pilot_pass_observed_units",
+  "elapsed_s": 1353.74200797081,
+  "estimated_30ref_10_large_radius_hours_at_mean": 8.290316296948326,
+  "max_split_logZ_per_P_diff": 0.003733770838980891,
+  "mean_unit_elapsed_s": 99.48379556337993,
+  "q05_ess_fraction": 0.617413924208981,
+  "requested_radii": [
+    0.12,
+    0.15,
+    0.2,
+    0.3,
+    0.45,
+    0.65
+  ],
+  "rule": "low_tv_spectral_teacher",
+  "selector": "dense_qc_stable_ref30",
+  "unit_rows": 99
+}

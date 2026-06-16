@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "blocked": true,
+    "reason": "Stage 06 refused to promote figures because the selected line is not all-QC-pass."
+  },
+  "files": [
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_qcpass_line_4rule_lowtv/final_report/STAGE_BLOCKED.md"
+  ],
+  "hard_failures": [
+    "Stage 06 refused to promote figures because the selected line is not all-QC-pass."
+  ],
+  "stage": "06_results_figures",
+  "status": "blocked",
+  "warnings": []
+}

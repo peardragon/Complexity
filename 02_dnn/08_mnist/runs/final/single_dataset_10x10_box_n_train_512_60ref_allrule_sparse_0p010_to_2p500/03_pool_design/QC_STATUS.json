@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "P": 2461,
+    "expected_P": 2461,
+    "figure_exists": true,
+    "sparse_radius_count": 19
+  },
+  "files": [
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/figures/fig01_model_parameter_scale.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/model_spec.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/POOL_CONTRACT.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/QC_GATES.md",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/QC_STATUS.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/REPORT.md",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/03_pool_design/run_config_resolved.json"
+  ],
+  "hard_failures": [],
+  "stage": "03_pool_design",
+  "status": "pass",
+  "warnings": []
+}

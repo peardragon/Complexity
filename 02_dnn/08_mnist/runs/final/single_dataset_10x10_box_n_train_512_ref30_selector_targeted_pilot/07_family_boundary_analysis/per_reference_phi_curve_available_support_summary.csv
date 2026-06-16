@@ -1,0 +1,5 @@
+rule,reference_count,references_with_sparse_points,available_point_count,qc_fail_point_count,radius_min,radius_max
+low_tv_spectral_teacher,60,47,766,106,0.01,2.5
+random_label,60,1,314,0,0.01,2.5
+real_even_odd,60,1,314,0,0.01,2.5
+teacher_nn,60,1,314,0,0.01,2.5

@@ -1,0 +1,2 @@
+split_id,n_train,n_test,train_even_fraction,test_even_fraction
+0,512,2048,0.5,0.5

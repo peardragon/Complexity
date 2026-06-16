@@ -1,0 +1,14 @@
+{
+  "copied_unit_summaries": 0,
+  "known_bad_units": [],
+  "known_bad_units_skipped": 0,
+  "missing_unit_summaries_to_compute": 2898,
+  "source_runs": [
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_dense_0p010_to_0p080",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_microline_4rule_lowtv",
+    "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_dense_0p010_to_0p080"
+  ],
+  "target_radius_count": 19,
+  "target_rule_count": 4,
+  "target_unit_count": 4560
+}

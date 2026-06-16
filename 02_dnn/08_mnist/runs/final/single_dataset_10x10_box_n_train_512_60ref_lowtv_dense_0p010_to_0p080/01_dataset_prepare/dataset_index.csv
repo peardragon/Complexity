@@ -1,0 +1,2 @@
+experiment_id,mode,split_id,rule,dataset_path,n_train,n_test,input_dim,train_pos_fraction
+mnist10_single_dataset_10x10_box_n_train_512_60ref_lowtv_dense,final_single_dataset,0,low_tv_spectral_teacher,02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_lowtv_dense_0p010_to_0p080/01_dataset_prepare/raw_datasets/split_000/low_tv_spectral_teacher/dataset.npz,512,2048,100,0.5

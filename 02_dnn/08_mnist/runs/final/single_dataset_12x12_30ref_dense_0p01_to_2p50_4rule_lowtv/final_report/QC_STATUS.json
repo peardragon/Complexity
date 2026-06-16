@@ -1,0 +1,31 @@
+{
+  "checks": {
+    "figure_count": 5,
+    "main_figure_exists": true,
+    "phi_rows": 27,
+    "raw_dense_figure_exists": true,
+    "raw_phi_rows": 1000,
+    "supported_radii_count": 0
+  },
+  "files": [
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/figures/fig04_phi_energy_qc_pass_main.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/figures/fig05_phi_full_qc_pass.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/figures/fig07_sampling_qc_pass_heatmap.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/figures/fig08_phi_energy_raw_dense_diagnostic.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/figures/fig09_phi_full_raw_dense_diagnostic.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/final_claim_table.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/phi_bootstrap_by_rule_radius.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/phi_by_rule_radius.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/phi_by_rule_radius_raw_diagnostic.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/qc_pass_by_rule_radius.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/QC_STATUS.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/REPORT.md",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/final_report/run_config_resolved.json"
+  ],
+  "hard_failures": [],
+  "stage": "06_results_figures",
+  "status": "pass",
+  "warnings": [
+    "Only QC-passed rule/radius rows are plotted in phi_by_rule_radius.csv; raw dense diagnostics are no-claim where QC failed."
+  ]
+}

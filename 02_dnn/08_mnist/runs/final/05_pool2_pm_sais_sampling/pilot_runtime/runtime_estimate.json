@@ -1,0 +1,12 @@
+{
+  "estimated_full_sampling_hours": 185.4040821393331,
+  "estimated_full_sampling_s": 667454.6957015991,
+  "full_n_samples": 1024,
+  "full_units": 150000,
+  "max_split_logZ_per_P_diff": 0.027077941296810366,
+  "mean_unit_elapsed_s_at_512": 2.224848985671997,
+  "min_smc_cess_fraction": 0.7500000000012957,
+  "pilot_elapsed_s": 91.65453624725342,
+  "pilot_units": 24,
+  "q05_ess_fraction": 0.8367320774736654
+}

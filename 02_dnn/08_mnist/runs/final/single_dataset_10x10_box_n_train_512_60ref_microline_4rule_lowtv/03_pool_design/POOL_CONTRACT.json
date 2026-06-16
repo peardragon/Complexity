@@ -1,0 +1,12 @@
+{
+  "d_raw": "||theta-theta_ref||/sqrt(P)",
+  "pool1": "optimizer-induced exact references",
+  "pool2": "hard L2 shells",
+  "radii": [
+    0.01,
+    0.011,
+    0.012,
+    0.013,
+    0.014
+  ]
+}

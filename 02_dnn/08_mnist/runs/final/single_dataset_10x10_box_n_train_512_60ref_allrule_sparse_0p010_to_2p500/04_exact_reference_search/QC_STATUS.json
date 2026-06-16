@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "all_exact": true,
+    "expected_reference_rows": 240,
+    "min_refs_per_rule": 60,
+    "reference_rows": 240,
+    "reused_allrule_references": true,
+    "source_run": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_dense_0p010_to_0p080",
+    "theta_length_all_P": true
+  },
+  "hard_failures": [],
+  "stage": "04_exact_reference_search",
+  "status": "pass",
+  "warnings": []
+}

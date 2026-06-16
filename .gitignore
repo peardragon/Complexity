@@ -62,3 +62,20 @@ payloads/
 02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/sample_unit_summary.csv
 02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/rh_by_ref_radius_h.csv
 02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/logs/progress.jsonl
+
+# 08_mnist local raw payloads and per-unit audit trees. Keep docs, configs,
+# source, compact summary tables, figures, reports, and manifests visible to Git.
+02_dnn/08_mnist/data/**
+02_dnn/08_mnist/**/raw_datasets/**
+02_dnn/08_mnist/**/selected_reference_pool/**
+02_dnn/08_mnist/**/sample_payloads/**
+02_dnn/08_mnist/**/unit_summaries/**
+02_dnn/08_mnist/**/stability_pilot*/**
+02_dnn/08_mnist/**/attempt_logs/**
+02_dnn/08_mnist/**/shell_summary_by_unit*.csv
+02_dnn/08_mnist/**/unit_summary_long.csv
+02_dnn/08_mnist/**/overlay_unit_summary_long.csv
+02_dnn/08_mnist/**/pilot_unit_summary.csv
+02_dnn/08_mnist/**/05_pool2_pm_sais_sampling/QC_STATUS.json
+02_dnn/08_mnist/**/figures/*interactive*.html
+02_dnn/08_mnist/**/logs/**

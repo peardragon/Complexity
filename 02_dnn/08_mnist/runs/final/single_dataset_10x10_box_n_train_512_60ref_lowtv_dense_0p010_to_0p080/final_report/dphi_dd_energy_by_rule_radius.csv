@@ -1,0 +1,15 @@
+rule,radius,d_delta_phi_energy_dd,qc_pass,derivative_method
+low_tv_spectral_teacher,0.01,-0.006537784828122794,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.011,-0.006651403333791093,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.012,-0.007318969060475489,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.013,-0.008041320637117743,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.014,-0.008601574752389192,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.016,-0.009993082011466056,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.018,-0.01149914215056903,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.02,-0.013098798590881039,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.025,-0.017015913918724673,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.03,-0.021525646811436677,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.04,-0.03165097335988499,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.05,-0.042829045731033334,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.065,-0.05992469727390999,True,numpy.gradient on all-QC dense low-TV radii
+low_tv_spectral_teacher,0.08,-0.06840284708066666,True,numpy.gradient on all-QC dense low-TV radii

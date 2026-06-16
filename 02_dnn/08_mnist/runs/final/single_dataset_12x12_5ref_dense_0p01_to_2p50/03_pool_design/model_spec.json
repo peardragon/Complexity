@@ -1,0 +1,8 @@
+{
+  "P": 2533,
+  "activation": "tanh",
+  "architecture": "196-12-12-1-tanh",
+  "hidden_layers": 2,
+  "hidden_width": 12,
+  "input_dim": 196
+}

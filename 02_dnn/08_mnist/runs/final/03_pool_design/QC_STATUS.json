@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "P": 3441,
+    "P_expected": 3441,
+    "dense_radius_count": 250,
+    "pytest": {
+      "cmd": "D:\\Complexity\\.venv\\Scripts\\python.exe -m pytest D:\\Complexity\\02_dnn\\08_mnist\\tests\\test_stage03_model_spec.py -q",
+      "elapsed_s": 0.40619993209838867,
+      "passed": true,
+      "returncode": 0,
+      "stderr_tail": "",
+      "stdout_tail": "..                                                                       [100%]\n2 passed in 0.07s\n"
+    }
+  },
+  "files": [
+    "02_dnn/08_mnist/runs/final/03_pool_design/MODEL_SPEC.md",
+    "02_dnn/08_mnist/runs/final/03_pool_design/POOL_CONTRACT.json",
+    "02_dnn/08_mnist/runs/final/03_pool_design/POOL_CONTRACT.md",
+    "02_dnn/08_mnist/runs/final/03_pool_design/QC_GATES.md",
+    "02_dnn/08_mnist/runs/final/03_pool_design/run_config_resolved.json"
+  ],
+  "hard_failures": [],
+  "stage": "03_pool_design",
+  "status": "pass",
+  "warnings": []
+}

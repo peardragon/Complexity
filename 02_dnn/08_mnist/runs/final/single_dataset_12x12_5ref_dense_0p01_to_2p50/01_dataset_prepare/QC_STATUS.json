@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "balance_max": 0.5,
+    "balance_min": 0.5,
+    "dataset_rows": 3,
+    "fig01_exists": true,
+    "fig02_exists": true
+  },
+  "files": [
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/dataset_index.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/figures/fig01_mnist_28_vs_14_montage.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/figures/fig02_label_balance_by_rule.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/metadata/label_balance_summary.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/metadata/mnist_source.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/metadata/split_summary.csv",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/raw_datasets/split_000/random_label/dataset.npz",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/raw_datasets/split_000/random_label/dataset_metadata.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/raw_datasets/split_000/real_even_odd/dataset.npz",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/raw_datasets/split_000/real_even_odd/dataset_metadata.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/raw_datasets/split_000/teacher_nn/dataset.npz",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/raw_datasets/split_000/teacher_nn/dataset_metadata.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_5ref_dense_0p01_to_2p50/01_dataset_prepare/run_config_resolved.json"
+  ],
+  "hard_failures": [],
+  "stage": "01_dataset_prepare",
+  "status": "pass",
+  "warnings": []
+}

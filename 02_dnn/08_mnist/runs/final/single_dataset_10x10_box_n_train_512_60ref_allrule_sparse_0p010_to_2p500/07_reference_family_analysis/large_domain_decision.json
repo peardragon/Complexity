@@ -1,0 +1,299 @@
+{
+  "criteria": {
+    "bootstrap_sd_gate": 0.012,
+    "ess_gate": 0.04,
+    "large_radii": [
+      0.45,
+      0.65,
+      0.85,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5
+    ],
+    "required": "predeclared selector has complete selected-reference units and all QC gates pass at every large radius",
+    "selector_size": 30,
+    "split_gate": 0.004
+  },
+  "decision_table": [
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "low_tv_spectral_teacher",
+      "selector": "dense_qc_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "random_label",
+      "selector": "dense_qc_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "real_even_odd",
+      "selector": "dense_qc_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "teacher_nn",
+      "selector": "dense_qc_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "low_tv_spectral_teacher",
+      "selector": "high_margin_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "random_label",
+      "selector": "high_margin_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "real_even_odd",
+      "selector": "high_margin_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "teacher_nn",
+      "selector": "high_margin_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "low_tv_spectral_teacher",
+      "selector": "l2_min_norm_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "random_label",
+      "selector": "l2_min_norm_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "real_even_odd",
+      "selector": "l2_min_norm_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "teacher_nn",
+      "selector": "l2_min_norm_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.3,
+      "rule": "low_tv_spectral_teacher",
+      "selector": "optimizer_first30_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "random_label",
+      "selector": "optimizer_first30_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "real_even_odd",
+      "selector": "optimizer_first30_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "teacher_nn",
+      "selector": "optimizer_first30_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "low_tv_spectral_teacher",
+      "selector": "phi_qc_cluster_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "random_label",
+      "selector": "phi_qc_cluster_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "real_even_odd",
+      "selector": "phi_qc_cluster_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "teacher_nn",
+      "selector": "phi_qc_cluster_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "low_tv_spectral_teacher",
+      "selector": "qc_hardness_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "random_label",
+      "selector": "qc_hardness_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "real_even_odd",
+      "selector": "qc_hardness_stable_ref30"
+    },
+    {
+      "all_large_domain_qc_pass": false,
+      "complete_large_domain": false,
+      "large_domain_missing_or_failed_rows": 10,
+      "max_qc_pass_radius_observed": 0.08,
+      "rule": "teacher_nn",
+      "selector": "qc_hardness_stable_ref30"
+    }
+  ],
+  "hard_lowtv_reference_examples": [
+    {
+      "first_fail_radius": 0.65,
+      "max_split_logZ_per_P_diff": 0.014483520864672746,
+      "min_margin": 0.6850565145372707,
+      "ref_id": 6,
+      "theta_norm": 11.675638599483072,
+      "unit_qc_fail_count": 8
+    },
+    {
+      "first_fail_radius": 1.0,
+      "max_split_logZ_per_P_diff": 0.01992111699038066,
+      "min_margin": 1.7976305918142843,
+      "ref_id": 19,
+      "theta_norm": 13.514985064444865,
+      "unit_qc_fail_count": 5
+    },
+    {
+      "first_fail_radius": 1.5,
+      "max_split_logZ_per_P_diff": 0.012253545523131027,
+      "min_margin": 2.95468720316023,
+      "ref_id": 16,
+      "theta_norm": 13.998038262787924,
+      "unit_qc_fail_count": 5
+    },
+    {
+      "first_fail_radius": 0.65,
+      "max_split_logZ_per_P_diff": 0.011819613823012224,
+      "min_margin": 1.6403154448719903,
+      "ref_id": 21,
+      "theta_norm": 12.13822148045803,
+      "unit_qc_fail_count": 5
+    },
+    {
+      "first_fail_radius": 0.85,
+      "max_split_logZ_per_P_diff": 0.010977929707312869,
+      "min_margin": 1.3545433633751278,
+      "ref_id": 10,
+      "theta_norm": 11.693938133178548,
+      "unit_qc_fail_count": 5
+    },
+    {
+      "first_fail_radius": 1.25,
+      "max_split_logZ_per_P_diff": 0.010563369905565423,
+      "min_margin": 0.6570414680426524,
+      "ref_id": 24,
+      "theta_norm": 13.558768542467371,
+      "unit_qc_fail_count": 5
+    },
+    {
+      "first_fail_radius": 1.5,
+      "max_split_logZ_per_P_diff": 0.018549643893130036,
+      "min_margin": 1.9957561068301293,
+      "ref_id": 9,
+      "theta_norm": 14.849926954397114,
+      "unit_qc_fail_count": 4
+    },
+    {
+      "first_fail_radius": 1.5,
+      "max_split_logZ_per_P_diff": 0.013505771708534184,
+      "min_margin": 1.5795369960611194,
+      "ref_id": 12,
+      "theta_norm": 12.63495278207709,
+      "unit_qc_fail_count": 4
+    },
+    {
+      "first_fail_radius": 0.85,
+      "max_split_logZ_per_P_diff": 0.01335174660053681,
+      "min_margin": 4.039459453706383,
+      "ref_id": 27,
+      "theta_norm": 14.225401192765649,
+      "unit_qc_fail_count": 4
+    },
+    {
+      "first_fail_radius": 0.85,
+      "max_split_logZ_per_P_diff": 0.012923628885941743,
+      "min_margin": 0.2862856360631787,
+      "ref_id": 8,
+      "theta_norm": 12.876839072402571,
+      "unit_qc_fail_count": 4
+    }
+  ],
+  "large_domain_supported_for_predeclared_lowtv_ref30": false,
+  "next_safe_action": "Do not launch sparse large-domain production from the current evidence. First define a predeclared reference law such as l2_min_norm_ref30, run a targeted Stage05 pilot on its missing/hard large-radii units, and only promote if complete selector-level QC passes."
+}

@@ -1,0 +1,76 @@
+{
+  "compute": {
+    "chunk_size": 1024,
+    "device": "auto",
+    "dtype": "float32"
+  },
+  "dataset": {
+    "downscale": "PIL.Image.resize((10, 10), Image.Resampling.BOX)",
+    "input_dim": 100,
+    "input_side": 10,
+    "label_rules": [
+      "low_tv_spectral_teacher",
+      "real_even_odd",
+      "teacher_nn",
+      "random_label"
+    ],
+    "n_splits": 1,
+    "n_test": 2048,
+    "n_train": 512
+  },
+  "elapsed_s": 108.55405497550964,
+  "experiment_id": "mnist10_single_dataset_10x10_box_n_train_512_60ref_qcpass_line",
+  "identity": "single_dataset_10x10_box_n_train_512_60ref_qcpass_line_4rule_lowtv",
+  "mode": "final_single_dataset",
+  "model": {
+    "P": 2461,
+    "activation": "tanh",
+    "architecture": "100-20-20-1-tanh",
+    "hidden_layers": 2,
+    "hidden_width": 20,
+    "input_dim": 100
+  },
+  "outputs": {
+    "run_root": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_qcpass_line_4rule_lowtv",
+    "summary_only_pool2": true
+  },
+  "python": "D:\\Complexity\\.venv\\Scripts\\python.exe",
+  "qc": {
+    "bootstrap_sd_phi_max": 0.012,
+    "finite_unit_fraction_min": 0.9,
+    "max_split_logZ_per_P_diff": 0.004,
+    "q05_ess_fraction_min": 0.04
+  },
+  "reference_search": {
+    "max_attempts_per_dataset": 600,
+    "optimizer": "adam_then_lbfgs_if_needed",
+    "selected_refs_per_dataset": 60
+  },
+  "resolved_at_unix": 1781416019.9715703,
+  "sampling": {
+    "fallback_policies_enabled": false,
+    "fallback_policy_note": "Disabled for the first 10x10 BOX QC-pass-line pass; any failed rule/radius row is diagnosed before targeted escalation.",
+    "lambda_reg": 1.0,
+    "proposal": "exact_shell_l2_vmf_adaptive_ce_tempered_smc_qcpass_line",
+    "r0": 0.01,
+    "radii": [
+      0.01,
+      0.02,
+      0.03,
+      0.05,
+      0.08
+    ],
+    "radius_grid_kind": "qcpass_small_hard_line_0p01_to_0p08",
+    "recovery_note": "Fresh 10x10 BOX n_train_512 run; no direct-IS recovery substitution is used in the first pass.",
+    "samples_per_ref_radius": 4096
+  },
+  "smc": {
+    "bisection_steps": 32,
+    "max_steps": 180,
+    "mh_sweeps": 2,
+    "min_delta_t": 0.0001,
+    "move_kappa_factor": 80.0,
+    "resample_ess_fraction": 0.5,
+    "target_cess_fraction": 0.95
+  }
+}

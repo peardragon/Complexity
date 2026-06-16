@@ -1,0 +1,4 @@
+{
+  "lambda_reg": 1.0,
+  "selection_rule": "single scaled run fixed lambda=1.0"
+}

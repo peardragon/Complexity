@@ -1,0 +1,21 @@
+{
+  "claim_policy": "Only points with qc_pass=true are formal; failed broad points are pursuit_no_claim diagnostics.",
+  "derivative": "numpy.gradient over source/rule sorted radii",
+  "output_root": "02_dnn/08_mnist/smoke_runs/large_domain_pursuit_10x10_box_60ref",
+  "sources": [
+    {
+      "alpha": 1.0,
+      "label": "formal all-QC microline",
+      "linestyle": "-",
+      "run_root": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_microline_4rule_lowtv",
+      "source": "microline_formal_pass"
+    },
+    {
+      "alpha": 0.82,
+      "label": "broad pursuit raw/QC-labelled",
+      "linestyle": "--",
+      "run_root": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_qcpass_line_4rule_lowtv",
+      "source": "broad_0p01_to_0p08_pursuit"
+    }
+  ]
+}

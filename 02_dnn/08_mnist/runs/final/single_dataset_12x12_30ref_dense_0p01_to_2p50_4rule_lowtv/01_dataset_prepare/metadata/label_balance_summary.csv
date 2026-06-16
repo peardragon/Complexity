@@ -1,0 +1,5 @@
+split_id,rule,train_pos_fraction,test_pos_fraction,train_n_pos,train_n_neg,definition,graph_k,spectral_k,selected_seed,candidate_count,train_threshold,train_tv_on_selection_graph,train_nmstv_on_selection_graph,real_even_odd_tv_on_selection_graph,real_even_odd_baseline_on_selection_graph,real_even_odd_nmstv_on_selection_graph,nmstv_ratio_to_real_even_odd,corr_even_odd,max_digit_label_purity,sigma,teacher_seed,teacher_architecture,train_median_logit_threshold,train_seed,test_seed
+0,low_tv_spectral_teacher,0.5,0.4970703125,512,512,low-frequency spectral graph teacher on MNIST14 train kNN graph with kNN interpolation for test labels,16.0,8.0,146.0,2.0,-0.005358623427817459,0.13719964591432357,0.27439929182864714,0.17848233394109925,0.5,0.3569646678821985,0.7687015453282938,0.01953125,0.7456140350877193,9.138216603455202,,,,,
+0,real_even_odd,0.5,0.5,512,512,"even digit +1, odd digit -1",,,,,,,,,,,,,,,,,,,
+0,teacher_nn,0.5,0.490234375,512,512,,,,,,,,,,,,,,,,31001.0,196-12-12-1-tanh,-0.04232446268451841,,
+0,random_label,0.5,0.5,512,512,,,,,,,,,,,,,,,,,,,41001.0,42001.0

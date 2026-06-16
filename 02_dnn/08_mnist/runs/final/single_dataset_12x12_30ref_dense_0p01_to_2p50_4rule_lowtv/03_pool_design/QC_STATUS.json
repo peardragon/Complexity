@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "P": 2533,
+    "dense_radius_count": 250,
+    "expected_P": 2533,
+    "figure_exists": true
+  },
+  "files": [
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/03_pool_design/figures/fig01_model_parameter_scale.png",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/03_pool_design/model_spec.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/03_pool_design/POOL_CONTRACT.json",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/03_pool_design/QC_GATES.md",
+    "02_dnn/08_mnist/runs/final/single_dataset_12x12_30ref_dense_0p01_to_2p50_4rule_lowtv/03_pool_design/run_config_resolved.json"
+  ],
+  "hard_failures": [],
+  "stage": "03_pool_design",
+  "status": "pass",
+  "warnings": []
+}

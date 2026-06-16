@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "dataset_files_exist": true,
+    "dataset_rows": 4,
+    "reused_filtered_allrule_datasets": true,
+    "source_run": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_dense_0p010_to_0p080"
+  },
+  "hard_failures": [],
+  "stage": "01_dataset_prepare",
+  "status": "pass",
+  "warnings": []
+}
