@@ -16,7 +16,7 @@
       "interior_radius_count_eta_gt_1e_minus_3": 42,
       "max_A": 0.0651922365511097,
       "max_eta": 0.995,
-      "mean_A": 0.0440866255935805,
+      "mean_A": 0.044166957011978036,
       "mean_eta": 0.9949999999999998,
       "radius_count": 42
     },
@@ -34,18 +34,18 @@
   "baseline_reproduction": {
     "available": true,
     "baseline_csv": "01_theory/01_theory_analytic/raw_outputs/theory_full_rs_alpha0p1.csv",
-    "max_abs_phi_rel_diff": 0.0025639745020664684,
+    "max_abs_phi_rel_diff": 0.0026816052756530873,
     "pass_1e_minus_3": false,
     "pass_2e_minus_3": false,
     "pass_3e_minus_3": true,
-    "rmse_phi_rel_diff": 0.0007680553410447179,
+    "rmse_phi_rel_diff": 0.0006369226360866918,
     "shared_radius_count": 42
   },
   "best_by_largest_N": {
     "N": 320,
-    "branch": "full_max_envelope",
+    "branch": "boundary_mixed_eta0",
     "peak_radius_abs_diff": 0.0,
-    "rmse": 0.020471029506922197
+    "rmse": 0.0017405702323724564
   },
   "branches": [
     "boundary_mixed_eta0",
@@ -54,9 +54,9 @@
   ],
   "feasible_csv": "01_theory/01_theory_analytic/raw_outputs/theory_full_feasible_rs_alpha0p1_fine.csv",
   "interpretation": {
-    "best_branch": "full_max_envelope",
+    "best_branch": "boundary_mixed_eta0",
     "best_peak_radius_abs_diff": 0.0,
-    "best_rmse": 0.020471029506922197,
+    "best_rmse": 0.0017405702323724564,
     "case": "full_mixed_collapses_to_boundary",
     "full_mixed_max_A": 0.0,
     "full_mixed_max_eta": 0.0,

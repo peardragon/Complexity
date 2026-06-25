@@ -1,0 +1,973 @@
+{"s": "W2963739978", "p": "published_in", "o": "S4306420609", "year": 2017}
+{"s": "W2963739978", "p": "has_topic", "o": "T10320", "score": 0.955299973487854, "year": 2017}
+{"s": "W2963739978", "p": "has_topic", "o": "T11512", "score": 0.9539999961853027, "year": 2017}
+{"s": "W2963739978", "p": "has_topic", "o": "T12859", "score": 0.9053000211715698, "year": 2017}
+{"s": "W2963739978", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2017}
+{"s": "W2963739978", "p": "authored_by", "o": "A5057451920", "position": "middle", "year": 2017}
+{"s": "W2963739978", "p": "authored_by", "o": "A5033089246", "position": "middle", "year": 2017}
+{"s": "W2963739978", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2017}
+{"s": "W2890911678", "p": "published_in", "o": "S52395412", "year": 2018}
+{"s": "W2890911678", "p": "has_topic", "o": "T10887", "score": 0.9107999801635742, "year": 2018}
+{"s": "W2890911678", "p": "has_topic", "o": "T12576", "score": 0.01730000041425228, "year": 2018}
+{"s": "W2890911678", "p": "has_topic", "o": "T10211", "score": 0.01489999983459711, "year": 2018}
+{"s": "W2890911678", "p": "authored_by", "o": "A5003431320", "position": "first", "year": 2018}
+{"s": "W2890911678", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2018}
+{"s": "W2890911678", "p": "authored_by", "o": "A5006360401", "position": "middle", "year": 2018}
+{"s": "W2890911678", "p": "authored_by", "o": "A5019398608", "position": "last", "year": 2018}
+{"s": "W2963285844", "p": "published_in", "o": "S4306419637", "year": 2017}
+{"s": "W2963285844", "p": "has_topic", "o": "T10320", "score": 0.9958000183105469, "year": 2017}
+{"s": "W2963285844", "p": "has_topic", "o": "T10876", "score": 0.9902999997138977, "year": 2017}
+{"s": "W2963285844", "p": "has_topic", "o": "T10036", "score": 0.9836000204086304, "year": 2017}
+{"s": "W2963285844", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2017}
+{"s": "W2963285844", "p": "authored_by", "o": "A5057451920", "position": "middle", "year": 2017}
+{"s": "W2963285844", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2017}
+{"s": "W2912260645", "p": "has_topic", "o": "T10320", "score": 1.0, "year": 2019}
+{"s": "W2912260645", "p": "has_topic", "o": "T11612", "score": 0.9962999820709229, "year": 2019}
+{"s": "W2912260645", "p": "has_topic", "o": "T11206", "score": 0.9947999715805054, "year": 2019}
+{"s": "W2912260645", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2019}
+{"s": "W2912260645", "p": "authored_by", "o": "A5100337924", "position": "middle", "year": 2019}
+{"s": "W2912260645", "p": "authored_by", "o": "A5057451920", "position": "middle", "year": 2019}
+{"s": "W2912260645", "p": "authored_by", "o": "A5001226970", "position": "middle", "year": 2019}
+{"s": "W2912260645", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2019}
+{"s": "W2912260645", "p": "cites", "o": "W2963285844", "internal": true, "year": 2019}
+{"s": "W2912260645", "p": "cites", "o": "W2963739978", "internal": true, "year": 2019}
+{"s": "W2963404710", "p": "published_in", "o": "S4306400194", "year": 2016}
+{"s": "W2963404710", "p": "has_topic", "o": "T10500", "score": 1.0, "year": 2016}
+{"s": "W2963404710", "p": "has_topic", "o": "T10378", "score": 0.996399998664856, "year": 2016}
+{"s": "W2963404710", "p": "has_topic", "o": "T11205", "score": 0.9961000084877014, "year": 2016}
+{"s": "W2963404710", "p": "authored_by", "o": "A5057451920", "position": "first", "year": 2016}
+{"s": "W2963404710", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2016}
+{"s": "W2963404710", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2016}
+{"s": "W2994848047", "p": "published_in", "o": "S4306419637", "year": 2020}
+{"s": "W2994848047", "p": "has_topic", "o": "T10500", "score": 0.9991000294685364, "year": 2020}
+{"s": "W2994848047", "p": "has_topic", "o": "T10057", "score": 0.9940000176429749, "year": 2020}
+{"s": "W2994848047", "p": "has_topic", "o": "T11612", "score": 0.9937999844551086, "year": 2020}
+{"s": "W2994848047", "p": "authored_by", "o": "A5011289358", "position": "first", "year": 2020}
+{"s": "W2994848047", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2020}
+{"s": "W2994848047", "p": "authored_by", "o": "A5103083233", "position": "middle", "year": 2020}
+{"s": "W2994848047", "p": "authored_by", "o": "A5003384169", "position": "middle", "year": 2020}
+{"s": "W2994848047", "p": "authored_by", "o": "A5017529415", "position": "last", "year": 2020}
+{"s": "W2994848047", "p": "cites", "o": "W2807299122", "internal": true, "year": 2020}
+{"s": "W2994848047", "p": "cites", "o": "W2963285844", "internal": true, "year": 2020}
+{"s": "W2994848047", "p": "cites", "o": "W2963739978", "internal": true, "year": 2020}
+{"s": "W3098033339", "p": "published_in", "o": "S4306420609", "year": 2020}
+{"s": "W3098033339", "p": "has_topic", "o": "T10688", "score": 0.9909999966621399, "year": 2020}
+{"s": "W3098033339", "p": "has_topic", "o": "T10775", "score": 0.9847000241279602, "year": 2020}
+{"s": "W3098033339", "p": "has_topic", "o": "T10271", "score": 0.9843999743461609, "year": 2020}
+{"s": "W3098033339", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2020}
+{"s": "W3098033339", "p": "authored_by", "o": "A5045805879", "position": "middle", "year": 2020}
+{"s": "W3098033339", "p": "authored_by", "o": "A5016054994", "position": "last", "year": 2020}
+{"s": "W7133211296", "p": "has_topic", "o": "T11596", "score": 0.19249999523162842, "year": 2022}
+{"s": "W7133211296", "p": "has_topic", "o": "T10181", "score": 0.15049999952316284, "year": 2022}
+{"s": "W7133211296", "p": "has_topic", "o": "T12031", "score": 0.043699998408555984, "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5127789305", "position": "first", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5113854698", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5069446643", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5010086803", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5127839143", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5040174386", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5019210292", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5127806875", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5059753414", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5094318817", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5127779634", "position": "middle", "year": 2022}
+{"s": "W7133211296", "p": "authored_by", "o": "A5127805553", "position": "last", "year": 2022}
+{"s": "W7133184166", "p": "has_topic", "o": "T12694", "score": 0.19130000472068787, "year": 2022}
+{"s": "W7133184166", "p": "has_topic", "o": "T11431", "score": 0.11169999837875366, "year": 2022}
+{"s": "W7133184166", "p": "has_topic", "o": "T10465", "score": 0.09989999979734421, "year": 2022}
+{"s": "W7133184166", "p": "authored_by", "o": "A5029133361", "position": "first", "year": 2022}
+{"s": "W7133184166", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W7133184166", "p": "authored_by", "o": "A5071668416", "position": "last", "year": 2022}
+{"s": "W2618069152", "p": "has_topic", "o": "T10500", "score": 0.9998999834060669, "year": 2018}
+{"s": "W2618069152", "p": "has_topic", "o": "T10963", "score": 0.9934999942779541, "year": 2018}
+{"s": "W2618069152", "p": "has_topic", "o": "T11205", "score": 0.9905999898910522, "year": 2018}
+{"s": "W2618069152", "p": "authored_by", "o": "A5015603055", "position": "first", "year": 2018}
+{"s": "W2618069152", "p": "authored_by", "o": "A5010365187", "position": "middle", "year": 2018}
+{"s": "W2618069152", "p": "authored_by", "o": "A5057451920", "position": "middle", "year": 2018}
+{"s": "W2618069152", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2018}
+{"s": "W2618069152", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2018}
+{"s": "W2618069152", "p": "cites", "o": "W2613715972", "internal": true, "year": 2018}
+{"s": "W2995343314", "p": "published_in", "o": "S4306419637", "year": 2020}
+{"s": "W2995343314", "p": "has_topic", "o": "T11689", "score": 0.9998000264167786, "year": 2020}
+{"s": "W2995343314", "p": "has_topic", "o": "T11612", "score": 0.9991999864578247, "year": 2020}
+{"s": "W2995343314", "p": "has_topic", "o": "T10036", "score": 0.9983999729156494, "year": 2020}
+{"s": "W2995343314", "p": "authored_by", "o": "A5033738047", "position": "first", "year": 2020}
+{"s": "W2995343314", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2020}
+{"s": "W2995343314", "p": "authored_by", "o": "A5045805879", "position": "last", "year": 2020}
+{"s": "W2995343314", "p": "cites", "o": "W2807299122", "internal": true, "year": 2020}
+{"s": "W2995343314", "p": "cites", "o": "W2963285844", "internal": true, "year": 2020}
+{"s": "W2995343314", "p": "cites", "o": "W2963739978", "internal": true, "year": 2020}
+{"s": "W3092869576", "p": "published_in", "o": "S4306400194", "year": 2020}
+{"s": "W3092869576", "p": "has_topic", "o": "T11902", "score": 0.7426000237464905, "year": 2020}
+{"s": "W3092869576", "p": "has_topic", "o": "T11122", "score": 0.6916999816894531, "year": 2020}
+{"s": "W3092869576", "p": "has_topic", "o": "T12535", "score": 0.6204000115394592, "year": 2020}
+{"s": "W3092869576", "p": "authored_by", "o": "A5110716768", "position": "first", "year": 2020}
+{"s": "W3092869576", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2020}
+{"s": "W3092869576", "p": "authored_by", "o": "A5045805879", "position": "last", "year": 2020}
+{"s": "W7133256343", "p": "has_topic", "o": "T11901", "score": 0.10300000011920929, "year": 2022}
+{"s": "W7133256343", "p": "has_topic", "o": "T10181", "score": 0.07209999859333038, "year": 2022}
+{"s": "W7133256343", "p": "has_topic", "o": "T10028", "score": 0.06790000200271606, "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5127789305", "position": "first", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5113854698", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5127790119", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5127839143", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5019210292", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5034729427", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5059753414", "position": "middle", "year": 2022}
+{"s": "W7133256343", "p": "authored_by", "o": "A5127805553", "position": "last", "year": 2022}
+{"s": "W3120448537", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W3120448537", "p": "has_topic", "o": "T11307", "score": 0.9997000098228455, "year": 2021}
+{"s": "W3120448537", "p": "has_topic", "o": "T11689", "score": 0.9987000226974487, "year": 2021}
+{"s": "W3120448537", "p": "has_topic", "o": "T12535", "score": 0.9986000061035156, "year": 2021}
+{"s": "W3120448537", "p": "authored_by", "o": "A5108253513", "position": "first", "year": 2021}
+{"s": "W3120448537", "p": "authored_by", "o": "A5052645158", "position": "middle", "year": 2021}
+{"s": "W3120448537", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2021}
+{"s": "W3120448537", "p": "cites", "o": "W2963739978", "internal": true, "year": 2021}
+{"s": "W3129089775", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W3129089775", "p": "has_topic", "o": "T11307", "score": 0.9993000030517578, "year": 2021}
+{"s": "W3129089775", "p": "has_topic", "o": "T10036", "score": 0.9983999729156494, "year": 2021}
+{"s": "W3129089775", "p": "has_topic", "o": "T10320", "score": 0.9976000189781189, "year": 2021}
+{"s": "W3129089775", "p": "authored_by", "o": "A5112461374", "position": "first", "year": 2021}
+{"s": "W3129089775", "p": "authored_by", "o": "A5066011484", "position": "middle", "year": 2021}
+{"s": "W3129089775", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2021}
+{"s": "W3129089775", "p": "cites", "o": "W2912260645", "internal": true, "year": 2021}
+{"s": "W3151953921", "p": "published_in", "o": "S4306419637", "year": 2020}
+{"s": "W3151953921", "p": "has_topic", "o": "T11307", "score": 0.9984999895095825, "year": 2020}
+{"s": "W3151953921", "p": "has_topic", "o": "T12535", "score": 0.991100013256073, "year": 2020}
+{"s": "W3151953921", "p": "has_topic", "o": "T12072", "score": 0.9890999794006348, "year": 2020}
+{"s": "W3151953921", "p": "authored_by", "o": "A5110716768", "position": "first", "year": 2020}
+{"s": "W3151953921", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2020}
+{"s": "W3151953921", "p": "authored_by", "o": "A5045805879", "position": "last", "year": 2020}
+{"s": "W3195944916", "p": "has_topic", "o": "T10320", "score": 0.18240000307559967, "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5011289358", "position": "first", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5021987631", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5083552052", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5051687709", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5000982271", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5068114632", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5110275739", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5021062973", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5015603055", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5006360335", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5061554266", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5031758852", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5003384169", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2020}
+{"s": "W3195944916", "p": "authored_by", "o": "A5017529415", "position": "last", "year": 2020}
+{"s": "W4281690148", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4281690148", "p": "has_topic", "o": "T10028", "score": 0.986299991607666, "year": 2022}
+{"s": "W4281690148", "p": "has_topic", "o": "T11636", "score": 0.9394999742507935, "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5028765069", "position": "first", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5087687501", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5048025708", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5035963910", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5080552239", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5079422282", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5103099305", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5112705664", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5117097165", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5044945258", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5033845208", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5019210292", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5113895633", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5091250983", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5065002167", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5089452138", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5082654541", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5076310142", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5003696778", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5035786206", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5082569485", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5018535992", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5026885120", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5030305998", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5008127936", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5046222666", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5088906859", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5052645158", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5046548985", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5076240321", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5101597225", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5089914621", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5030015839", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5004880532", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5102493578", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5066465234", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5028830229", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5082952724", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5068850854", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5087003679", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5040457466", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5019337496", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5085146470", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5017274462", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5042805801", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5002960442", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5077726785", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5058917931", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5051401881", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5000080119", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5049971483", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5063302493", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5049483928", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5026064427", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5031891503", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5056974774", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5005750167", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5073402985", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5027915931", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5001678986", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5061781904", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5086984307", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5026315595", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5076818276", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5054896491", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5006088176", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5050804466", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5017514239", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5048928280", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5103112611", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5083735830", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5075261035", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5068508539", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5030304225", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5052091382", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5046006076", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5042601761", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5024731885", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5052291325", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5045077843", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5031362250", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5028298718", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5068059558", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5087636608", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5020400986", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5068956151", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5023802054", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5029652042", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5043628255", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5074117194", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5083882742", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5030442997", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5051064208", "position": "middle", "year": 2022}
+{"s": "W4281690148", "p": "authored_by", "o": "A5022994077", "position": "middle", "year": 2022}
+{"s": "W2807299122", "p": "published_in", "o": "S4306400194", "year": 2018}
+{"s": "W2807299122", "p": "has_topic", "o": "T11689", "score": 0.9994999766349792, "year": 2018}
+{"s": "W2807299122", "p": "has_topic", "o": "T10036", "score": 0.9987999796867371, "year": 2018}
+{"s": "W2807299122", "p": "has_topic", "o": "T11612", "score": 0.9987000226974487, "year": 2018}
+{"s": "W2807299122", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2018}
+{"s": "W2807299122", "p": "authored_by", "o": "A5100337924", "position": "middle", "year": 2018}
+{"s": "W2807299122", "p": "authored_by", "o": "A5057451920", "position": "middle", "year": 2018}
+{"s": "W2807299122", "p": "authored_by", "o": "A5001226970", "position": "middle", "year": 2018}
+{"s": "W2807299122", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2018}
+{"s": "W2807299122", "p": "cites", "o": "W2785749378", "internal": true, "year": 2018}
+{"s": "W2807299122", "p": "cites", "o": "W2963739978", "internal": true, "year": 2018}
+{"s": "W4401306979", "p": "published_in", "o": "S4306400194", "year": 2024}
+{"s": "W4401306979", "p": "has_topic", "o": "T10181", "score": 0.9628999829292297, "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5094155825", "position": "first", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5112149946", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5056884424", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5035760608", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5066308063", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5083343984", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5079135104", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5072443257", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5013190433", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5057217987", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5087706654", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5100659849", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5113663395", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5039658137", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276485", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5035211063", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5029766994", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5033033832", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5109758430", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5032806916", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5071735499", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5013012032", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5103445258", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5049028265", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5108813586", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5019956577", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5052176965", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5113147193", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5080125160", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5082569485", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5114249802", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5113319891", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276489", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276490", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5033494285", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5066738877", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5069648186", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5109758431", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5072676834", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5114202941", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5103033215", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5111033324", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276492", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5069958913", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5049953222", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5050454971", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106085231", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5063017186", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5025950368", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5108965087", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5111279831", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5065530031", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276493", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5095384020", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5003701992", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5086001486", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5014681596", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5026364652", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5093547848", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5072811055", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5098979174", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5113319892", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5114202942", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5113319893", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5035109220", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5098316132", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5109631334", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276494", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276495", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276496", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5028303705", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5111144527", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5087694006", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5011391021", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276497", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276498", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5048632071", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5107138421", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5030606900", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5026339957", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5098533435", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5093547777", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5111279832", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5101912835", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5043460350", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106300982", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5023079707", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276499", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5113319894", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5098979177", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276500", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5094155830", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276501", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5053301405", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276502", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276503", "position": "middle", "year": 2024}
+{"s": "W4401306979", "p": "authored_by", "o": "A5106276504", "position": "middle", "year": 2024}
+{"s": "W3091401866", "p": "published_in", "o": "S4306400194", "year": 2020}
+{"s": "W3091401866", "p": "has_topic", "o": "T10036", "score": 0.9998999834060669, "year": 2020}
+{"s": "W3091401866", "p": "has_topic", "o": "T12535", "score": 0.9998999834060669, "year": 2020}
+{"s": "W3091401866", "p": "has_topic", "o": "T12072", "score": 0.9988999962806702, "year": 2020}
+{"s": "W3091401866", "p": "authored_by", "o": "A5061554266", "position": "first", "year": 2020}
+{"s": "W3091401866", "p": "authored_by", "o": "A5016231212", "position": "middle", "year": 2020}
+{"s": "W3091401866", "p": "authored_by", "o": "A5003384169", "position": "middle", "year": 2020}
+{"s": "W3091401866", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2020}
+{"s": "W3091401866", "p": "cites", "o": "W2963739978", "internal": true, "year": 2020}
+{"s": "W3091401866", "p": "cites", "o": "W2995343314", "internal": true, "year": 2020}
+{"s": "W2785749378", "p": "published_in", "o": "S4306400194", "year": 2018}
+{"s": "W2785749378", "p": "has_topic", "o": "T11689", "score": 0.9995999932289124, "year": 2018}
+{"s": "W2785749378", "p": "has_topic", "o": "T11612", "score": 0.9984999895095825, "year": 2018}
+{"s": "W2785749378", "p": "has_topic", "o": "T12072", "score": 0.9972000122070312, "year": 2018}
+{"s": "W2785749378", "p": "authored_by", "o": "A5103209777", "position": "first", "year": 2018}
+{"s": "W2785749378", "p": "authored_by", "o": "A5101636973", "position": "middle", "year": 2018}
+{"s": "W2785749378", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2018}
+{"s": "W2785749378", "p": "authored_by", "o": "A5035931692", "position": "last", "year": 2018}
+{"s": "W2613715972", "p": "published_in", "o": "S4306400194", "year": 2017}
+{"s": "W2613715972", "p": "has_topic", "o": "T11245", "score": 0.9987999796867371, "year": 2017}
+{"s": "W2613715972", "p": "has_topic", "o": "T12549", "score": 0.9983999729156494, "year": 2017}
+{"s": "W2613715972", "p": "has_topic", "o": "T10052", "score": 0.9973999857902527, "year": 2017}
+{"s": "W2613715972", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2017}
+{"s": "W2613715972", "p": "authored_by", "o": "A5110293322", "position": "middle", "year": 2017}
+{"s": "W2613715972", "p": "authored_by", "o": "A5071983998", "position": "middle", "year": 2017}
+{"s": "W2613715972", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2017}
+{"s": "W2752860283", "p": "published_in", "o": "S4306400194", "year": 2017}
+{"s": "W2752860283", "p": "has_topic", "o": "T10500", "score": 0.9991999864578247, "year": 2017}
+{"s": "W2752860283", "p": "has_topic", "o": "T10320", "score": 0.9987999796867371, "year": 2017}
+{"s": "W2752860283", "p": "has_topic", "o": "T11612", "score": 0.9975000023841858, "year": 2017}
+{"s": "W2752860283", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2017}
+{"s": "W2752860283", "p": "cites", "o": "W2618069152", "internal": true, "year": 2017}
+{"s": "W2618858825", "p": "published_in", "o": "S4306400194", "year": 2017}
+{"s": "W2618858825", "p": "has_topic", "o": "T14339", "score": 0.9979000091552734, "year": 2017}
+{"s": "W2618858825", "p": "has_topic", "o": "T10775", "score": 0.9973999857902527, "year": 2017}
+{"s": "W2618858825", "p": "has_topic", "o": "T10320", "score": 0.9973000288009644, "year": 2017}
+{"s": "W2618858825", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2017}
+{"s": "W2618858825", "p": "authored_by", "o": "A5057451920", "position": "middle", "year": 2017}
+{"s": "W2618858825", "p": "authored_by", "o": "A5050566186", "position": "last", "year": 2017}
+{"s": "W4283734749", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4283734749", "p": "has_topic", "o": "T10028", "score": 0.9872999787330627, "year": 2022}
+{"s": "W4283734749", "p": "has_topic", "o": "T10181", "score": 0.9710000157356262, "year": 2022}
+{"s": "W4283734749", "p": "has_topic", "o": "T10320", "score": 0.9538999795913696, "year": 2022}
+{"s": "W4283734749", "p": "authored_by", "o": "A5053378034", "position": "first", "year": 2022}
+{"s": "W4283734749", "p": "authored_by", "o": "A5038265055", "position": "middle", "year": 2022}
+{"s": "W4283734749", "p": "authored_by", "o": "A5066011484", "position": "middle", "year": 2022}
+{"s": "W4283734749", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2022}
+{"s": "W3202467213", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W3202467213", "p": "has_topic", "o": "T11714", "score": 0.9957000017166138, "year": 2021}
+{"s": "W3202467213", "p": "has_topic", "o": "T11307", "score": 0.9937999844551086, "year": 2021}
+{"s": "W3202467213", "p": "has_topic", "o": "T12072", "score": 0.9678000211715698, "year": 2021}
+{"s": "W3202467213", "p": "authored_by", "o": "A5084377683", "position": "first", "year": 2021}
+{"s": "W3202467213", "p": "authored_by", "o": "A5102906366", "position": "middle", "year": 2021}
+{"s": "W3202467213", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2021}
+{"s": "W3202467213", "p": "authored_by", "o": "A5045805879", "position": "last", "year": 2021}
+{"s": "W3202467213", "p": "cites", "o": "W2963739978", "internal": true, "year": 2021}
+{"s": "W3202467213", "p": "cites", "o": "W3092869576", "internal": true, "year": 2021}
+{"s": "W3202467213", "p": "cites", "o": "W3098033339", "internal": true, "year": 2021}
+{"s": "W4226285793", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4226285793", "p": "has_topic", "o": "T10028", "score": 0.9883999824523926, "year": 2022}
+{"s": "W4226285793", "p": "has_topic", "o": "T12254", "score": 0.9786999821662903, "year": 2022}
+{"s": "W4226285793", "p": "has_topic", "o": "T10181", "score": 0.9761999845504761, "year": 2022}
+{"s": "W4226285793", "p": "authored_by", "o": "A5020043722", "position": "first", "year": 2022}
+{"s": "W4226285793", "p": "authored_by", "o": "A5019167028", "position": "middle", "year": 2022}
+{"s": "W4226285793", "p": "authored_by", "o": "A5024901763", "position": "middle", "year": 2022}
+{"s": "W4226285793", "p": "authored_by", "o": "A5010086803", "position": "middle", "year": 2022}
+{"s": "W4226285793", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2022}
+{"s": "W4319997768", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4319997768", "p": "has_topic", "o": "T10028", "score": 0.9922000169754028, "year": 2022}
+{"s": "W4319997768", "p": "has_topic", "o": "T10181", "score": 0.9907000064849854, "year": 2022}
+{"s": "W4319997768", "p": "has_topic", "o": "T13629", "score": 0.9868000149726868, "year": 2022}
+{"s": "W4319997768", "p": "authored_by", "o": "A5075759362", "position": "first", "year": 2022}
+{"s": "W4319997768", "p": "authored_by", "o": "A5053888839", "position": "middle", "year": 2022}
+{"s": "W4319997768", "p": "authored_by", "o": "A5019862529", "position": "middle", "year": 2022}
+{"s": "W4319997768", "p": "authored_by", "o": "A5112608251", "position": "middle", "year": 2022}
+{"s": "W4319997768", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W4319997768", "p": "authored_by", "o": "A5045805879", "position": "last", "year": 2022}
+{"s": "W3112948183", "p": "published_in", "o": "S4306400194", "year": 2020}
+{"s": "W3112948183", "p": "has_topic", "o": "T11689", "score": 0.9997000098228455, "year": 2020}
+{"s": "W3112948183", "p": "has_topic", "o": "T10036", "score": 0.9994999766349792, "year": 2020}
+{"s": "W3112948183", "p": "has_topic", "o": "T11307", "score": 0.9990000128746033, "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5011289358", "position": "first", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5061554266", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5031758852", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5110275739", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5003384169", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5021062973", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5017529415", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5015603055", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5006360335", "position": "middle", "year": 2020}
+{"s": "W3112948183", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2613715972", "internal": true, "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2752860283", "internal": true, "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2807299122", "internal": true, "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2963285844", "internal": true, "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2963739978", "internal": true, "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2994848047", "internal": true, "year": 2020}
+{"s": "W3112948183", "p": "cites", "o": "W2995343314", "internal": true, "year": 2020}
+{"s": "W3173182565", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W3173182565", "p": "has_topic", "o": "T11689", "score": 0.9998999834060669, "year": 2021}
+{"s": "W3173182565", "p": "has_topic", "o": "T11512", "score": 0.9991000294685364, "year": 2021}
+{"s": "W3173182565", "p": "has_topic", "o": "T12535", "score": 0.9987999796867371, "year": 2021}
+{"s": "W3173182565", "p": "authored_by", "o": "A5052645158", "position": "first", "year": 2021}
+{"s": "W3173182565", "p": "authored_by", "o": "A5041285188", "position": "middle", "year": 2021}
+{"s": "W3173182565", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2021}
+{"s": "W3173182565", "p": "authored_by", "o": "A5008334918", "position": "last", "year": 2021}
+{"s": "W3173182565", "p": "cites", "o": "W3092869576", "internal": true, "year": 2021}
+{"s": "W3172995810", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W3172995810", "p": "has_topic", "o": "T11689", "score": 0.9995999932289124, "year": 2021}
+{"s": "W3172995810", "p": "has_topic", "o": "T12535", "score": 0.9993000030517578, "year": 2021}
+{"s": "W3172995810", "p": "has_topic", "o": "T12026", "score": 0.9987000226974487, "year": 2021}
+{"s": "W3172995810", "p": "authored_by", "o": "A5005429282", "position": "first", "year": 2021}
+{"s": "W3172995810", "p": "authored_by", "o": "A5051231311", "position": "middle", "year": 2021}
+{"s": "W3172995810", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2021}
+{"s": "W3172995810", "p": "cites", "o": "W2963739978", "internal": true, "year": 2021}
+{"s": "W3172995810", "p": "cites", "o": "W2994848047", "internal": true, "year": 2021}
+{"s": "W4221153523", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4221153523", "p": "has_topic", "o": "T11307", "score": 0.9980000257492065, "year": 2022}
+{"s": "W4221153523", "p": "has_topic", "o": "T12535", "score": 0.9959999918937683, "year": 2022}
+{"s": "W4221153523", "p": "has_topic", "o": "T10036", "score": 0.9940000176429749, "year": 2022}
+{"s": "W4221153523", "p": "authored_by", "o": "A5013136179", "position": "first", "year": 2022}
+{"s": "W4221153523", "p": "authored_by", "o": "A5079499739", "position": "middle", "year": 2022}
+{"s": "W4221153523", "p": "authored_by", "o": "A5029448258", "position": "middle", "year": 2022}
+{"s": "W4221153523", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W4221153523", "p": "authored_by", "o": "A5045805879", "position": "last", "year": 2022}
+{"s": "W2994066474", "p": "published_in", "o": "S4306400194", "year": 2019}
+{"s": "W2994066474", "p": "has_topic", "o": "T10462", "score": 0.9998999834060669, "year": 2019}
+{"s": "W2994066474", "p": "has_topic", "o": "T12072", "score": 0.9944000244140625, "year": 2019}
+{"s": "W2994066474", "p": "has_topic", "o": "T12101", "score": 0.9929999709129333, "year": 2019}
+{"s": "W2994066474", "p": "authored_by", "o": "A5081034298", "position": "first", "year": 2019}
+{"s": "W2994066474", "p": "authored_by", "o": "A5011289358", "position": "middle", "year": 2019}
+{"s": "W2994066474", "p": "authored_by", "o": "A5047090527", "position": "middle", "year": 2019}
+{"s": "W2994066474", "p": "authored_by", "o": "A5041777043", "position": "middle", "year": 2019}
+{"s": "W2994066474", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2019}
+{"s": "W2994066474", "p": "cites", "o": "W2752860283", "internal": true, "year": 2019}
+{"s": "W2994066474", "p": "cites", "o": "W2807299122", "internal": true, "year": 2019}
+{"s": "W2994066474", "p": "cites", "o": "W2963285844", "internal": true, "year": 2019}
+{"s": "W2994066474", "p": "cites", "o": "W2963739978", "internal": true, "year": 2019}
+{"s": "W2401137308", "p": "published_in", "o": "S4306400194", "year": 2016}
+{"s": "W2401137308", "p": "has_topic", "o": "T10028", "score": 0.9993000030517578, "year": 2016}
+{"s": "W2401137308", "p": "has_topic", "o": "T10181", "score": 0.9984999895095825, "year": 2016}
+{"s": "W2401137308", "p": "has_topic", "o": "T10320", "score": 0.9983000159263611, "year": 2016}
+{"s": "W2401137308", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2016}
+{"s": "W2401137308", "p": "authored_by", "o": "A5024901763", "position": "middle", "year": 2016}
+{"s": "W2401137308", "p": "authored_by", "o": "A5071983998", "position": "middle", "year": 2016}
+{"s": "W2401137308", "p": "authored_by", "o": "A5070613374", "position": "last", "year": 2016}
+{"s": "W4286906081", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W4286906081", "p": "has_topic", "o": "T11612", "score": 0.9986000061035156, "year": 2021}
+{"s": "W4286906081", "p": "has_topic", "o": "T11689", "score": 0.9883000254631042, "year": 2021}
+{"s": "W4286906081", "p": "has_topic", "o": "T12101", "score": 0.9872000217437744, "year": 2021}
+{"s": "W4286906081", "p": "authored_by", "o": "A5040683373", "position": "first", "year": 2021}
+{"s": "W4286906081", "p": "authored_by", "o": "A5045805879", "position": "middle", "year": 2021}
+{"s": "W4286906081", "p": "authored_by", "o": "A5074037460", "position": "middle", "year": 2021}
+{"s": "W4286906081", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2021}
+{"s": "W3044481990", "p": "published_in", "o": "S4306400194", "year": 2020}
+{"s": "W3044481990", "p": "has_topic", "o": "T11307", "score": 0.9994999766349792, "year": 2020}
+{"s": "W3044481990", "p": "has_topic", "o": "T12535", "score": 0.9993000030517578, "year": 2020}
+{"s": "W3044481990", "p": "has_topic", "o": "T10036", "score": 0.9991999864578247, "year": 2020}
+{"s": "W3044481990", "p": "authored_by", "o": "A5035369215", "position": "first", "year": 2020}
+{"s": "W3044481990", "p": "cites", "o": "W2807299122", "internal": true, "year": 2020}
+{"s": "W3044481990", "p": "cites", "o": "W2963739978", "internal": true, "year": 2020}
+{"s": "W4309216950", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4309216950", "p": "has_topic", "o": "T10036", "score": 0.9941999912261963, "year": 2022}
+{"s": "W4309216950", "p": "has_topic", "o": "T11689", "score": 0.982699990272522, "year": 2022}
+{"s": "W4309216950", "p": "has_topic", "o": "T11206", "score": 0.9731000065803528, "year": 2022}
+{"s": "W4309216950", "p": "authored_by", "o": "A5061328254", "position": "first", "year": 2022}
+{"s": "W4309216950", "p": "authored_by", "o": "A5045805879", "position": "middle", "year": 2022}
+{"s": "W4309216950", "p": "authored_by", "o": "A5074037460", "position": "middle", "year": 2022}
+{"s": "W4309216950", "p": "authored_by", "o": "A5040683373", "position": "middle", "year": 2022}
+{"s": "W4309216950", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2022}
+{"s": "W4226211578", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4226211578", "p": "has_topic", "o": "T10181", "score": 0.9988999962806702, "year": 2022}
+{"s": "W4226211578", "p": "has_topic", "o": "T10028", "score": 0.9939000010490417, "year": 2022}
+{"s": "W4226211578", "p": "has_topic", "o": "T12535", "score": 0.9298999905586243, "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5085627713", "position": "first", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5051865121", "position": "middle", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5104037395", "position": "middle", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5100363719", "position": "middle", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5014055962", "position": "middle", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5048302740", "position": "middle", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W4226211578", "p": "authored_by", "o": "A5035914396", "position": "last", "year": 2022}
+{"s": "W2578705295", "p": "published_in", "o": "S4306400194", "year": 2016}
+{"s": "W2578705295", "p": "has_topic", "o": "T12101", "score": 1.0, "year": 2016}
+{"s": "W2578705295", "p": "has_topic", "o": "T10462", "score": 0.9904999732971191, "year": 2016}
+{"s": "W2578705295", "p": "has_topic", "o": "T12072", "score": 0.9882000088691711, "year": 2016}
+{"s": "W2578705295", "p": "authored_by", "o": "A5036435487", "position": "first", "year": 2016}
+{"s": "W2578705295", "p": "authored_by", "o": "A5101058302", "position": "middle", "year": 2016}
+{"s": "W2578705295", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2016}
+{"s": "W2578705295", "p": "authored_by", "o": "A5084108666", "position": "last", "year": 2016}
+{"s": "W3112617038", "p": "published_in", "o": "S4306400194", "year": 2020}
+{"s": "W3112617038", "p": "has_topic", "o": "T12535", "score": 0.9993000030517578, "year": 2020}
+{"s": "W3112617038", "p": "has_topic", "o": "T10028", "score": 0.9991999864578247, "year": 2020}
+{"s": "W3112617038", "p": "has_topic", "o": "T11307", "score": 0.9980000257492065, "year": 2020}
+{"s": "W3112617038", "p": "authored_by", "o": "A5103865713", "position": "first", "year": 2020}
+{"s": "W3112617038", "p": "authored_by", "o": "A5010086803", "position": "middle", "year": 2020}
+{"s": "W3112617038", "p": "authored_by", "o": "A5035369215", "position": "last", "year": 2020}
+{"s": "W3207956290", "p": "published_in", "o": "S4306400194", "year": 2021}
+{"s": "W3207956290", "p": "has_topic", "o": "T11307", "score": 0.9998000264167786, "year": 2021}
+{"s": "W3207956290", "p": "has_topic", "o": "T10036", "score": 0.9997000098228455, "year": 2021}
+{"s": "W3207956290", "p": "has_topic", "o": "T11612", "score": 0.9995999932289124, "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5102853126", "position": "first", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5051865121", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5104037395", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5050484501", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5073584072", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5047062711", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5016611202", "position": "middle", "year": 2021}
+{"s": "W3207956290", "p": "authored_by", "o": "A5035914396", "position": "last", "year": 2021}
+{"s": "W4389649385", "p": "published_in", "o": "S4306400194", "year": 2023}
+{"s": "W4389649385", "p": "has_topic", "o": "T10028", "score": 0.9987000226974487, "year": 2023}
+{"s": "W4389649385", "p": "has_topic", "o": "T10181", "score": 0.991599977016449, "year": 2023}
+{"s": "W4389649385", "p": "has_topic", "o": "T12535", "score": 0.957099974155426, "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5071640510", "position": "first", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5007992087", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5070953294", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5110698003", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5112029801", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5076683869", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5077354153", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5100420195", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5060717631", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5113069812", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5100713028", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5071615007", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5093272100", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5053888839", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5048167471", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5066427994", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5045805879", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5014193325", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5082545089", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5048764935", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5112347601", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5010225522", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5081096634", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5009962014", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5026208886", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5088110132", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5108136269", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5113791670", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5076745446", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5090701958", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5059899470", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5022287663", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5093219820", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5003241968", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5010086803", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5064986566", "position": "middle", "year": 2023}
+{"s": "W4389649385", "p": "authored_by", "o": "A5087591662", "position": "last", "year": 2023}
+{"s": "W3197919196", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W3197919196", "p": "has_topic", "o": "T11689", "score": 0.9998000264167786, "year": 2022}
+{"s": "W3197919196", "p": "has_topic", "o": "T10320", "score": 0.9945999979972839, "year": 2022}
+{"s": "W3197919196", "p": "has_topic", "o": "T12676", "score": 0.9941999912261963, "year": 2022}
+{"s": "W3197919196", "p": "authored_by", "o": "A5008670518", "position": "first", "year": 2022}
+{"s": "W3197919196", "p": "authored_by", "o": "A5040683373", "position": "middle", "year": 2022}
+{"s": "W3197919196", "p": "authored_by", "o": "A5045805879", "position": "middle", "year": 2022}
+{"s": "W3197919196", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W3197919196", "p": "authored_by", "o": "A5074037460", "position": "last", "year": 2022}
+{"s": "W3096695297", "p": "published_in", "o": "S4306400194", "year": 2020}
+{"s": "W3096695297", "p": "has_topic", "o": "T12814", "score": 0.9994000196456909, "year": 2020}
+{"s": "W3096695297", "p": "has_topic", "o": "T12676", "score": 0.996399998664856, "year": 2020}
+{"s": "W3096695297", "p": "has_topic", "o": "T10036", "score": 0.9904999732971191, "year": 2020}
+{"s": "W3096695297", "p": "authored_by", "o": "A5084393451", "position": "first", "year": 2020}
+{"s": "W3096695297", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2020}
+{"s": "W3096695297", "p": "authored_by", "o": "A5018113047", "position": "last", "year": 2020}
+{"s": "W3096695297", "p": "cites", "o": "W2912260645", "internal": true, "year": 2020}
+{"s": "W4309864855", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4309864855", "p": "has_topic", "o": "T10036", "score": 0.998199999332428, "year": 2022}
+{"s": "W4309864855", "p": "has_topic", "o": "T10500", "score": 0.9943000078201294, "year": 2022}
+{"s": "W4309864855", "p": "has_topic", "o": "T11612", "score": 0.9925000071525574, "year": 2022}
+{"s": "W4309864855", "p": "authored_by", "o": "A5040173784", "position": "first", "year": 2022}
+{"s": "W4309864855", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W4309864855", "p": "authored_by", "o": "A5053378034", "position": "last", "year": 2022}
+{"s": "W4309589433", "p": "published_in", "o": "S4306400194", "year": 2022}
+{"s": "W4309589433", "p": "has_topic", "o": "T10320", "score": 0.9954000115394592, "year": 2022}
+{"s": "W4309589433", "p": "has_topic", "o": "T11206", "score": 0.9954000115394592, "year": 2022}
+{"s": "W4309589433", "p": "has_topic", "o": "T11948", "score": 0.9947999715805054, "year": 2022}
+{"s": "W4309589433", "p": "authored_by", "o": "A5047726287", "position": "middle", "year": 2022}
+{"s": "W4309589433", "p": "authored_by", "o": "A5045805879", "position": "middle", "year": 2022}
+{"s": "W4309589433", "p": "authored_by", "o": "A5035369215", "position": "middle", "year": 2022}
+{"s": "W4309589433", "p": "authored_by", "o": "A5029133361", "position": "last", "year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5057451920", "weight": 7, "first_year": 2016, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5033089246", "weight": 1, "first_year": 2017, "last_year": 2017}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5070613374", "weight": 8, "first_year": 2016, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5003431320", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5006360401", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5019398608", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5100337924", "weight": 2, "first_year": 2018, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5001226970", "weight": 2, "first_year": 2018, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5011289358", "weight": 4, "first_year": 2019, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103083233", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5003384169", "weight": 4, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5017529415", "weight": 3, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5045805879", "weight": 12, "first_year": 2020, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5016054994", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5127789305", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113854698", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5069446643", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5010086803", "weight": 4, "first_year": 2020, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5127839143", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5040174386", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5019210292", "weight": 3, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5127806875", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5059753414", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5094318817", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5127779634", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5127805553", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5029133361", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5071668416", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5015603055", "weight": 3, "first_year": 2018, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5010365187", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5033738047", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5110716768", "weight": 2, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5127790119", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5034729427", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5108253513", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5052645158", "weight": 3, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5112461374", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5066011484", "weight": 2, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5021987631", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5083552052", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5051687709", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5000982271", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5068114632", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5110275739", "weight": 2, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5021062973", "weight": 2, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5006360335", "weight": 2, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5061554266", "weight": 3, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5031758852", "weight": 2, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5028765069", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5087687501", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5048025708", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035963910", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5080552239", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5079422282", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103099305", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5112705664", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5117097165", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5044945258", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5033845208", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113895633", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5091250983", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5065002167", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5089452138", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5082654541", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5076310142", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5003696778", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035786206", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5082569485", "weight": 2, "first_year": 2022, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5018535992", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5026885120", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5030305998", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5008127936", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5046222666", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5088906859", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5046548985", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5076240321", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5101597225", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5089914621", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5030015839", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5004880532", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5102493578", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5066465234", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5028830229", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5082952724", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5068850854", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5087003679", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5040457466", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5019337496", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5085146470", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5017274462", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5042805801", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5002960442", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5077726785", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5058917931", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5051401881", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5000080119", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5049971483", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5063302493", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5049483928", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5026064427", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5031891503", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5056974774", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5005750167", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5073402985", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5027915931", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5001678986", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5061781904", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5086984307", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5026315595", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5076818276", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5054896491", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5006088176", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5050804466", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5017514239", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5048928280", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103112611", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5083735830", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5075261035", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5068508539", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5030304225", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5052091382", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5046006076", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5042601761", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5024731885", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5052291325", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5045077843", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5031362250", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5028298718", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5068059558", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5087636608", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5020400986", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5068956151", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5023802054", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5029652042", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5043628255", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5074117194", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5083882742", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5030442997", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5051064208", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5022994077", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5094155825", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5112149946", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5056884424", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035760608", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5066308063", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5083343984", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5079135104", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5072443257", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5013190433", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5057217987", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5087706654", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5100659849", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113663395", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5039658137", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276485", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035211063", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5029766994", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5033033832", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5109758430", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5032806916", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5071735499", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5013012032", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103445258", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5049028265", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5108813586", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5019956577", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5052176965", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113147193", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5080125160", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5114249802", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113319891", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276489", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276490", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5033494285", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5066738877", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5069648186", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5109758431", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5072676834", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5114202941", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103033215", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5111033324", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276492", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5069958913", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5049953222", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5050454971", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106085231", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5063017186", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5025950368", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5108965087", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5111279831", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5065530031", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276493", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5095384020", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5003701992", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5086001486", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5014681596", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5026364652", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5093547848", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5072811055", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5098979174", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113319892", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5114202942", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113319893", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035109220", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5098316132", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5109631334", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276494", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276495", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276496", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5028303705", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5111144527", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5087694006", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5011391021", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276497", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276498", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5048632071", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5107138421", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5030606900", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5026339957", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5098533435", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5093547777", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5111279832", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5101912835", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5043460350", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106300982", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5023079707", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276499", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113319894", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5098979177", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276500", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5094155830", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276501", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5053301405", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276502", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276503", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5106276504", "weight": 1, "first_year": 2024, "last_year": 2024}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5016231212", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103209777", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5101636973", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035931692", "weight": 1, "first_year": 2018, "last_year": 2018}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5110293322", "weight": 1, "first_year": 2017, "last_year": 2017}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5071983998", "weight": 2, "first_year": 2016, "last_year": 2017}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5050566186", "weight": 1, "first_year": 2017, "last_year": 2017}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5053378034", "weight": 2, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5038265055", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5084377683", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5102906366", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5020043722", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5019167028", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5024901763", "weight": 2, "first_year": 2016, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5075759362", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5053888839", "weight": 2, "first_year": 2022, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5019862529", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5112608251", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5041285188", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5008334918", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5005429282", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5051231311", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5013136179", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5079499739", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5029448258", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5081034298", "weight": 1, "first_year": 2019, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5047090527", "weight": 1, "first_year": 2019, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5041777043", "weight": 1, "first_year": 2019, "last_year": 2019}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5040683373", "weight": 3, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5074037460", "weight": 3, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5061328254", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5085627713", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5051865121", "weight": 2, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5104037395", "weight": 2, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5100363719", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5014055962", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5048302740", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5035914396", "weight": 2, "first_year": 2021, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5036435487", "weight": 1, "first_year": 2016, "last_year": 2016}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5101058302", "weight": 1, "first_year": 2016, "last_year": 2016}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5084108666", "weight": 1, "first_year": 2016, "last_year": 2016}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5103865713", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5102853126", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5050484501", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5073584072", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5047062711", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5016611202", "weight": 1, "first_year": 2021, "last_year": 2021}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5071640510", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5007992087", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5070953294", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5110698003", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5112029801", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5076683869", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5077354153", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5100420195", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5060717631", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113069812", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5100713028", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5071615007", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5093272100", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5048167471", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5066427994", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5014193325", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5082545089", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5048764935", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5112347601", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5010225522", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5081096634", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5009962014", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5026208886", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5088110132", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5108136269", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5113791670", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5076745446", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5090701958", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5059899470", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5022287663", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5093219820", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5003241968", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5064986566", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5087591662", "weight": 1, "first_year": 2023, "last_year": 2023}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5008670518", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5084393451", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5018113047", "weight": 1, "first_year": 2020, "last_year": 2020}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5040173784", "weight": 1, "first_year": 2022, "last_year": 2022}
+{"s": "A5035369215", "p": "collaborates_with", "o": "A5047726287", "weight": 1, "first_year": 2022, "last_year": 2022}

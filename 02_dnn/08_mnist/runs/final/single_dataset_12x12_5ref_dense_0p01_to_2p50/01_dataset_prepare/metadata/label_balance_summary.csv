@@ -1,4 +1,0 @@
-split_id,rule,train_pos_fraction,test_pos_fraction,train_n_pos,train_n_neg,definition,teacher_seed,teacher_architecture,train_median_logit_threshold,train_seed,test_seed
-0,real_even_odd,0.5,0.5,512,512,"even digit +1, odd digit -1",,,,,
-0,teacher_nn,0.5,0.490234375,512,512,,31001.0,196-12-12-1-tanh,-0.04232446268451841,,
-0,random_label,0.5,0.5,512,512,,,,,41001.0,42001.0

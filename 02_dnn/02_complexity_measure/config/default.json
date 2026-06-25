@@ -1,7 +1,0 @@
-{
-    "stage":  "02_complexity_measure",
-    "retained":  [
-                     "18_beta_cell_30_dataset_nmstv",
-                     "18_beta_cell_60_dataset_30_reference"
-                 ]
-}

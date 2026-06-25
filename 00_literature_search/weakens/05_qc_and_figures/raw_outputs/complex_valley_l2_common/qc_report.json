@@ -1,0 +1,67 @@
+{
+  "experiment_id": "complex_valley_l2_common",
+  "qc_thresholds": {
+    "max_region_l1_error": 0.45,
+    "min_ess_fraction": 0.012,
+    "min_region_hits": 25,
+    "min_truth_region_mass": 0.01
+  },
+  "summary": [
+    {
+      "accept_rate": 0.5667777777777778,
+      "attempted_sample_count": 18000,
+      "covered_important_regions": 2,
+      "elapsed_seconds": 6.99420413793996,
+      "ess_fraction": 0.006159569738681128,
+      "failure_reason": "missing_important_region,ess_fraction_low",
+      "important_regions": 4,
+      "method": "random_walk_mcmc",
+      "method_role": "existing_method_reproduction",
+      "pass_qc": false,
+      "region_l1_error": 0.26797019117280585,
+      "sample_count": 3000
+    },
+    {
+      "accept_rate": 0.9891111111111112,
+      "attempted_sample_count": 18000,
+      "covered_important_regions": 2,
+      "elapsed_seconds": 120.63037133798935,
+      "ess_fraction": 0.7009060010228025,
+      "failure_reason": "missing_important_region",
+      "important_regions": 4,
+      "method": "hmc",
+      "method_role": "existing_method_reproduction",
+      "pass_qc": false,
+      "region_l1_error": 0.23480360067015396,
+      "sample_count": 3000
+    },
+    {
+      "accept_rate": null,
+      "attempted_sample_count": 18000,
+      "covered_important_regions": 2,
+      "elapsed_seconds": 8.602490775985643,
+      "ess_fraction": 0.001442885085865771,
+      "failure_reason": "missing_important_region,ess_fraction_low",
+      "important_regions": 4,
+      "method": "pseudo_langevin",
+      "method_role": "existing_method_proxy_reproduction",
+      "pass_qc": false,
+      "region_l1_error": 0.3063495110653781,
+      "sample_count": 3000
+    },
+    {
+      "accept_rate": null,
+      "attempted_sample_count": 18000,
+      "covered_important_regions": 4,
+      "elapsed_seconds": 0.2452615771908313,
+      "ess_fraction": 0.01777785650595493,
+      "failure_reason": "",
+      "important_regions": 4,
+      "method": "vmf_l2_final",
+      "method_role": "final_method_proxy_instantiation",
+      "pass_qc": true,
+      "region_l1_error": 0.003628967555690447,
+      "sample_count": 18000
+    }
+  ]
+}

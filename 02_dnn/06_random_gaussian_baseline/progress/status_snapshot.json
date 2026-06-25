@@ -1,0 +1,121 @@
+{
+  "cpu_affinity_cpus": "0-15",
+  "dataset_count": 90,
+  "dataset_expected": 90,
+  "manifest_expected_rows": 2700,
+  "manifest_rows": 2700,
+  "max_selected_refs_in_dataset_unit": 30,
+  "pool_dataset_units": 90,
+  "roots": {
+    "dataset": "02_dnn/06_random_gaussian_baseline/raw_outputs/01_dataset_gen/gaussian_random_90_dataset",
+    "overlay": "02_dnn/06_random_gaussian_baseline/figures/gaussian_overlay",
+    "proxy": "02_dnn/06_random_gaussian_baseline/raw_outputs/05_proxy_local_entropy/gaussian_random_90_dataset_30_reference/d_0.01_to_2.50_dense",
+    "reference": "02_dnn/06_random_gaussian_baseline/raw_outputs/03_reference_search/gaussian_random_90_dataset_30_reference",
+    "reference_pool": "02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/reference_pool/gaussian_random_90_dataset_30_reference",
+    "shell": "02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/shell_pool/gaussian_random_90_dataset_30_reference/d_0.01_to_2.50_dense"
+  },
+  "safe_gpu_ids": [
+    "2",
+    "3"
+  ],
+  "sampling": {
+    "active_process_ids": [],
+    "active_shards": [],
+    "allowed_physical_gpus": [
+      "2",
+      "3"
+    ],
+    "backend": "python",
+    "completed": 675000,
+    "disk_free_gb": 5609.5,
+    "disk_total_gb": 22177.29,
+    "disk_used_gb": 15599.1,
+    "elapsed": "08:58:37",
+    "elapsed_seconds": 32317.783350467682,
+    "estimated_disk_free_after_full_gb": 4259.5,
+    "estimated_full_raw_gb": 1350.0,
+    "eta": "00:00:00",
+    "eta_seconds": 0.0,
+    "event": "completed",
+    "failed": 0,
+    "last_completed_unit_index": null,
+    "percent": 100.0,
+    "rate_units_per_s": 20.886333467862418,
+    "run_root": "02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/shell_pool/gaussian_random_90_dataset_30_reference/d_0.01_to_2.50_dense",
+    "session_completed": 675000,
+    "shard_status_count": 32,
+    "timestamp": "2026-06-23T05:26:31+09:00",
+    "total": 675000,
+    "utilization": {
+      "cpu_percent": 6.1,
+      "gpus": [
+        {
+          "memory_total_mb": 49140.0,
+          "memory_used_mb": 840.0,
+          "name": "NVIDIA RTX A6000",
+          "utilization_gpu_percent": 0.0
+        },
+        {
+          "memory_total_mb": 49140.0,
+          "memory_used_mb": 4.0,
+          "name": "NVIDIA RTX A6000",
+          "utilization_gpu_percent": 0.0
+        },
+        {
+          "memory_total_mb": 49140.0,
+          "memory_used_mb": 4.0,
+          "name": "NVIDIA RTX A6000",
+          "utilization_gpu_percent": 0.0
+        },
+        {
+          "memory_total_mb": 49140.0,
+          "memory_used_mb": 4.0,
+          "name": "NVIDIA RTX A6000",
+          "utilization_gpu_percent": 0.0
+        }
+      ],
+      "memory_percent": 4.4,
+      "memory_total_gb": 377.51,
+      "memory_used_gb": 13.82
+    },
+    "visible_devices_policy": "2,3",
+    "worker_return_codes": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "selected_reference_dataset_units": 90,
+  "timestamp": "2026-06-23T07:56:33+09:00",
+  "valid_pool_dataset_units": 90,
+  "valid_selected_reference_dataset_units": 90
+}

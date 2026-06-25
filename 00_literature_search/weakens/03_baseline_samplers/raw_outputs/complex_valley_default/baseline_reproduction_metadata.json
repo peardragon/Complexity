@@ -1,0 +1,39 @@
+{
+  "hmc": {
+    "accept_rate": 0.9894444444444445,
+    "burn_in": 3000,
+    "leapfrog_steps": 14,
+    "mass": 1.0,
+    "method_role": "existing_method_reproduction",
+    "n_steps": 18000,
+    "proxy_mapping": "full-gradient leapfrog HMC on U(z)=beta*E(z)",
+    "retained_sample_count": 3000,
+    "source_paper": "arXiv:2503.08266",
+    "step_size": 0.033,
+    "thin": 5
+  },
+  "pseudo_langevin": {
+    "accept_rate": null,
+    "batch_size": 24,
+    "burn_in": 3000,
+    "dt": 0.01,
+    "friction": 1.15,
+    "method_role": "existing_method_proxy_reproduction",
+    "n_steps": 18000,
+    "proxy_mapping": "underdamped minibatch Langevin with rough-term gradient minibatches",
+    "retained_sample_count": 3000,
+    "source_paper": "arXiv:2603.15367",
+    "thin": 5
+  },
+  "random_walk_mcmc": {
+    "accept_rate": 0.5621111111111111,
+    "burn_in": 3000,
+    "method_role": "existing_method_reproduction",
+    "n_steps": 18000,
+    "proposal_scale": 0.115,
+    "proxy_mapping": "Gaussian random-walk Metropolis on U(z)=beta*E(z)",
+    "retained_sample_count": 3000,
+    "source_paper": "local random-walk control",
+    "thin": 5
+  }
+}

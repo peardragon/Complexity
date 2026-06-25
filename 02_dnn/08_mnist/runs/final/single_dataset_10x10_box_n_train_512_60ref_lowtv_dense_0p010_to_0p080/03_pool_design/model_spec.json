@@ -1,8 +1,0 @@
-{
-  "P": 2461,
-  "activation": "tanh",
-  "architecture": "100-20-20-1-tanh",
-  "hidden_layers": 2,
-  "hidden_width": 20,
-  "input_dim": 100
-}

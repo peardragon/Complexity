@@ -2,12 +2,17 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import pandas as pd
 from scipy.optimize import brentq
 from scipy.special import ndtr, roots_hermitenorm
+
+
+DEFAULT_RADII = tuple(round(0.15 + 0.05 * idx, 10) for idx in range(42))
 
 
 def gh_norm(n: int) -> tuple[np.ndarray, np.ndarray]:
@@ -75,7 +80,7 @@ class FullRS:
         self.z0_grid = self.z0[:, None, None]
         self.z1_grid = self.z1[None, :, None]
         self.z3_grid = self.z3[None, None, :]
-        self.w01 = self.w0[:, None] * self.w1[None, :]
+        self.w1_cond = self.w1[None, :]
         self.logw3 = np.log(self.w3)[None, None, :]
 
     def ge_energy(self, q_norm: float, s_value: float, cd: float) -> float:
@@ -91,7 +96,7 @@ class FullRS:
         logs = self.logw3 - self.beta * np.logaddexp(0.0, -h)
         m = np.max(logs, axis=2, keepdims=True)
         inner = np.squeeze(m, 2) + np.log(np.sum(np.exp(logs - m), axis=2))
-        sums = np.sum(self.w01 * mask * inner, axis=1) / denom
+        sums = np.sum(self.w1_cond * mask * inner, axis=1) / denom
         return float(np.sum(self.w0 * sums))
 
     def action(self, q_norm: float, s_value: float, radius: float) -> float:
@@ -153,7 +158,7 @@ def compute_rows(config: dict) -> list[dict[str, float]]:
         n1=int(config.get("n1", 13)),
         n3=int(config.get("n3", 19)),
     )
-    radii = [float(value) for value in config.get("radii", [0.15, 0.25, 0.40, 0.60, 0.85, 1.10, 1.35, 1.60, 1.90, 2.20])]
+    radii = [float(value) for value in config.get("radii", DEFAULT_RADII)]
     rows = [
         calc.solve_radius(
             radius,
@@ -170,12 +175,32 @@ def compute_rows(config: dict) -> list[dict[str, float]]:
     return rows
 
 
+def parse_radii(value: str | None) -> tuple[float, ...]:
+    if value is None or not str(value).strip():
+        return ()
+    return tuple(float(x.strip()) for x in str(value).split(",") if x.strip())
+
+
+def load_config(path: Path | None, args: argparse.Namespace) -> dict[str, Any]:
+    payload: dict[str, Any] = {}
+    if path is not None and path.exists():
+        payload = json.loads(path.read_text(encoding="utf-8-sig"))
+    if args.alpha is not None:
+        payload["alpha"] = args.alpha
+    cli_radii = parse_radii(args.radii)
+    if cli_radii:
+        payload["radii"] = cli_radii
+    return payload
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=Path, default=Path("01_theory/01_theory_analytic/config/default.json"))
     parser.add_argument("--out", required=True)
-    parser.add_argument("--alpha", type=float, default=0.5)
+    parser.add_argument("--alpha", type=float, default=None)
+    parser.add_argument("--radii", type=str, default=None, help="Comma-separated radii override.")
     args = parser.parse_args()
-    rows = compute_rows({"alpha": args.alpha})
+    rows = compute_rows(load_config(args.config, args))
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(out, index=False)

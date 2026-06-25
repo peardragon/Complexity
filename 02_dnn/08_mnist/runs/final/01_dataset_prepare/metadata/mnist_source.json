@@ -1,5 +1,0 @@
-{
-  "cache_path": "02_dnn/08_mnist/data/mnist/mnist_openml_uint8.npz",
-  "download_performed": false,
-  "source": "local_npz_cache"
-}

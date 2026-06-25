@@ -1,0 +1,5 @@
+rule,status
+very_low_tv_spectral_teacher,active
+real_even_odd,active
+teacher_nn,active
+random_label,active

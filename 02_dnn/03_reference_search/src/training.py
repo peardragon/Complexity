@@ -16,7 +16,7 @@ if str(SCRIPT_DIR) not in sys.path:
 from batch_energy import ManualTorchBatchEnergyModel
 from energy import DNNBinaryEnergy0
 from model_types import DNNArch, TrainConfig
-from network import flatten_params, init_3layer_params
+from network import flatten_params, forward_3layer, init_3layer_params, loss_forward
 from seed import set_global_seed
 
 
@@ -130,6 +130,73 @@ def _run_lbfgs_scipy_simple(
     except _ExactStop:
         theta_out = np.asarray(latest["theta"], dtype=np.float64).reshape(-1)
 
+    return theta_out, {
+        "lbfgs_iters_completed": int(lbfgs_state["iters"]),
+        "lbfgs_early_stop_epoch": lbfgs_state["early_stop_epoch"],
+        "lbfgs_early_stop_reached": bool(lbfgs_state["early_stop_reached"]),
+    }
+
+
+def _run_lbfgs_torch_simple(
+    theta_start: np.ndarray,
+    base: DNNBinaryEnergy0,
+    cfg: TrainConfig,
+    y_pm1_np: np.ndarray,
+    *,
+    chunk_iter: int = 50,
+) -> tuple[np.ndarray, dict[str, Any]]:
+    max_iter = int(cfg.lbfgs_max_iter)
+    theta0 = np.asarray(theta_start, dtype=np.float64).reshape(-1)
+    if max_iter <= 0:
+        return theta0, {
+            "lbfgs_iters_completed": 0,
+            "lbfgs_early_stop_epoch": None,
+            "lbfgs_early_stop_reached": False,
+        }
+    theta = torch.tensor(theta0, device=base.device, dtype=base.dtype, requires_grad=True)
+    lbfgs_state = {
+        "iters": 0,
+        "early_stop_epoch": None,
+        "early_stop_reached": False,
+    }
+
+    def closure() -> torch.Tensor:
+        optimizer.zero_grad(set_to_none=True)
+        logits = forward_3layer(base.X, theta, base.spec, base.activation)
+        per_ex = loss_forward(logits, base.y, base.loss, margin=base.margin)
+        loss_mean = per_ex.mean()
+        prior = 0.5 * base.weight_decay * torch.mean(theta * theta)
+        energy = loss_mean + prior
+        energy.backward()
+        return energy
+
+    remaining = max_iter
+    while remaining > 0:
+        step_iter = min(int(chunk_iter), remaining)
+        optimizer = torch.optim.LBFGS(
+            [theta],
+            lr=1.0,
+            max_iter=step_iter,
+            max_eval=max(1, step_iter * 2),
+            tolerance_grad=1.0e-7,
+            tolerance_change=1.0e-9,
+            line_search_fn="strong_wolfe",
+        )
+        try:
+            optimizer.step(closure)
+        except RuntimeError:
+            break
+        lbfgs_state["iters"] += int(step_iter)
+        remaining -= int(step_iter)
+        with torch.no_grad():
+            logits = forward_3layer(base.X, theta, base.spec, base.activation)
+            stats = _logit_stats(logits.detach().cpu().numpy(), y_pm1_np)
+        if float(stats["final_cls_err"]) == 0.0:
+            lbfgs_state["early_stop_reached"] = True
+            lbfgs_state["early_stop_epoch"] = int(lbfgs_state["iters"])
+            break
+
+    theta_out = theta.detach().cpu().numpy().astype(np.float64).reshape(-1)
     return theta_out, {
         "lbfgs_iters_completed": int(lbfgs_state["iters"]),
         "lbfgs_early_stop_epoch": lbfgs_state["early_stop_epoch"],
@@ -302,7 +369,7 @@ def train_reference_solutions_simple_batched(
         spec=spec,
         activation=str(cfgs[0].activation),
         loss=str(cfgs[0].loss),
-        weight_decay=0.0,
+        weight_decay=float(cfgs[0].weight_decay),
         margin=float(cfgs[0].margin),
         device=device,
         dtype=torch.float64,
@@ -313,7 +380,7 @@ def train_reference_solutions_simple_batched(
         spec=spec,
         activation=str(cfgs[0].activation),
         loss=str(cfgs[0].loss),
-        weight_decay=0.0,
+        weight_decay=float(cfgs[0].weight_decay),
         margin=float(cfgs[0].margin),
         device="cpu",
         dtype=torch.float64,
@@ -339,8 +406,12 @@ def train_reference_solutions_simple_batched(
                 "lbfgs_early_stop_reached": False,
             }
         else:
-            theta_final, lbfgs_info = _run_lbfgs_scipy_simple(theta_final, base_cpu, cfg, y_pm1_np)
-            optimizer_chain = "adam_then_lbfgs"
+            if base.device.type == "cuda":
+                theta_final, lbfgs_info = _run_lbfgs_torch_simple(theta_final, base, cfg, y_pm1_np)
+                optimizer_chain = "adam_then_torch_cuda_lbfgs"
+            else:
+                theta_final, lbfgs_info = _run_lbfgs_scipy_simple(theta_final, base_cpu, cfg, y_pm1_np)
+                optimizer_chain = "adam_then_scipy_lbfgs"
         summary = _build_summary(
             attempt_id=idx,
             theta_final=theta_final,

@@ -8,9 +8,9 @@
   "qc_cell_count": 168,
   "radius_grid_step": 0.04999999999999982,
   "rmse_improves": true,
-  "rmse_largest": 0.020676097598780967,
+  "rmse_largest": 0.0018436169443736819,
   "rmse_monotone": true,
-  "rmse_smallest": 0.08452939847384003,
+  "rmse_smallest": 0.06403167224270002,
   "smallest_n": 40,
   "smc_fail_cell_count": 0,
   "split_fail_cell_count": 0

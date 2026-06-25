@@ -1,0 +1,22 @@
+{
+  "args": {
+    "chunk_size": 4096,
+    "cpu_threads": 4,
+    "device": "cpu",
+    "force": false,
+    "max_probe_units": null,
+    "out_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_all_radii_90ref/06_results_figures/replicate_stability_probe/expanded_4rules_3radii_lowhigh_2rep",
+    "radii": "0.3,1.0,2.5",
+    "refs_per_cell": 2,
+    "replicates": 2,
+    "rules": "",
+    "samples_per_ref_radius": 1024,
+    "seed": 2026061800,
+    "target_refs": 90
+  },
+  "cfg": {
+    "created_at": "2026-06-18T12:01:47",
+    "samples_per_ref_radius": 1024,
+    "source_run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_all_radii_90ref"
+  }
+}

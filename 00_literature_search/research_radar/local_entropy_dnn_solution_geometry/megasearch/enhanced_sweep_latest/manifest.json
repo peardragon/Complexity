@@ -1,0 +1,22 @@
+{
+  "since_year": 2021,
+  "extra_arxiv": [
+    "2603.15367"
+  ],
+  "total_candidates": 573,
+  "promoted_candidates": 133,
+  "source_counts": {
+    "user_supplied_arxiv": 1,
+    "openalex_author_latest": 228,
+    "arxiv_recency": 183,
+    "lab_radar_latest": 350,
+    "openalex_recent_citer": 17,
+    "openalex_backward_ref": 21
+  },
+  "user_seed_found": {
+    "2603.15367": true
+  },
+  "user_seed_promoted": {
+    "2603.15367": true
+  }
+}

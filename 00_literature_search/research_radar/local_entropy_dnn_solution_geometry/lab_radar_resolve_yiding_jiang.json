@@ -1,0 +1,59 @@
+{
+  "query": "Yiding Jiang",
+  "kind": "author",
+  "institution": null,
+  "orcid": "",
+  "candidates": [
+    {
+      "id": "A5011289358",
+      "name": "Yiding Jiang",
+      "orcid": "",
+      "last_institution": null,
+      "works_count": 40,
+      "cited_by_count": 658,
+      "top_topics": [
+        "Reinforcement Learning in Robotics",
+        "Domain Adaptation and Few-Shot Learning",
+        "Adversarial Robustness in Machine Learning",
+        "Evolutionary Algorithms and Applications"
+      ],
+      "recent_titles": [
+        "2026 · Maximum Likelihood Reinforcement Learning",
+        "2026 · Maximum Likelihood Reinforcement Learning",
+        "2026 · From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence"
+      ]
+    },
+    {
+      "id": "A5068399213",
+      "name": "Yiding Jiang",
+      "orcid": "",
+      "last_institution": "Milliman (United States)",
+      "works_count": 2,
+      "cited_by_count": 374,
+      "top_topics": [
+        "Lung Cancer Diagnosis and Treatment",
+        "Global Cancer Incidence and Screening",
+        "Lung Cancer Treatments and Mutations",
+        "Colorectal Cancer Screening and Detection"
+      ],
+      "recent_titles": [
+        "2013 · A Cost-Utility Analysis of Lung Cancer Screening and the Additional Benefits of Incorporating Smoking Cessation Interventions",
+        "2012 · An Actuarial Analysis Shows That Offering Lung Cancer Screening As An Insurance Benefit Would Save Lives At Relatively Low Cost"
+      ]
+    },
+    {
+      "id": "A5113126461",
+      "name": "Yiding Jiang",
+      "orcid": "",
+      "last_institution": "Communication University of China",
+      "works_count": 1,
+      "cited_by_count": 1,
+      "top_topics": [
+        "Media, Gender, and Advertising"
+      ],
+      "recent_titles": [
+        "2023 · Aladdin——The Live-Action Version: A Feminist Revolt Against Patriarchy"
+      ]
+    }
+  ]
+}

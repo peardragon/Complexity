@@ -1,0 +1,443 @@
+{
+  "lab_dir": "carlo_baldassi",
+  "pi_ids": [
+    "A5028083013"
+  ],
+  "year_span": [
+    2016,
+    2026
+  ],
+  "totals": {
+    "papers": 49,
+    "citations": 1156,
+    "researchers": 125,
+    "likely_members": 13,
+    "topics": 26
+  },
+  "papers_per_year": {
+    "2016": 11,
+    "2017": 5,
+    "2018": 5,
+    "2019": 8,
+    "2020": 5,
+    "2021": 2,
+    "2022": 4,
+    "2023": 3,
+    "2024": 2,
+    "2025": 3,
+    "2026": 1
+  },
+  "citations_per_year": {
+    "2016": 368,
+    "2017": 75,
+    "2018": 98,
+    "2019": 439,
+    "2020": 49,
+    "2021": 24,
+    "2022": 74,
+    "2023": 27,
+    "2024": 1,
+    "2025": 0,
+    "2026": 1
+  },
+  "oa_ratio_per_year": {
+    "2016": 1.0,
+    "2017": 1.0,
+    "2018": 1.0,
+    "2019": 0.75,
+    "2020": 0.8,
+    "2021": 0.5,
+    "2022": 1.0,
+    "2023": 0.333,
+    "2024": 0.5,
+    "2025": 1.0,
+    "2026": 1.0
+  },
+  "top_topics": [
+    {
+      "topic": "Neural Networks and Applications",
+      "papers": 9
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "papers": 6
+    },
+    {
+      "topic": "Scientific Computing and Data Management",
+      "papers": 3
+    },
+    {
+      "topic": "Bioinformatics and Genomic Networks",
+      "papers": 2
+    },
+    {
+      "topic": "Quantum Computing Algorithms and Architecture",
+      "papers": 2
+    },
+    {
+      "topic": "Constraint Satisfaction and Optimization",
+      "papers": 2
+    },
+    {
+      "topic": "MicroRNA in disease regulation",
+      "papers": 2
+    },
+    {
+      "topic": "Advanced Neural Network Applications",
+      "papers": 2
+    },
+    {
+      "topic": "Neural dynamics and brain function",
+      "papers": 2
+    },
+    {
+      "topic": "Markov Chains and Monte Carlo Methods",
+      "papers": 2
+    },
+    {
+      "topic": "Model Reduction and Neural Networks",
+      "papers": 1
+    },
+    {
+      "topic": "Evolutionary Algorithms and Applications",
+      "papers": 1
+    }
+  ],
+  "top_fields": [
+    {
+      "field": "Computer Science",
+      "papers": 29
+    },
+    {
+      "field": "Biochemistry, Genetics and Molecular Biology",
+      "papers": 5
+    },
+    {
+      "field": "Decision Sciences",
+      "papers": 4
+    },
+    {
+      "field": "Physics and Astronomy",
+      "papers": 3
+    },
+    {
+      "field": "Engineering",
+      "papers": 2
+    },
+    {
+      "field": "Neuroscience",
+      "papers": 2
+    },
+    {
+      "field": "Mathematics",
+      "papers": 2
+    },
+    {
+      "field": "Medicine",
+      "papers": 1
+    }
+  ],
+  "emerging_topics": [
+    {
+      "topic": "Advanced Neural Network Applications",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.154,
+      "delta": 0.154
+    },
+    {
+      "topic": "Metaheuristic Optimization Algorithms Research",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.077,
+      "delta": 0.077
+    },
+    {
+      "topic": "Anomaly Detection Techniques and Applications",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.077,
+      "delta": 0.077
+    },
+    {
+      "topic": "Quantum many-body systems",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.077,
+      "delta": 0.077
+    },
+    {
+      "topic": "Evolutionary Algorithms and Applications",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.077,
+      "delta": 0.077
+    },
+    {
+      "topic": "Neural Networks and Applications",
+      "early": 6,
+      "late": 3,
+      "early_share": 0.167,
+      "late_share": 0.231,
+      "delta": 0.064
+    }
+  ],
+  "declining_topics": [
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "early": 6,
+      "late": 0,
+      "early_share": 0.167,
+      "late_share": 0.0,
+      "delta": -0.167
+    },
+    {
+      "topic": "Scientific Computing and Data Management",
+      "early": 3,
+      "late": 0,
+      "early_share": 0.083,
+      "late_share": 0.0,
+      "delta": -0.083
+    },
+    {
+      "topic": "Bioinformatics and Genomic Networks",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.056,
+      "late_share": 0.0,
+      "delta": -0.056
+    },
+    {
+      "topic": "MicroRNA in disease regulation",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.056,
+      "late_share": 0.0,
+      "delta": -0.056
+    },
+    {
+      "topic": "Markov Chains and Monte Carlo Methods",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.056,
+      "late_share": 0.0,
+      "delta": -0.056
+    },
+    {
+      "topic": "Model Reduction and Neural Networks",
+      "early": 1,
+      "late": 0,
+      "early_share": 0.028,
+      "late_share": 0.0,
+      "delta": -0.028
+    }
+  ],
+  "new_collaborators_per_year": {
+    "2016": 62,
+    "2017": 23,
+    "2018": 8,
+    "2019": 8,
+    "2020": 6,
+    "2021": 3,
+    "2022": 2,
+    "2023": 3,
+    "2024": 1,
+    "2025": 8,
+    "2026": 0
+  },
+  "top_venues": [
+    {
+      "venue": "arXiv (Cornell University)",
+      "papers": 16
+    },
+    {
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "papers": 8
+    },
+    {
+      "venue": "Journal of Statistical Mechanics Theory and Experiment",
+      "papers": 4
+    },
+    {
+      "venue": "Proceedings of the National Academy of Sciences",
+      "papers": 4
+    },
+    {
+      "venue": "Physical review. E",
+      "papers": 3
+    },
+    {
+      "venue": "Physical Review Letters",
+      "papers": 2
+    },
+    {
+      "venue": "IEEE Transactions on Evolutionary Computation",
+      "papers": 1
+    },
+    {
+      "venue": "Genome biology",
+      "papers": 1
+    },
+    {
+      "venue": "Management Science",
+      "papers": 1
+    },
+    {
+      "venue": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)",
+      "papers": 1
+    }
+  ],
+  "rising_members": [
+    {
+      "name": "Fabrizio Pittorino",
+      "first_author_count": 2,
+      "papers": 5,
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "name": "Davide Badalotti",
+      "first_author_count": 2,
+      "papers": 2,
+      "years": [
+        2025,
+        2026
+      ]
+    },
+    {
+      "name": "Elizaveta Demyanenko",
+      "first_author_count": 1,
+      "papers": 2,
+      "years": [
+        2021,
+        2025
+      ]
+    },
+    {
+      "name": "Luca Colombo",
+      "first_author_count": 1,
+      "papers": 1,
+      "years": [
+        2025,
+        2025
+      ]
+    }
+  ],
+  "notable_papers": [
+    {
+      "title": "Entropy-SGD: biasing gradient descent into wide valleys*",
+      "year": 2019,
+      "citations": 288,
+      "doi": "10.1088/1742-5468/ab39d9",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Unreasonable effectiveness of learning neural networks: From accessible states and robust ensembles to basic algorithmic schemes",
+      "year": 2016,
+      "citations": 142,
+      "doi": "10.1073/pnas.1608103113",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Simultaneous identification of specifically interacting paralogs and interprotein contacts by direct coupling analysis",
+      "year": 2016,
+      "citations": 140,
+      "doi": "10.1073/pnas.1607570113",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Shaping the learning landscape in neural networks around wide flat minima",
+      "year": 2019,
+      "citations": 88,
+      "doi": "10.1073/pnas.1908636117",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Efficiency of quantum vs. classical annealing in nonconvex learning problems",
+      "year": 2018,
+      "citations": 64,
+      "doi": "10.1073/pnas.1711456115",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Local entropy as a measure for sampling solutions in constraint satisfaction problems",
+      "year": 2016,
+      "citations": 57,
+      "doi": "10.1088/1742-5468/2016/02/023301",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Properties of the Geometry of Solutions and Capacity of Multilayer Neural Networks with Rectified Linear Unit Activations",
+      "year": 2019,
+      "citations": 56,
+      "doi": "10.1103/physrevlett.123.170602",
+      "venue": "Physical Review Letters"
+    },
+    {
+      "title": "RNAs competing for microRNAs mutually influence their fluctuations in a highly non-linear microRNA-dependent manner in single cells",
+      "year": 2017,
+      "citations": 52,
+      "doi": "10.1186/s13059-017-1162-x",
+      "venue": "Genome biology"
+    },
+    {
+      "title": "A Behavioral Characterization of the Drift Diffusion Model and Its Multialternative Extension for Choice Under Time Pressure",
+      "year": 2020,
+      "citations": 39,
+      "doi": "10.1287/mnsc.2019.3475",
+      "venue": "Management Science"
+    },
+    {
+      "title": "Recombinator-<i>k</i>-Means: An Evolutionary Algorithm That Exploits <i>k</i>-Means++ for Recombination",
+      "year": 2022,
+      "citations": 38,
+      "doi": "10.1109/tevc.2022.3144134",
+      "venue": "IEEE Transactions on Evolutionary Computation"
+    },
+    {
+      "title": "Learning through atypical phase transitions in overparameterized neural networks",
+      "year": 2022,
+      "citations": 28,
+      "doi": "10.1103/physreve.106.014116",
+      "venue": "Physical review. E"
+    },
+    {
+      "title": "Learning may need only a few bits of synaptic precision",
+      "year": 2016,
+      "citations": 25,
+      "doi": "10.1103/physreve.93.052313",
+      "venue": "Physical review. E"
+    },
+    {
+      "title": "Role of Synaptic Stochasticity in Training Low-Precision Neural Networks",
+      "year": 2018,
+      "citations": 24,
+      "doi": "10.1103/physrevlett.120.268103",
+      "venue": "Physical Review Letters"
+    },
+    {
+      "title": "Entropic gradient descent algorithms and wide flat minima",
+      "year": 2021,
+      "citations": 24,
+      "doi": "10.1088/1742-5468/ac3ae8",
+      "venue": "Virtual Community of Pathological Anatomy (University of Castilla La Mancha)"
+    },
+    {
+      "title": "Parle: parallelizing stochastic gradient descent",
+      "year": 2017,
+      "citations": 19,
+      "doi": "10.48550/arxiv.1707.00424",
+      "venue": "arXiv (Cornell University)"
+    }
+  ],
+  "themes": {
+    "has_themes": false
+  }
+}

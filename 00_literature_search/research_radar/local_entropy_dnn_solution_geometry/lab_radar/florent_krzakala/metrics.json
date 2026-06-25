@@ -1,0 +1,463 @@
+{
+  "lab_dir": "florent_krzakala",
+  "pi_ids": [
+    "A5068236230"
+  ],
+  "year_span": [
+    2016,
+    2025
+  ],
+  "totals": {
+    "papers": 143,
+    "citations": 3051,
+    "researchers": 133,
+    "likely_members": 55,
+    "topics": 39
+  },
+  "papers_per_year": {
+    "2016": 16,
+    "2017": 8,
+    "2018": 5,
+    "2019": 18,
+    "2020": 21,
+    "2021": 7,
+    "2022": 12,
+    "2023": 22,
+    "2024": 23,
+    "2025": 11
+  },
+  "citations_per_year": {
+    "2016": 1016,
+    "2017": 223,
+    "2018": 149,
+    "2019": 619,
+    "2020": 523,
+    "2021": 212,
+    "2022": 149,
+    "2023": 55,
+    "2024": 99,
+    "2025": 6
+  },
+  "oa_ratio_per_year": {
+    "2016": 0.875,
+    "2017": 0.5,
+    "2018": 1.0,
+    "2019": 0.833,
+    "2020": 0.905,
+    "2021": 0.857,
+    "2022": 0.917,
+    "2023": 0.955,
+    "2024": 1.0,
+    "2025": 0.818
+  },
+  "top_topics": [
+    {
+      "topic": "Sparse and Compressive Sensing Techniques",
+      "papers": 25
+    },
+    {
+      "topic": "Neural Networks and Applications",
+      "papers": 21
+    },
+    {
+      "topic": "Neural Networks and Reservoir Computing",
+      "papers": 11
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "papers": 10
+    },
+    {
+      "topic": "Random Matrices and Applications",
+      "papers": 7
+    },
+    {
+      "topic": "Theoretical and Computational Physics",
+      "papers": 6
+    },
+    {
+      "topic": "Advanced X-ray Imaging Techniques",
+      "papers": 6
+    },
+    {
+      "topic": "Blind Source Separation Techniques",
+      "papers": 5
+    },
+    {
+      "topic": "Bayesian Methods and Mixture Models",
+      "papers": 5
+    },
+    {
+      "topic": "Generative Adversarial Networks and Image Synthesis",
+      "papers": 4
+    },
+    {
+      "topic": "Face and Expression Recognition",
+      "papers": 4
+    },
+    {
+      "topic": "Statistical Mechanics and Entropy",
+      "papers": 3
+    }
+  ],
+  "top_fields": [
+    {
+      "field": "Computer Science",
+      "papers": 78
+    },
+    {
+      "field": "Engineering",
+      "papers": 28
+    },
+    {
+      "field": "Physics and Astronomy",
+      "papers": 20
+    },
+    {
+      "field": "Mathematics",
+      "papers": 14
+    },
+    {
+      "field": "Neuroscience",
+      "papers": 1
+    },
+    {
+      "field": "Agricultural and Biological Sciences",
+      "papers": 1
+    },
+    {
+      "field": "Social Sciences",
+      "papers": 1
+    }
+  ],
+  "emerging_topics": [
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "early": 2,
+      "late": 8,
+      "early_share": 0.029,
+      "late_share": 0.107,
+      "delta": 0.077
+    },
+    {
+      "topic": "Neural Networks and Applications",
+      "early": 8,
+      "late": 13,
+      "early_share": 0.118,
+      "late_share": 0.173,
+      "delta": 0.056
+    },
+    {
+      "topic": "Machine Learning and Data Classification",
+      "early": 0,
+      "late": 3,
+      "early_share": 0.0,
+      "late_share": 0.04,
+      "delta": 0.04
+    },
+    {
+      "topic": "Adversarial Robustness in Machine Learning",
+      "early": 0,
+      "late": 3,
+      "early_share": 0.0,
+      "late_share": 0.04,
+      "delta": 0.04
+    },
+    {
+      "topic": "Statistical Methods and Inference",
+      "early": 0,
+      "late": 3,
+      "early_share": 0.0,
+      "late_share": 0.04,
+      "delta": 0.04
+    },
+    {
+      "topic": "Gaussian Processes and Bayesian Inference",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.027,
+      "delta": 0.027
+    }
+  ],
+  "declining_topics": [
+    {
+      "topic": "Sparse and Compressive Sensing Techniques",
+      "early": 17,
+      "late": 8,
+      "early_share": 0.25,
+      "late_share": 0.107,
+      "delta": -0.143
+    },
+    {
+      "topic": "Advanced X-ray Imaging Techniques",
+      "early": 6,
+      "late": 0,
+      "early_share": 0.088,
+      "late_share": 0.0,
+      "delta": -0.088
+    },
+    {
+      "topic": "Neural Networks and Reservoir Computing",
+      "early": 8,
+      "late": 3,
+      "early_share": 0.118,
+      "late_share": 0.04,
+      "delta": -0.078
+    },
+    {
+      "topic": "Random lasers and scattering media",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.029,
+      "late_share": 0.0,
+      "delta": -0.029
+    },
+    {
+      "topic": "Tensor decomposition and applications",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.029,
+      "late_share": 0.0,
+      "delta": -0.029
+    }
+  ],
+  "new_collaborators_per_year": {
+    "2016": 29,
+    "2017": 4,
+    "2018": 6,
+    "2019": 15,
+    "2020": 14,
+    "2021": 18,
+    "2022": 12,
+    "2023": 19,
+    "2024": 12,
+    "2025": 3
+  },
+  "top_venues": [
+    {
+      "venue": "arXiv (Cornell University)",
+      "papers": 59
+    },
+    {
+      "venue": "Journal of Statistical Mechanics Theory and Experiment",
+      "papers": 17
+    },
+    {
+      "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "papers": 6
+    },
+    {
+      "venue": "ArXiv.org",
+      "papers": 6
+    },
+    {
+      "venue": "IEEE Transactions on Information Theory",
+      "papers": 5
+    },
+    {
+      "venue": "Proceedings of the National Academy of Sciences",
+      "papers": 3
+    },
+    {
+      "venue": "Journal of Physics A Mathematical and Theoretical",
+      "papers": 3
+    },
+    {
+      "venue": "Machine Learning Science and Technology",
+      "papers": 2
+    },
+    {
+      "venue": "Journal of Physics Conference Series",
+      "papers": 2
+    },
+    {
+      "venue": "Advances In Physics",
+      "papers": 1
+    }
+  ],
+  "rising_members": [
+    {
+      "name": "Hugo Cui",
+      "first_author_count": 8,
+      "papers": 12,
+      "years": [
+        2021,
+        2025
+      ]
+    },
+    {
+      "name": "Bruno Loureiro",
+      "first_author_count": 5,
+      "papers": 34,
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "name": "Yatin Dandi",
+      "first_author_count": 5,
+      "papers": 14,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Luca Arnaboldi",
+      "first_author_count": 5,
+      "papers": 6,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Cédric Gerbelot",
+      "first_author_count": 4,
+      "papers": 12,
+      "years": [
+        2020,
+        2025
+      ]
+    },
+    {
+      "name": "Julien Launay",
+      "first_author_count": 4,
+      "papers": 8,
+      "years": [
+        2019,
+        2024
+      ]
+    },
+    {
+      "name": "Lucas Clarté",
+      "first_author_count": 4,
+      "papers": 4,
+      "years": [
+        2022,
+        2024
+      ]
+    },
+    {
+      "name": "Alice Guionnet",
+      "first_author_count": 3,
+      "papers": 3,
+      "years": [
+        2023,
+        2025
+      ]
+    }
+  ],
+  "notable_papers": [
+    {
+      "title": "Statistical physics of inference: thresholds and algorithms",
+      "year": 2016,
+      "citations": 424,
+      "doi": "10.1080/00018732.2016.1211393",
+      "venue": "Advances In Physics"
+    },
+    {
+      "title": "Optimal errors and phase transitions in high-dimensional generalized linear models",
+      "year": 2019,
+      "citations": 200,
+      "doi": "10.1073/pnas.1802705116",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Large-Scale Optical Reservoir Computing for Spatiotemporal Chaotic Systems Prediction",
+      "year": 2020,
+      "citations": 183,
+      "doi": "10.1103/physrevx.10.041037",
+      "venue": "Physical Review X"
+    },
+    {
+      "title": "Entropy and mutual information in models of deep neural networks*",
+      "year": 2019,
+      "citations": 144,
+      "doi": "10.1088/1742-5468/ab3430",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Approximate Message-Passing Decoder and Capacity Achieving Sparse Superposition Codes",
+      "year": 2017,
+      "citations": 119,
+      "doi": "10.1109/tit.2017.2713833",
+      "venue": "IEEE Transactions on Information Theory"
+    },
+    {
+      "title": "Optical Reservoir Computing Using Multiple Light Scattering for Chaotic Systems Prediction",
+      "year": 2019,
+      "citations": 118,
+      "doi": "10.1109/jstqe.2019.2936281",
+      "venue": "IEEE Journal of Selected Topics in Quantum Electronics"
+    },
+    {
+      "title": "Phase Transitions and Sample Complexity in Bayes-Optimal Matrix Factorization",
+      "year": 2016,
+      "citations": 108,
+      "doi": "10.1109/tit.2016.2556702",
+      "venue": "IEEE Transactions on Information Theory"
+    },
+    {
+      "title": "Random projections through multiple optical scattering: Approximating Kernels at the speed of light",
+      "year": 2016,
+      "citations": 102,
+      "doi": "10.1109/icassp.2016.7472872",
+      "venue": null
+    },
+    {
+      "title": "Information-theoretic thresholds from the cavity method",
+      "year": 2018,
+      "citations": 92,
+      "doi": "10.1016/j.aim.2018.05.029",
+      "venue": "Advances in Mathematics"
+    },
+    {
+      "title": "Generalisation error in learning with random features and the hidden manifold model*",
+      "year": 2021,
+      "citations": 79,
+      "doi": "10.1088/1742-5468/ac3ae6",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Mutual information for symmetric rank-one matrix estimation: A proof of the replica formula",
+      "year": 2016,
+      "citations": 78,
+      "doi": null,
+      "venue": "Queen Mary Research Online (Queen Mary University of London)"
+    },
+    {
+      "title": "Mutual information in rank-one matrix estimation",
+      "year": 2016,
+      "citations": 72,
+      "doi": "10.1109/itw.2016.7606798",
+      "venue": null
+    },
+    {
+      "title": "The mutual information in random linear estimation",
+      "year": 2016,
+      "citations": 71,
+      "doi": "10.1109/allerton.2016.7852290",
+      "venue": null
+    },
+    {
+      "title": "Learning curves of generic features maps for realistic datasets with a teacher-student model*",
+      "year": 2022,
+      "citations": 57,
+      "doi": "10.1088/1742-5468/ac9825",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Double Trouble in Double Descent : Bias and Variance(s) in the Lazy\\n Regime",
+      "year": 2020,
+      "citations": 57,
+      "doi": "10.48550/arxiv.2003.01054",
+      "venue": "arXiv (Cornell University)"
+    }
+  ],
+  "themes": {
+    "has_themes": false
+  }
+}

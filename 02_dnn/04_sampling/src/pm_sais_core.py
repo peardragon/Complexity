@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import math
 import json
+import os
+from collections import OrderedDict
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
@@ -16,6 +18,8 @@ from vmf import log_sphere_mgf, sample_vmf, sample_vmf_batch
 
 
 DERIVATIVE_METHODOLOGY_ID = "exact_shell_l2_vmf_ce_smc_radial_score_derivative_v1"
+_REF_STATIC_CACHE: OrderedDict[tuple[str, str], dict[str, Any]] = OrderedDict()
+_REF_STATIC_CACHE_MAX = int(os.environ.get("COMPLEXITY_REF_STATIC_CACHE_MAX", "2048"))
 
 
 @dataclass(frozen=True)
@@ -85,6 +89,32 @@ def weighted_ratio(logw: np.ndarray, mask: np.ndarray) -> tuple[float, float, fl
         return 0.0, float("-inf"), 0.0
     log_ratio = float(logsumexp(logw[mask]) - logsumexp(logw))
     return float(np.exp(log_ratio)), log_ratio, ess_from_logw(logw[mask])
+
+
+def _reference_static_fields(
+    *,
+    record: ReferenceRecord,
+    theta_ref: np.ndarray,
+    data: dict[str, np.ndarray],
+) -> dict[str, Any]:
+    key = (str(Path(record.theta_path).resolve()), str(Path(record.dataset_path).resolve()))
+    try:
+        cached = _REF_STATIC_CACHE.pop(key)
+    except KeyError:
+        ref_norm = float(np.linalg.norm(theta_ref))
+        if not np.isfinite(ref_norm) or ref_norm <= 0.0:
+            raise ValueError(f"Bad theta_ref norm for {record.theta_path}: {ref_norm}")
+        ce_ref, err_ref = ce_and_error(theta_ref, data["X_train"], data["y"])
+        cached = {
+            "theta_ref_norm": ref_norm,
+            "mu": -theta_ref / ref_norm,
+            "ce_ref": float(ce_ref),
+            "err_ref": float(err_ref),
+        }
+    _REF_STATIC_CACHE[key] = cached
+    while len(_REF_STATIC_CACHE) > _REF_STATIC_CACHE_MAX:
+        _REF_STATIC_CACHE.popitem(last=False)
+    return cached
 
 
 def _split_weighted_means(values: np.ndarray, logw: np.ndarray, split: np.ndarray) -> tuple[float, float]:
@@ -459,18 +489,22 @@ def sample_unit(
     summary_path = unit_dir / "unit_summary.json"
     samples_path = unit_dir / "samples.npz"
     if summary_path.exists() and samples_path.exists() and not force:
-        payload = json.loads(summary_path.read_text(encoding="utf-8"))
-        payload["reused"] = True
-        return payload
+        try:
+            payload = json.loads(summary_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            payload = None
+        if isinstance(payload, dict):
+            payload["reused"] = True
+            return payload
 
     ensure_dir(unit_dir)
     data = load_dataset(record.dataset_path)
     theta_ref = load_theta(record.theta_path)
-    ref_norm = float(np.linalg.norm(theta_ref))
-    if not np.isfinite(ref_norm) or ref_norm <= 0.0:
-        raise ValueError(f"Bad theta_ref norm for {record.theta_path}: {ref_norm}")
-    ce_ref, err_ref = ce_and_error(theta_ref, data["X_train"], data["y"])
-    mu = -theta_ref / ref_norm
+    ref_static = _reference_static_fields(record=record, theta_ref=theta_ref, data=data)
+    ref_norm = float(ref_static["theta_ref_norm"])
+    ce_ref = float(ref_static["ce_ref"])
+    err_ref = float(ref_static["err_ref"])
+    mu = np.asarray(ref_static["mu"], dtype=np.float64)
     kappa = float(params.lambda_reg * float(radius) * ref_norm / math.sqrt(P))
     sampler = str(params.sampler).strip().lower()
     if sampler in {"smc", "ce_smc", "adaptive_ce_smc", "exact_shell_l2_vmf_ce_smc"}:

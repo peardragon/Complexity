@@ -1,7 +1,0 @@
-{
-  "cache_path": "02_dnn/08_mnist/data/mnist/mnist_openml_uint8.npz",
-  "download_allowed_for_smoke": true,
-  "download_performed": false,
-  "source": "openml_mnist_784",
-  "source_status": "local_cache"
-}

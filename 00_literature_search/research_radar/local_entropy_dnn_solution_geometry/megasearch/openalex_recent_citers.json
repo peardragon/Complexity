@@ -1,0 +1,1110 @@
+{
+  "Baldassi2016LocalEntropy": {
+    "openalex_id": "W2262732936",
+    "title": "Local entropy as a measure for sampling solutions in constraint satisfaction problems",
+    "cited_by_count": 57,
+    "recent_citers": [
+      {
+        "title": "Unveiling the Structure of Wide Flat Minima in Neural Networks",
+        "year": 2021,
+        "doi": "https://doi.org/10.1103/physrevlett.127.278301",
+        "venue": "Physical Review Letters",
+        "cited_by_count": 33,
+        "url": "https://doi.org/10.1103/physrevlett.127.278301",
+        "authors": [
+          "Carlo Baldassi",
+          "Clarissa Lauditi",
+          "Enrico M. Malatesta",
+          "Gabriele Perugini",
+          "Riccardo Zecchina"
+        ]
+      },
+      {
+        "title": "Frozen 1-RSB structure of the symmetric Ising perceptron",
+        "year": 2021,
+        "doi": "https://doi.org/10.1145/3406325.3451119",
+        "venue": null,
+        "cited_by_count": 32,
+        "url": "https://doi.org/10.1145/3406325.3451119",
+        "authors": [
+          "Will Perkins",
+          "Changji Xu"
+        ]
+      },
+      {
+        "title": "Proof of the Contiguity Conjecture and Lognormal Limit for the Symmetric Perceptron",
+        "year": 2022,
+        "doi": "https://doi.org/10.1109/focs52979.2021.00041",
+        "venue": null,
+        "cited_by_count": 29,
+        "url": "https://doi.org/10.1109/focs52979.2021.00041",
+        "authors": [
+          "Emmanuel Abbé",
+          "Shuangping Li",
+          "Allan Sly"
+        ]
+      },
+      {
+        "title": "Binary perceptron: efficient algorithms can find solutions in a rare well-connected cluster",
+        "year": 2022,
+        "doi": "https://doi.org/10.1145/3519935.3519975",
+        "venue": null,
+        "cited_by_count": 23,
+        "url": "https://doi.org/10.1145/3519935.3519975",
+        "authors": [
+          "Emmanuel Abbé",
+          "Shuangping Li",
+          "Allan Sly"
+        ]
+      },
+      {
+        "title": "Typical and atypical solutions in nonconvex neural networks with discrete and continuous weights",
+        "year": 2023,
+        "doi": "https://doi.org/10.1103/physreve.108.024310",
+        "venue": "Physical review. E",
+        "cited_by_count": 18,
+        "url": "https://doi.org/10.1103/physreve.108.024310",
+        "authors": [
+          "Carlo Baldassi",
+          "Enrico M. Malatesta",
+          "Gabriele Perugini",
+          "Riccardo Zecchina"
+        ]
+      },
+      {
+        "title": "Teacher-Student Learning for a Binary Perceptron with Quantum Fluctuations",
+        "year": 2021,
+        "doi": "https://doi.org/10.7566/jpsj.90.074002",
+        "venue": "Journal of the Physical Society of Japan",
+        "cited_by_count": 14,
+        "url": "https://doi.org/10.7566/jpsj.90.074002",
+        "authors": [
+          "Shunta Arai",
+          "Masayuki Ohzeki",
+          "Kazuyuki Tanaka"
+        ]
+      },
+      {
+        "title": "The Loss Surface Of Deep Linear Networks Viewed Through The Algebraic Geometry Lens",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/tpami.2021.3071289",
+        "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "cited_by_count": 10,
+        "url": "https://doi.org/10.1109/tpami.2021.3071289",
+        "authors": [
+          "Dhagash Mehta",
+          "Tianran Chen",
+          "Tingting Tang",
+          "Jonathan D. Hauenstein"
+        ]
+      },
+      {
+        "title": "Exact full-RSB SAT/UNSAT transition in infinitely wide two-layer neural networks",
+        "year": 2025,
+        "doi": "https://doi.org/10.21468/scipostphys.18.4.118",
+        "venue": "SciPost Physics",
+        "cited_by_count": 9,
+        "url": "https://doi.org/10.21468/scipostphys.18.4.118",
+        "authors": [
+          "Brandon Livio Annesi",
+          "Enrico M. Malatesta",
+          "Francesco Zamponi"
+        ]
+      }
+    ]
+  },
+  "Chaudhari2017EntropySGD": {
+    "openalex_id": "W2552194003",
+    "title": "Entropy-SGD: biasing gradient descent into wide valleys*",
+    "cited_by_count": 288,
+    "recent_citers": [
+      {
+        "title": "Interpretable machine learning: Fundamental principles and 10 grand challenges",
+        "year": 2022,
+        "doi": "https://doi.org/10.1214/21-ss133",
+        "venue": "Statistics Surveys",
+        "cited_by_count": 838,
+        "url": "https://doi.org/10.1214/21-ss133",
+        "authors": [
+          "Cynthia Rudin",
+          "Chaofan Chen",
+          "Zhi Chen",
+          "Haiyang Huang",
+          "Lesia Semenova",
+          "Chudi Zhong"
+        ]
+      },
+      {
+        "title": "Network geometry",
+        "year": 2021,
+        "doi": "https://doi.org/10.1038/s42254-020-00264-4",
+        "venue": "Nature Reviews Physics",
+        "cited_by_count": 210,
+        "url": "https://doi.org/10.1038/s42254-020-00264-4",
+        "authors": [
+          "Marián Boguñá",
+          "Ivan Bonamassa",
+          "Manlio De Domenico",
+          "Shlomo Havlin",
+          "Dmitri Krioukov",
+          "M. Ángeles Serrano"
+        ]
+      },
+      {
+        "title": "ADAHESSIAN: An Adaptive Second Order Optimizer for Machine Learning",
+        "year": 2021,
+        "doi": "https://doi.org/10.1609/aaai.v35i12.17275",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "cited_by_count": 183,
+        "url": "https://doi.org/10.1609/aaai.v35i12.17275",
+        "authors": [
+          "Zhewei Yao",
+          "Amir Gholami",
+          "Sheng Shen",
+          "Mustafa Mustafa",
+          "Kurt Keutzer",
+          "Michael W. Mahoney"
+        ]
+      },
+      {
+        "title": "Memorizing without overfitting: Bias, variance, and interpolation in overparameterized models",
+        "year": 2022,
+        "doi": "https://doi.org/10.1103/physrevresearch.4.013201",
+        "venue": "Physical Review Research",
+        "cited_by_count": 72,
+        "url": "https://doi.org/10.1103/physrevresearch.4.013201",
+        "authors": [
+          "Jason W. Rocks",
+          "Pankaj Mehta"
+        ]
+      },
+      {
+        "title": "RDA: Robust Domain Adaptation via Fourier Adversarial Attacking",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/iccv48922.2021.00886",
+        "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+        "cited_by_count": 70,
+        "url": "https://doi.org/10.1109/iccv48922.2021.00886",
+        "authors": [
+          "Jiaxing Huang",
+          "Dayan Guan",
+          "Aoran Xiao",
+          "Shijian Lu"
+        ]
+      },
+      {
+        "title": "Annealing Knowledge Distillation",
+        "year": 2021,
+        "doi": "https://doi.org/10.18653/v1/2021.eacl-main.212",
+        "venue": null,
+        "cited_by_count": 69,
+        "url": "https://doi.org/10.18653/v1/2021.eacl-main.212",
+        "authors": [
+          "Aref Jafari",
+          "Mehdi Rezagholizadeh",
+          "Pranav Sharma",
+          "Ali Ghodsi"
+        ]
+      },
+      {
+        "title": "On the Existence of Simpler Machine Learning Models",
+        "year": 2022,
+        "doi": "https://doi.org/10.1145/3531146.3533232",
+        "venue": "2022 ACM Conference on Fairness, Accountability, and Transparency",
+        "cited_by_count": 67,
+        "url": "https://doi.org/10.1145/3531146.3533232",
+        "authors": [
+          "Lesia Semenova",
+          "Cynthia Rudin",
+          "Ronald Parr"
+        ]
+      },
+      {
+        "title": "Towards Efficient and Scalable Sharpness-Aware Minimization",
+        "year": 2022,
+        "doi": "https://doi.org/10.1109/cvpr52688.2022.01204",
+        "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "cited_by_count": 61,
+        "url": "https://doi.org/10.1109/cvpr52688.2022.01204",
+        "authors": [
+          "Yong Liu",
+          "Siqi Mai",
+          "Xiangning Chen",
+          "Cho‐Jui Hsieh",
+          "Yang You"
+        ]
+      }
+    ]
+  },
+  "Dinh2017SharpMinima": {
+    "openalex_id": "W2605372163",
+    "title": "Sharp Minima Can Generalize For Deep Nets",
+    "cited_by_count": 148,
+    "recent_citers": [
+      {
+        "title": "Interpretable machine learning: Fundamental principles and 10 grand challenges",
+        "year": 2022,
+        "doi": "https://doi.org/10.1214/21-ss133",
+        "venue": "Statistics Surveys",
+        "cited_by_count": 838,
+        "url": "https://doi.org/10.1214/21-ss133",
+        "authors": [
+          "Cynthia Rudin",
+          "Chaofan Chen",
+          "Zhi Chen",
+          "Haiyang Huang",
+          "Lesia Semenova",
+          "Chudi Zhong"
+        ]
+      },
+      {
+        "title": "Robust Overfitting may be mitigated by properly learned smoothening",
+        "year": 2021,
+        "doi": null,
+        "venue": null,
+        "cited_by_count": 69,
+        "url": "https://openalex.org/W3124432598",
+        "authors": [
+          "Tianlong Chen",
+          "Zhenyu Zhang",
+          "Sijia Liu",
+          "Shiyu Chang",
+          "Zhangyang Wang"
+        ]
+      },
+      {
+        "title": "Artificial Neural Variability for Deep Learning: On Overfitting, Noise Memorization, and Catastrophic Forgetting",
+        "year": 2021,
+        "doi": "https://doi.org/10.1162/neco_a_01403",
+        "venue": "Neural Computation",
+        "cited_by_count": 49,
+        "url": "https://doi.org/10.1162/neco_a_01403",
+        "authors": [
+          "Zeke Xie",
+          "Fengxiang He",
+          "Shaopeng Fu",
+          "Issei Sato",
+          "Dacheng Tao",
+          "Masashi Sugiyama"
+        ]
+      },
+      {
+        "title": "Regularizing Neural Networks via Adversarial Model Perturbation",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/cvpr46437.2021.00806",
+        "venue": null,
+        "cited_by_count": 44,
+        "url": "https://doi.org/10.1109/cvpr46437.2021.00806",
+        "authors": [
+          "Yaowei Zheng",
+          "Richong Zhang",
+          "Yongyi Mao"
+        ]
+      },
+      {
+        "title": "Relating Adversarially Robust Generalization to Flat Minima",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/iccv48922.2021.00771",
+        "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+        "cited_by_count": 29,
+        "url": "https://doi.org/10.1109/iccv48922.2021.00771",
+        "authors": [
+          "David Stutz",
+          "Matthias Hein",
+          "Bernt Schiele"
+        ]
+      },
+      {
+        "title": "Machine learning meets physics: A two-way street",
+        "year": 2024,
+        "doi": "https://doi.org/10.1073/pnas.2403580121",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "cited_by_count": 28,
+        "url": "https://doi.org/10.1073/pnas.2403580121",
+        "authors": [
+          "Herbert Levine",
+          "Yuhai Tu"
+        ]
+      },
+      {
+        "title": "Is it enough to optimize CNN architectures on ImageNet?",
+        "year": 2022,
+        "doi": "https://doi.org/10.3389/fcomp.2022.1041703",
+        "venue": "Frontiers in Computer Science",
+        "cited_by_count": 26,
+        "url": "https://doi.org/10.3389/fcomp.2022.1041703",
+        "authors": [
+          "Lukas Tuggener",
+          "Jürgen Schmidhuber",
+          "Thilo Stadelmann"
+        ]
+      },
+      {
+        "title": "Efficient Sharpness-aware Minimization for Improved Training of Neural Networks",
+        "year": 2021,
+        "doi": "https://doi.org/10.48550/arxiv.2110.03141",
+        "venue": "arXiv (Cornell University)",
+        "cited_by_count": 26,
+        "url": "https://doi.org/10.48550/arxiv.2110.03141",
+        "authors": [
+          "Jiawei Du",
+          "Hanshu Yan",
+          "Jiashi Feng",
+          "Joey Tianyi Zhou",
+          "Liangli Zhen",
+          "Rick Siow Mong Goh"
+        ]
+      }
+    ]
+  },
+  "Jiang2020FantasticGeneralization": {
+    "openalex_id": "W2992043355",
+    "title": "Fantastic Generalization Measures and Where to Find Them",
+    "cited_by_count": 153,
+    "recent_citers": [
+      {
+        "title": "Effect of data encoding on the expressive power of variational quantum-machine-learning models",
+        "year": 2021,
+        "doi": "https://doi.org/10.1103/physreva.103.032430",
+        "venue": "Physical review. A/Physical review, A",
+        "cited_by_count": 690,
+        "url": "https://doi.org/10.1103/physreva.103.032430",
+        "authors": [
+          "Maria Schuld",
+          "Ryan Sweke",
+          "Johannes Jakob Meyer"
+        ]
+      },
+      {
+        "title": "Evaluation of the MACE force field architecture: From medicinal chemistry to materials science",
+        "year": 2023,
+        "doi": "https://doi.org/10.1063/5.0155322",
+        "venue": "The Journal of Chemical Physics",
+        "cited_by_count": 175,
+        "url": "https://doi.org/10.1063/5.0155322",
+        "authors": [
+          "Dávid Péter Kovács",
+          "Ilyes Batatia",
+          "Eszter Sára Arany",
+          "Gábor Cśanyi"
+        ]
+      },
+      {
+        "title": "The Modern Mathematics of Deep Learning",
+        "year": 2022,
+        "doi": "https://doi.org/10.1017/9781009025096.002",
+        "venue": "Cambridge University Press eBooks",
+        "cited_by_count": 116,
+        "url": "https://doi.org/10.1017/9781009025096.002",
+        "authors": [
+          "Julius Berner",
+          "Philipp Grohs",
+          "Gitta Kutyniok",
+          "Philipp Petersen"
+        ]
+      },
+      {
+        "title": "Encoding-dependent generalization bounds for parametrized quantum circuits",
+        "year": 2021,
+        "doi": "https://doi.org/10.17169/refubium-33753",
+        "venue": "arXiv (Cornell University)",
+        "cited_by_count": 98,
+        "url": "https://doi.org/10.17169/refubium-33753",
+        "authors": [
+          "Caro, Matthias C.",
+          "Elies Gil-Fuster",
+          "Johannes Jakob Meyer",
+          "Jens Eisert",
+          "Ryan Sweke"
+        ]
+      },
+      {
+        "title": "Boundary Smoothing for Named Entity Recognition",
+        "year": 2022,
+        "doi": "https://doi.org/10.18653/v1/2022.acl-long.490",
+        "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "cited_by_count": 92,
+        "url": "https://doi.org/10.18653/v1/2022.acl-long.490",
+        "authors": [
+          "Enwei Zhu",
+          "Jinpeng Li"
+        ]
+      },
+      {
+        "title": "Are Labels Always Necessary for Classifier Accuracy Evaluation?",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/cvpr46437.2021.01482",
+        "venue": null,
+        "cited_by_count": 75,
+        "url": "https://doi.org/10.1109/cvpr46437.2021.01482",
+        "authors": [
+          "Weijian Deng",
+          "Liang Zheng"
+        ]
+      },
+      {
+        "title": "Understanding quantum machine learning also requires rethinking generalization",
+        "year": 2024,
+        "doi": "https://doi.org/10.1038/s41467-024-45882-z",
+        "venue": "Nature Communications",
+        "cited_by_count": 68,
+        "url": "https://doi.org/10.1038/s41467-024-45882-z",
+        "authors": [
+          "Elies Gil-Fuster",
+          "Jens Eisert",
+          "Carlos Bravo-Prieto"
+        ]
+      },
+      {
+        "title": "Mathematical Aspects of Deep Learning",
+        "year": 2022,
+        "doi": "https://doi.org/10.1017/9781009025096",
+        "venue": "Cambridge University Press eBooks",
+        "cited_by_count": 63,
+        "url": "https://doi.org/10.1017/9781009025096",
+        "authors": [
+          "Philipp Grohs",
+          "Kutyniok, Gitta 1972-"
+        ]
+      }
+    ]
+  },
+  "Foret2021SharpnessAware": {
+    "openalex_id": "W3091401866",
+    "title": "Sharpness-Aware Minimization for Efficiently Improving Generalization",
+    "cited_by_count": 104,
+    "recent_citers": [
+      {
+        "title": "Combining EfficientNet and Vision Transformers for Video Deepfake Detection",
+        "year": 2022,
+        "doi": "https://doi.org/10.1007/978-3-031-06433-3_19",
+        "venue": "Lecture notes in computer science",
+        "cited_by_count": 258,
+        "url": "https://doi.org/10.1007/978-3-031-06433-3_19",
+        "authors": [
+          "Davide Alessandro Coccomini",
+          "Nicola Messina",
+          "Claudio Gennaro",
+          "Fabrizio Falchi"
+        ]
+      },
+      {
+        "title": "Vision Transformers Are Robust Learners",
+        "year": 2022,
+        "doi": "https://doi.org/10.1609/aaai.v36i2.20103",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "cited_by_count": 206,
+        "url": "https://doi.org/10.1609/aaai.v36i2.20103",
+        "authors": [
+          "Sayak Paul",
+          "Pin‐Yu Chen"
+        ]
+      },
+      {
+        "title": "Advanced metaheuristic optimization techniques in applications of deep neural networks: a review",
+        "year": 2021,
+        "doi": "https://doi.org/10.1007/s00521-021-05960-5",
+        "venue": "Neural Computing and Applications",
+        "cited_by_count": 192,
+        "url": "https://doi.org/10.1007/s00521-021-05960-5",
+        "authors": [
+          "Mohamed Abd Elaziz",
+          "Abdelghani Dahou",
+          "Laith Abualigah",
+          "Liyang Yu",
+          "Mohammad Alshinwan",
+          "Ahmad M. Khasawneh"
+        ]
+      },
+      {
+        "title": "Transformers in Vision: A Survey",
+        "year": 2022,
+        "doi": "https://doi.org/10.1145/3505244",
+        "venue": "ACM Computing Surveys",
+        "cited_by_count": 125,
+        "url": "https://doi.org/10.1145/3505244",
+        "authors": [
+          "Salman Khan",
+          "Muzammal Naseer",
+          "Munawar Hayat",
+          "Syed Waqas Zamir",
+          "Fahad Shahbaz Khan",
+          "Mubarak Shah"
+        ]
+      },
+      {
+        "title": "On Efficient Training of Large-Scale Deep Learning Models",
+        "year": 2024,
+        "doi": "https://doi.org/10.1145/3700439",
+        "venue": "ACM Computing Surveys",
+        "cited_by_count": 55,
+        "url": "https://doi.org/10.1145/3700439",
+        "authors": [
+          "Li Shen",
+          "Yan Sun",
+          "Zhiyuan Yu",
+          "Liang Ding",
+          "Xinmei Tian",
+          "Dacheng Tao"
+        ]
+      },
+      {
+        "title": "User-friendly Introduction to PAC-Bayes Bounds",
+        "year": 2024,
+        "doi": "https://doi.org/10.1561/2200000100",
+        "venue": "Foundations and Trends® in Machine Learning",
+        "cited_by_count": 50,
+        "url": "https://doi.org/10.1561/2200000100",
+        "authors": [
+          "Pierre Alquier"
+        ]
+      },
+      {
+        "title": "Sharpness-Aware Minimization Improves Language Model Generalization",
+        "year": 2022,
+        "doi": "https://doi.org/10.18653/v1/2022.acl-long.508",
+        "venue": "Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "cited_by_count": 43,
+        "url": "https://doi.org/10.18653/v1/2022.acl-long.508",
+        "authors": [
+          "Dara Bahri",
+          "Hossein Mobahi",
+          "Yi Tay"
+        ]
+      },
+      {
+        "title": "PCA Dimensionality Reduction Method for Image Classification",
+        "year": 2021,
+        "doi": "https://doi.org/10.1007/s11063-021-10632-5",
+        "venue": "Neural Processing Letters",
+        "cited_by_count": 43,
+        "url": "https://doi.org/10.1007/s11063-021-10632-5",
+        "authors": [
+          "Baiting Zhao",
+          "Xiao Dong",
+          "Yongcun Guo",
+          "Xiaofen Jia",
+          "Yourui Huang"
+        ]
+      }
+    ]
+  },
+  "Zhang2017RethinkingGeneralization": {
+    "openalex_id": "W2950220847",
+    "title": "Understanding deep learning requires rethinking generalization",
+    "cited_by_count": 1091,
+    "recent_citers": [
+      {
+        "title": "A survey on deep learning and its applications",
+        "year": 2021,
+        "doi": "https://doi.org/10.1016/j.cosrev.2021.100379",
+        "venue": "Computer Science Review",
+        "cited_by_count": 1513,
+        "url": "https://doi.org/10.1016/j.cosrev.2021.100379",
+        "authors": [
+          "Shi Dong",
+          "Ping Wang",
+          "Khushnood Abbas"
+        ]
+      },
+      {
+        "title": "Surprises in high-dimensional ridgeless least squares interpolation",
+        "year": 2022,
+        "doi": "https://doi.org/10.1214/21-aos2133",
+        "venue": "The Annals of Statistics",
+        "cited_by_count": 494,
+        "url": "https://doi.org/10.1214/21-aos2133",
+        "authors": [
+          "Trevor Hastie",
+          "Andrea Montanari",
+          "Saharon Rosset",
+          "Ryan J. Tibshirani"
+        ]
+      },
+      {
+        "title": "Explainable Deep Learning: A Field Guide for the Uninitiated",
+        "year": 2022,
+        "doi": "https://doi.org/10.1613/jair.1.13200",
+        "venue": "Journal of Artificial Intelligence Research",
+        "cited_by_count": 408,
+        "url": "https://doi.org/10.1613/jair.1.13200",
+        "authors": [
+          "Gabriëlle Ras",
+          "Ning Xie",
+          "Marcel van Gerven",
+          "Derek Doran"
+        ]
+      },
+      {
+        "title": "Deep Neural Networks for Estimation and Inference",
+        "year": 2021,
+        "doi": "https://doi.org/10.3982/ecta16901",
+        "venue": "Econometrica",
+        "cited_by_count": 308,
+        "url": "https://doi.org/10.3982/ecta16901",
+        "authors": [
+          "Max H. Farrell",
+          "Tengyuan Liang",
+          "Sanjog Misra"
+        ]
+      },
+      {
+        "title": "Denoising Implicit Feedback for Recommendation",
+        "year": 2021,
+        "doi": "https://doi.org/10.1145/3437963.3441800",
+        "venue": null,
+        "cited_by_count": 273,
+        "url": "https://doi.org/10.1145/3437963.3441800",
+        "authors": [
+          "Wenjie Wang",
+          "Fuli Feng",
+          "Xiangnan He",
+          "Liqiang Nie",
+          "Tat‐Seng Chua"
+        ]
+      },
+      {
+        "title": "Factors Influencing Entrepreneurial Intention of University Students in China: Integrating the Perceived University Support and Theory of Planned Behavior",
+        "year": 2021,
+        "doi": "https://doi.org/10.3390/su13084519",
+        "venue": "Sustainability",
+        "cited_by_count": 227,
+        "url": "https://doi.org/10.3390/su13084519",
+        "authors": [
+          "Yushun Su",
+          "Zeren Zhu",
+          "Jingwen Chen",
+          "Yuanqing Jin",
+          "Ting Wang",
+          "Chien‐Liang Lin"
+        ]
+      },
+      {
+        "title": "AI-Based Intrusion Detection Systems for In-Vehicle Networks: A Survey",
+        "year": 2022,
+        "doi": "https://doi.org/10.1145/3570954",
+        "venue": "ACM Computing Surveys",
+        "cited_by_count": 208,
+        "url": "https://doi.org/10.1145/3570954",
+        "authors": [
+          "Sampath Rajapaksha",
+          "Harsha Kalutarage",
+          "M. Omar Al-Kadri",
+          "Andrei Petrovski",
+          "Garikayi Madzudzo",
+          "Madeline Cheah"
+        ]
+      },
+      {
+        "title": "A Vision-Based Social Distancing and Critical Density Detection System for COVID-19",
+        "year": 2021,
+        "doi": "https://doi.org/10.3390/s21134608",
+        "venue": "Sensors",
+        "cited_by_count": 197,
+        "url": "https://doi.org/10.3390/s21134608",
+        "authors": [
+          "Dongfang Yang",
+          "Ekim Yurtsever",
+          "Vishnu Renganathan",
+          "Keith Redmill",
+          "Ümi̇t Özgüner"
+        ]
+      }
+    ]
+  },
+  "Baldassi2020ShapingLandscape": {
+    "openalex_id": "W2998438489",
+    "title": "Shaping the learning landscape in neural networks around wide flat minima",
+    "cited_by_count": 88,
+    "recent_citers": [
+      {
+        "title": "Current understanding of biological identity at the nanoscale and future prospects",
+        "year": 2021,
+        "doi": "https://doi.org/10.1038/s41565-021-00860-0",
+        "venue": "Nature Nanotechnology",
+        "cited_by_count": 205,
+        "url": "https://doi.org/10.1038/s41565-021-00860-0",
+        "authors": [
+          "Kenneth A. Dawson",
+          "Yan Yan"
+        ]
+      },
+      {
+        "title": "The inverse variance–flatness relation in stochastic gradient descent is critical for finding flat minima",
+        "year": 2021,
+        "doi": "https://doi.org/10.1073/pnas.2015617118",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "cited_by_count": 59,
+        "url": "https://doi.org/10.1073/pnas.2015617118",
+        "authors": [
+          "Yu Feng",
+          "Yuhai Tu"
+        ]
+      },
+      {
+        "title": "ps-CALR: Periodic-Shift Cosine Annealing Learning Rate for Deep Neural Networks",
+        "year": 2023,
+        "doi": "https://doi.org/10.1109/access.2023.3340719",
+        "venue": "IEEE Access",
+        "cited_by_count": 55,
+        "url": "https://doi.org/10.1109/access.2023.3340719",
+        "authors": [
+          "Olanrewaju Victor Johnson",
+          "XinYing Chew",
+          "Khai Wah Khaw",
+          "Ming Ha Lee"
+        ]
+      },
+      {
+        "title": "Comparative Analysis of Activation Functions Used in the Hidden Layers of Deep Neural Networks",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/hora52670.2021.9461312",
+        "venue": "2021 3rd International Congress on Human-Computer Interaction, Optimization and Robotic Applications (HORA)",
+        "cited_by_count": 39,
+        "url": "https://doi.org/10.1109/hora52670.2021.9461312",
+        "authors": [
+          "Martin Kaloev",
+          "Georgi Krastev"
+        ]
+      },
+      {
+        "title": "Class-Conditional Sharpness-Aware Minimization for Deep Long-Tailed Recognition",
+        "year": 2023,
+        "doi": "https://doi.org/10.1109/cvpr52729.2023.00341",
+        "venue": null,
+        "cited_by_count": 38,
+        "url": "https://doi.org/10.1109/cvpr52729.2023.00341",
+        "authors": [
+          "Zhipeng Zhou",
+          "Lanqing Li",
+          "Peilin Zhao",
+          "Pheng‐Ann Heng",
+          "Wei Gong"
+        ]
+      },
+      {
+        "title": "Unveiling the Structure of Wide Flat Minima in Neural Networks",
+        "year": 2021,
+        "doi": "https://doi.org/10.1103/physrevlett.127.278301",
+        "venue": "Physical Review Letters",
+        "cited_by_count": 33,
+        "url": "https://doi.org/10.1103/physrevlett.127.278301",
+        "authors": [
+          "Carlo Baldassi",
+          "Clarissa Lauditi",
+          "Enrico M. Malatesta",
+          "Gabriele Perugini",
+          "Riccardo Zecchina"
+        ]
+      },
+      {
+        "title": "Learning through atypical phase transitions in overparameterized neural networks",
+        "year": 2022,
+        "doi": "https://doi.org/10.1103/physreve.106.014116",
+        "venue": "Physical review. E",
+        "cited_by_count": 28,
+        "url": "https://doi.org/10.1103/physreve.106.014116",
+        "authors": [
+          "Carlo Baldassi",
+          "Clarissa Lauditi",
+          "Enrico M. Malatesta",
+          "Rosalba Pacelli",
+          "Gabriele Perugini",
+          "Riccardo Zecchina"
+        ]
+      },
+      {
+        "title": "On the different regimes of stochastic gradient descent",
+        "year": 2024,
+        "doi": "https://doi.org/10.1073/pnas.2316301121",
+        "venue": "Proceedings of the National Academy of Sciences",
+        "cited_by_count": 28,
+        "url": "https://doi.org/10.1073/pnas.2316301121",
+        "authors": [
+          "Antonio Sclocchi",
+          "Matthieu Wyart"
+        ]
+      }
+    ]
+  },
+  "Andriushchenko2023ModernSharpness": {
+    "openalex_id": "W4321012955",
+    "title": "A Modern Look at the Relationship between Sharpness and Generalization",
+    "cited_by_count": 2,
+    "recent_citers": [
+      {
+        "title": "Bringing the Discussion of Minima Sharpness to the Audio Domain: A Filter-Normalised Evaluation for Acoustic Scene Classification",
+        "year": 2024,
+        "doi": "https://doi.org/10.1109/icassp48485.2024.10446177",
+        "venue": null,
+        "cited_by_count": 5,
+        "url": "https://doi.org/10.1109/icassp48485.2024.10446177",
+        "authors": [
+          "Manuel Milling",
+          "Andreas Triantafyllopoulos",
+          "Iosif Tsangko",
+          "Simon Rampp",
+          "Björn W. Schuller"
+        ]
+      },
+      {
+        "title": "Stochastic Gradient Descent outperforms Gradient Descent in recovering a high-dimensional signal in a glassy energy landscape",
+        "year": 2023,
+        "doi": "https://doi.org/10.48550/arxiv.2309.04788",
+        "venue": "arXiv (Cornell University)",
+        "cited_by_count": 2,
+        "url": "https://doi.org/10.48550/arxiv.2309.04788",
+        "authors": [
+          "Persia Jana Kamali",
+          "Pierfrancesco Urbani"
+        ]
+      }
+    ]
+  },
+  "Mele2025DensityStates": {
+    "openalex_id": "W2657631929",
+    "title": "Methods for interpreting and understanding deep neural networks",
+    "cited_by_count": 2705,
+    "recent_citers": [
+      {
+        "title": "Explainable Artificial Intelligence (XAI): What we know and what is left to attain Trustworthy Artificial Intelligence",
+        "year": 2023,
+        "doi": "https://doi.org/10.1016/j.inffus.2023.101805",
+        "venue": "Information Fusion",
+        "cited_by_count": 1507,
+        "url": "https://doi.org/10.1016/j.inffus.2023.101805",
+        "authors": [
+          "Sajid Ali",
+          "Tamer Abuhmed",
+          "Shaker El–Sappagh",
+          "Khan Muhammad",
+          "José M. Alonso",
+          "Roberto Confalonieri"
+        ]
+      },
+      {
+        "title": "Explaining Deep Neural Networks and Beyond: A Review of Methods and Applications",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/jproc.2021.3060483",
+        "venue": "Proceedings of the IEEE",
+        "cited_by_count": 1318,
+        "url": "https://doi.org/10.1109/jproc.2021.3060483",
+        "authors": [
+          "Wojciech Samek",
+          "Grégoire Montavon",
+          "Sebastian Lapuschkin",
+          "Christopher J. Anders",
+          "Klaus‐Robert Müller"
+        ]
+      },
+      {
+        "title": "A Survey on the Explainability of Supervised Machine Learning",
+        "year": 2021,
+        "doi": "https://doi.org/10.1613/jair.1.12228",
+        "venue": "Journal of Artificial Intelligence Research",
+        "cited_by_count": 960,
+        "url": "https://doi.org/10.1613/jair.1.12228",
+        "authors": [
+          "Nadia Burkart",
+          "Marco F. Huber"
+        ]
+      },
+      {
+        "title": "Structure-based protein function prediction using graph convolutional networks",
+        "year": 2021,
+        "doi": "https://doi.org/10.1038/s41467-021-23303-9",
+        "venue": "Nature Communications",
+        "cited_by_count": 905,
+        "url": "https://doi.org/10.1038/s41467-021-23303-9",
+        "authors": [
+          "Vladimir Gligorijević",
+          "P. Douglas Renfrew",
+          "Tomasz Kościółek",
+          "Julia Koehler Leman",
+          "Daniel Berenberg",
+          "Tommi Vatanen"
+        ]
+      },
+      {
+        "title": "Combining Machine Learning and Computational Chemistry for Predictive Insights Into Chemical Systems",
+        "year": 2021,
+        "doi": "https://doi.org/10.1021/acs.chemrev.1c00107",
+        "venue": "Chemical Reviews",
+        "cited_by_count": 812,
+        "url": "https://doi.org/10.1021/acs.chemrev.1c00107",
+        "authors": [
+          "John A. Keith",
+          "Valentín Vassilev-Galindo",
+          "Bingqing Cheng",
+          "Stefan Chmiela",
+          "Michael Gastegger",
+          "Klaus‐Robert Müller"
+        ]
+      },
+      {
+        "title": "A Unifying Review of Deep and Shallow Anomaly Detection",
+        "year": 2021,
+        "doi": "https://doi.org/10.1109/jproc.2021.3052449",
+        "venue": "Proceedings of the IEEE",
+        "cited_by_count": 808,
+        "url": "https://doi.org/10.1109/jproc.2021.3052449",
+        "authors": [
+          "Lukas Ruff",
+          "Jacob R. Kauffmann",
+          "Robert A. Vandermeulen",
+          "Gregoire Montavon",
+          "Wojciech Samek",
+          "Marius Kloft"
+        ]
+      },
+      {
+        "title": "Addressing bias in big data and AI for health care: A call for open science",
+        "year": 2021,
+        "doi": "https://doi.org/10.1016/j.patter.2021.100347",
+        "venue": "Patterns",
+        "cited_by_count": 792,
+        "url": "https://doi.org/10.1016/j.patter.2021.100347",
+        "authors": [
+          "Natalia Norori",
+          "Qiyang Hu",
+          "Florence M. Aellen",
+          "Francesca Dalia Faraci",
+          "Athina Tzovara"
+        ]
+      },
+      {
+        "title": "Unbox the black-box for the medical explainable AI via multi-modal and multi-centre data fusion: A mini-review, two showcases and beyond",
+        "year": 2021,
+        "doi": "https://doi.org/10.1016/j.inffus.2021.07.016",
+        "venue": "Information Fusion",
+        "cited_by_count": 697,
+        "url": "https://doi.org/10.1016/j.inffus.2021.07.016",
+        "authors": [
+          "Guang Yang",
+          "Qinghao Ye",
+          "Jun Xia"
+        ]
+      }
+    ]
+  },
+  "Garipov2018LossSurfaces": {
+    "openalex_id": "W2788838181",
+    "title": "Loss Surfaces, Mode Connectivity, and Fast Ensembling of DNNs",
+    "cited_by_count": 213,
+    "recent_citers": [
+      {
+        "title": "YOLOv7: Trainable Bag-of-Freebies Sets New State-of-the-Art for Real-Time Object Detectors",
+        "year": 2023,
+        "doi": "https://doi.org/10.1109/cvpr52729.2023.00721",
+        "venue": null,
+        "cited_by_count": 10939,
+        "url": "https://doi.org/10.1109/cvpr52729.2023.00721",
+        "authors": [
+          "Chien-Yao Wang",
+          "Alexey Bochkovskiy",
+          "Hong-Yuan Mark Liao"
+        ]
+      },
+      {
+        "title": "cACP-DeepGram: Classification of anticancer peptides via deep neural network and skip-gram-based word embedding model",
+        "year": 2022,
+        "doi": "https://doi.org/10.1016/j.artmed.2022.102349",
+        "venue": "Artificial Intelligence in Medicine",
+        "cited_by_count": 133,
+        "url": "https://doi.org/10.1016/j.artmed.2022.102349",
+        "authors": [
+          "Shahid Akbar",
+          "Maqsood Hayat",
+          "Muhammad Tahir",
+          "Salman Khan",
+          "Fawaz Khaled Alarfaj"
+        ]
+      },
+      {
+        "title": "Fixing Data Augmentation to Improve Adversarial Robustness",
+        "year": 2021,
+        "doi": "https://doi.org/10.48550/arxiv.2103.01946",
+        "venue": "arXiv (Cornell University)",
+        "cited_by_count": 104,
+        "url": "https://doi.org/10.48550/arxiv.2103.01946",
+        "authors": [
+          "Sylvestre-Alvise Rebuffi",
+          "Sven Gowal",
+          "Dan A. Calian",
+          "Florian Stimberg",
+          "Olivia Wiles",
+          "Timothy Mann"
+        ]
+      },
+      {
+        "title": "Sharpness-Aware Gradient Matching for Domain Generalization",
+        "year": 2023,
+        "doi": "https://doi.org/10.1109/cvpr52729.2023.00367",
+        "venue": null,
+        "cited_by_count": 98,
+        "url": "https://doi.org/10.1109/cvpr52729.2023.00367",
+        "authors": [
+          "Pengfei Wang",
+          "Zhaoxiang Zhang",
+          "Zhen Lei",
+          "Lei Zhang"
+        ]
+      },
+      {
+        "title": "An Overview of Backdoor Attacks Against Deep Neural Networks and Possible Defences",
+        "year": 2022,
+        "doi": "https://doi.org/10.1109/ojsp.2022.3190213",
+        "venue": "IEEE Open Journal of Signal Processing",
+        "cited_by_count": 79,
+        "url": "https://doi.org/10.1109/ojsp.2022.3190213",
+        "authors": [
+          "Wei Guo",
+          "Benedetta Tondi",
+          "Mauro Barni"
+        ]
+      },
+      {
+        "title": "Federated Domain Generalization with Generalization Adjustment",
+        "year": 2023,
+        "doi": "https://doi.org/10.1109/cvpr52729.2023.00385",
+        "venue": null,
+        "cited_by_count": 76,
+        "url": "https://doi.org/10.1109/cvpr52729.2023.00385",
+        "authors": [
+          "Ruipeng Zhang",
+          "Qinwei Xu",
+          "Jiangchao Yao",
+          "Ya Zhang",
+          "Qi Tian",
+          "Yanfeng Wang"
+        ]
+      },
+      {
+        "title": "Deep Hybrid Network for Land Cover Semantic Segmentation in High-Spatial Resolution Satellite Images",
+        "year": 2021,
+        "doi": "https://doi.org/10.3390/info12060230",
+        "venue": "Information",
+        "cited_by_count": 54,
+        "url": "https://doi.org/10.3390/info12060230",
+        "authors": [
+          "Sultan Daud Khan",
+          "Louai Alarabi",
+          "Saleh Basalamah"
+        ]
+      },
+      {
+        "title": "Towards Better Plasticity-Stability Trade-off in Incremental Learning: A Simple Linear Connector",
+        "year": 2022,
+        "doi": "https://doi.org/10.1109/cvpr52688.2022.00019",
+        "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+        "cited_by_count": 52,
+        "url": "https://doi.org/10.1109/cvpr52688.2022.00019",
+        "authors": [
+          "Guoliang Lin",
+          "Hanlu Chu",
+          "Hanjiang Lai"
+        ]
+      }
+    ]
+  }
+}

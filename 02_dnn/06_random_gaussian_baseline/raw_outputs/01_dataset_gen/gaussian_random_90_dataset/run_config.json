@@ -1,0 +1,9 @@
+{
+  "datasets_per_beta": 90,
+  "generator": "iid_gaussian_features_balanced_random_labels_v1",
+  "run_name": "gaussian_random_90_dataset",
+  "seed_formula": "606000000 + 1000 * source_sorted_index + 100000 * dataset_id + 1234",
+  "selected_betas": [
+    0.05
+  ]
+}

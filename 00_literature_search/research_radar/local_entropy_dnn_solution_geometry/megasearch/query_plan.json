@@ -1,0 +1,65 @@
+{
+  "topic": "local entropy, Franz-Parisi potential, shell sampling, and solution-space geometry for neural networks and dataset complexity",
+  "depth": 5,
+  "facets": [
+    {
+      "id": "local_entropy_flat_minima",
+      "query": "\"local entropy\" neural networks flat minima wide valleys",
+      "notes": "Core local-entropy/flat-minima bridge."
+    },
+    {
+      "id": "franz_parisi_perceptron",
+      "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+      "notes": "Statistical-physics lineage and perceptron reference theory."
+    },
+    {
+      "id": "robust_ensembles_dense_clusters",
+      "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+      "notes": "Baldassi-Zecchina dense-cluster line."
+    },
+    {
+      "id": "entropy_sgd_wide_valleys",
+      "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+      "notes": "Optimization methods that explicitly bias toward local entropy."
+    },
+    {
+      "id": "sharpness_flatness_generalization",
+      "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+      "notes": "Adjacent flatness and PAC-Bayes debate."
+    },
+    {
+      "id": "loss_landscape_connectivity",
+      "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+      "notes": "Solution-space topology and connectivity."
+    },
+    {
+      "id": "random_labels_dataset_complexity",
+      "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+      "notes": "Dataset/rule complexity and label randomization baselines."
+    },
+    {
+      "id": "partition_function_sampling",
+      "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+      "notes": "Normalizing-constant estimation and SMC methods."
+    },
+    {
+      "id": "von_mises_fisher_shell",
+      "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+      "notes": "Directional shell proposal and hypersphere sampling."
+    },
+    {
+      "id": "recent_density_states",
+      "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+      "notes": "Recent density-of-states/local geometry papers."
+    }
+  ],
+  "sources": [
+    "arxiv",
+    "semanticscholar",
+    "openalex",
+    "crossref",
+    "dblp",
+    "ddg",
+    "pubmed"
+  ]
+}

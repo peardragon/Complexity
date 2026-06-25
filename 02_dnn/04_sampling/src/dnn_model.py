@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import os
+from collections import OrderedDict
 from dataclasses import dataclass
+from typing import Any
 
 import numpy as np
 
@@ -26,6 +29,44 @@ class DNNArch:
 
 ARCH = DNNArch()
 P = ARCH.param_count
+
+_TORCH_XY_CACHE: OrderedDict[tuple[Any, ...], tuple[Any, Any]] = OrderedDict()
+_TORCH_XY_CACHE_MAX = int(os.environ.get("COMPLEXITY_TORCH_XY_CACHE_MAX", "128"))
+
+
+def _array_cache_key(arr: np.ndarray) -> tuple[Any, ...]:
+    base = np.asarray(arr)
+    ptr = int(base.__array_interface__.get("data", (0,))[0])
+    return (id(base), ptr, tuple(base.shape), str(base.dtype), tuple(base.strides))
+
+
+def _get_torch_xy_tensors(
+    x: np.ndarray,
+    y: np.ndarray,
+    *,
+    device: Any,
+    dtype: Any,
+    np_dtype: Any,
+) -> tuple[Any, Any]:
+    import torch
+
+    x_base = np.asarray(x)
+    y_base = np.asarray(y)
+    key = (_array_cache_key(x_base), _array_cache_key(y_base), str(device), str(dtype))
+    try:
+        cached = _TORCH_XY_CACHE.pop(key)
+    except KeyError:
+        x_t = torch.as_tensor(np.asarray(x_base, dtype=np_dtype), device=device, dtype=dtype)
+        y_t = torch.as_tensor(normalize_labels(y_base).astype(np_dtype), device=device, dtype=dtype)
+        cached = (x_t, y_t)
+    _TORCH_XY_CACHE[key] = cached
+    while len(_TORCH_XY_CACHE) > _TORCH_XY_CACHE_MAX:
+        _TORCH_XY_CACHE.popitem(last=False)
+    return cached
+
+
+def clear_runtime_caches() -> None:
+    _TORCH_XY_CACHE.clear()
 
 
 def unpack_theta(theta: np.ndarray, arch: DNNArch = ARCH) -> tuple[np.ndarray, ...]:
@@ -95,8 +136,8 @@ def _ce_error_batch_torch(
         device_name = "cuda" if torch.cuda.is_available() else "cpu"
     device = torch.device(device_name)
     dtype = torch.float32 if str(dtype_name).lower() in {"float32", "fp32"} else torch.float64
-    x_t = torch.as_tensor(np.asarray(x, dtype=np.float32 if dtype is torch.float32 else np.float64), device=device, dtype=dtype)
-    y_t = torch.as_tensor(normalize_labels(y).astype(np.float32 if dtype is torch.float32 else np.float64), device=device, dtype=dtype)
+    np_dtype = np.float32 if dtype is torch.float32 else np.float64
+    x_t, y_t = _get_torch_xy_tensors(x, y, device=device, dtype=dtype, np_dtype=np_dtype)
     theta_np = np.asarray(theta_batch, dtype=np.float32 if dtype is torch.float32 else np.float64)
     ce_rows: list[np.ndarray] = []
     err_rows: list[np.ndarray] = []
@@ -211,8 +252,7 @@ def ce_radial_grad_batch(
     torch_device = torch.device(device_name)
     torch_dtype = torch.float32 if str(dtype).lower() in {"float32", "fp32"} else torch.float64
     np_dtype = np.float32 if torch_dtype is torch.float32 else np.float64
-    x_t = torch.as_tensor(np.asarray(x, dtype=np_dtype), device=torch_device, dtype=torch_dtype)
-    y_t = torch.as_tensor(normalize_labels(y).astype(np_dtype), device=torch_device, dtype=torch_dtype)
+    x_t, y_t = _get_torch_xy_tensors(x, y, device=torch_device, dtype=torch_dtype, np_dtype=np_dtype)
     theta_np = theta_batch.astype(np_dtype, copy=False)
     direction_np = directions.astype(np_dtype, copy=False)
 

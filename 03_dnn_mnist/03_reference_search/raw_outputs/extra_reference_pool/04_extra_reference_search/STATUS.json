@@ -1,0 +1,40 @@
+{
+  "attempts_this_run_total": 40,
+  "elapsed_s": 14.668233156204224,
+  "extra_reference_index": "/home/bjyong/Complexity/local_project/03_dnn_mnist/03_reference_search/raw_outputs/extra_reference_pool/04_extra_reference_search/extra_reference_index.csv",
+  "extra_reference_rows_total": 120,
+  "new_refs_this_run_total": 40,
+  "rule_status": [
+    {
+      "attempts_this_rule": 10,
+      "elapsed_s": 5.423319339752197,
+      "new_refs_this_run": 10,
+      "rule": "low_tv_spectral_teacher"
+    },
+    {
+      "attempts_this_rule": 10,
+      "elapsed_s": 1.5872507095336914,
+      "new_refs_this_run": 10,
+      "rule": "real_even_odd"
+    },
+    {
+      "attempts_this_rule": 10,
+      "elapsed_s": 1.072519063949585,
+      "new_refs_this_run": 10,
+      "rule": "teacher_nn"
+    },
+    {
+      "attempts_this_rule": 10,
+      "elapsed_s": 1.7648005485534668,
+      "new_refs_this_run": 10,
+      "rule": "random_label"
+    }
+  ],
+  "rules": [
+    "low_tv_spectral_teacher",
+    "real_even_odd",
+    "teacher_nn",
+    "random_label"
+  ],
+  "target_new_per_rule": 10
+}

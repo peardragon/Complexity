@@ -1,15 +1,45 @@
-﻿# Analytic theory raw output report
+# Analytic Theory Raw Output Report
 
 ## Config
 
-- 설정 파일: `01_theory/01_theory_analytic/config/default.json`
-- alpha: `0.1`
-- lambda_ref/lambda_shell: `1` / `1`
+- Config file: `01_theory/01_theory_analytic/config/default.json`
+- Alpha: `0.1`
+- Lambda ref/shell: `1` / `1`
+- Radius grid: 42 points from `0.15` to `2.20` in steps of `0.05`
+- Baseline grid: `q_grid_count=45`, `s_grid_count=31`, `s_abs_max=0.25`
 
-## Output files
+## Eq. (50) Normalization
 
-- `theory_full_rs_alpha0p1.csv`: analytic full-RS 해로 계산한 d별 phi 원천 표이다. `phi_rel` 열은 첫 radius 기준 상대 phi이며 analytic figure와 comparison stage가 사용한다.
+The regenerated outputs use the corrected selected-reference energetic
+quadrature: the conditional reference average at fixed `z0` uses the `z1`
+Gaussian weight and denominator `H0(z0)`, and the outer `Dz0` quadrature weight
+is applied exactly once.
 
-## Reproduction chain
+Focused normalization checks from the regenerated source:
 
-`src/theory_full_rs.py`가 config의 alpha/lambda와 radius grid를 사용해 CSV를 만들고, `figures/fig01_phi_by_analytic_solution_alpha0p1.png`가 이 CSV를 직접 읽어 생성된다.
+- Constant-integrand Eq. (50) quadrature normalization: `1.0016879917552934`
+- Legacy duplicated-`z0` normalization on the same check: `0.09896283472721967`
+- Baseline/full-feasible `A=0` energetic-term absolute difference at a fixed
+  test point: `5.551115123125783e-17`
+
+## Runtime
+
+- Python: `D:\Complexity\.venv\Scripts\python.exe`
+- Baseline regeneration wall time: `6.010 s`
+- Error log: `theory_full_rs_alpha0p1.err.log`, size `0`
+
+## Output Files
+
+- `theory_full_rs_alpha0p1.csv`: corrected Eq. (50) analytic full-RS baseline
+  table with 42 radius rows. The `phi_rel` column is relative to the first
+  radius and is used by the analytic figure and dense comparison stage.
+- `theory_full_rs_alpha0p1.log`: stdout from the regeneration command.
+- `theory_full_rs_alpha0p1.err.log`: stderr from the regeneration command.
+
+## Reproduction Command
+
+```powershell
+.\.venv\Scripts\python.exe 01_theory\01_theory_analytic\src\theory_full_rs.py `
+  --config 01_theory\01_theory_analytic\config\default.json `
+  --out 01_theory\01_theory_analytic\raw_outputs\theory_full_rs_alpha0p1.csv
+```

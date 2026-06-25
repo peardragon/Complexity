@@ -1,0 +1,62 @@
+stage: 06_random_gaussian_baseline.exact_shell_l2_vmf_ce_smc
+method: exact_shell_l2_vmf_adaptive_ce_tempered_smc
+run:
+  name: gaussian_exact_shell_ce_smc_18cell_90dataset_30reference_dense_to2p5_lambda1_gamma1
+  preset: random_baseline
+  seed: 20260622
+  id_suffix: GAUSS_18d90r30_dense_gpu23
+  resume_missing_units: true
+upstream:
+  dataset_raw_root: 02_dnn/06_random_gaussian_baseline/raw_outputs/01_dataset_gen/gaussian_18_beta_cell_90_dataset/raw_datasets
+  reference_search_root: 02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/reference_pool/gaussian_18_beta_cell_90_dataset_30_reference/selected_reference_pool
+model:
+  architecture: 2-48-48-1-tanh
+  P: 2545
+target:
+  gamma_ce: 1.0
+  lambda_reg: 1.0
+ensemble:
+  datasets_per_beta: 90
+  references_per_dataset: 30
+sampling:
+  r0: 0.01
+  radius_range:
+    start: 0.01
+    stop: 2.50
+    step: 0.01
+    decimals: 2
+  samples_per_ref_radius_mode: constant
+  samples_per_ref_radius_constant: 1024
+  proposal: exact_shell_l2_vmf_adaptive_ce_smc
+  h_ladder: [1, 2, 4, 6, 8, .inf]
+smc:
+  target_cess_fraction: 0.75
+  resample_ess_fraction: 0.75
+  max_steps: 120
+  min_delta_t: 0.0001
+  bisection_steps: 32
+  mh_sweeps: 1
+  move_kappa_factor: 80.0
+derivative:
+  enabled: true
+compute:
+  chunk_size: 1024
+  device: auto
+  dtype: float32
+  workers: 1
+aggregation:
+  bootstrap_replicates: 400
+qc:
+  finite_references_per_beta_radius: 2700
+  aggregate_ref_level_ess_min: 691200
+  q05_ess_fraction_min: 0.20
+  max_split_logZ_per_P_diff: 0.004
+  bootstrap_sd_phi_max: 0.012
+  smc_min_cess_fraction_min: 0.60
+  smc_max_tempering_steps: 120
+derivative_qc:
+  max_split_dlogZ_dr_per_P_diff: 0.004
+  bootstrap_sd_dphi_full_dr_max: 0.012
+  ce_replay_max_abs_diff_allowed: 0.001
+claim_policy:
+  failed_radius: no_claim

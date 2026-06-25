@@ -52,6 +52,51 @@ def load_comparison_rows(analytic_csv: Path, sampling_csv: Path) -> list[dict[st
     return rows
 
 
+def peak_radius(r: list[float], phi: list[float]) -> float:
+    pairs = [(rr, pp) for rr, pp in zip(r, phi) if math.isfinite(rr) and math.isfinite(pp)]
+    if not pairs:
+        return float("nan")
+    return float(max(pairs, key=lambda item: item[1])[0])
+
+
+def finite_n_error_rows(comparison_rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    out: list[dict[str, str]] = []
+    n_values = sorted({as_int(row, "N") for row in comparison_rows})
+    for n in n_values:
+        rows = [row for row in comparison_rows if as_int(row, "N") == n]
+        errors = [as_float(row, "finiteN_error") for row in rows if math.isfinite(as_float(row, "finiteN_error"))]
+        if not errors:
+            continue
+        radii = [as_float(row, "r") for row in rows]
+        emp = [as_float(row, "phi_emp") for row in rows]
+        theory = [as_float(row, "phi_theory") for row in rows]
+        emp_peak = peak_radius(radii, emp)
+        theory_peak = peak_radius(radii, theory)
+        peak_diff = abs(emp_peak - theory_peak) if math.isfinite(emp_peak) and math.isfinite(theory_peak) else float("nan")
+        out.append(
+            {
+                "N": str(n),
+                "inv_N": f"{1.0 / n:.17g}" if n else "nan",
+                "rmse_to_theory": f"{float(np.sqrt(np.mean(np.square(errors)))):.17g}",
+                "max_abs_error_to_theory": f"{float(np.max(np.abs(errors))):.17g}",
+                "peak_radius_emp": f"{emp_peak:.17g}",
+                "peak_radius_theory": f"{theory_peak:.17g}",
+                "peak_radius_abs_diff": f"{peak_diff:.17g}",
+            }
+        )
+    return out
+
+
+def write_csv(path: Path, rows: list[dict[str, str]], fieldnames: list[str] | None = None) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    if fieldnames is None:
+        fieldnames = list(rows[0].keys()) if rows else []
+    with path.open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def goal_status(error_rows: list[dict[str, str]], qc_rows: list[dict[str, str]]) -> dict[str, object]:
     by_n = {as_int(row, "N"): row for row in error_rows}
     n_values = sorted(by_n)
@@ -201,8 +246,28 @@ def main() -> None:
     args = parser.parse_args()
     summary_root = args.summary_root.resolve()
     comparison_rows = load_comparison_rows(args.analytic_csv.resolve(), args.sampling_csv.resolve())
-    error_rows = read_csv(summary_root / "finiteN_error_summary.csv")
+    comparison_fieldnames = [
+        "r",
+        "N",
+        "phi_theory",
+        "phi_emp",
+        "finiteN_error",
+        "weighted_CE",
+        "weighted_err",
+        "reference_count",
+        "mean_ess_frac",
+        "q05_ess_frac",
+        "max_split_logZ_per_N_diff",
+        "fallback_unit_count",
+        "fallback_unit_fraction",
+        "min_smc_cess_fraction",
+        "max_smc_step_count",
+    ]
+    write_csv(summary_root / "comparison_phi_by_N_alpha0p1.csv", comparison_rows, comparison_fieldnames)
+    error_rows = finite_n_error_rows(comparison_rows)
+    write_csv(summary_root / "finiteN_error_summary.csv", error_rows)
     qc_rows = read_csv(args.qc_csv.resolve())
+    write_csv(summary_root / "comparison_qc_summary.csv", qc_rows)
     status = goal_status(error_rows, qc_rows)
     figure = write_goal_figure(summary_root, comparison_rows, error_rows, qc_rows, status, args.figure_dir.resolve())
     report = write_report(summary_root, status, figure)

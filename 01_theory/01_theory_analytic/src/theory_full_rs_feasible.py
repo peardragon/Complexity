@@ -2,8 +2,8 @@
 
 This module leaves ``theory_full_rs.py`` as the retained A=0 baseline and
 adds the eta direction for the full feasible covariance cone. The energetic
-quadrature intentionally extends the legacy normalization convention from the
-baseline solver so that eta=0 remains directly comparable to the retained CSV.
+quadrature follows Eq. (50): the selected-reference average is conditional at
+fixed z0, and the Gaussian weight Dz0 is applied exactly once outside it.
 """
 from __future__ import annotations
 
@@ -139,7 +139,7 @@ if NUMBA_AVAILABLE:
 
 
     @njit
-    def _ge_energy_legacy_numba(
+    def _ge_energy_numba(
         Q: float,
         p: float,
         t: float,
@@ -194,9 +194,8 @@ if NUMBA_AVAILABLE:
                     sum_z2 += w2[i2] * (max_log + math.log(exp_sum))
                 sum_z1 += w1[i1] * sum_z2
 
-            # Legacy baseline convention: keep the extra w0 factor used by
-            # theory_full_rs.py so eta=0 reproduces retained outputs.
-            total += w0[i0] * (w0[i0] * sum_z1 / denom_i)
+            # Eq. (50): condition on z0 using H0(z0), then apply Dz0 once.
+            total += w0[i0] * (sum_z1 / denom_i)
         return total
 
 
@@ -255,7 +254,7 @@ if NUMBA_AVAILABLE:
                     gs = _gs_entropy_numba(p, t, cd, q_ref)
                     if not math.isfinite(gs):
                         continue
-                    ge = _ge_energy_legacy_numba(
+                    ge = _ge_energy_numba(
                         Q,
                         p,
                         t,
@@ -371,7 +370,7 @@ class FullRSFeasible:
         max_logs = np.max(logs, axis=3, keepdims=True)
         inner_z3 = np.squeeze(max_logs, axis=3) + np.log(np.sum(np.exp(logs - max_logs), axis=3))
         inner_z2 = np.sum(self.w2[None, None, :] * inner_z3, axis=2)
-        sums = np.sum((self.w0[:, None] * self.w1[None, :]) * self.mask * inner_z2, axis=1) / self.denom
+        sums = np.sum(self.w1[None, :] * self.mask * inner_z2, axis=1) / self.denom
         return float(np.sum(self.w0 * sums))
 
     def action(self, *, Q: float, radius: float, s: float, eta: float) -> dict[str, float]:

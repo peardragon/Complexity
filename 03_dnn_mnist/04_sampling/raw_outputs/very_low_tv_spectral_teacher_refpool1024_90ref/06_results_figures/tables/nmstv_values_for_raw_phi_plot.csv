@@ -1,0 +1,5 @@
+rule,nmstv_mean,tv_mean,n_datasets,label
+very_low_tv_spectral_teacher,0.3245703473792008,0.1622455532858676,1,very low tv
+real_even_odd,0.4932864276461805,0.2466432138230902,1,even odd
+teacher_nn,0.6843772639598127,0.3421886319799063,1,teacher nn
+random_label,0.985558573825462,0.4927792869127309,1,random

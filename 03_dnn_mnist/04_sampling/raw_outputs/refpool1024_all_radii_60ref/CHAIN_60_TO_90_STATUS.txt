@@ -1,0 +1,6 @@
+checked_at=2026-06-18T09:24:45+09:00
+stage=complete
+run60=/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_all_radii_60ref
+run90=/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_all_radii_90ref
+audit60=/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_all_radii_60ref/AUDIT.json
+audit90=/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_all_radii_90ref/AUDIT.json

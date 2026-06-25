@@ -1,0 +1,23 @@
+{
+  "beta": 5.2,
+  "domain": {
+    "grid_n": 170,
+    "xlim": [
+      -4.0,
+      4.0
+    ],
+    "ylim": [
+      -3.4,
+      3.4
+    ]
+  },
+  "experiment_id": "complex_valley_smoke",
+  "method_roles": {
+    "hmc": "existing method reproduction proxy for arXiv:2503.08266",
+    "pseudo_langevin": "existing method proxy reproduction for arXiv:2603.15367",
+    "random_walk_mcmc": "existing local MCMC control",
+    "vmf_l2_final": "final vMF+L2 methodology in proxy coordinates"
+  },
+  "rough_term_count": 35,
+  "seed": 20260622
+}

@@ -1,0 +1,479 @@
+{
+  "lab_dir": "lenka_zdeborova",
+  "pi_ids": [
+    "A5089268172"
+  ],
+  "year_span": [
+    2016,
+    2026
+  ],
+  "totals": {
+    "papers": 146,
+    "citations": 5141,
+    "researchers": 135,
+    "likely_members": 61,
+    "topics": 50
+  },
+  "papers_per_year": {
+    "2016": 9,
+    "2017": 7,
+    "2018": 5,
+    "2019": 22,
+    "2020": 17,
+    "2021": 8,
+    "2022": 15,
+    "2023": 17,
+    "2024": 27,
+    "2025": 17,
+    "2026": 2
+  },
+  "citations_per_year": {
+    "2016": 948,
+    "2017": 180,
+    "2018": 149,
+    "2019": 2962,
+    "2020": 310,
+    "2021": 212,
+    "2022": 183,
+    "2023": 74,
+    "2024": 117,
+    "2025": 6,
+    "2026": 0
+  },
+  "oa_ratio_per_year": {
+    "2016": 1.0,
+    "2017": 0.429,
+    "2018": 1.0,
+    "2019": 0.818,
+    "2020": 0.882,
+    "2021": 0.875,
+    "2022": 1.0,
+    "2023": 1.0,
+    "2024": 1.0,
+    "2025": 0.824,
+    "2026": 1.0
+  },
+  "top_topics": [
+    {
+      "topic": "Neural Networks and Applications",
+      "papers": 25
+    },
+    {
+      "topic": "Sparse and Compressive Sensing Techniques",
+      "papers": 16
+    },
+    {
+      "topic": "Complex Network Analysis Techniques",
+      "papers": 8
+    },
+    {
+      "topic": "Theoretical and Computational Physics",
+      "papers": 8
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "papers": 7
+    },
+    {
+      "topic": "Random Matrices and Applications",
+      "papers": 6
+    },
+    {
+      "topic": "Blind Source Separation Techniques",
+      "papers": 5
+    },
+    {
+      "topic": "Face and Expression Recognition",
+      "papers": 4
+    },
+    {
+      "topic": "Machine Learning and Data Classification",
+      "papers": 4
+    },
+    {
+      "topic": "Computational Physics and Python Applications",
+      "papers": 3
+    },
+    {
+      "topic": "Generative Adversarial Networks and Image Synthesis",
+      "papers": 3
+    },
+    {
+      "topic": "Bayesian Methods and Mixture Models",
+      "papers": 3
+    }
+  ],
+  "top_fields": [
+    {
+      "field": "Computer Science",
+      "papers": 76
+    },
+    {
+      "field": "Physics and Astronomy",
+      "papers": 25
+    },
+    {
+      "field": "Engineering",
+      "papers": 23
+    },
+    {
+      "field": "Mathematics",
+      "papers": 16
+    },
+    {
+      "field": "Materials Science",
+      "papers": 1
+    },
+    {
+      "field": "Neuroscience",
+      "papers": 1
+    },
+    {
+      "field": "Agricultural and Biological Sciences",
+      "papers": 1
+    },
+    {
+      "field": "Medicine",
+      "papers": 1
+    }
+  ],
+  "emerging_topics": [
+    {
+      "topic": "Theoretical and Computational Physics",
+      "early": 2,
+      "late": 6,
+      "early_share": 0.029,
+      "late_share": 0.077,
+      "delta": 0.048
+    },
+    {
+      "topic": "Advanced Optical Network Technologies",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.026,
+      "delta": 0.026
+    },
+    {
+      "topic": "Image and Signal Denoising Methods",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.026,
+      "delta": 0.026
+    },
+    {
+      "topic": "Opinion Dynamics and Social Influence",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.026,
+      "delta": 0.026
+    },
+    {
+      "topic": "Cellular Automata and Applications",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.026,
+      "delta": 0.026
+    },
+    {
+      "topic": "Gaussian Processes and Bayesian Inference",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.026,
+      "delta": 0.026
+    }
+  ],
+  "declining_topics": [
+    {
+      "topic": "Sparse and Compressive Sensing Techniques",
+      "early": 10,
+      "late": 6,
+      "early_share": 0.147,
+      "late_share": 0.077,
+      "delta": -0.07
+    },
+    {
+      "topic": "Constraint Satisfaction and Optimization",
+      "early": 3,
+      "late": 0,
+      "early_share": 0.044,
+      "late_share": 0.0,
+      "delta": -0.044
+    },
+    {
+      "topic": "Markov Chains and Monte Carlo Methods",
+      "early": 3,
+      "late": 0,
+      "early_share": 0.044,
+      "late_share": 0.0,
+      "delta": -0.044
+    },
+    {
+      "topic": "Advanced X-ray Imaging Techniques",
+      "early": 3,
+      "late": 0,
+      "early_share": 0.044,
+      "late_share": 0.0,
+      "delta": -0.044
+    },
+    {
+      "topic": "Complex Network Analysis Techniques",
+      "early": 5,
+      "late": 3,
+      "early_share": 0.074,
+      "late_share": 0.038,
+      "delta": -0.035
+    },
+    {
+      "topic": "Statistical Mechanics and Entropy",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.029,
+      "late_share": 0.0,
+      "delta": -0.029
+    }
+  ],
+  "new_collaborators_per_year": {
+    "2016": 22,
+    "2017": 7,
+    "2018": 6,
+    "2019": 30,
+    "2020": 9,
+    "2021": 9,
+    "2022": 18,
+    "2023": 13,
+    "2024": 11,
+    "2025": 8,
+    "2026": 1
+  },
+  "top_venues": [
+    {
+      "venue": "arXiv (Cornell University)",
+      "papers": 51
+    },
+    {
+      "venue": "Journal of Statistical Mechanics Theory and Experiment",
+      "papers": 21
+    },
+    {
+      "venue": "Physical review. E",
+      "papers": 10
+    },
+    {
+      "venue": "ArXiv.org",
+      "papers": 10
+    },
+    {
+      "venue": "Journal of Physics A Mathematical and Theoretical",
+      "papers": 8
+    },
+    {
+      "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "papers": 7
+    },
+    {
+      "venue": "Machine Learning Science and Technology",
+      "papers": 7
+    },
+    {
+      "venue": "Proceedings of the National Academy of Sciences",
+      "papers": 4
+    },
+    {
+      "venue": "IEEE Transactions on Information Theory",
+      "papers": 2
+    },
+    {
+      "venue": "Nature Physics",
+      "papers": 2
+    }
+  ],
+  "rising_members": [
+    {
+      "name": "Hugo Cui",
+      "first_author_count": 12,
+      "papers": 15,
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "name": "Yatin Dandi",
+      "first_author_count": 6,
+      "papers": 11,
+      "years": [
+        2023,
+        2026
+      ]
+    },
+    {
+      "name": "Freya Behrens",
+      "first_author_count": 5,
+      "papers": 12,
+      "years": [
+        2022,
+        2026
+      ]
+    },
+    {
+      "name": "Davide Ghio",
+      "first_author_count": 4,
+      "papers": 4,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Bruno Loureiro",
+      "first_author_count": 3,
+      "papers": 25,
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "name": "Alice Guionnet",
+      "first_author_count": 3,
+      "papers": 3,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Emanuele Troiani",
+      "first_author_count": 3,
+      "papers": 10,
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "name": "Damien Barbier",
+      "first_author_count": 3,
+      "papers": 3,
+      "years": [
+        2024,
+        2025
+      ]
+    }
+  ],
+  "notable_papers": [
+    {
+      "title": "Machine learning and the physical sciences",
+      "year": 2019,
+      "citations": 2429,
+      "doi": "10.1103/revmodphys.91.045002",
+      "venue": "Reviews of Modern Physics"
+    },
+    {
+      "title": "Statistical physics of inference: thresholds and algorithms",
+      "year": 2016,
+      "citations": 424,
+      "doi": "10.1080/00018732.2016.1211393",
+      "venue": "Advances In Physics"
+    },
+    {
+      "title": "Network dismantling",
+      "year": 2016,
+      "citations": 292,
+      "doi": "10.1073/pnas.1605083113",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Optimal errors and phase transitions in high-dimensional generalized linear models",
+      "year": 2019,
+      "citations": 200,
+      "doi": "10.1073/pnas.1802705116",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Entropy and mutual information in models of deep neural networks*",
+      "year": 2019,
+      "citations": 144,
+      "doi": "10.1088/1742-5468/ab3430",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Phase Transitions and Sample Complexity in Bayes-Optimal Matrix Factorization",
+      "year": 2016,
+      "citations": 108,
+      "doi": "10.1109/tit.2016.2556702",
+      "venue": "IEEE Transactions on Information Theory"
+    },
+    {
+      "title": "Information-theoretic thresholds from the cavity method",
+      "year": 2018,
+      "citations": 92,
+      "doi": "10.1016/j.aim.2018.05.029",
+      "venue": "Advances in Mathematics"
+    },
+    {
+      "title": "New tool in the box",
+      "year": 2017,
+      "citations": 90,
+      "doi": "10.1038/nphys4053",
+      "venue": "Nature Physics"
+    },
+    {
+      "title": "Understanding deep learning is also a job for physicists",
+      "year": 2020,
+      "citations": 85,
+      "doi": "10.1038/s41567-020-0929-2",
+      "venue": "Nature Physics"
+    },
+    {
+      "title": "Generalisation error in learning with random features and the hidden manifold model*",
+      "year": 2021,
+      "citations": 79,
+      "doi": "10.1088/1742-5468/ac3ae6",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Mutual information for symmetric rank-one matrix estimation: A proof of the replica formula",
+      "year": 2016,
+      "citations": 78,
+      "doi": null,
+      "venue": "Queen Mary Research Online (Queen Mary University of London)"
+    },
+    {
+      "title": "Learning curves of generic features maps for realistic datasets with a teacher-student model*",
+      "year": 2022,
+      "citations": 57,
+      "doi": "10.1088/1742-5468/ac9825",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "The Gaussian equivalence of generative models for learning with shallow neural networks",
+      "year": 2020,
+      "citations": 48,
+      "doi": "10.48550/arxiv.2006.14709",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Typology of phase transitions in Bayesian inference problems",
+      "year": 2019,
+      "citations": 45,
+      "doi": "10.1103/physreve.99.042109",
+      "venue": "Physical review. E"
+    },
+    {
+      "title": "Dynamical mean-field theory for stochastic gradient descent in Gaussian mixture classification",
+      "year": 2021,
+      "citations": 40,
+      "doi": "10.1088/1742-5468/ac3a80",
+      "venue": "HAL (Le Centre pour la Communication Scientifique Directe)"
+    }
+  ],
+  "themes": {
+    "has_themes": false
+  }
+}

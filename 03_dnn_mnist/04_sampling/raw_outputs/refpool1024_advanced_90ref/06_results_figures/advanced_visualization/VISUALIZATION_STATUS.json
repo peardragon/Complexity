@@ -1,0 +1,31 @@
+{
+  "dataset_embedding_rows": 512,
+  "dataset_rows": 512,
+  "dphi_rows": 196,
+  "figures": [
+    "figures/fig01_dataset_label_representatives.png",
+    "figures/fig02_dataset_tsne_umap_embeddings.png",
+    "figures/fig03_phi_energy_by_rule.png",
+    "figures/fig04_dphi_energy_by_rule.png",
+    "figures/fig05_reference_phi_curve_tsne_umap.png",
+    "figures/fig06_proximal_phi_landscape_heatmap.png",
+    "figures/fig07_proximal_reference_examples.png"
+  ],
+  "generated_at": "2026-06-20T16:30:42",
+  "phi_rows": 196,
+  "reference_embedding_rows": 360,
+  "sklearn_version": "1.9.0",
+  "source_run": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/refpool1024_advanced_90ref",
+  "tables": [
+    "tables/dataset_train_samples_with_rule_labels.csv",
+    "tables/dataset_label_summary.csv",
+    "tables/dataset_tsne_umap_embedding.csv",
+    "tables/advanced_phi_by_rule_radius.csv",
+    "tables/advanced_dphi_dd_by_rule_radius.csv",
+    "tables/reference_phi_curve_tsne_umap_embedding.csv",
+    "tables/reference_phi_curve_nearest_neighbors.csv",
+    "tables/reference_embedding_features.csv",
+    "tables/proximal_landscape_example_refs.csv"
+  ],
+  "umap_version": "0.5.12"
+}

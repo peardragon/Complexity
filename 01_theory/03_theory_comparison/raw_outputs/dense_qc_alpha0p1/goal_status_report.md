@@ -5,8 +5,8 @@
 - Full QC pass: `True`
 - RMSE improves largest vs smallest N: `True`
 - RMSE monotone over all retained N: `True`
-- Smallest-N RMSE: `0.0845294`
-- Largest-N RMSE: `0.0206761`
+- Smallest-N RMSE: `0.0640317`
+- Largest-N RMSE: `0.00184362`
 - Largest-N peak radius diff: `0`
 - Radius grid step: `0.05`
 - QC cells: `168`

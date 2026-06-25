@@ -1,7 +1,0 @@
-{
-  "bad_reference_count_pools": [],
-  "dataset_pool_count": 540,
-  "expected_dataset_pool_count": 540,
-  "expected_reference_count_per_dataset": 30,
-  "passed": true
-}

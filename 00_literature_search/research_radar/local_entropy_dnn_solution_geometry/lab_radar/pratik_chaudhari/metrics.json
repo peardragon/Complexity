@@ -1,0 +1,479 @@
+{
+  "lab_dir": "pratik_chaudhari",
+  "pi_ids": [
+    "A5006038667"
+  ],
+  "year_span": [
+    2016,
+    2026
+  ],
+  "totals": {
+    "papers": 122,
+    "citations": 1029,
+    "researchers": 354,
+    "likely_members": 67,
+    "topics": 67
+  },
+  "papers_per_year": {
+    "2016": 3,
+    "2017": 4,
+    "2018": 4,
+    "2019": 6,
+    "2020": 10,
+    "2021": 15,
+    "2022": 11,
+    "2023": 19,
+    "2024": 21,
+    "2025": 26,
+    "2026": 3
+  },
+  "citations_per_year": {
+    "2016": 14,
+    "2017": 38,
+    "2018": 57,
+    "2019": 333,
+    "2020": 175,
+    "2021": 158,
+    "2022": 14,
+    "2023": 127,
+    "2024": 88,
+    "2025": 24,
+    "2026": 1
+  },
+  "oa_ratio_per_year": {
+    "2016": 0.0,
+    "2017": 0.75,
+    "2018": 0.75,
+    "2019": 0.333,
+    "2020": 0.9,
+    "2021": 0.733,
+    "2022": 1.0,
+    "2023": 0.789,
+    "2024": 0.667,
+    "2025": 0.769,
+    "2026": 1.0
+  },
+  "top_topics": [
+    {
+      "topic": "Domain Adaptation and Few-Shot Learning",
+      "papers": 10
+    },
+    {
+      "topic": "Neural Networks and Applications",
+      "papers": 7
+    },
+    {
+      "topic": "Model Reduction and Neural Networks",
+      "papers": 6
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "papers": 5
+    },
+    {
+      "topic": "Radiomics and Machine Learning in Medical Imaging",
+      "papers": 5
+    },
+    {
+      "topic": "Reinforcement Learning in Robotics",
+      "papers": 5
+    },
+    {
+      "topic": "Robotics and Sensor-Based Localization",
+      "papers": 4
+    },
+    {
+      "topic": "Remote Sensing and LiDAR Applications",
+      "papers": 3
+    },
+    {
+      "topic": "Generative Adversarial Networks and Image Synthesis",
+      "papers": 3
+    },
+    {
+      "topic": "Machine Learning and Data Classification",
+      "papers": 3
+    },
+    {
+      "topic": "Sports Performance and Training",
+      "papers": 2
+    },
+    {
+      "topic": "Human Pose and Action Recognition",
+      "papers": 2
+    }
+  ],
+  "top_fields": [
+    {
+      "field": "Computer Science",
+      "papers": 67
+    },
+    {
+      "field": "Engineering",
+      "papers": 20
+    },
+    {
+      "field": "Medicine",
+      "papers": 14
+    },
+    {
+      "field": "Physics and Astronomy",
+      "papers": 7
+    },
+    {
+      "field": "Neuroscience",
+      "papers": 5
+    },
+    {
+      "field": "Environmental Science",
+      "papers": 4
+    },
+    {
+      "field": "Social Sciences",
+      "papers": 2
+    },
+    {
+      "field": "Psychology",
+      "papers": 1
+    }
+  ],
+  "emerging_topics": [
+    {
+      "topic": "Radiomics and Machine Learning in Medical Imaging",
+      "early": 0,
+      "late": 5,
+      "early_share": 0.0,
+      "late_share": 0.062,
+      "delta": 0.062
+    },
+    {
+      "topic": "Neural Networks and Applications",
+      "early": 1,
+      "late": 6,
+      "early_share": 0.024,
+      "late_share": 0.075,
+      "delta": 0.051
+    },
+    {
+      "topic": "Robotics and Sensor-Based Localization",
+      "early": 0,
+      "late": 4,
+      "early_share": 0.0,
+      "late_share": 0.05,
+      "delta": 0.05
+    },
+    {
+      "topic": "Remote Sensing and LiDAR Applications",
+      "early": 0,
+      "late": 3,
+      "early_share": 0.0,
+      "late_share": 0.037,
+      "delta": 0.037
+    },
+    {
+      "topic": "Multimodal Machine Learning Applications",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.025,
+      "delta": 0.025
+    },
+    {
+      "topic": "Robotics and Automated Systems",
+      "early": 0,
+      "late": 2,
+      "early_share": 0.0,
+      "late_share": 0.025,
+      "delta": 0.025
+    }
+  ],
+  "declining_topics": [
+    {
+      "topic": "Domain Adaptation and Few-Shot Learning",
+      "early": 7,
+      "late": 3,
+      "early_share": 0.167,
+      "late_share": 0.037,
+      "delta": -0.129
+    },
+    {
+      "topic": "Model Reduction and Neural Networks",
+      "early": 5,
+      "late": 1,
+      "early_share": 0.119,
+      "late_share": 0.013,
+      "delta": -0.107
+    },
+    {
+      "topic": "Reinforcement Learning in Robotics",
+      "early": 4,
+      "late": 1,
+      "early_share": 0.095,
+      "late_share": 0.013,
+      "delta": -0.083
+    },
+    {
+      "topic": "Sports Performance and Training",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.048,
+      "late_share": 0.0,
+      "delta": -0.048
+    },
+    {
+      "topic": "Vehicle Dynamics and Control Systems",
+      "early": 2,
+      "late": 0,
+      "early_share": 0.048,
+      "late_share": 0.0,
+      "delta": -0.048
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "early": 3,
+      "late": 2,
+      "early_share": 0.071,
+      "late_share": 0.025,
+      "delta": -0.046
+    }
+  ],
+  "new_collaborators_per_year": {
+    "2016": 6,
+    "2017": 7,
+    "2018": 3,
+    "2019": 23,
+    "2020": 14,
+    "2021": 31,
+    "2022": 76,
+    "2023": 62,
+    "2024": 42,
+    "2025": 84,
+    "2026": 5
+  },
+  "top_venues": [
+    {
+      "venue": "arXiv (Cornell University)",
+      "papers": 43
+    },
+    {
+      "venue": "ArXiv.org",
+      "papers": 14
+    },
+    {
+      "venue": "Neuro-Oncology",
+      "papers": 4
+    },
+    {
+      "venue": "Proceedings of the National Academy of Sciences",
+      "papers": 3
+    },
+    {
+      "venue": "Lecture notes in computer science",
+      "papers": 3
+    },
+    {
+      "venue": "IEEE Robotics and Automation Letters",
+      "papers": 2
+    },
+    {
+      "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+      "papers": 2
+    },
+    {
+      "venue": "Journal of Statistical Mechanics Theory and Experiment",
+      "papers": 1
+    },
+    {
+      "venue": "Mechanical Systems and Signal Processing",
+      "papers": 1
+    },
+    {
+      "venue": "IEEE Journal of Biomedical and Health Informatics",
+      "papers": 1
+    }
+  ],
+  "rising_members": [
+    {
+      "name": "Rohit Jena",
+      "first_author_count": 7,
+      "papers": 8,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Fanyang Yu",
+      "first_author_count": 5,
+      "papers": 6,
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "name": "Yifei Shao",
+      "first_author_count": 3,
+      "papers": 8,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Jialin Mao",
+      "first_author_count": 3,
+      "papers": 4,
+      "years": [
+        2021,
+        2026
+      ]
+    },
+    {
+      "name": "Siming He",
+      "first_author_count": 3,
+      "papers": 3,
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Ankit Prabhu",
+      "first_author_count": 2,
+      "papers": 5,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Dexter Ong",
+      "first_author_count": 2,
+      "papers": 8,
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "name": "Yuezhan Tao",
+      "first_author_count": 2,
+      "papers": 7,
+      "years": [
+        2024,
+        2025
+      ]
+    }
+  ],
+  "notable_papers": [
+    {
+      "title": "Entropy-SGD: biasing gradient descent into wide valleys*",
+      "year": 2019,
+      "citations": 288,
+      "doi": "10.1088/1742-5468/ab39d9",
+      "venue": "Journal of Statistical Mechanics Theory and Experiment"
+    },
+    {
+      "title": "Bias in machine learning models can be significantly mitigated by careful training: Evidence from neuroimaging studies",
+      "year": 2023,
+      "citations": 76,
+      "doi": "10.1073/pnas.2211613120",
+      "venue": "Proceedings of the National Academy of Sciences"
+    },
+    {
+      "title": "Rethinking the Hyperparameters for Fine-tuning",
+      "year": 2020,
+      "citations": 62,
+      "doi": "10.48550/arxiv.2002.11770",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Embracing the Disharmony in Medical Imaging: A Simple and Effective Framework for Domain Adaptation",
+      "year": 2021,
+      "citations": 59,
+      "doi": "10.1016/j.media.2021.102309",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Evaluation of Machine Learning Models for Classifying Upper Extremity Exercises Using Inertial Measurement Unit-Based Kinematic Data",
+      "year": 2020,
+      "citations": 40,
+      "doi": "10.1109/jbhi.2020.2999902",
+      "venue": "IEEE Journal of Biomedical and Health Informatics"
+    },
+    {
+      "title": "Stochastic Gradient Descent Performs Variational Inference, Converges to Limit Cycles for Deep Networks",
+      "year": 2018,
+      "citations": 36,
+      "doi": "10.1109/ita.2018.8503224",
+      "venue": null
+    },
+    {
+      "title": "Scalable Reinforcement Learning Policies for Multi-Agent Control",
+      "year": 2021,
+      "citations": 26,
+      "doi": "10.1109/iros51168.2021.9636344",
+      "venue": "2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+    },
+    {
+      "title": "UAVs for forestry: Metric-semantic mapping and diameter estimation with autonomous aerial robots",
+      "year": 2024,
+      "citations": 25,
+      "doi": "10.1016/j.ymssp.2023.111050",
+      "venue": "Mechanical Systems and Signal Processing"
+    },
+    {
+      "title": "Deformable Linear Object Prediction Using Locally Linear Latent Dynamics",
+      "year": 2021,
+      "citations": 24,
+      "doi": "10.1109/icra48506.2021.9560955",
+      "venue": null
+    },
+    {
+      "title": "A Baseline for Few-Shot Image Classification",
+      "year": 2019,
+      "citations": 24,
+      "doi": "10.48550/arxiv.1909.02729",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Directional adversarial training for cost sensitive deep learning classification applications",
+      "year": 2020,
+      "citations": 23,
+      "doi": "10.1016/j.engappai.2020.103550",
+      "venue": "Research Padua  Archive (University of Padua)"
+    },
+    {
+      "title": "Deep relaxation: partial differential equations for optimizing deep neural networks",
+      "year": 2018,
+      "citations": 21,
+      "doi": "10.1007/s40687-018-0148-y",
+      "venue": "Research in the Mathematical Sciences"
+    },
+    {
+      "title": "Parle: parallelizing stochastic gradient descent",
+      "year": 2017,
+      "citations": 19,
+      "doi": "10.48550/arxiv.1707.00424",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "TreeScope: An Agricultural Robotics Dataset for LiDAR-Based Mapping of Trees in Forests and Orchards",
+      "year": 2024,
+      "citations": 18,
+      "doi": "10.1109/icra57147.2024.10611103",
+      "venue": null
+    },
+    {
+      "title": "Partial differential equations for training deep neural networks",
+      "year": 2017,
+      "citations": 18,
+      "doi": "10.1109/acssc.2017.8335634",
+      "venue": null
+    }
+  ],
+  "themes": {
+    "has_themes": false
+  }
+}

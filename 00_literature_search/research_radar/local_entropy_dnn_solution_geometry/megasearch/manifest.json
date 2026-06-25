@@ -1,0 +1,575 @@
+[
+  {
+    "source": "manual_seed",
+    "status": "ok",
+    "records": 20
+  },
+  {
+    "source": "arxiv",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.023
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22local+entropy%22+neural+networks+flat+minima+wide+valleys&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.506
+  },
+  {
+    "source": "openalex",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.628
+  },
+  {
+    "source": "crossref",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.03
+  },
+  {
+    "source": "dblp",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "empty",
+    "records": 0,
+    "seconds": 1.077
+  },
+  {
+    "source": "ddg",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "ok",
+    "records": 12,
+    "seconds": 2.381
+  },
+  {
+    "source": "pubmed",
+    "facet": "local_entropy_flat_minima",
+    "query": "\"local entropy\" neural networks flat minima wide valleys",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.375
+  },
+  {
+    "source": "arxiv",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.955
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22Franz-Parisi%22+potential+perceptron+neural+network+local+entropy&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.244
+  },
+  {
+    "source": "openalex",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.902
+  },
+  {
+    "source": "crossref",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.035
+  },
+  {
+    "source": "dblp",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.916
+  },
+  {
+    "source": "ddg",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 3.473
+  },
+  {
+    "source": "pubmed",
+    "facet": "franz_parisi_perceptron",
+    "query": "\"Franz-Parisi\" potential perceptron neural network local entropy",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.376
+  },
+  {
+    "source": "arxiv",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.869
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22robust+ensemble%22+%22dense+clusters%22+neural+networks+local+entropy&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.498
+  },
+  {
+    "source": "openalex",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.627
+  },
+  {
+    "source": "crossref",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.923
+  },
+  {
+    "source": "dblp",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.908
+  },
+  {
+    "source": "ddg",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "ok",
+    "records": 12,
+    "seconds": 2.581
+  },
+  {
+    "source": "pubmed",
+    "facet": "robust_ensembles_dense_clusters",
+    "query": "\"robust ensemble\" \"dense clusters\" neural networks local entropy",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.366
+  },
+  {
+    "source": "arxiv",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.064
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22Entropy-SGD%22+%22wide+valleys%22+local+entropy+deep+learning&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.26
+  },
+  {
+    "source": "openalex",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.178
+  },
+  {
+    "source": "crossref",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.451
+  },
+  {
+    "source": "dblp",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.898
+  },
+  {
+    "source": "ddg",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "ok",
+    "records": 12,
+    "seconds": 2.732
+  },
+  {
+    "source": "pubmed",
+    "facet": "entropy_sgd_wide_valleys",
+    "query": "\"Entropy-SGD\" \"wide valleys\" local entropy deep learning",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.385
+  },
+  {
+    "source": "arxiv",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.089
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "ok",
+    "records": 12,
+    "seconds": 3.815
+  },
+  {
+    "source": "openalex",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.41
+  },
+  {
+    "source": "crossref",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.919
+  },
+  {
+    "source": "dblp",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.907
+  },
+  {
+    "source": "ddg",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.746
+  },
+  {
+    "source": "pubmed",
+    "facet": "sharpness_flatness_generalization",
+    "query": "sharpness flatness generalization neural networks reparameterization PAC-Bayes",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.442
+  },
+  {
+    "source": "arxiv",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.824
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.995
+  },
+  {
+    "source": "openalex",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.901
+  },
+  {
+    "source": "crossref",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "ok",
+    "records": 12,
+    "seconds": 0.986
+  },
+  {
+    "source": "dblp",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.968
+  },
+  {
+    "source": "ddg",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "ok",
+    "records": 12,
+    "seconds": 3.392
+  },
+  {
+    "source": "pubmed",
+    "facet": "loss_landscape_connectivity",
+    "query": "\"loss landscape\" \"mode connectivity\" neural networks flat minima",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.356
+  },
+  {
+    "source": "arxiv",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.175
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22random+labels%22+memorization+dataset+complexity+neural+networks+graph+total+variation&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.28
+  },
+  {
+    "source": "openalex",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.204
+  },
+  {
+    "source": "crossref",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.923
+  },
+  {
+    "source": "dblp",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.911
+  },
+  {
+    "source": "ddg",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "ok",
+    "records": 12,
+    "seconds": 2.197
+  },
+  {
+    "source": "pubmed",
+    "facet": "random_labels_dataset_complexity",
+    "query": "\"random labels\" memorization dataset complexity neural networks graph total variation",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.396
+  },
+  {
+    "source": "arxiv",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.572
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22annealed+importance+sampling%22+%22sequential+Monte+Carlo%22+partition+function+neural+networks&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.25
+  },
+  {
+    "source": "openalex",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.013
+  },
+  {
+    "source": "crossref",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.676
+  },
+  {
+    "source": "dblp",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.921
+  },
+  {
+    "source": "ddg",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.587
+  },
+  {
+    "source": "pubmed",
+    "facet": "partition_function_sampling",
+    "query": "\"annealed importance sampling\" \"sequential Monte Carlo\" partition function neural networks",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.361
+  },
+  {
+    "source": "arxiv",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.948
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22von+Mises-Fisher%22+sampling+hypersphere+shell+importance+sampling&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.251
+  },
+  {
+    "source": "openalex",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.174
+  },
+  {
+    "source": "crossref",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.284
+  },
+  {
+    "source": "dblp",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.9
+  },
+  {
+    "source": "ddg",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.352
+  },
+  {
+    "source": "pubmed",
+    "facet": "von_mises_fisher_shell",
+    "query": "\"von Mises-Fisher\" sampling hypersphere shell importance sampling",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.374
+  },
+  {
+    "source": "arxiv",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.358
+  },
+  {
+    "source": "semanticscholar",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "failed",
+    "error": "429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22density+of+states%22+neural+networks+Franz-Parisi+local+geometry+loss+landscape&limit=12&fields=title%2Cauthors%2Cyear%2Cvenue%2CexternalIds%2CopenAccessPdf%2CcitationCount%2Cabstract%2Curl",
+    "records": 0,
+    "seconds": 0.486
+  },
+  {
+    "source": "openalex",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "ok",
+    "records": 9,
+    "seconds": 1.028
+  },
+  {
+    "source": "crossref",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "ok",
+    "records": 12,
+    "seconds": 1.335
+  },
+  {
+    "source": "dblp",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.981
+  },
+  {
+    "source": "ddg",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "ok",
+    "records": 12,
+    "seconds": 3.674
+  },
+  {
+    "source": "pubmed",
+    "facet": "recent_density_states",
+    "query": "\"density of states\" neural networks Franz-Parisi local geometry loss landscape",
+    "status": "empty",
+    "records": 0,
+    "seconds": 0.376
+  }
+]

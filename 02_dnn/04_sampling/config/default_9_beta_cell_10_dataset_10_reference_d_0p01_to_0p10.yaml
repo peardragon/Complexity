@@ -1,0 +1,59 @@
+﻿stage: 04_sampling.exact_shell_l2_vmf_ce_smc
+method: exact_shell_l2_vmf_adaptive_ce_tempered_smc
+run:
+  name: exact_shell_ce_smc_9cell_dense_near_pool1_lambda1_gamma1
+  preset: candidate
+  seed: 20260521
+  id_suffix: SMC_pool1_l2top10_lambda1_gamma1_near
+upstream:
+  dataset_raw_root: 02_dnn/01_dataset_gen/raw_outputs/36_beta_cell_10_dataset/raw_datasets
+  reference_search_root: 02_dnn/04_sampling/raw_outputs/reference_pool/9_beta_cell_10_dataset_10_reference/selected_reference_pool
+model:
+  architecture: 2-48-48-1-tanh
+  P: 2545
+target:
+  gamma_ce: 1.0
+  lambda_reg: 1.0
+cells_config: configs/beta_cells_9.json
+ensemble:
+  datasets_per_beta: 10
+  references_per_dataset: 10
+sampling:
+  r0: 0.01
+  radii: [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10]
+  samples_per_ref_radius_mode: constant
+  samples_per_ref_radius_constant: 1024
+  proposal: exact_shell_l2_vmf_adaptive_ce_smc
+  h_ladder: [1, 2, 4, 6, 8, .inf]
+smc:
+  target_cess_fraction: 0.75
+  resample_ess_fraction: 0.75
+  max_steps: 120
+  min_delta_t: 0.0001
+  bisection_steps: 32
+  mh_sweeps: 1
+  move_kappa_factor: 80.0
+derivative:
+  enabled: true
+compute:
+  chunk_size: 256
+  device: auto
+  dtype: float32
+  workers: 1
+aggregation:
+  bootstrap_replicates: 400
+qc:
+  finite_references_per_beta_radius: 100
+  aggregate_ref_level_ess_min: 25600
+  q05_ess_fraction_min: 0.20
+  max_split_logZ_per_P_diff: 0.004
+  bootstrap_sd_phi_max: 0.012
+  smc_min_cess_fraction_min: 0.60
+  smc_max_tempering_steps: 120
+derivative_qc:
+  max_split_dlogZ_dr_per_P_diff: 0.004
+  bootstrap_sd_dphi_full_dr_max: 0.012
+  ce_replay_max_abs_diff_allowed: 0.001
+claim_policy:
+  failed_radius: no_claim
+

@@ -1,0 +1,683 @@
+[
+  {
+    "rank": 1,
+    "bibkey": "Franz1995RecipesMetastable",
+    "title": "Recipes for metastable states in spin glasses",
+    "authors": [
+      "Silvio Franz",
+      "Giorgio Parisi"
+    ],
+    "year": 1995,
+    "venue": "Journal de Physique I",
+    "doi": "10.1051/jp1:1995201",
+    "arxiv_id": "cond-mat/9503167",
+    "url": "https://arxiv.org/abs/cond-mat/9503167",
+    "pdf_url": "https://arxiv.org/pdf/cond-mat/9503167",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 2,
+    "bibkey": "Gardner1988SpaceInteractions",
+    "title": "The space of interactions in neural network models",
+    "authors": [
+      "Elizabeth Gardner"
+    ],
+    "year": 1988,
+    "venue": "Journal of Physics A: Mathematical and General",
+    "doi": "10.1088/0305-4470/21/1/030",
+    "arxiv_id": null,
+    "url": "https://doi.org/10.1088/0305-4470/21/1/030",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 3,
+    "bibkey": "Seung1992StatisticalMechanics",
+    "title": "Statistical mechanics of learning from examples",
+    "authors": [
+      "H. Sebastian Seung",
+      "Haim Sompolinsky",
+      "Naftali Tishby"
+    ],
+    "year": 1992,
+    "venue": "Physical Review A",
+    "doi": "10.1103/PhysRevA.45.6056",
+    "arxiv_id": null,
+    "url": "https://doi.org/10.1103/PhysRevA.45.6056",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 4,
+    "bibkey": "Baldassi2015SubdominantDense",
+    "title": "Subdominant dense clusters allow for simple learning and high computational performance in neural networks with discrete synapses",
+    "authors": [
+      "Carlo Baldassi",
+      "Alessandro Ingrosso",
+      "Carlo Lucibello",
+      "Luca Saglietti",
+      "Riccardo Zecchina"
+    ],
+    "year": 2015,
+    "venue": "Physical Review Letters",
+    "doi": "10.1103/PhysRevLett.115.128101",
+    "arxiv_id": "1509.05753",
+    "url": "https://arxiv.org/abs/1509.05753",
+    "pdf_url": "https://arxiv.org/pdf/1509.05753",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 5,
+    "bibkey": "Baldassi2016LocalEntropy",
+    "title": "Local entropy as a measure for sampling solutions in constraint satisfaction problems",
+    "authors": [
+      "Carlo Baldassi",
+      "Alessandro Ingrosso",
+      "Carlo Lucibello",
+      "Luca Saglietti",
+      "Riccardo Zecchina"
+    ],
+    "year": 2016,
+    "venue": "Journal of Statistical Mechanics: Theory and Experiment",
+    "doi": "10.1088/1742-5468/2016/02/023301",
+    "arxiv_id": "1511.05634",
+    "url": "https://arxiv.org/abs/1511.05634",
+    "pdf_url": "https://arxiv.org/pdf/1511.05634",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 6,
+    "bibkey": "Baldassi2016UnreasonableEffectiveness",
+    "title": "Unreasonable effectiveness of learning neural networks: From accessible states and robust ensembles to basic algorithmic schemes",
+    "authors": [
+      "Carlo Baldassi",
+      "Christian Borgs",
+      "Jennifer Chayes",
+      "Alessandro Ingrosso",
+      "Carlo Lucibello",
+      "Luca Saglietti",
+      "Riccardo Zecchina"
+    ],
+    "year": 2016,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "doi": "10.1073/pnas.1608103113",
+    "arxiv_id": "1605.06444",
+    "url": "https://arxiv.org/abs/1605.06444",
+    "pdf_url": "https://arxiv.org/pdf/1605.06444",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 7,
+    "bibkey": "Chaudhari2017EntropySGD",
+    "title": "Entropy-SGD: Biasing gradient descent into wide valleys",
+    "authors": [
+      "Pratik Chaudhari",
+      "Anna Choromanska",
+      "Stefano Soatto",
+      "Yann LeCun",
+      "Carlo Baldassi",
+      "Christian Borgs",
+      "Jennifer Chayes",
+      "Levent Sagun",
+      "Riccardo Zecchina"
+    ],
+    "year": 2017,
+    "venue": "International Conference on Learning Representations",
+    "doi": null,
+    "arxiv_id": "1611.01838",
+    "url": "https://arxiv.org/abs/1611.01838",
+    "pdf_url": "https://arxiv.org/pdf/1611.01838",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 8,
+    "bibkey": "Baldassi2020ShapingLandscape",
+    "title": "Shaping the learning landscape in neural networks around wide flat minima",
+    "authors": [
+      "Carlo Baldassi",
+      "Fabrizio Pittorino",
+      "Riccardo Zecchina"
+    ],
+    "year": 2020,
+    "venue": "Proceedings of the National Academy of Sciences",
+    "doi": "10.1073/pnas.1908636117",
+    "arxiv_id": "1905.07833",
+    "url": "https://arxiv.org/abs/1905.07833",
+    "pdf_url": "https://arxiv.org/pdf/1905.07833",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 9,
+    "bibkey": "Baldassi2021UnveilingStructure",
+    "title": "Unveiling the structure of wide flat minima in neural networks",
+    "authors": [
+      "Carlo Baldassi",
+      "Clarissa Lauditi",
+      "Enrico M. Malatesta",
+      "Gabriele Perugini",
+      "Riccardo Zecchina"
+    ],
+    "year": 2021,
+    "venue": "Physical Review Letters",
+    "doi": "10.1103/PhysRevLett.127.278301",
+    "arxiv_id": "2107.01163",
+    "url": "https://arxiv.org/abs/2107.01163",
+    "pdf_url": "https://arxiv.org/pdf/2107.01163",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 10,
+    "bibkey": "Pittorino2021EntropicGradient",
+    "title": "Entropic gradient descent algorithms and wide flat minima",
+    "authors": [
+      "Fabrizio Pittorino",
+      "Carlo Lucibello",
+      "Christoph Feinauer",
+      "Gabriele Perugini",
+      "Carlo Baldassi",
+      "Elizaveta Demyanenko",
+      "Riccardo Zecchina"
+    ],
+    "year": 2021,
+    "venue": "Journal of Statistical Mechanics: Theory and Experiment",
+    "doi": "10.1088/1742-5468/ac3ae8",
+    "arxiv_id": "2006.07897",
+    "url": "https://arxiv.org/abs/2006.07897",
+    "pdf_url": "https://arxiv.org/pdf/2006.07897",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 11,
+    "bibkey": "Pittorino2022DeepNetworksToroids",
+    "title": "Deep networks on toroids: removing symmetries reveals the structure of flat regions in the landscape geometry",
+    "authors": [
+      "Fabrizio Pittorino",
+      "Antonio Ferraro",
+      "Gabriele Perugini",
+      "Carlo Baldassi",
+      "Riccardo Zecchina"
+    ],
+    "year": 2022,
+    "venue": "International Conference on Machine Learning",
+    "doi": "10.1088/1742-5468/ac9832",
+    "arxiv_id": "2202.03038",
+    "url": "https://proceedings.mlr.press/v162/pittorino22a.html",
+    "pdf_url": "https://proceedings.mlr.press/v162/pittorino22a/pittorino22a.pdf",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 12,
+    "bibkey": "Baldassi2022LearningAtypical",
+    "title": "Learning through atypical phase transitions in overparameterized neural networks",
+    "authors": [
+      "Carlo Baldassi",
+      "Clarissa Lauditi",
+      "Enrico M. Malatesta",
+      "Rosalba Pacelli",
+      "Gabriele Perugini",
+      "Riccardo Zecchina"
+    ],
+    "year": 2022,
+    "venue": "Physical Review E",
+    "doi": "10.1103/PhysRevE.106.014116",
+    "arxiv_id": "2110.00683",
+    "url": "https://arxiv.org/abs/2110.00683",
+    "pdf_url": "https://arxiv.org/pdf/2110.00683",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 13,
+    "bibkey": "Baldassi2023TypicalAtypical",
+    "title": "Typical and atypical solutions in nonconvex neural networks with discrete and continuous weights",
+    "authors": [
+      "Carlo Baldassi",
+      "Enrico M. Malatesta",
+      "Gabriele Perugini",
+      "Riccardo Zecchina"
+    ],
+    "year": 2023,
+    "venue": "Physical Review E",
+    "doi": "10.1103/PhysRevE.108.024310",
+    "arxiv_id": "2304.13871",
+    "url": "https://arxiv.org/abs/2304.13871",
+    "pdf_url": "https://arxiv.org/pdf/2304.13871",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 14,
+    "bibkey": "Barbier2024AtypicalSolutions",
+    "title": "On the atypical solutions of the symmetric binary perceptron",
+    "authors": [
+      "Damien Barbier",
+      "Ahmed El Alaoui",
+      "Florent Krzakala",
+      "Lenka Zdeborová"
+    ],
+    "year": 2024,
+    "venue": "Journal of Physics A: Mathematical and Theoretical",
+    "doi": null,
+    "arxiv_id": "2310.02850",
+    "url": "https://arxiv.org/abs/2310.02850",
+    "pdf_url": "https://arxiv.org/pdf/2310.02850",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 15,
+    "bibkey": "Dinh2017SharpMinima",
+    "title": "Sharp minima can generalize for deep nets",
+    "authors": [
+      "Laurent Dinh",
+      "Razvan Pascanu",
+      "Samy Bengio",
+      "Yoshua Bengio"
+    ],
+    "year": 2017,
+    "venue": "International Conference on Machine Learning",
+    "doi": null,
+    "arxiv_id": "1703.04933",
+    "url": "https://arxiv.org/abs/1703.04933",
+    "pdf_url": "https://arxiv.org/pdf/1703.04933",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 16,
+    "bibkey": "Keskar2017LargeBatch",
+    "title": "On large-batch training for deep learning: Generalization gap and sharp minima",
+    "authors": [
+      "Nitish Shirish Keskar",
+      "Dheevatsa Mudigere",
+      "Jorge Nocedal",
+      "Mikhail Smelyanskiy",
+      "Ping Tak Peter Tang"
+    ],
+    "year": 2017,
+    "venue": "International Conference on Learning Representations",
+    "doi": null,
+    "arxiv_id": "1609.04836",
+    "url": "https://arxiv.org/abs/1609.04836",
+    "pdf_url": "https://arxiv.org/pdf/1609.04836",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 17,
+    "bibkey": "Jiang2020FantasticGeneralization",
+    "title": "Fantastic generalization measures and where to find them",
+    "authors": [
+      "Yiding Jiang",
+      "Behnam Neyshabur",
+      "Hossein Mobahi",
+      "Dilip Krishnan",
+      "Samy Bengio"
+    ],
+    "year": 2020,
+    "venue": "International Conference on Learning Representations",
+    "doi": null,
+    "arxiv_id": "1912.02178",
+    "url": "https://arxiv.org/abs/1912.02178",
+    "pdf_url": "https://arxiv.org/pdf/1912.02178",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 18,
+    "bibkey": "Andriushchenko2023ModernSharpness",
+    "title": "A modern look at the relationship between sharpness and generalization",
+    "authors": [
+      "Maksym Andriushchenko",
+      "Francesco Croce",
+      "Maximilian Müller",
+      "Matthias Hein",
+      "Nicolas Flammarion"
+    ],
+    "year": 2023,
+    "venue": "International Conference on Machine Learning",
+    "doi": "10.5555/3618408.3618444",
+    "arxiv_id": "2302.07011",
+    "url": "https://arxiv.org/abs/2302.07011",
+    "pdf_url": "https://arxiv.org/pdf/2302.07011",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 19,
+    "bibkey": "Foret2021SharpnessAware",
+    "title": "Sharpness-aware minimization for efficiently improving generalization",
+    "authors": [
+      "Pierre Foret",
+      "Ariel Kleiner",
+      "Hossein Mobahi",
+      "Behnam Neyshabur"
+    ],
+    "year": 2021,
+    "venue": "International Conference on Learning Representations",
+    "doi": null,
+    "arxiv_id": "2010.01412",
+    "url": "https://arxiv.org/abs/2010.01412",
+    "pdf_url": "https://arxiv.org/pdf/2010.01412",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 20,
+    "bibkey": "Dziugaite2017ComputingNonvacuous",
+    "title": "Computing nonvacuous generalization bounds for deep (stochastic) neural networks with many more parameters than training data",
+    "authors": [
+      "Gintare Karolina Dziugaite",
+      "Daniel M. Roy"
+    ],
+    "year": 2017,
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "doi": null,
+    "arxiv_id": "1703.11008",
+    "url": "https://arxiv.org/abs/1703.11008",
+    "pdf_url": "https://arxiv.org/pdf/1703.11008",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 21,
+    "bibkey": "Haddouche2025PACBayesianLink",
+    "title": "A PAC-Bayesian link between generalisation and flat minima",
+    "authors": [
+      "Maxime Haddouche",
+      "Paul Viallard",
+      "Umut Simsekli",
+      "Benjamin Guedj"
+    ],
+    "year": 2025,
+    "venue": "Proceedings of Machine Learning Research, ALT",
+    "doi": null,
+    "arxiv_id": "2402.08508",
+    "url": "https://proceedings.mlr.press/v272/haddouche25a.html",
+    "pdf_url": "https://raw.githubusercontent.com/mlresearch/v272/main/assets/haddouche25a/haddouche25a.pdf",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 22,
+    "bibkey": "Zhang2017RethinkingGeneralization",
+    "title": "Understanding deep learning requires rethinking generalization",
+    "authors": [
+      "Chiyuan Zhang",
+      "Samy Bengio",
+      "Moritz Hardt",
+      "Benjamin Recht",
+      "Oriol Vinyals"
+    ],
+    "year": 2017,
+    "venue": "International Conference on Learning Representations",
+    "doi": null,
+    "arxiv_id": "1611.03530",
+    "url": "https://arxiv.org/abs/1611.03530",
+    "pdf_url": "https://arxiv.org/pdf/1611.03530",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 23,
+    "bibkey": "Arpit2017CloserMemorization",
+    "title": "A closer look at memorization in deep networks",
+    "authors": [
+      "Devansh Arpit",
+      "Stanislaw Jastrzebski",
+      "Nicolas Ballas",
+      "David Krueger",
+      "Emmanuel Bengio",
+      "Maxinder S. Kanwal",
+      "Tegan Maharaj",
+      "Asja Fischer",
+      "Aaron Courville",
+      "Yoshua Bengio",
+      "Simon Lacoste-Julien"
+    ],
+    "year": 2017,
+    "venue": "International Conference on Machine Learning",
+    "doi": null,
+    "arxiv_id": "1706.05394",
+    "url": "https://arxiv.org/abs/1706.05394",
+    "pdf_url": "https://arxiv.org/pdf/1706.05394",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 24,
+    "bibkey": "Li2018VisualizingLoss",
+    "title": "Visualizing the loss landscape of neural nets",
+    "authors": [
+      "Hao Li",
+      "Zheng Xu",
+      "Gavin Taylor",
+      "Christoph Studer",
+      "Tom Goldstein"
+    ],
+    "year": 2018,
+    "venue": "Advances in Neural Information Processing Systems",
+    "doi": null,
+    "arxiv_id": "1712.09913",
+    "url": "https://arxiv.org/abs/1712.09913",
+    "pdf_url": "https://arxiv.org/pdf/1712.09913",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 25,
+    "bibkey": "Garipov2018LossSurfaces",
+    "title": "Loss surfaces, mode connectivity, and fast ensembling of DNNs",
+    "authors": [
+      "Timur Garipov",
+      "Pavel Izmailov",
+      "Dmitrii Podoprikhin",
+      "Dmitry Vetrov",
+      "Andrew Gordon Wilson"
+    ],
+    "year": 2018,
+    "venue": "Advances in Neural Information Processing Systems",
+    "doi": null,
+    "arxiv_id": "1802.10026",
+    "url": "https://arxiv.org/abs/1802.10026",
+    "pdf_url": "https://arxiv.org/pdf/1802.10026",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 26,
+    "bibkey": "Draxler2018EssentiallyNoBarriers",
+    "title": "Essentially no barriers in neural network energy landscape",
+    "authors": [
+      "Felix Draxler",
+      "Kambis Veschgini",
+      "Manfred Salmhofer",
+      "Fred A. Hamprecht"
+    ],
+    "year": 2018,
+    "venue": "International Conference on Machine Learning",
+    "doi": null,
+    "arxiv_id": "1803.00885",
+    "url": "https://arxiv.org/abs/1803.00885",
+    "pdf_url": "https://arxiv.org/pdf/1803.00885",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 27,
+    "bibkey": "Izmailov2018AveragingWeights",
+    "title": "Averaging weights leads to wider optima and better generalization",
+    "authors": [
+      "Pavel Izmailov",
+      "Dmitrii Podoprikhin",
+      "Timur Garipov",
+      "Dmitry Vetrov",
+      "Andrew Gordon Wilson"
+    ],
+    "year": 2018,
+    "venue": "Conference on Uncertainty in Artificial Intelligence",
+    "doi": null,
+    "arxiv_id": "1803.05407",
+    "url": "https://arxiv.org/abs/1803.05407",
+    "pdf_url": "https://arxiv.org/pdf/1803.05407",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 28,
+    "bibkey": "Mele2025DensityStates",
+    "title": "Density of states in neural networks: an in-depth exploration of learning in parameter space",
+    "authors": [
+      "Margherita Mele",
+      "Roberto Menichetti",
+      "Alessandro Ingrosso",
+      "Raffaello Potestio"
+    ],
+    "year": 2025,
+    "venue": "Transactions on Machine Learning Research",
+    "doi": null,
+    "arxiv_id": "2409.18683",
+    "url": "https://openreview.net/forum?id=BLDtWlFKhn",
+    "pdf_url": "https://openreview.net/pdf?id=BLDtWlFKhn",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 29,
+    "bibkey": "Winer2026DeepNeuralNetsHamiltonians",
+    "title": "Deep neural nets as Hamiltonians",
+    "authors": [
+      "Mike Winer",
+      "Boris Hanin"
+    ],
+    "year": 2026,
+    "venue": "Physical Review E",
+    "doi": "10.1103/xg33-ksqn",
+    "arxiv_id": "2503.23982",
+    "url": "https://doi.org/10.1103/xg33-ksqn",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 30,
+    "bibkey": "Neal2001AnnealedImportance",
+    "title": "Annealed importance sampling",
+    "authors": [
+      "Radford M. Neal"
+    ],
+    "year": 2001,
+    "venue": "Statistics and Computing",
+    "doi": "10.1023/A:1008923215028",
+    "arxiv_id": "physics/9803008",
+    "url": "https://arxiv.org/abs/physics/9803008",
+    "pdf_url": "https://arxiv.org/pdf/physics/9803008",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 31,
+    "bibkey": "DelMoral2006SMCSamplers",
+    "title": "Sequential Monte Carlo samplers",
+    "authors": [
+      "Pierre Del Moral",
+      "Arnaud Doucet",
+      "Ajay Jasra"
+    ],
+    "year": 2006,
+    "venue": "Journal of the Royal Statistical Society: Series B",
+    "doi": "10.1111/j.1467-9868.2006.00553.x",
+    "arxiv_id": null,
+    "url": "https://doi.org/10.1111/j.1467-9868.2006.00553.x",
+    "pdf_url": "https://www.stats.ox.ac.uk/~doucet/delmoral_doucet_jasra_sequentialmontecarlosamplersJRSSB.pdf",
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 32,
+    "bibkey": "Wood1994SimulationVMF",
+    "title": "Simulation of the von Mises Fisher distribution",
+    "authors": [
+      "Andrew T. A. Wood"
+    ],
+    "year": 1994,
+    "venue": "Communications in Statistics - Simulation and Computation",
+    "doi": "10.1080/03610919408813161",
+    "arxiv_id": null,
+    "url": "https://doi.org/10.1080/03610919408813161",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 33,
+    "bibkey": "Shuman2013EmergingGraphSignal",
+    "title": "The emerging field of signal processing on graphs",
+    "authors": [
+      "David I. Shuman",
+      "Sunil K. Narang",
+      "Pascal Frossard",
+      "Antonio Ortega",
+      "Pierre Vandergheynst"
+    ],
+    "year": 2013,
+    "venue": "IEEE Signal Processing Magazine",
+    "doi": "10.1109/MSP.2012.2235192",
+    "arxiv_id": null,
+    "url": "https://doi.org/10.1109/MSP.2012.2235192",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 34,
+    "bibkey": "Ortega2018GraphSignalProcessing",
+    "title": "Graph signal processing: Overview, challenges, and applications",
+    "authors": [
+      "Antonio Ortega",
+      "Pascal Frossard",
+      "Jelena Kovačević",
+      "José M. F. Moura",
+      "Pierre Vandergheynst"
+    ],
+    "year": 2018,
+    "venue": "Proceedings of the IEEE",
+    "doi": "10.1109/JPROC.2018.2820126",
+    "arxiv_id": null,
+    "url": "https://doi.org/10.1109/JPROC.2018.2820126",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  },
+  {
+    "rank": 35,
+    "bibkey": "Zhou2004LearningLocalGlobal",
+    "title": "Learning with local and global consistency",
+    "authors": [
+      "Dengyong Zhou",
+      "Olivier Bousquet",
+      "Thomas N. Lal",
+      "Jason Weston",
+      "Bernhard Schölkopf"
+    ],
+    "year": 2004,
+    "venue": "Advances in Neural Information Processing Systems",
+    "doi": null,
+    "arxiv_id": null,
+    "url": "https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency",
+    "pdf_url": null,
+    "source": "curated_verified",
+    "query": "local entropy neural network solution geometry"
+  }
+]

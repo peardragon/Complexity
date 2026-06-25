@@ -1,0 +1,2 @@
+rule,nmstv_mean,tv_mean,n_datasets
+low_tv_spectral_teacher,0.4070564814370742,0.2035282407185371,1

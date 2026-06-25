@@ -1,0 +1,5 @@
+{
+  "reference_index": "/home/bjyong/Complexity/local_project/03_dnn_mnist/03_reference_search/raw_outputs/very_low_tv_spectral_teacher_v1/04_exact_reference_search/reference_index.csv",
+  "rule": "very_low_tv_spectral_teacher",
+  "target_refs_per_rule": 90
+}

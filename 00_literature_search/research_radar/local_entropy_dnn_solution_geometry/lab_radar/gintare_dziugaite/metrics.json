@@ -1,0 +1,459 @@
+{
+  "lab_dir": "gintare_dziugaite",
+  "pi_ids": [
+    "A5021062973"
+  ],
+  "year_span": [
+    2016,
+    2026
+  ],
+  "totals": {
+    "papers": 60,
+    "citations": 1234,
+    "researchers": 179,
+    "likely_members": 31,
+    "topics": 25
+  },
+  "papers_per_year": {
+    "2016": 1,
+    "2017": 3,
+    "2018": 2,
+    "2019": 7,
+    "2020": 12,
+    "2021": 5,
+    "2022": 6,
+    "2023": 3,
+    "2024": 12,
+    "2025": 6,
+    "2026": 3
+  },
+  "citations_per_year": {
+    "2016": 255,
+    "2017": 257,
+    "2018": 15,
+    "2019": 388,
+    "2020": 191,
+    "2021": 105,
+    "2022": 17,
+    "2023": 2,
+    "2024": 4,
+    "2025": 0,
+    "2026": 0
+  },
+  "oa_ratio_per_year": {
+    "2016": 1.0,
+    "2017": 0.667,
+    "2018": 1.0,
+    "2019": 0.714,
+    "2020": 0.583,
+    "2021": 0.8,
+    "2022": 1.0,
+    "2023": 1.0,
+    "2024": 1.0,
+    "2025": 1.0,
+    "2026": 1.0
+  },
+  "top_topics": [
+    {
+      "topic": "Neural Networks and Applications",
+      "papers": 9
+    },
+    {
+      "topic": "Machine Learning and Algorithms",
+      "papers": 6
+    },
+    {
+      "topic": "Machine Learning and Data Classification",
+      "papers": 5
+    },
+    {
+      "topic": "Privacy-Preserving Technologies in Data",
+      "papers": 5
+    },
+    {
+      "topic": "Adversarial Robustness in Machine Learning",
+      "papers": 5
+    },
+    {
+      "topic": "Advanced Neural Network Applications",
+      "papers": 4
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "papers": 4
+    },
+    {
+      "topic": "Domain Adaptation and Few-Shot Learning",
+      "papers": 3
+    },
+    {
+      "topic": "Fault Detection and Control Systems",
+      "papers": 2
+    },
+    {
+      "topic": "Explainable Artificial Intelligence (XAI)",
+      "papers": 2
+    },
+    {
+      "topic": "Underwater Acoustics Research",
+      "papers": 1
+    },
+    {
+      "topic": "Model Reduction and Neural Networks",
+      "papers": 1
+    }
+  ],
+  "top_fields": [
+    {
+      "field": "Computer Science",
+      "papers": 51
+    },
+    {
+      "field": "Engineering",
+      "papers": 5
+    },
+    {
+      "field": "Earth and Planetary Sciences",
+      "papers": 1
+    },
+    {
+      "field": "Physics and Astronomy",
+      "papers": 1
+    },
+    {
+      "field": "Medicine",
+      "papers": 1
+    },
+    {
+      "field": "Decision Sciences",
+      "papers": 1
+    }
+  ],
+  "emerging_topics": [
+    {
+      "topic": "Multi-Agent Systems and Negotiation",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.033,
+      "delta": 0.033
+    },
+    {
+      "topic": "Risk and Portfolio Optimization",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.033,
+      "delta": 0.033
+    },
+    {
+      "topic": "Intelligent Tutoring Systems and Adaptive Learning",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.033,
+      "delta": 0.033
+    },
+    {
+      "topic": "Experimental Learning in Engineering",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.033,
+      "delta": 0.033
+    },
+    {
+      "topic": "Mineral Processing and Grinding",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.033,
+      "delta": 0.033
+    },
+    {
+      "topic": "Advanced Database Systems and Queries",
+      "early": 0,
+      "late": 1,
+      "early_share": 0.0,
+      "late_share": 0.033,
+      "delta": 0.033
+    }
+  ],
+  "declining_topics": [
+    {
+      "topic": "Advanced Neural Network Applications",
+      "early": 4,
+      "late": 0,
+      "early_share": 0.133,
+      "late_share": 0.0,
+      "delta": -0.133
+    },
+    {
+      "topic": "Machine Learning and Algorithms",
+      "early": 5,
+      "late": 1,
+      "early_share": 0.167,
+      "late_share": 0.033,
+      "delta": -0.133
+    },
+    {
+      "topic": "Stochastic Gradient Optimization Techniques",
+      "early": 3,
+      "late": 1,
+      "early_share": 0.1,
+      "late_share": 0.033,
+      "delta": -0.067
+    },
+    {
+      "topic": "Machine Learning and Data Classification",
+      "early": 3,
+      "late": 2,
+      "early_share": 0.1,
+      "late_share": 0.067,
+      "delta": -0.033
+    },
+    {
+      "topic": "Underwater Acoustics Research",
+      "early": 1,
+      "late": 0,
+      "early_share": 0.033,
+      "late_share": 0.0,
+      "delta": -0.033
+    },
+    {
+      "topic": "Adversarial Robustness in Machine Learning",
+      "early": 3,
+      "late": 2,
+      "early_share": 0.1,
+      "late_share": 0.067,
+      "delta": -0.033
+    }
+  ],
+  "new_collaborators_per_year": {
+    "2016": 2,
+    "2017": 0,
+    "2018": 0,
+    "2019": 10,
+    "2020": 29,
+    "2021": 4,
+    "2022": 9,
+    "2023": 11,
+    "2024": 47,
+    "2025": 19,
+    "2026": 47
+  },
+  "top_venues": [
+    {
+      "venue": "arXiv (Cornell University)",
+      "papers": 44
+    },
+    {
+      "venue": "ArXiv.org",
+      "papers": 4
+    },
+    {
+      "venue": "Neural Information Processing Systems",
+      "papers": 2
+    },
+    {
+      "venue": "International Conference on Artificial Intelligence and Statistics",
+      "papers": 2
+    },
+    {
+      "venue": "Apollo (University of Cambridge)",
+      "papers": 1
+    },
+    {
+      "venue": "SSRN Electronic Journal",
+      "papers": 1
+    },
+    {
+      "venue": "Open MIND",
+      "papers": 1
+    }
+  ],
+  "rising_members": [
+    {
+      "name": "Jonathan Frankle",
+      "first_author_count": 5,
+      "papers": 11,
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "name": "Mahdi Haghifam",
+      "first_author_count": 5,
+      "papers": 9,
+      "years": [
+        2019,
+        2025
+      ]
+    },
+    {
+      "name": "Mansheej Paul",
+      "first_author_count": 3,
+      "papers": 5,
+      "years": [
+        2020,
+        2025
+      ]
+    },
+    {
+      "name": "Nazanin Mohammadi Sepahvand",
+      "first_author_count": 3,
+      "papers": 3,
+      "years": [
+        2024,
+        2026
+      ]
+    },
+    {
+      "name": "Jin Tian",
+      "first_author_count": 2,
+      "papers": 3,
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "name": "Theodore Papamarkou",
+      "first_author_count": 2,
+      "papers": 2,
+      "years": [
+        2026,
+        2026
+      ]
+    },
+    {
+      "name": "Ghada Sokar",
+      "first_author_count": 1,
+      "papers": 2,
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "name": "Eleni Triantafillou",
+      "first_author_count": 1,
+      "papers": 3,
+      "years": [
+        2024,
+        2025
+      ]
+    }
+  ],
+  "notable_papers": [
+    {
+      "title": "A study of the effect of JPG compression on adversarial images",
+      "year": 2016,
+      "citations": 255,
+      "doi": "10.48550/arxiv.1608.00853",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Computing Nonvacuous Generalization Bounds for Deep (Stochastic) Neural Networks with Many More Parameters than Training Data",
+      "year": 2017,
+      "citations": 250,
+      "doi": "10.48550/arxiv.1703.11008",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Stabilizing the Lottery Ticket Hypothesis",
+      "year": 2019,
+      "citations": 146,
+      "doi": "10.48550/arxiv.1903.01611",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Linear Mode Connectivity and the Lottery Ticket Hypothesis",
+      "year": 2019,
+      "citations": 100,
+      "doi": "10.48550/arxiv.1912.05671",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Deep Learning on a Data Diet: Finding Important Examples Early in\\n Training",
+      "year": 2021,
+      "citations": 81,
+      "doi": "10.48550/arxiv.2107.07075",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "The Lottery Ticket Hypothesis at Scale",
+      "year": 2019,
+      "citations": 78,
+      "doi": null,
+      "venue": null
+    },
+    {
+      "title": "Pruning Neural Networks at Initialization: Why are We Missing the Mark?",
+      "year": 2020,
+      "citations": 48,
+      "doi": "10.48550/arxiv.2009.08576",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Information-Theoretic Generalization Bounds for SGLD via Data-Dependent Estimates",
+      "year": 2019,
+      "citations": 38,
+      "doi": "10.48550/arxiv.1911.02151",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "RelatIF: Identifying Explanatory Training Samples via Relative Influence",
+      "year": 2020,
+      "citations": 33,
+      "doi": null,
+      "venue": "International Conference on Artificial Intelligence and Statistics"
+    },
+    {
+      "title": "In Defense of Uniform Convergence: Generalization via derandomization\\n with an application to interpolating predictors",
+      "year": 2019,
+      "citations": 23,
+      "doi": "10.48550/arxiv.1912.04265",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Enforcing Interpretability and its Statistical Impacts: Trade-offs between Accuracy and Interpretability",
+      "year": 2020,
+      "citations": 22,
+      "doi": "10.48550/arxiv.2010.13764",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "NeurIPS 2020 Competition: Predicting Generalization in Deep Learning",
+      "year": 2020,
+      "citations": 22,
+      "doi": "10.48550/arxiv.2012.07976",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "Deep learning versus kernel learning: an empirical study of loss landscape geometry and the time evolution of the Neural Tangent Kernel",
+      "year": 2020,
+      "citations": 20,
+      "doi": null,
+      "venue": "Neural Information Processing Systems"
+    },
+    {
+      "title": "On the role of data in PAC-Bayes bounds",
+      "year": 2020,
+      "citations": 19,
+      "doi": "10.48550/arxiv.2006.10929",
+      "venue": "arXiv (Cornell University)"
+    },
+    {
+      "title": "On the role of data in PAC-Bayes",
+      "year": 2021,
+      "citations": 11,
+      "doi": null,
+      "venue": "International Conference on Artificial Intelligence and Statistics"
+    }
+  ],
+  "themes": {
+    "has_themes": false
+  }
+}

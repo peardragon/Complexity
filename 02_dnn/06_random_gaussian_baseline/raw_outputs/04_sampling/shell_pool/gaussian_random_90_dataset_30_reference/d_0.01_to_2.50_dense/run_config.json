@@ -1,0 +1,85 @@
+{
+  "aggregation": {
+    "bootstrap_replicates": 400
+  },
+  "claim_policy": {
+    "failed_radius": "no_claim"
+  },
+  "compute": {
+    "chunk_size": 1024,
+    "device": "auto",
+    "dtype": "float32",
+    "workers": 1
+  },
+  "derivative": {
+    "enabled": true
+  },
+  "derivative_qc": {
+    "bootstrap_sd_dphi_full_dr_max": 0.012,
+    "ce_replay_max_abs_diff_allowed": 0.001,
+    "max_split_dlogZ_dr_per_P_diff": 0.004
+  },
+  "ensemble": {
+    "datasets_per_beta": 90,
+    "references_per_dataset": 30
+  },
+  "method": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+  "model": {
+    "P": 2545,
+    "architecture": "2-48-48-1-tanh"
+  },
+  "qc": {
+    "aggregate_ref_level_ess_min": 691200,
+    "bootstrap_sd_phi_max": 0.012,
+    "finite_references_per_beta_radius": 2700,
+    "max_split_logZ_per_P_diff": 0.004,
+    "q05_ess_fraction_min": 0.2,
+    "smc_max_tempering_steps": 120,
+    "smc_min_cess_fraction_min": 0.6
+  },
+  "run": {
+    "id_suffix": "GAUSS_90d30r_dense_gpu23",
+    "name": "gaussian_exact_shell_ce_smc_90dataset_30reference_dense_to2p5_lambda1_gamma1",
+    "preset": "random_baseline",
+    "resume_missing_units": true,
+    "seed": 20260622
+  },
+  "sampling": {
+    "h_ladder": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      Infinity
+    ],
+    "proposal": "exact_shell_l2_vmf_adaptive_ce_smc",
+    "r0": 0.01,
+    "radius_range": {
+      "decimals": 2,
+      "start": 0.01,
+      "step": 0.01,
+      "stop": 2.5
+    },
+    "samples_per_ref_radius_constant": 1024,
+    "samples_per_ref_radius_mode": "constant"
+  },
+  "smc": {
+    "bisection_steps": 32,
+    "max_steps": 120,
+    "mh_sweeps": 1,
+    "min_delta_t": 0.0001,
+    "move_kappa_factor": 80.0,
+    "resample_ess_fraction": 0.75,
+    "target_cess_fraction": 0.75
+  },
+  "stage": "06_random_gaussian_baseline.exact_shell_l2_vmf_ce_smc",
+  "target": {
+    "gamma_ce": 1.0,
+    "lambda_reg": 1.0
+  },
+  "upstream": {
+    "dataset_raw_root": "02_dnn/06_random_gaussian_baseline/raw_outputs/01_dataset_gen/gaussian_random_90_dataset/raw_datasets",
+    "reference_search_root": "02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/reference_pool/gaussian_random_90_dataset_30_reference/selected_reference_pool"
+  }
+}

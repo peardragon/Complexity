@@ -1,0 +1,17 @@
+method,region,truth_mass,estimated_mass,hit_count,weighted
+random_walk_mcmc,solution_core,0.6439396218642788,0.773,2319,False
+random_walk_mcmc,near_same_valley,0.2377499619179926,0.216,648,False
+random_walk_mcmc,across_barrier,0.012301631293273888,0.0,0,False
+random_walk_mcmc,remote_needle,0.10485821982581811,0.0,0,False
+hmc,solution_core,0.6439396218642788,0.7166666666666667,2150,False
+hmc,near_same_valley,0.2377499619179926,0.2826666666666667,848,False
+hmc,across_barrier,0.012301631293273888,0.0,0,False
+hmc,remote_needle,0.10485821982581811,0.0,0,False
+pseudo_langevin,solution_core,0.6439396218642788,0.6003333333333334,1801,False
+pseudo_langevin,near_same_valley,0.2377499619179926,0.38333333333333336,1150,False
+pseudo_langevin,across_barrier,0.012301631293273888,0.0,0,False
+pseudo_langevin,remote_needle,0.10485821982581811,0.0,0,False
+vmf_l2_final,solution_core,0.6439396218642788,0.643205805416732,3747,True
+vmf_l2_final,near_same_valley,0.2377499619179926,0.2390494198141543,3990,True
+vmf_l2_final,across_barrier,0.012301631293273888,0.012680520092088437,2169,True
+vmf_l2_final,remote_needle,0.10485821982581811,0.10364141541265069,1485,True

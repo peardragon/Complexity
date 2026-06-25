@@ -1,0 +1,27 @@
+{
+  "query": "Pierfrancesco Urbani",
+  "kind": "author",
+  "institution": null,
+  "orcid": "",
+  "candidates": [
+    {
+      "id": "A5017614803",
+      "name": "Pierfrancesco Urbani",
+      "orcid": "0000-0002-4722-6811",
+      "last_institution": "Centre National de la Recherche Scientifique",
+      "works_count": 97,
+      "cited_by_count": 2646,
+      "top_topics": [
+        "Material Dynamics and Properties",
+        "Theoretical and Computational Physics",
+        "Advanced Thermodynamics and Statistical Mechanics",
+        "Neural Networks and Applications"
+      ],
+      "recent_titles": [
+        "2026 · Theory of learning of high-dimensional controlled non-linear dynamical systems (I): models and methods",
+        "2026 · Theory of learning of high-dimensional controlled non-linear dynamical systems (I): models and methods",
+        "2026 · High-dimensional dynamical systems: co-existence of attractors, phase transitions, maximal Lyapunov exponent and response to periodic drive"
+      ]
+    }
+  ]
+}

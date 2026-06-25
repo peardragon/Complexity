@@ -13,8 +13,6 @@
   },
   "run_name": "18_beta_cell_60_dataset_30_reference",
   "selected_reference_count": 32400,
-  "source_reference_search_root": "not_retained_summary_only",
-  "target_reference_pool_root": "02_dnn/04_sampling/raw_outputs/reference_pool/18_beta_cell_60_dataset_30_reference/selected_reference_pool",
-  "mode": "summary_only",
-  "theta_payloads_retained": false
+  "source_reference_search_root": "02_dnn/03_reference_search/raw_outputs/18_beta_cell_60_dataset_30_reference/selected_references",
+  "target_reference_pool_root": "02_dnn/04_sampling/raw_outputs/reference_pool/18_beta_cell_60_dataset_30_reference/selected_reference_pool"
 }

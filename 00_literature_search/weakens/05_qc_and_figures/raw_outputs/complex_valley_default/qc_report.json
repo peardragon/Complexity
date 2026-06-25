@@ -1,0 +1,59 @@
+{
+  "experiment_id": "complex_valley_default",
+  "qc_thresholds": {
+    "max_region_l1_error": 0.45,
+    "min_ess_fraction": 0.012,
+    "min_region_hits": 25,
+    "min_truth_region_mass": 0.015
+  },
+  "summary": [
+    {
+      "accept_rate": 0.5621111111111111,
+      "covered_important_regions": 2,
+      "ess_fraction": 0.2829266166375625,
+      "failure_reason": "missing_important_region",
+      "important_regions": 4,
+      "method": "random_walk_mcmc",
+      "method_role": "existing_method_reproduction",
+      "pass_qc": false,
+      "region_l1_error": 0.35222858502270826,
+      "sample_count": 3000
+    },
+    {
+      "accept_rate": 0.9894444444444445,
+      "covered_important_regions": 2,
+      "ess_fraction": 0.7421784243817762,
+      "failure_reason": "missing_important_region",
+      "important_regions": 4,
+      "method": "hmc",
+      "method_role": "existing_method_reproduction",
+      "pass_qc": false,
+      "region_l1_error": 0.35189525168937497,
+      "sample_count": 3000
+    },
+    {
+      "accept_rate": null,
+      "covered_important_regions": 2,
+      "ess_fraction": 0.001483168852699521,
+      "failure_reason": "missing_important_region,ess_fraction_low",
+      "important_regions": 4,
+      "method": "pseudo_langevin",
+      "method_role": "existing_method_proxy_reproduction",
+      "pass_qc": false,
+      "region_l1_error": 0.334895251689375,
+      "sample_count": 3000
+    },
+    {
+      "accept_rate": null,
+      "covered_important_regions": 4,
+      "ess_fraction": 0.019034933771051966,
+      "failure_reason": "",
+      "important_regions": 4,
+      "method": "vmf_l2_final",
+      "method_role": "final_method_proxy_instantiation",
+      "pass_qc": true,
+      "region_l1_error": 0.02152078246414724,
+      "sample_count": 80000
+    }
+  ]
+}

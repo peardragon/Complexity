@@ -1,0 +1,6 @@
+{
+  "expected_record_count": 2700,
+  "output_manifest": "02_dnn/06_random_gaussian_baseline/manifests/reference_manifest_gaussian_90_30.csv",
+  "projected_unit_count": 675000,
+  "selected_record_count": 2700
+}

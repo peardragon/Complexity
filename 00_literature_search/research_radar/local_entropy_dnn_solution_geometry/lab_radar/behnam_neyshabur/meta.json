@@ -1,0 +1,15 @@
+{
+  "authors": [
+    "A5035369215"
+  ],
+  "institution": null,
+  "year_from": 2016,
+  "year_to": 2026,
+  "raw_count": 63,
+  "unique_count": 47,
+  "year_span": [
+    2016,
+    2024
+  ],
+  "works_file": "works.jsonl"
+}

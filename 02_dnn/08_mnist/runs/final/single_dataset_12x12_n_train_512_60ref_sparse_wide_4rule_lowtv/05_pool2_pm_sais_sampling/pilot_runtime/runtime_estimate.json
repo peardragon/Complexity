@@ -1,9 +1,0 @@
-{
-  "estimated_full_sampling_hours": 8.173367914358774,
-  "full_units": 4560,
-  "max_split_logZ_per_P_diff": 0.019560445816145668,
-  "mean_unit_elapsed_s": 6.452658879756927,
-  "pilot_elapsed_s": 149.93868708610535,
-  "pilot_units": 20,
-  "q05_ess_fraction": 0.6747174795263237
-}

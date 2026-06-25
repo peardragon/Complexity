@@ -1,81 +1,143 @@
-**/results_raw/**
-!**/results_raw/.gitkeep
-!**/results_raw/runs/.gitkeep
-!**/results_raw/smoke_runs/.gitkeep
-!**/results_summary/**
-!**/results_summary/runs/.gitkeep
-!**/results_summary/smoke_runs/.gitkeep
-
-# In-progress DNN 30/30 runs. Remove these once the full 01/02/03 run set is
-# complete and intentionally promoted.
-02_dnn/01_dataset_gen/d2/results_summary/runs/ea140c05985f/**
-02_dnn/02_complexity_measure/d2/results_summary/runs/5841c6999151/**
-02_dnn/03_reference_search/d2/results_summary/runs/9387a214b7dd/**
+# Python, notebooks, and local environments
 **/__pycache__/
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
 .ipynb_checkpoints/
 .venv/
+00_literature_search/.lit_venv/
 julia_env/
 .uv_cache/
 .julia_depot/
 .tmp_jupyter/
+
+# Local tool/session state
 .lh/
 .history/
+**/.agents/
+**/.codex/
+GIT_HELPER.md
+
+# Logs and temporary files
 *.log
 *.log.stderr
-*.npz
-*.npy
+*.tmp
 *.tmp.*
-**/sample_payloads/**
-GIT_HELPER.md
-payloads/
+*.bak
+*.swp
+logs/
+**/logs/
+
+# Binary and raw data payloads stay local unless explicitly promoted.
+*.npy
+*.npz
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.parquet
+
+# Legacy result contracts
+**/results_raw/**
+!**/results_raw/.gitkeep
+!**/results_raw/runs/.gitkeep
+!**/results_raw/smoke_runs/.gitkeep
+**/results_summary/**
+!**/results_summary/.gitkeep
+!**/results_summary/runs/.gitkeep
+!**/results_summary/smoke_runs/.gitkeep
+
+# Workstation-only raw payload trees. Keep configs, source, reports, compact
+# summaries, figures, manifests, and promoted markdown visible to Git.
+**/raw_outputs/**/raw/
+**/raw_outputs/**/raw/**
+**/raw_outputs/**/raw_datasets/
+**/raw_outputs/**/raw_datasets/**
+**/raw_outputs/**/raw_data/
+**/raw_outputs/**/raw_data/**
+**/raw_outputs/**/sample_payloads/
+**/raw_outputs/**/sample_payloads/**
+**/raw_outputs/**/shards/
+**/raw_outputs/**/shards/**
+**/raw_outputs/**/selected_reference_pool/
+**/raw_outputs/**/selected_reference_pool/**
+**/raw_outputs/**/selected_references/
+**/raw_outputs/**/selected_references/**
+**/raw_outputs/**/unit_summaries/
+**/raw_outputs/**/unit_summaries/**
+**/raw_outputs/**/raw_attempts/
+**/raw_outputs/**/raw_attempts/**
+**/raw_outputs/**/attempt_logs/
+**/raw_outputs/**/attempt_logs/**
+**/raw_outputs/**/superhard_examples/
+**/raw_outputs/**/superhard_examples/**
+**/raw_outputs/**/logs/
+**/raw_outputs/**/logs/**
+**/smoke_runs/**/sample_payloads/
+**/smoke_runs/**/sample_payloads/**
+**/smoke_runs/**/unit_summaries/
+**/smoke_runs/**/unit_summaries/**
+**/smoke_runs/**/attempt_logs/
+**/smoke_runs/**/attempt_logs/**
+**/smoke_runs/**/logs/
+**/smoke_runs/**/logs/**
+
+# Large row-level sampling/audit tables; compact summaries and reports remain
+# trackable.
+**/metadata/loss_gap_ratios.csv
+**/metadata/sample_unit_summary.csv
+**/metadata/rh_by_ref_radius_h.csv
+**/metadata/logs/progress.jsonl
+**/summary_tables/loss_gap_ratios.csv
+**/summary_tables/sample_unit_summary.csv
+**/summary_tables/rh_by_ref_radius_h.csv
+**/summary_tables/logs/progress.jsonl
+**/shell_summary_by_unit*.csv
+**/unit_summary_long.csv
+**/overlay_unit_summary_long.csv
+**/pilot_unit_summary.csv
+**/sampling_log_latest*.csv
+**/shard*_unit_summary.csv
+**/tasks_shard*_of_*.csv
+**/QC_STATUS.json
+**/figures/*interactive*.html
+
+# Copied source/cache snapshots.
+**/src_cache_*/
+**/src_cache_*/**
+**/.src_cache_*/
+**/.src_cache_*/**
+
+# Runtime process/status breadcrumbs.
+**/AFFINITY_REBALANCER_PID.txt
+**/RUNNING_PIDS.txt
+**/MANAGER_STATUS.txt
+**/MONITOR_STATUS.txt
+
+# Local literature search caches and cloned helper repos.
+00_literature_search/research_radar/**/data/
+00_literature_search/research_radar/**/data/**
+00_literature_search/**/megasearch/raw/
+00_literature_search/**/megasearch/raw/**
+00_literature_search/**/pdfs/
+00_literature_search/**/pdfs/**
+00_literature_search/**/pdfs_*/
+00_literature_search/**/pdfs_*/**
+00_literature_search/tools/scholar-lab-radar/
+00_literature_search/tools/scholar-lab-radar/**
+00_literature_search/tools/scholar-megasearch/
+00_literature_search/tools/scholar-megasearch/**
+
+# Local backup and one-off helper bins. Preserve explicit placeholders only.
 99_backup/**
 !99_backup/.gitkeep
 99_codex_bin/**
 !99_codex_bin/.gitkeep
-*.tmp
+**/backup/**
+
+# Project-specific transfer/archive payloads
+payloads/
+**/sample_payloads/**
 02_dnn/transfer_archives/**
-
-# Promoted raw payloads stay on this workstation. Track configs, code, reports,
-# compact summaries, and figures in Git, but do not put million-file raw payload
-# trees or row-level audit tables into repository history.
-01_theory/02_theory_sampling/raw_outputs/shell_pool/sample_payloads/**
-02_dnn/01_dataset_gen/raw_outputs/**/raw/**
-02_dnn/01_dataset_gen/raw_outputs/**/raw_datasets/**
-02_dnn/02_complexity_measure/raw_outputs/**/raw/**
-02_dnn/03_reference_search/raw_outputs/**/raw/**
-02_dnn/03_reference_search/raw_outputs/**/raw_attempts/**
-02_dnn/03_reference_search/raw_outputs/**/selected_references/**
-02_dnn/04_sampling/raw_outputs/**/raw/**
-02_dnn/04_sampling/raw_outputs/**/sample_payloads/**
-02_dnn/04_sampling/raw_outputs/reference_pool/*/selected_reference_pool/cell_beta_*/**
-02_dnn/04_sampling/raw_outputs/shell_pool/36_beta_cell_30_dataset_30_reference/**
-
-# Dense/sparse shell runs keep very large row-level metadata locally. Compact
-# manifests, summaries, figures, and provenance remain tracked.
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/loss_gap_ratios.csv
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/sample_unit_summary.csv
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/rh_by_ref_radius_h.csv
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_0.01_to_2.50_*/metadata/logs/progress.jsonl
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/loss_gap_ratios.csv
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/sample_unit_summary.csv
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/rh_by_ref_radius_h.csv
-02_dnn/04_sampling/raw_outputs/shell_pool/*/d_*/summary_tables/logs/progress.jsonl
-
-# 08_mnist local raw payloads and per-unit audit trees. Keep docs, configs,
-# source, compact summary tables, figures, reports, and manifests visible to Git.
-02_dnn/08_mnist/data/**
-02_dnn/08_mnist/**/raw_datasets/**
-02_dnn/08_mnist/**/selected_reference_pool/**
-02_dnn/08_mnist/**/sample_payloads/**
-02_dnn/08_mnist/**/unit_summaries/**
-02_dnn/08_mnist/**/stability_pilot*/**
-02_dnn/08_mnist/**/attempt_logs/**
-02_dnn/08_mnist/**/shell_summary_by_unit*.csv
-02_dnn/08_mnist/**/unit_summary_long.csv
-02_dnn/08_mnist/**/overlay_unit_summary_long.csv
-02_dnn/08_mnist/**/pilot_unit_summary.csv
-02_dnn/08_mnist/**/05_pool2_pm_sais_sampling/QC_STATUS.json
-02_dnn/08_mnist/**/figures/*interactive*.html
-02_dnn/08_mnist/**/logs/**
