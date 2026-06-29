@@ -1,0 +1,152 @@
+{
+  "aggregate_status": {
+    "completed_units": 2,
+    "etas": [
+      0.02
+    ],
+    "expected_units": 2,
+    "max_ce_replay_abs_diff": 0.0,
+    "max_split_dlogZ_dr_per_P_diff": 0.06916717076939129,
+    "max_split_logZ_per_P_diff": 0.005148481170704752,
+    "max_unit_elapsed_s": 0.8858354091644287,
+    "mean_unit_elapsed_s": 0.7202032804489136,
+    "min_ess_fraction": 0.6251780945078831,
+    "note": "Eta-specific exact-reference phi smoke.",
+    "radial_derivative_enabled": true,
+    "radii": [
+      0.1,
+      0.2
+    ],
+    "ref_count": 1,
+    "resource_policy": {
+      "cpu_limit_target": "use <=60% by limiting shard count and thread count",
+      "cpu_threads_per_process": 2,
+      "device": "cpu",
+      "gpu_limit_target": "use <=50%; this run uses CPU only unless the wrapper is changed after a GPU smoke"
+    },
+    "samples_per_ref_radius": 64,
+    "save_unit_samples_npz": true,
+    "status": "complete"
+  },
+  "compute": {
+    "chunk_size": 256,
+    "derivative_chunk_size": 32,
+    "device": "cpu",
+    "dtype": "float32"
+  },
+  "dataset": {
+    "downscale": "PIL.Image.resize((10, 10), Image.Resampling.BOX)",
+    "input_dim": 100,
+    "input_side": 10,
+    "label_rules": [
+      "low_tv_spectral_teacher",
+      "real_even_odd",
+      "teacher_nn",
+      "random_label"
+    ],
+    "n_splits": 1,
+    "n_test": 2048,
+    "n_train": 512
+  },
+  "experiment_id": "mnist10_eta_specific_reference_phi_smoke",
+  "identity": "direct_derivative_unit_smoke_eta_2unit_n64",
+  "mode": "final_single_dataset",
+  "model": {
+    "P": 2461,
+    "activation": "tanh",
+    "architecture": "100-20-20-1-tanh",
+    "hidden_layers": 2,
+    "hidden_width": 20,
+    "input_dim": 100
+  },
+  "outputs": {
+    "analysis_root": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/07_reference_family_analysis",
+    "run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/direct_derivative_unit_smoke_eta_2unit_n64",
+    "save_unit_samples_npz": true,
+    "source_reuse": {
+      "allrule_dense_source": "/home/bjyong/Complexity/local_project/03_dnn_mnist/shared/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_dense_0p010_to_0p080",
+      "new_sparse_radii": [
+        0.1,
+        0.2
+      ],
+      "overlap_radii_expected_reuse": [
+        0.01,
+        0.02,
+        0.03,
+        0.05,
+        0.08
+      ]
+    },
+    "source_run_root": "02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500",
+    "summary_only_pool2": true
+  },
+  "python": "/home/bjyong/miniconda3/bin/python",
+  "qc": {
+    "bootstrap_sd_phi_max": 0.012,
+    "finite_unit_fraction_min": 0.95,
+    "max_split_logZ_per_P_diff": 0.004,
+    "q05_ess_fraction_min": 0.04
+  },
+  "reference_search": {
+    "eta_reference_run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_gapfill_0p02_0p05_0p15_0p25_30ref_cpu60_gpu0",
+    "max_attempts_per_dataset": 600,
+    "optimizer": "adam_then_lbfgs_if_needed",
+    "selected_refs_per_dataset": 30
+  },
+  "resolved_at_unix": 1782644851.3796732,
+  "resource_policy": {
+    "cpu_limit_target": "use <=60% by limiting shard count and thread count",
+    "cpu_threads_per_process": 2,
+    "device": "cpu",
+    "gpu_limit_target": "use <=50%; this run uses CPU only unless the wrapper is changed after a GPU smoke"
+  },
+  "sampling": {
+    "fallback_policies_enabled": false,
+    "fallback_policy_note": "Sparse 2.50 extension starts from the all-rule dense QC-pass run. Overlapping dense radii are reused. Larger sparse radii use the unchanged hard-shell PM-SAIS estimator with targeted replicate/particle fallback policies selected from the one-reference sparse pilot; remaining failed rule/radius rows are no-claim until targeted recomputation passes.",
+    "lambda_reg": 1.0,
+    "note": "Eta-specific exact references from 06_eta_flip_phase_transition reference-search smoke.",
+    "proposal": "exact_shell_l2_vmf_adaptive_ce_tempered_smc_qcpass_line",
+    "r0": 0.1,
+    "radial_derivative_enabled": true,
+    "radii": [
+      0.1,
+      0.2
+    ],
+    "radius_grid_kind": "dense_local_support_0p010_to_0p650_resampled",
+    "recovery_note": "All-rule sparse-to-2.50 extension. Reuses identical 10x10 BOX datasets, exact references, and overlapping QC-passed dense shell units from the all-rule dense run. New sparse radii beyond 0.08 are computed with the unchanged hard-shell PM-SAIS skeleton.",
+    "resampling_note": "Fresh PM-SAIS unit summaries using existing exact references and selector membership. Procedure and fallback policies are inherited from 08_mnist; seeds are offset for an independent rerun.",
+    "samples_per_ref_radius": 64,
+    "seed_offset": 2026062600,
+    "targeted_strong_ref_ids": {
+      "random_label": [
+        0,
+        2,
+        14
+      ],
+      "real_even_odd": [
+        1,
+        5,
+        13,
+        22,
+        39,
+        54
+      ],
+      "teacher_nn": [
+        0,
+        1,
+        3,
+        13,
+        27
+      ]
+    }
+  },
+  "smc": {
+    "bisection_steps": 32,
+    "max_steps": 180,
+    "mh_sweeps": 2,
+    "min_delta_t": 0.0001,
+    "move_kappa_factor": 80.0,
+    "resample_ess_fraction": 0.5,
+    "target_cess_fraction": 0.95
+  }
+}

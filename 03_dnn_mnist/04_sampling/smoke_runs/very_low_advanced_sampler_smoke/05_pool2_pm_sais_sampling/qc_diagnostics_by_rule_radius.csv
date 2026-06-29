@@ -1,0 +1,13 @@
+rule,radius,d0,target_ref_count,observed_ref_count,missing_ref_count,finite_unit_count,finite_unit_fraction,q05_ess_fraction,max_split_logZ_per_P_diff,bootstrap_sd_delta_phi_energy,qc_diagnostic_pass,sampling_status,missing_ref_ids
+random_label,0.1,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+random_label,1.25,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+random_label,2.45,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+real_even_odd,0.1,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+real_even_odd,1.25,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+real_even_odd,2.45,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+teacher_nn,0.1,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+teacher_nn,1.25,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+teacher_nn,2.45,0.1,1,0,1,0,0.0,,,,False,partial_missing_units,0
+very_low_tv_spectral_teacher,0.1,0.1,1,1,0,1,1.0,0.7330969383260145,1.3887909414917228e-05,0.0,True,complete,
+very_low_tv_spectral_teacher,1.25,0.1,1,1,0,1,1.0,0.8741039863785854,0.0010268860751497812,0.0,True,complete,
+very_low_tv_spectral_teacher,2.45,0.1,1,1,0,1,1.0,0.6943332745880678,0.008180849350308095,0.0,False,complete,

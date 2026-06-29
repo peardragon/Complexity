@@ -1,0 +1,10 @@
+{
+  "d_max": 1.0,
+  "d_min": 0.01,
+  "figure": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/eta_positive_curvature_mass_dense30ref_r1p0_n1024_cpu60_gpu0/fig01_eta_positive_curvature_mass_composite.png",
+  "inset_eta": null,
+  "n_ref_metric_rows": 90,
+  "n_unit_rows_loaded": 9000,
+  "out_dir": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/eta_positive_curvature_mass_dense30ref_r1p0_n1024_cpu60_gpu0",
+  "run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0"
+}

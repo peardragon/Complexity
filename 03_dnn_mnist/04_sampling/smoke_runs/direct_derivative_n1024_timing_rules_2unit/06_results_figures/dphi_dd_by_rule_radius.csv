@@ -1,0 +1,9 @@
+rule,radius,n_units,target_ref_count,sampling_status,qc_diagnostic_pass,d_phi_energy_raw_dd,d2_phi_energy_raw_dd2,d_delta_phi_energy_dd,d2_delta_phi_energy_dd2,d_delta_phi_full_dd,d2_delta_phi_full_dd2,d_phi_energy_direct_dd,d_phi_energy_direct_dd_sem
+random_label,0.1,0,1,partial_missing_units,False,,,,,,,,0.0
+random_label,1.0,0,1,partial_missing_units,False,,,,,,,,0.0
+real_even_odd,0.1,0,1,partial_missing_units,False,,,,,,,,0.0
+real_even_odd,1.0,0,1,partial_missing_units,False,,,,,,,,0.0
+teacher_nn,0.1,0,1,partial_missing_units,False,,,,,,,,0.0
+teacher_nn,1.0,0,1,partial_missing_units,False,,,,,,,,0.0
+very_low_tv_spectral_teacher,0.1,1,1,complete,True,-0.06163103961678431,,-0.06163103961678431,,2.495757252750976,,-0.07468955008882572,0.0
+very_low_tv_spectral_teacher,1.0,1,1,complete,False,-0.06163103961678431,,-0.06163103961678431,,2.495757252750976,,-0.03831033058161087,0.0

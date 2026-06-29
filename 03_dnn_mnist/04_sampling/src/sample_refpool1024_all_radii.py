@@ -35,16 +35,25 @@ REFERENCE_RUN_ROOT = (
     / "single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500"
 )
 REFERENCE_INDEX = REFERENCE_RUN_ROOT / "04_exact_reference_search" / "reference_index.csv"
+VERY_LOW_REFERENCE_RUN_ROOT = LOCAL_ROOT / "03_reference_search" / "raw_outputs" / "very_low_tv_spectral_teacher_v1"
+VERY_LOW_REFERENCE_INDEX = VERY_LOW_REFERENCE_RUN_ROOT / "04_exact_reference_search" / "reference_index.csv"
 DEFAULT_EXTRA_REFERENCE_RUN_ROOT = LOCAL_ROOT / "03_reference_search" / "raw_outputs" / "extra_reference_pool"
 EXTRA_REFERENCE_INDEX_NAME = "extra_reference_index.csv"
 DEFAULT_RUN_ROOT = LOCAL_ROOT / "04_sampling" / "raw_outputs" / "refpool1024_all_radii_60ref"
 
 RULES = [
-    "low_tv_spectral_teacher",
+    "very_low_tv_spectral_teacher",
     "real_even_odd",
     "teacher_nn",
     "random_label",
 ]
+DEPRECATED_RULES = ["low_tv_spectral_teacher"]
+SEED_OFFSETS_BY_RULE = {
+    "very_low_tv_spectral_teacher": 2026061900,
+    "real_even_odd": 2026061800,
+    "teacher_nn": 2026061800,
+    "random_label": 2026061800,
+}
 PRODUCTION_RADII = [round(idx / 10.0, 1) for idx in range(1, 26)]
 ADVANCED_RADII = [round(idx / 20.0, 2) for idx in range(2, 51)]
 RADII = list(PRODUCTION_RADII)
@@ -60,6 +69,9 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 import resample_mnist10_local_support as resample  # noqa: E402
+
+
+resample.RULES = list(RULES)
 
 
 def ensure_dir(path: Path) -> Path:
@@ -170,6 +182,9 @@ def configure_resources(cpu_threads: int, device: str) -> None:
 
 def load_reference_pool(extra_reference_run_root: Path, target_refs: int) -> pd.DataFrame:
     refs = pd.read_csv(REFERENCE_INDEX)
+    refs = refs[~refs["rule"].astype(str).isin(DEPRECATED_RULES)].copy()
+    very_low = pd.read_csv(VERY_LOW_REFERENCE_INDEX)
+    refs = pd.concat([very_low, refs], ignore_index=True, sort=False)
     refs["ref_id"] = refs["ref_id"].astype(int)
     extra_path = extra_reference_run_root / "04_extra_reference_search" / EXTRA_REFERENCE_INDEX_NAME
     if extra_path.exists():
@@ -192,7 +207,9 @@ def load_reference_pool(extra_reference_run_root: Path, target_refs: int) -> pd.
         raise RuntimeError(f"Reference pool is short for target_refs={target_refs}: {missing}")
     out = pd.concat(rows, ignore_index=True, sort=False)
     out["pool_rank"] = out.groupby("rule").cumcount() + 1
-    return out.sort_values(["rule", "pool_rank"]).reset_index(drop=True)
+    out["resample_seed_offset"] = out["rule"].map(SEED_OFFSETS_BY_RULE).fillna(2026061800).astype(int)
+    out["_rule_order"] = pd.Categorical(out["rule"], categories=RULES, ordered=True)
+    return out.sort_values(["_rule_order", "pool_rank"]).drop(columns=["_rule_order"]).reset_index(drop=True)
 
 
 def configure_sampler(args: argparse.Namespace, run_root: Path, cpu_threads: int) -> dict[str, Any]:
@@ -207,6 +224,8 @@ def configure_sampler(args: argparse.Namespace, run_root: Path, cpu_threads: int
     cfg["sampling"]["samples_per_ref_radius"] = int(args.samples_per_ref_radius)
     cfg["sampling"]["fallback_policies_enabled"] = False
     cfg["sampling"]["seed_offset"] = int(args.seed_offset)
+    cfg["sampling"]["seed_offsets_by_rule"] = dict(SEED_OFFSETS_BY_RULE)
+    cfg["sampling"]["radial_derivative_enabled"] = bool(args.direct_derivative)
     cfg["sampling"]["task_policy"] = "mechanical_all_rule_ref_radius_no_qc_gate"
     cfg["sampling"]["note"] = (
         "All configured rule/ref/radius units are sampled mechanically. QC diagnostics are reported "
@@ -215,12 +234,16 @@ def configure_sampler(args: argparse.Namespace, run_root: Path, cpu_threads: int
     cfg["reference_search"] = dict(cfg["reference_search"])
     cfg["reference_search"]["target_pool_refs_per_rule"] = int(args.target_refs)
     cfg["reference_search"]["pool_source"] = str(REFERENCE_INDEX)
+    cfg["reference_search"]["very_low_pool_source"] = str(VERY_LOW_REFERENCE_INDEX)
+    cfg["reference_search"]["deprecated_rules_excluded"] = list(DEPRECATED_RULES)
     cfg["compute"] = dict(cfg.get("compute", {}))
     cfg["compute"]["chunk_size"] = int(args.chunk_size)
+    cfg["compute"]["derivative_chunk_size"] = int(args.derivative_chunk_size)
     cfg["compute"]["device"] = str(args.device or os.environ.get("MNIST14_DEVICE", "cpu"))
     cfg["outputs"] = dict(cfg["outputs"])
     cfg["outputs"]["run_root"] = str(run_root)
     cfg["outputs"]["source_reference_run_root"] = str(REFERENCE_RUN_ROOT)
+    cfg["outputs"]["very_low_source_reference_run_root"] = str(VERY_LOW_REFERENCE_RUN_ROOT)
     cfg["outputs"]["extra_reference_run_root"] = str(args.extra_reference_run_root)
     cfg["outputs"]["save_unit_samples_npz"] = bool(args.save_samples_npz)
     cfg["outputs"]["unit_layout"] = "05_pool2_pm_sais_sampling/unit_summaries/split_000/<rule>/ref_xxx/r_xxxx/{unit_summary.json,samples.npz}"
@@ -317,6 +340,10 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
         "n_samples",
         "logZ",
         "logZ_inf_full",
+        "dlogZ_inf_full_dr",
+        "split_dlogZ_dr_per_P_diff",
+        "weighted_total_radial_score_sd",
+        "ce_replay_max_abs_diff",
         "ess_fraction",
         "split_logZ_per_P_diff",
         "weighted_ce",
@@ -335,6 +362,17 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
     )
     joined = unit_df.merge(r0_df, on=key, how="left")
     joined["phi_energy_raw"] = joined["logZ_inf_full"] / float(P)
+    if "dlogZ_inf_full_dr" in joined.columns:
+        joined["d_phi_energy_direct_dd_unit"] = joined["dlogZ_inf_full_dr"] / float(P)
+        joined["d_delta_phi_energy_direct_dd_unit"] = joined["d_phi_energy_direct_dd_unit"]
+    for direct_col in [
+        "d_phi_energy_direct_dd_unit",
+        "d_delta_phi_energy_direct_dd_unit",
+        "split_dlogZ_dr_per_P_diff",
+        "ce_replay_max_abs_diff",
+    ]:
+        if direct_col not in joined.columns:
+            joined[direct_col] = np.nan
     joined["delta_phi_energy_unit"] = (joined["logZ_inf_full"] - joined["logZ_r0"]) / float(P)
     joined["delta_phi_full_unit"] = np.where(
         joined["radius"] > 0,
@@ -393,6 +431,8 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
                 "finite_unit_fraction": float(finite_fraction),
                 "q05_ess_fraction": q05_ess,
                 "max_split_logZ_per_P_diff": max_split,
+                "max_split_dlogZ_dr_per_P_diff": float(sub["split_dlogZ_dr_per_P_diff"].max()) if "split_dlogZ_dr_per_P_diff" in sub.columns else float("nan"),
+                "max_ce_replay_abs_diff": float(sub["ce_replay_max_abs_diff"].max()) if "ce_replay_max_abs_diff" in sub.columns else float("nan"),
                 "bootstrap_sd_delta_phi_energy": boot_sd,
                 "qc_diagnostic_pass": qc_diagnostic_pass,
                 "sampling_status": "complete" if complete else "partial_missing_units",
@@ -405,6 +445,9 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
                     "mean_phi_energy_raw": mean_raw,
                     "mean_delta_phi_energy": mean_delta,
                     "mean_delta_phi_full": mean_full,
+                    "mean_d_phi_energy_direct_dd": float(sub["d_phi_energy_direct_dd_unit"].mean()) if len(sub) else float("nan"),
+                    "sd_d_phi_energy_direct_dd": float(sub["d_phi_energy_direct_dd_unit"].std(ddof=1)) if len(sub) > 1 else float("nan"),
+                    "sem_d_phi_energy_direct_dd": float(sub["d_phi_energy_direct_dd_unit"].std(ddof=1) / math.sqrt(len(sub))) if len(sub) > 1 else 0.0,
                     "weighted_ce_mean": float(sub["weighted_ce"].mean()) if len(sub) else float("nan"),
                     "weighted_error_mean": float(sub["weighted_error"].mean()) if len(sub) else float("nan"),
                 }
@@ -417,6 +460,8 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
                     "phi_energy_raw": mean_raw,
                     "delta_phi_energy": mean_delta,
                     "delta_phi_full": mean_full,
+                    "d_phi_energy_direct_dd": float(sub["d_phi_energy_direct_dd_unit"].mean()) if len(sub) else float("nan"),
+                    "d_phi_energy_direct_dd_sem": float(sub["d_phi_energy_direct_dd_unit"].std(ddof=1) / math.sqrt(len(sub))) if len(sub) > 1 else 0.0,
                     "n_units": int(len(sub)),
                     "target_ref_count": int(target_refs),
                     "sampling_status": row["sampling_status"],
@@ -436,6 +481,7 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
     dphi_cols = ["rule", "radius", "n_units", "target_ref_count", "sampling_status", "qc_diagnostic_pass"] + derivative_columns(
         ["phi_energy_raw", "delta_phi_energy", "delta_phi_full"]
     )
+    dphi_cols.extend(["d_phi_energy_direct_dd", "d_phi_energy_direct_dd_sem"])
     write_csv(out_dir / "dphi_dd_by_rule_radius.csv", phi_df[dphi_cols])
 
     completed_units = int(len(joined.drop_duplicates(["rule", "ref_id", "radius"])))
@@ -454,6 +500,9 @@ def summarize_and_write(run_root: Path, cfg: dict[str, Any], pool_df: pd.DataFra
         "total_rule_radius_rows": int(len(RULES) * len(RADII)),
         "qc_diagnostic_pass_rows": int(qc_df["qc_diagnostic_pass"].sum()),
         "save_unit_samples_npz": bool(cfg["outputs"].get("save_unit_samples_npz", False)),
+        "radial_derivative_enabled": bool(cfg["sampling"].get("radial_derivative_enabled", False)),
+        "max_split_dlogZ_dr_per_P_diff": float(joined["split_dlogZ_dr_per_P_diff"].max()),
+        "max_ce_replay_abs_diff": float(joined["ce_replay_max_abs_diff"].max()),
         "radius_grid_kind": str(cfg["sampling"].get("radius_grid_kind", "")),
         "derivative_outputs": {
             "unit_table": "05_pool2_pm_sais_sampling/shell_summary_by_unit_with_phi_derivatives.csv",
@@ -552,7 +601,9 @@ def run_sampling(args: argparse.Namespace) -> dict[str, Any]:
             "target_refs_per_rule": int(args.target_refs),
             "available_refs_per_rule": pool_df.groupby("rule")["ref_id"].nunique().astype(int).to_dict(),
             "reference_index": str(REFERENCE_INDEX),
+            "very_low_reference_index": str(VERY_LOW_REFERENCE_INDEX),
             "extra_reference_run_root": str(args.extra_reference_run_root),
+            "deprecated_rules_excluded": list(DEPRECATED_RULES),
         },
     )
     write_json(run_root / "run_config_resolved.json", cfg)
@@ -575,6 +626,7 @@ def run_sampling(args: argparse.Namespace) -> dict[str, Any]:
                     "ref_id": int(row["ref_id"]),
                     "pool_rank": int(row.get("pool_rank", -1)),
                     "radius": float(radius),
+                    "resample_seed_offset": int(row.get("resample_seed_offset", cfg["sampling"]["seed_offset"])),
                 }
                 for idx, (row, radius) in enumerate(tasks)
             ]
@@ -587,7 +639,7 @@ def run_sampling(args: argparse.Namespace) -> dict[str, Any]:
     for idx, (row, radius) in enumerate(tasks, start=1):
         print(
             f"[refpool1024] shard={args.shard_index}/{args.shard_count} unit={idx}/{len(tasks)} "
-            f"rule={row['rule']} ref={int(row['ref_id']):03d} r={radius:.1f}",
+            f"rule={row['rule']} ref={int(row['ref_id']):03d} r={radius:.2f}",
             flush=True,
         )
         payload = resample.sample_unit(row, float(radius), cfg, run_root, force=bool(args.force))
@@ -638,6 +690,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--device", default=os.environ.get("MNIST14_DEVICE", "cpu"))
     parser.add_argument("--cpu-threads", type=int, default=0)
     parser.add_argument("--chunk-size", type=int, default=512)
+    parser.add_argument("--derivative-chunk-size", type=int, default=64)
     parser.add_argument("--shard-index", type=int, default=0)
     parser.add_argument("--shard-count", type=int, default=1)
     parser.add_argument("--max-units", type=int, default=None)
@@ -647,6 +700,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-final-aggregate", action="store_true")
     parser.add_argument("--save-samples-npz", dest="save_samples_npz", action="store_true", default=True)
     parser.add_argument("--no-save-samples-npz", dest="save_samples_npz", action="store_false")
+    parser.add_argument("--direct-derivative", action="store_true")
     args = parser.parse_args(argv)
     activate_radii(str(args.radius_grid), str(args.radii))
 

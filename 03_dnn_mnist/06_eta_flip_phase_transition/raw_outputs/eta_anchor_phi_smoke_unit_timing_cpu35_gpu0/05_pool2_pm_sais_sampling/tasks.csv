@@ -1,0 +1,2 @@
+task_index,eta,rule,ref_id,radius,samples_per_ref_radius
+0,0.0,eta_0p00,0,1.0,128

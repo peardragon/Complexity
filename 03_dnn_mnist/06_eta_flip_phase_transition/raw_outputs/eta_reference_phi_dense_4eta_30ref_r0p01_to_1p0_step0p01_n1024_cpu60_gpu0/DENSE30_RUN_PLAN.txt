@@ -1,0 +1,14 @@
+run_name=eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0
+run_root=/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0
+reference_run_root=/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_gapfill_0p05_0p15_0p25_30ref_cpu60_gpu0
+eta_list=0.05,0.15,0.25
+scope=eta 0.05,0.15,0.25, 30 references per eta, n=1024
+radii=0.01..1.00 step 0.01, anchor r0=0.1
+cpu_policy=max 19 logical CPUs out of 32 (<=60%), CPU-only, GPU 0%
+shards=15
+threads_per_shard=1
+reference_search_threads=8
+save_unit_samples_npz=true
+smoke_eta_units=8
+smoke_eta_mean_elapsed_s=5.349
+conservative_estimate_note=small-d smoke underestimates larger radii; 3 eta x 30 ref x 100 radii gives 9000 units after the gap-fill reference search.

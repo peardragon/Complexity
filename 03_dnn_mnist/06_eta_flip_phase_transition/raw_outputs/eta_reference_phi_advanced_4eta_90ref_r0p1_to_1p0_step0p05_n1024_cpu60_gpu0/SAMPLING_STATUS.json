@@ -1,0 +1,45 @@
+{
+  "completed_units": 6840,
+  "etas": [
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "expected_units": 6840,
+  "max_split_logZ_per_P_diff": 0.02298814471555814,
+  "max_unit_elapsed_s": 43.17321991920471,
+  "mean_unit_elapsed_s": 30.221596584578005,
+  "min_ess_fraction": 0.501114084918248,
+  "note": "Eta-specific exact-reference phi smoke.",
+  "radii": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "ref_count": 90,
+  "resource_policy": {
+    "cpu_limit_target": "use <=60% by limiting shard count and thread count",
+    "cpu_threads_per_process": 2,
+    "device": "cpu",
+    "gpu_limit_target": "use <=50%; this run uses CPU only unless the wrapper is changed after a GPU smoke"
+  },
+  "samples_per_ref_radius": 1024,
+  "status": "complete"
+}

@@ -1,0 +1,30 @@
+{
+  "complete_rule_radius_rows": 2,
+  "completed_units": 2,
+  "derivative_outputs": {
+    "rule_radius_table": "06_results_figures/dphi_dd_by_rule_radius.csv",
+    "unit_table": "05_pool2_pm_sais_sampling/shell_summary_by_unit_with_phi_derivatives.csv"
+  },
+  "expected_units": 8,
+  "max_ce_replay_abs_diff": 0.0,
+  "max_split_dlogZ_dr_per_P_diff": 0.002558200054488041,
+  "qc_diagnostic_pass_rows": 1,
+  "r0": 0.1,
+  "radial_derivative_enabled": true,
+  "radii": [
+    0.1,
+    1.0
+  ],
+  "radius_grid_kind": "custom_2_radii",
+  "rules": [
+    "very_low_tv_spectral_teacher",
+    "real_even_odd",
+    "teacher_nn",
+    "random_label"
+  ],
+  "samples_per_ref_radius": 1024,
+  "save_unit_samples_npz": true,
+  "status": "partial",
+  "target_refs_per_rule": 1,
+  "total_rule_radius_rows": 8
+}

@@ -1,2 +1,0 @@
-rule,radius,probe_unit_count,mean_replicate_phi_sd,max_replicate_phi_sd,mean_split_q95,max_split_q95,mean_split_fail_rate,max_split_fail_rate
-low_tv_spectral_teacher,0.3,2,0.001481315309141056,0.002023327402378433,0.003113478145007472,0.003357804623945952,0.0,0.0

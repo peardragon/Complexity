@@ -1,0 +1,30 @@
+{
+  "completed_units": 20,
+  "estimated_20_unit_elapsed_s": 88.16374230384827,
+  "etas": [
+    0.0,
+    0.2,
+    0.35,
+    0.5
+  ],
+  "expected_units": 20,
+  "max_unit_elapsed_s": 7.515594720840454,
+  "mean_unit_elapsed_s": 4.408187115192414,
+  "note": "Anchor smoke: eta labels are sampled around fixed real_even_odd references; eta-specific reference search not performed.",
+  "radii": [
+    0.1,
+    0.8,
+    0.9,
+    1.0,
+    1.1
+  ],
+  "ref_count": 1,
+  "resource_policy": {
+    "cpu_limit_target": "use <=35% by limiting thread count",
+    "cpu_threads_per_process": 8,
+    "device": "cpu",
+    "gpu_limit_target": "use <=25%; this smoke uses CPU only"
+  },
+  "samples_per_ref_radius": 128,
+  "status": "complete"
+}

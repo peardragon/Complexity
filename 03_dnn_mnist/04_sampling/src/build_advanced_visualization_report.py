@@ -24,9 +24,32 @@ import umap
 
 LOCAL_ROOT = Path("/home/bjyong/Complexity/local_project/03_dnn_mnist")
 WINDOWS_PROJECT_ROOT = Path("/home/bjyong/Complexity/windows_project")
-RUN_ROOT = LOCAL_ROOT / "04_sampling" / "raw_outputs" / "refpool1024_advanced_90ref"
-OUT_ROOT = RUN_ROOT / "06_results_figures" / "advanced_visualization"
-DATASET_FALLBACK_ROOT = (
+RUN_ROOT = LOCAL_ROOT / "04_sampling" / "raw_outputs" / "very_low_tv_spectral_teacher_refpool1024_advanced_90ref"
+DATASET_OUT_ROOT = (
+    LOCAL_ROOT
+    / "01_dataset_gen"
+    / "raw_outputs"
+    / "active_rule_dataset_representations_very_low_refpool1024_advanced_90ref"
+)
+DATASET_FIG_ROOT = (
+    LOCAL_ROOT
+    / "01_dataset_gen"
+    / "figures"
+    / "active_rule_dataset_representations_very_low_refpool1024_advanced_90ref"
+)
+PROXY_OUT_ROOT = (
+    LOCAL_ROOT
+    / "05_proxy_local_entropy"
+    / "raw_outputs"
+    / "very_low_tv_spectral_teacher_refpool1024_advanced_90ref"
+)
+PROXY_FIG_ROOT = (
+    LOCAL_ROOT
+    / "05_proxy_local_entropy"
+    / "figures"
+    / "very_low_tv_spectral_teacher_refpool1024_advanced_90ref"
+)
+PRODUCTION_DATASET_FALLBACK_ROOT = (
     WINDOWS_PROJECT_ROOT
     / "02_dnn"
     / "08_mnist"
@@ -37,21 +60,30 @@ DATASET_FALLBACK_ROOT = (
     / "raw_datasets"
     / "split_000"
 )
+VERY_LOW_DATASET_FALLBACK_ROOT = (
+    LOCAL_ROOT
+    / "01_dataset_gen"
+    / "raw_outputs"
+    / "very_low_tv_spectral_teacher_v1"
+    / "01_dataset_prepare"
+    / "raw_datasets"
+    / "split_000"
+)
 
 RULES = [
-    "low_tv_spectral_teacher",
+    "very_low_tv_spectral_teacher",
     "real_even_odd",
     "teacher_nn",
     "random_label",
 ]
 RULE_LABELS = {
-    "low_tv_spectral_teacher": "low tv",
+    "very_low_tv_spectral_teacher": "very low tv",
     "real_even_odd": "even/odd",
     "teacher_nn": "teacher",
     "random_label": "random",
 }
 COLORS = {
-    "low_tv_spectral_teacher": "#0072B2",
+    "very_low_tv_spectral_teacher": "#0072B2",
     "real_even_odd": "#009E73",
     "teacher_nn": "#D55E00",
     "random_label": "#CC79A7",
@@ -98,6 +130,14 @@ def resolve_dataset_path(raw_path: str | Path) -> Path:
 
 
 def dataset_metadata_note(rule: str, metadata: dict[str, object]) -> str:
+    if rule == "very_low_tv_spectral_teacher":
+        candidate = metadata.get("candidate", {})
+        if isinstance(candidate, dict):
+            return (
+                f"very-low spectral teacher, spectral_k={candidate.get('spectral_k')}, "
+                f"draw={candidate.get('draw_idx')}, threshold={float(candidate.get('threshold', 0.0)):.5f}"
+            )
+        return "very-low-TV spectral teacher"
     if rule == "real_even_odd":
         return "even digit -> +1, odd digit -> -1"
     if rule == "teacher_nn":
@@ -107,10 +147,7 @@ def dataset_metadata_note(rule: str, metadata: dict[str, object]) -> str:
         )
     if rule == "random_label":
         return f"balanced random labels, train seed={metadata.get('train_seed')}"
-    return (
-        f"kNN spectral teacher, k={metadata.get('graph_k')}, "
-        f"spectral_k={metadata.get('spectral_k')}, seed={metadata.get('selected_seed')}"
-    )
+    return str(rule)
 
 
 @dataclass
@@ -134,7 +171,10 @@ def load_rule_datasets() -> dict[str, RuleDataset]:
         if len(paths):
             dataset_path = resolve_dataset_path(paths.iloc[0])
         else:
-            dataset_path = DATASET_FALLBACK_ROOT / rule / "dataset.npz"
+            if rule == "very_low_tv_spectral_teacher":
+                dataset_path = VERY_LOW_DATASET_FALLBACK_ROOT / rule / "dataset.npz"
+            else:
+                dataset_path = PRODUCTION_DATASET_FALLBACK_ROOT / rule / "dataset.npz"
         metadata_path = dataset_path.with_name("dataset_metadata.json")
         payload = np.load(dataset_path)
         metadata = json.loads(metadata_path.read_text(encoding="utf-8")) if metadata_path.exists() else {}
@@ -573,8 +613,15 @@ def plot_proximal_landscape(emb: pd.DataFrame, units: pd.DataFrame, fig_dir: Pat
     return heatmap_path, curves_path
 
 
+def project_rel(path: Path) -> str:
+    try:
+        return str(path.resolve().relative_to(LOCAL_ROOT.resolve()))
+    except Exception:
+        return str(path)
+
+
 def write_report(
-    out_root: Path,
+    report_path: Path,
     table_paths: list[Path],
     figure_paths: list[Path],
     phi: pd.DataFrame,
@@ -588,10 +635,12 @@ def write_report(
         "",
         "## Scope",
         "",
-        "- Source run: `refpool1024_advanced_90ref`.",
+        "- Source run: `very_low_tv_spectral_teacher_refpool1024_advanced_90ref`.",
         "- Radius grid: `0.10, 0.15, ..., 2.50` (49 radii).",
-        "- Rules: `low_tv_spectral_teacher`, `real_even_odd`, `teacher_nn`, `random_label`.",
+        "- Rules: `very_low_tv_spectral_teacher`, `real_even_odd`, `teacher_nn`, `random_label`.",
         "- Sampling status: complete, 90 references per rule/radius.",
+        "- Dataset representations are stored under `01_dataset_gen`.",
+        "- Phi/dphi and reference-curve representations are stored under `05_proxy_local_entropy`.",
         "",
         "## Checks",
         "",
@@ -603,10 +652,10 @@ def write_report(
         "",
     ]
     for path in table_paths:
-        lines.append(f"- `tables/{path.name}`")
+        lines.append(f"- `{project_rel(path)}`")
     lines.extend(["", "## Figures", ""])
     for path in figure_paths:
-        lines.append(f"- `figures/{path.name}`")
+        lines.append(f"- `{project_rel(path)}`")
     lines.extend(
         [
             "",
@@ -618,45 +667,53 @@ def write_report(
             "",
         ]
     )
-    (out_root / "REPORT.md").write_text("\n".join(lines), encoding="utf-8")
+    ensure_dir(report_path.parent)
+    report_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> int:
-    out_root = ensure_dir(OUT_ROOT)
-    table_dir = ensure_dir(out_root / "tables")
-    fig_dir = ensure_dir(out_root / "figures")
+    dataset_out_root = ensure_dir(DATASET_OUT_ROOT)
+    dataset_table_dir = ensure_dir(dataset_out_root / "tables")
+    dataset_fig_dir = ensure_dir(DATASET_FIG_ROOT)
+    proxy_out_root = ensure_dir(PROXY_OUT_ROOT)
+    proxy_table_dir = ensure_dir(proxy_out_root / "tables")
+    proxy_fig_dir = ensure_dir(PROXY_FIG_ROOT)
 
     datasets = load_rule_datasets()
-    dataset_samples = build_dataset_tables(datasets, table_dir)
-    dataset_embedding = build_dataset_embedding(datasets, table_dir)
+    dataset_samples = build_dataset_tables(datasets, dataset_table_dir)
+    dataset_embedding = build_dataset_embedding(datasets, dataset_table_dir)
 
     phi, dphi = load_phi_tables()
-    write_csv(table_dir / "advanced_phi_by_rule_radius.csv", phi)
-    write_csv(table_dir / "advanced_dphi_dd_by_rule_radius.csv", dphi)
+    write_csv(proxy_table_dir / "advanced_phi_by_rule_radius.csv", phi)
+    write_csv(proxy_table_dir / "advanced_dphi_dd_by_rule_radius.csv", dphi)
 
-    ref_embedding, neighbors, units = build_reference_embedding(table_dir)
+    ref_embedding, neighbors, units = build_reference_embedding(proxy_table_dir)
     _ = neighbors
 
-    figure_paths = [
-        plot_dataset_representatives(datasets, fig_dir),
-        plot_dataset_embedding(dataset_embedding, fig_dir),
-        plot_phi_energy(phi, fig_dir),
-        plot_dphi_energy(dphi, fig_dir),
-        plot_reference_embedding(ref_embedding, fig_dir),
+    dataset_figure_paths = [
+        plot_dataset_representatives(datasets, dataset_fig_dir),
+        plot_dataset_embedding(dataset_embedding, dataset_fig_dir),
     ]
-    landscape_paths = plot_proximal_landscape(ref_embedding, units, fig_dir, table_dir)
-    figure_paths.extend(list(landscape_paths))
+    proxy_figure_paths = [
+        plot_phi_energy(phi, proxy_fig_dir),
+        plot_dphi_energy(dphi, proxy_fig_dir),
+        plot_reference_embedding(ref_embedding, proxy_fig_dir),
+    ]
+    landscape_paths = plot_proximal_landscape(ref_embedding, units, proxy_fig_dir, proxy_table_dir)
+    proxy_figure_paths.extend(list(landscape_paths))
 
-    table_paths = [
-        table_dir / "dataset_train_samples_with_rule_labels.csv",
-        table_dir / "dataset_label_summary.csv",
-        table_dir / "dataset_tsne_umap_embedding.csv",
-        table_dir / "advanced_phi_by_rule_radius.csv",
-        table_dir / "advanced_dphi_dd_by_rule_radius.csv",
-        table_dir / "reference_phi_curve_tsne_umap_embedding.csv",
-        table_dir / "reference_phi_curve_nearest_neighbors.csv",
-        table_dir / "reference_embedding_features.csv",
-        table_dir / "proximal_landscape_example_refs.csv",
+    dataset_table_paths = [
+        dataset_table_dir / "dataset_train_samples_with_rule_labels.csv",
+        dataset_table_dir / "dataset_label_summary.csv",
+        dataset_table_dir / "dataset_tsne_umap_embedding.csv",
+    ]
+    proxy_table_paths = [
+        proxy_table_dir / "advanced_phi_by_rule_radius.csv",
+        proxy_table_dir / "advanced_dphi_dd_by_rule_radius.csv",
+        proxy_table_dir / "reference_phi_curve_tsne_umap_embedding.csv",
+        proxy_table_dir / "reference_phi_curve_nearest_neighbors.csv",
+        proxy_table_dir / "reference_embedding_features.csv",
+        proxy_table_dir / "proximal_landscape_example_refs.csv",
     ]
     metadata = {
         "source_run": str(RUN_ROOT),
@@ -668,16 +725,37 @@ def main() -> int:
         "dphi_rows": int(len(dphi)),
         "sklearn_version": str(sklearn.__version__),
         "umap_version": str(umap.__version__),
-        "figures": [str(path.relative_to(out_root)) for path in figure_paths],
-        "tables": [str(path.relative_to(out_root)) for path in table_paths],
+        "dataset_output_root": str(dataset_out_root),
+        "dataset_figure_root": str(dataset_fig_dir),
+        "proxy_output_root": str(proxy_out_root),
+        "proxy_figure_root": str(proxy_fig_dir),
+        "dataset_figures": [str(path) for path in dataset_figure_paths],
+        "proxy_figures": [str(path) for path in proxy_figure_paths],
+        "dataset_tables": [str(path) for path in dataset_table_paths],
+        "proxy_tables": [str(path) for path in proxy_table_paths],
     }
-    write_json(out_root / "VISUALIZATION_STATUS.json", metadata)
-    write_report(out_root, table_paths, figure_paths, phi, dataset_embedding, ref_embedding)
+    write_json(dataset_out_root / "VISUALIZATION_STATUS.json", metadata)
+    write_json(proxy_out_root / "VISUALIZATION_STATUS.json", metadata)
+    write_report(
+        proxy_out_root / "REPORT.md",
+        dataset_table_paths + proxy_table_paths,
+        dataset_figure_paths + proxy_figure_paths,
+        phi,
+        dataset_embedding,
+        ref_embedding,
+    )
+    write_report(
+        dataset_out_root / "REPORT.md",
+        dataset_table_paths,
+        dataset_figure_paths,
+        phi,
+        dataset_embedding,
+        ref_embedding,
+    )
 
-    print(f"wrote advanced visualization to {out_root}")
-    print(f"tables: {table_dir}")
-    print(f"figures: {fig_dir}")
-    for path in figure_paths:
+    print(f"wrote dataset representations to {dataset_out_root} and {dataset_fig_dir}")
+    print(f"wrote proxy representations to {proxy_out_root} and {proxy_fig_dir}")
+    for path in dataset_figure_paths + proxy_figure_paths:
         print(path)
     return 0
 

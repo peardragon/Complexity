@@ -229,6 +229,7 @@ def reusable_resampled_payload(
     *,
     n_samples: int | None = None,
     require_samples_npz: bool = False,
+    require_direct_derivative: bool = False,
 ) -> dict[str, Any] | None:
     if force or not path.exists():
         return None
@@ -240,6 +241,7 @@ def reusable_resampled_payload(
         and (not require_samples_npz or samples_npz_path_from_summary(path).exists())
         and math.isfinite(float(payload.get("logZ_inf_full", float("nan"))))
         and math.isfinite(float(payload.get("split_logZ_per_P_diff", float("nan"))))
+        and (not require_direct_derivative or math.isfinite(float(payload.get("dlogZ_inf_full_dr", float("nan")))))
     ):
         payload["reused"] = True
         return payload
@@ -249,13 +251,15 @@ def reusable_resampled_payload(
 def sample_unit(row: dict[str, Any], radius: float, cfg: dict[str, Any], run_root: Path, *, force: bool) -> dict[str, Any]:
     path = unit_summary_path(run_root, row, radius)
     save_unit_samples = bool((cfg.get("outputs") or {}).get("save_unit_samples_npz", False))
+    seed_offset = int(row.get("resample_seed_offset", cfg["sampling"]["seed_offset"]))
     cached = reusable_resampled_payload(
         path,
         radius,
-        int(cfg["sampling"]["seed_offset"]),
+        seed_offset,
         force,
         n_samples=int(cfg["sampling"]["samples_per_ref_radius"]),
         require_samples_npz=save_unit_samples,
+        require_direct_derivative=bool(cfg.get("sampling", {}).get("radial_derivative_enabled", False)),
     )
     if cached is not None:
         return cached
@@ -266,7 +270,7 @@ def sample_unit(row: dict[str, Any], radius: float, cfg: dict[str, Any], run_roo
         n_samples = int(cfg["sampling"]["samples_per_ref_radius"])
         ds = pipe.load_dataset(row["dataset_path"])
         theta_ref = np.load(REPO_ROOT / str(row["theta_path"])).astype(np.float64).reshape(-1)
-        seed = int(cfg["sampling"]["seed_offset"]) + 3900000 + RULES.index(str(row["rule"])) * 100000 + int(row["ref_id"]) * 1000 + int(round(float(radius) * 10000))
+        seed = seed_offset + 3900000 + RULES.index(str(row["rule"])) * 100000 + int(row["ref_id"]) * 1000 + int(round(float(radius) * 10000))
         started = time.time()
         smc = pipe.run_smc_split(theta_ref, ds, float(radius), n_samples, lambda_reg, seed, cfg, float(row["CE_mean_train"]))
         samples_npz = smc.pop("_samples_npz", None)
@@ -277,7 +281,7 @@ def sample_unit(row: dict[str, Any], radius: float, cfg: dict[str, Any], run_roo
             "radius": float(radius),
             "n_samples": n_samples,
             "seed": seed,
-            "resample_seed_offset": int(cfg["sampling"]["seed_offset"]),
+            "resample_seed_offset": seed_offset,
             "lambda_reg": lambda_reg,
             "theta_path": str(row["theta_path"]),
             "dataset_path": str(row["dataset_path"]),
@@ -294,7 +298,7 @@ def sample_unit(row: dict[str, Any], radius: float, cfg: dict[str, Any], run_roo
             payload["samples_path"] = str(samples_path)
     else:
         fallback_cfg = pipe.cfg_for_fallback_policy(cfg, policy)
-        seed = int(cfg["sampling"]["seed_offset"]) + 9900000 + RULES.index(str(row["rule"])) * 100000 + int(row["ref_id"]) * 1000 + int(round(float(radius) * 10000))
+        seed = seed_offset + 9900000 + RULES.index(str(row["rule"])) * 100000 + int(row["ref_id"]) * 1000 + int(round(float(radius) * 10000))
         started = time.time()
         payload = pipe.run_replicated_smc(
             row,
@@ -310,7 +314,7 @@ def sample_unit(row: dict[str, Any], radius: float, cfg: dict[str, Any], run_roo
         payload["fallback_mh_sweeps"] = int(policy["mh_sweeps"])
         payload["fallback_move_kappa_factor"] = float(policy["move_kappa_factor"])
         payload["seed"] = seed
-        payload["resample_seed_offset"] = int(cfg["sampling"]["seed_offset"])
+        payload["resample_seed_offset"] = seed_offset
         payload["elapsed_s"] = float(time.time() - started)
         payload["finite"] = bool(np.isfinite(payload["logZ_inf_full"]))
         payload["reused"] = False

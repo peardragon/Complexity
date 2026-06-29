@@ -1,0 +1,15 @@
+1702088 shard0_of_15 cpus_0,1
+1702089 shard1_of_15 cpus_2,3
+1702090 shard2_of_15 cpus_4,5
+1702091 shard3_of_15 cpus_6,7
+1702092 shard4_of_15 cpus_8
+1702093 shard5_of_15 cpus_9
+1702094 shard6_of_15 cpus_10
+1702095 shard7_of_15 cpus_11
+1702096 shard8_of_15 cpus_12
+1702097 shard9_of_15 cpus_13
+1702098 shard10_of_15 cpus_14
+1702099 shard11_of_15 cpus_15
+1702100 shard12_of_15 cpus_16
+1702101 shard13_of_15 cpus_17
+1702102 shard14_of_15 cpus_18

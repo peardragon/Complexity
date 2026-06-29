@@ -1,5 +1,0 @@
-method,method_role,attempted_sample_count,elapsed_seconds,sample_count,accept_rate,ess_fraction,important_regions,covered_important_regions,region_l1_error,pass_qc,failure_reason
-random_walk_mcmc,existing_method_reproduction,5200,2.0075220009312034,850,0.5661538461538461,0.3109841619596751,4,2,0.23629293599406898,False,missing_important_region
-hmc,existing_method_reproduction,5200,34.161373080918565,850,0.9867307692307692,0.7968155595072144,4,2,0.29194259654314825,False,missing_important_region
-pseudo_langevin,existing_method_proxy_reproduction,5200,2.458476650994271,850,,0.05480271759868241,4,1,0.7137553199510535,False,"missing_important_region,region_mass_l1_error_high"
-vmf_l2_final,final_method_proxy_instantiation,5200,0.04786843387410045,5200,,0.015383206863045616,4,4,0.022019632826656456,True,

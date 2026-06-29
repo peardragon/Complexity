@@ -1,0 +1,12 @@
+run_name=eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0
+run_root=/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0
+reference_run_root=/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_gapfill_0p02_0p05_0p15_0p25_30ref_cpu60_gpu0
+eta_list=0.02,0.05,0.15,0.25
+scope=add eta 0.02 to existing eta 0.05,0.15,0.25 run; 30 references per eta, n=1024
+radii=0.01..1.00 step 0.01, anchor r0=0.1
+cpu_policy=max 19 logical CPUs out of 32 (<=60%), CPU-only, GPU 0%
+shards=15
+threads_per_shard=1
+reference_search_threads=8
+save_unit_samples_npz=true
+estimate_note=This reuses cached 0.05/0.15/0.25 units and computes only missing eta 0.02 units; expected new expensive units: 3000.

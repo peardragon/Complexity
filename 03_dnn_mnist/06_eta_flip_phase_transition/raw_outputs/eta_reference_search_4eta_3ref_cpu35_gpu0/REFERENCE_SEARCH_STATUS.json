@@ -1,0 +1,21 @@
+{
+  "all_selected_exact": true,
+  "attempt_rows": 16,
+  "elapsed_s": 5.55947470664978,
+  "etas": [
+    0.0,
+    0.2,
+    0.35,
+    0.5
+  ],
+  "expected_reference_rows": 12,
+  "reference_rows": 12,
+  "resource_policy": {
+    "cpu_limit_target": "use <=35% by limiting thread count",
+    "cpu_threads_per_process": 8,
+    "device": "cpu",
+    "gpu_limit_target": "use <=25%; this run uses CPU only"
+  },
+  "status": "complete",
+  "theta_length_all_P": true
+}

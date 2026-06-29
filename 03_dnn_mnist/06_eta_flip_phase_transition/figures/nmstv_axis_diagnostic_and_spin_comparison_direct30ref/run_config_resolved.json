@@ -1,0 +1,21 @@
+{
+  "finding": "Older MNIST complexity-axis NMSTV metadata placed eta=0.05 left of even odd; actual direct-run dataset NMSTV places eta=0.05 right of even odd.",
+  "inputs": {
+    "active_ref_index": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/01_active_rules_sampling/04_reference_pool/reference_pool_index.csv",
+    "eta_ref_index": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/02_eta_flip_sampling/04_reference_pool/reference_index.csv",
+    "mnist_complexity": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/combined_direct_dataset_complexity_metrics.csv",
+    "mnist_curvature": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/combined_direct_curvature_metrics_by_group.csv",
+    "mnist_phi": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/combined_direct_phi_by_group_radius.csv",
+    "old_mnist_axis": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/complexity_axis_spin_mnist_30ref_eta0p02_0p05_0p15_0p25/mnist_complexity_axis_metrics.csv",
+    "spin_Akappa": "/home/bjyong/Complexity/local_project/02_dnn/06_random_gaussian_baseline/figures/gaussian_overlay_final_derivative/measure_search/positive_curvature_mass_composite_spin_only.csv",
+    "spin_candidate": "/home/bjyong/Complexity/local_project/02_dnn/06_random_gaussian_baseline/figures/gaussian_overlay_final_derivative/measure_search/candidate_measures_by_beta_spin.csv",
+    "spin_dphi": "/home/bjyong/Complexity/local_project/02_dnn/05_proxy_local_entropy/raw_outputs/18_beta_cell_90_dataset_30_reference/d_0.01_to_2.50_dense/summary_tables/dphi_dr_by_beta_radius.csv"
+  },
+  "mnist_cases": 7,
+  "outputs": [
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/nmstv_axis_diagnostic_and_spin_comparison_direct30ref/fig01_nmstv_axis_diagnostic.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/nmstv_axis_diagnostic_and_spin_comparison_direct30ref/fig02_mnist_direct_vs_3nn_spin_composite.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/nmstv_axis_diagnostic_and_spin_comparison_direct30ref/fig03_normalized_phase_overlay_spin_mnist.png"
+  ],
+  "spin_betas": 18
+}

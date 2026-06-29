@@ -1,0 +1,62 @@
+{
+  "d_max": 1.0,
+  "d_min": 0.01,
+  "eta_nmstv_methods": {
+    "0.02": "exact k=3 lookup from /home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_sweep_pilot_cpu35_gpu0/summary_by_eta_k.csv",
+    "0.05": "linear interpolation in k=3 table from /home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_sweep_pilot_cpu35_gpu0/summary_by_eta_k.csv",
+    "0.15": "exact k=3 lookup from /home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_sweep_pilot_cpu35_gpu0/summary_by_eta_k.csv",
+    "0.25": "exact k=3 lookup from /home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_sweep_pilot_cpu35_gpu0/summary_by_eta_k.csv"
+  },
+  "etas": [
+    0.02,
+    0.05,
+    0.15,
+    0.25
+  ],
+  "even_odd_rule": "real_even_odd",
+  "generated_at_utc": "2026-06-27T21:54:37.070722+00:00",
+  "input_paths": {
+    "eta_graph_nmstv_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_sweep_pilot_cpu35_gpu0/summary_by_eta_k.csv",
+    "eta_run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0",
+    "eta_summary_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/06_results_figures/eta_reference_phi_by_eta_radius.csv",
+    "eta_unit_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_phi_dense_4eta_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/05_pool2_pm_sais_sampling/shell_summary_by_unit_with_phi_derivatives.csv",
+    "even_odd_summary_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/active_rules_refpool1024_dense30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/06_results_figures/phi_energy_by_rule_radius.csv",
+    "even_odd_unit_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/active_rules_refpool1024_dense30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/05_pool2_pm_sais_sampling/shell_summary_by_unit_with_phi_derivatives.csv",
+    "graph_run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_sweep_pilot_cpu35_gpu0",
+    "rule_run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/active_rules_refpool1024_dense30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0"
+  },
+  "input_sha256": {
+    "eta_graph_nmstv_table": "eebc10c120cd9b601379aed0845f1137c66cb55c0752150752c8949b08316031",
+    "eta_summary_table": "b2aff3ec84ee30a3eee1c02e696be07cacb0fb8d172f9ea4ca92dfa56fd030a8",
+    "eta_unit_table": "26d016e682d132ac51b5fc2dae97563057a29336fce483e3dc42d2ffe10bd387",
+    "even_odd_summary_table": "e391d90f4cb049e9d7c2def8ca62f1f904bac749b69ebc11a1943db03dd6ecf1",
+    "even_odd_unit_table": "5f0e063c9d86e0afec7b99a25e3195be3bc85706e59cb1c070fb52200ea06f45"
+  },
+  "matplotlib": "3.9.0",
+  "n_ref_curve_rows": 15000,
+  "n_ref_metric_rows": 150,
+  "n_unit_rows_loaded": 15000,
+  "numpy": "1.26.4",
+  "out_dir": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25",
+  "outputs": [
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/curve_summary_by_case_radius.csv",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/reflevel_derivative_curvature_by_case_radius.csv",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/A_kappa_by_reference.csv",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/case_summary_A_kappa.csv",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/gap_to_even_odd_by_radius.csv",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/gap_metrics_to_even_odd.csv",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig01_raw_phi_E_even_odd_eta_comparison.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig01_raw_phi_E_even_odd_eta_comparison.pdf",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig02_smoothed_dphi_dr_even_odd_eta_comparison.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig02_smoothed_dphi_dr_even_odd_eta_comparison.pdf",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig03_curvature_A_kappa_even_odd_eta_comparison.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig03_curvature_A_kappa_even_odd_eta_comparison.pdf",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig04_gap_metrics_to_even_odd.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/fig04_gap_metrics_to_even_odd.pdf",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/figures/phase_transition_discussion_30ref_eta0p02_0p05_0p15_0p25/REPORT.md"
+  ],
+  "pandas": "2.2.2",
+  "python": "3.12.2",
+  "script_path": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/src/build_phase_transition_discussion_30ref.py",
+  "smooth_window": 7
+}

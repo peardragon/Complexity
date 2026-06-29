@@ -11,6 +11,10 @@ julia_env/
 .julia_depot/
 .tmp_jupyter/
 
+# Literature vault stays local.
+00_literature_search/
+00_literature_search/**
+
 # Local tool/session state
 .lh/
 .history/
@@ -98,6 +102,7 @@ logs/
 **/unit_summary_long.csv
 **/overlay_unit_summary_long.csv
 **/pilot_unit_summary.csv
+**/combined_direct_derivative_units.csv
 **/sampling_log_latest*.csv
 **/shard*_unit_summary.csv
 **/tasks_shard*_of_*.csv
@@ -133,6 +138,7 @@ logs/
 # Local backup and one-off helper bins. Preserve explicit placeholders only.
 99_backup/**
 !99_backup/.gitkeep
+**/99_backup/**
 99_codex_bin/**
 !99_codex_bin/.gitkeep
 **/backup/**

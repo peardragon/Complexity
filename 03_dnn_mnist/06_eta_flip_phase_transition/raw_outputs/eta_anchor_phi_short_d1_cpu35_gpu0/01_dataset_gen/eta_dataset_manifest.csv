@@ -1,0 +1,5 @@
+eta,rule,dataset_path,flip_rate_train,flip_rate_test,reused
+0.0,eta_0p00,/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_anchor_phi_short_d1_cpu35_gpu0/01_dataset_gen/split_000/eta_0p00/rep_000/dataset.npz,0.0,0.0,False
+0.2,eta_0p20,/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_anchor_phi_short_d1_cpu35_gpu0/01_dataset_gen/split_000/eta_0p20/rep_000/dataset.npz,0.171875,0.1953125,False
+0.35,eta_0p35,/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_anchor_phi_short_d1_cpu35_gpu0/01_dataset_gen/split_000/eta_0p35/rep_000/dataset.npz,0.357421875,0.3603515625,False
+0.5,eta_0p50,/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_anchor_phi_short_d1_cpu35_gpu0/01_dataset_gen/split_000/eta_0p50/rep_000/dataset.npz,0.478515625,0.509765625,False

@@ -1,0 +1,19 @@
+{
+  "base_dataset": "/home/bjyong/Complexity/windows_project/02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/01_dataset_prepare/raw_datasets/split_000/real_even_odd/dataset.npz",
+  "base_seed": 2026062500,
+  "batch_size": 8,
+  "etas": [
+    0.02
+  ],
+  "lr": 0.022,
+  "max_attempts": 600,
+  "max_epochs": 1200,
+  "resource_policy": {
+    "cpu_limit_target": "use <=35% by limiting thread count",
+    "cpu_threads_per_process": 8,
+    "device": "cpu",
+    "gpu_limit_target": "use <=25%; this run uses CPU only"
+  },
+  "run_name": "eta_reference_search_gapfill_0p02_30ref_cpu60_gpu0",
+  "target_refs": 30
+}

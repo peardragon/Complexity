@@ -1,0 +1,24 @@
+system,control,control_value,case_label,A_kappa,A_kappa_sem,derivative_source
+3nn_spin,beta,0.05,beta=0.05,0.0063883408333409,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.07,beta=0.07,0.0059079732692251,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.09,beta=0.09,0.0051991419454657,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.11,beta=0.11,0.0046393901503916,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.13,beta=0.13,0.0038304985906941,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.15,beta=0.15,0.0030644865494894,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.17,beta=0.17,0.00188003135004,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.19,beta=0.19,0.0010026577333292,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.21,beta=0.21,0.0002571350990198,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.23,beta=0.23,1.842362253994395e-05,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.25,beta=0.25,0.0,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.27,beta=0.27,0.0,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.29,beta=0.29,0.0,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.31,beta=0.31,0.0,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.33,beta=0.33,0.0,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.35,beta=0.35,2.907620925219498e-05,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.37,beta=0.37,3.947831499114675e-06,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+3nn_spin,beta,0.39,beta=0.39,1.325786993130032e-05,,direct sampler derivative dlogZ/dd aggregated by beta/radius
+mnist_real_or_flip,eta_or_rule,,even odd,0.16820242389674098,0.012170715522043475,posthoc savgol_21_3 finite difference from sampled phi_E(d)
+mnist_real_or_flip,eta_or_rule,0.02,eta=0.02,0.1992301038291034,0.014621213414234191,posthoc savgol_21_3 finite difference from sampled phi_E(d)
+mnist_real_or_flip,eta_or_rule,0.05,eta=0.05,0.26414380685770084,0.015062907722620757,posthoc savgol_21_3 finite difference from sampled phi_E(d)
+mnist_real_or_flip,eta_or_rule,0.15,eta=0.15,0.460530698716397,0.01273391333103361,posthoc savgol_21_3 finite difference from sampled phi_E(d)
+mnist_real_or_flip,eta_or_rule,0.25,eta=0.25,0.6073276353973459,0.013579598129937068,posthoc savgol_21_3 finite difference from sampled phi_E(d)

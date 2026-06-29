@@ -1,0 +1,13 @@
+{
+  "run_name": "eta_sweep_pilot_cpu35_gpu0",
+  "base_dataset_path": "/home/bjyong/Complexity/windows_project/02_dnn/08_mnist/runs/final/single_dataset_10x10_box_n_train_512_60ref_allrule_sparse_0p010_to_2p500/01_dataset_prepare/raw_datasets/split_000/real_even_odd/dataset.npz",
+  "eta_values": [0.0, 0.02, 0.04, 0.06, 0.08, 0.1, 0.12, 0.15, 0.18, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5],
+  "replicates": 20,
+  "k_values": [3, 5, 8, 16, 32],
+  "base_seed": 20260625,
+  "cpu_load_cap_fraction": 0.35,
+  "gpu_load_cap_fraction": 0.25,
+  "thread_limit": 8,
+  "use_gpu": false,
+  "notes": "CPU-only pilot for eta label-flip complexity knob. Stores compact flip masks/labels, not duplicated image arrays."
+}

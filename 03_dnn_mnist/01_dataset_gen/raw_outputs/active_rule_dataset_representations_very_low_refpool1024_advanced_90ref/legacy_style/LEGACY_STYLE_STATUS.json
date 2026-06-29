@@ -1,0 +1,33 @@
+{
+  "active_rules": [
+    "very_low_tv_spectral_teacher",
+    "real_even_odd",
+    "teacher_nn",
+    "random_label"
+  ],
+  "dataset_fig_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style",
+  "dataset_figures": [
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_dataset_label_examples_very_low_tv_spectral_teacher.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_dataset_label_examples_real_even_odd.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_dataset_label_examples_teacher_nn.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_dataset_label_examples_random_label.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig02_active_rule_dataset_label_examples.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig03_active_rule_tsne_label_embedding.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_tsne_label_embedding_very_low_tv_spectral_teacher.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_tsne_label_embedding_real_even_odd.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_tsne_label_embedding_teacher_nn.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/figures/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style/fig_tsne_label_embedding_random_label.png"
+  ],
+  "dataset_raw_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/01_dataset_gen/raw_outputs/active_rule_dataset_representations_very_low_refpool1024_advanced_90ref/legacy_style",
+  "deprecated_rules": [
+    "low_tv_spectral_teacher"
+  ],
+  "proxy_fig_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/05_proxy_local_entropy/figures/very_low_tv_spectral_teacher_refpool1024_advanced_90ref/legacy_style",
+  "proxy_figures": [
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/05_proxy_local_entropy/figures/very_low_tv_spectral_teacher_refpool1024_advanced_90ref/legacy_style/fig01_active_rules_raw_phi_energy_spaghetti_deprecated_low.png",
+    "/home/bjyong/Complexity/local_project/03_dnn_mnist/05_proxy_local_entropy/figures/very_low_tv_spectral_teacher_refpool1024_advanced_90ref/legacy_style/fig_nmstv_raw_phi_energy_spaghetti.png"
+  ],
+  "proxy_raw_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/05_proxy_local_entropy/raw_outputs/very_low_tv_spectral_teacher_refpool1024_advanced_90ref/legacy_style",
+  "radius_grid": "advanced_0.05",
+  "run_root": "/home/bjyong/Complexity/local_project/03_dnn_mnist/04_sampling/raw_outputs/very_low_tv_spectral_teacher_refpool1024_advanced_90ref"
+}

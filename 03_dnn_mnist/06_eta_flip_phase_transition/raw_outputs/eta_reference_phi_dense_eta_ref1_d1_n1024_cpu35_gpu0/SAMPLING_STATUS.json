@@ -1,0 +1,32 @@
+{
+  "completed_units": 24,
+  "etas": [
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.5
+  ],
+  "expected_units": 24,
+  "max_split_logZ_per_P_diff": 0.0058983749249818624,
+  "max_unit_elapsed_s": 33.70556282997131,
+  "mean_unit_elapsed_s": 26.868591497341793,
+  "min_ess_fraction": 0.5719407570104189,
+  "note": "Eta-specific exact-reference phi smoke.",
+  "radii": [
+    0.8,
+    0.9,
+    1.0,
+    1.1
+  ],
+  "ref_count": 1,
+  "resource_policy": {
+    "cpu_limit_target": "use <=35% by limiting thread count",
+    "cpu_threads_per_process": 8,
+    "device": "cpu",
+    "gpu_limit_target": "use <=25%; this run uses CPU only"
+  },
+  "samples_per_ref_radius": 1024,
+  "status": "complete"
+}

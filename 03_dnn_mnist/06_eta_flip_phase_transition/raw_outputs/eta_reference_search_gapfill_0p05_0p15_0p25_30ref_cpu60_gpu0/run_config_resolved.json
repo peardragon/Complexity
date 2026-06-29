@@ -1,0 +1,21 @@
+{
+  "etas": [
+    0.05,
+    0.15,
+    0.25
+  ],
+  "expected_reference_rows": 90,
+  "note": "Merged gap-fill pool: new eta 0.05/0.15 exact references plus existing eta 0.25 references.",
+  "ref_count_for_sampling": 30,
+  "reference_rows": 90,
+  "refs_per_eta": {
+    "eta_0p05": 30,
+    "eta_0p15": 30,
+    "eta_0p25": 30
+  },
+  "sources": {
+    "eta_0p05_0p15": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_gapfill_0p05_0p15_30ref_cpu60_gpu0",
+    "eta_0p25": "/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_advanced_4eta_90ref_cpu35_gpu0"
+  },
+  "status": "complete"
+}
