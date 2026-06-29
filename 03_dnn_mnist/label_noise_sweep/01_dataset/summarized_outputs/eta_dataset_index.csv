@@ -1,0 +1,5 @@
+noise_eta,eta,n_train,input_shape,dataset_path,raw_payload_status
+noise_eta_0p02,0.02,512,10x10,03_dnn_mnist/label_noise_sweep/01_dataset/raw_outputs/noise_eta_0p02/dataset.npz,present
+noise_eta_0p05,0.05,512,10x10,03_dnn_mnist/label_noise_sweep/01_dataset/raw_outputs/noise_eta_0p05/dataset.npz,present
+noise_eta_0p15,0.15,512,10x10,03_dnn_mnist/label_noise_sweep/01_dataset/raw_outputs/noise_eta_0p15/dataset.npz,present
+noise_eta_0p25,0.25,512,10x10,03_dnn_mnist/label_noise_sweep/01_dataset/raw_outputs/noise_eta_0p25/dataset.npz,present

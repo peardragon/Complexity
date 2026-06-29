@@ -13,6 +13,19 @@ from scipy.special import ndtr, roots_hermitenorm
 
 
 DEFAULT_RADII = tuple(round(0.15 + 0.05 * idx, 10) for idx in range(42))
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_CONFIG = PROJECT_ROOT / "01_theory" / "01_theory_analytic" / "config" / "default.json"
+DEFAULT_OUTPUT_CSV = (
+    PROJECT_ROOT
+    / "01_theory"
+    / "01_theory_analytic"
+    / "summarized_outputs"
+    / "fig01_phi_by_analytic_solution_alpha0p1.csv"
+)
+
+
+def project_path(path: Path) -> Path:
+    return path if path.is_absolute() else PROJECT_ROOT / path
 
 
 def gh_norm(n: int) -> tuple[np.ndarray, np.ndarray]:
@@ -195,13 +208,14 @@ def load_config(path: Path | None, args: argparse.Namespace) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", type=Path, default=Path("01_theory/01_theory_analytic/config/default.json"))
-    parser.add_argument("--out", required=True)
+    parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    parser.add_argument("--out", type=Path, default=None)
     parser.add_argument("--alpha", type=float, default=None)
     parser.add_argument("--radii", type=str, default=None, help="Comma-separated radii override.")
     args = parser.parse_args()
-    rows = compute_rows(load_config(args.config, args))
-    out = Path(args.out)
+    config = load_config(project_path(args.config), args)
+    rows = compute_rows(config)
+    out = project_path(args.out) if args.out is not None else project_path(Path(config.get("output_csv", DEFAULT_OUTPUT_CSV)))
     out.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(out, index=False)
     print(out)

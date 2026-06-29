@@ -1,6 +1,0 @@
-{
-  "beta_count": 1,
-  "event": "skipped",
-  "reason": "Energy phase maps need at least two beta values; the Gaussian baseline has a single beta tag.",
-  "timestamp": "2026-06-23T05:35:09+09:00"
-}

@@ -1,0 +1,5 @@
+rule_id,rule_name,label
+rule_001,very_low_tv_spectral_teacher,very low tv
+rule_002,real_even_odd,even odd
+rule_003,teacher_nn,teacher nn
+rule_004,random_label,random

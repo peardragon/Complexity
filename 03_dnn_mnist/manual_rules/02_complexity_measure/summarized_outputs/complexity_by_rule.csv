@@ -1,0 +1,5 @@
+rule_id,rule_name,label,rule_order,nmstv_mean
+rule_001,very_low_tv_spectral_teacher,very low tv,1,0.3245703473792008
+rule_002,real_even_odd,even odd,2,0.4932864276461805
+rule_003,teacher_nn,teacher nn,3,0.6843772639598127
+rule_004,random_label,random,4,0.985558573825462

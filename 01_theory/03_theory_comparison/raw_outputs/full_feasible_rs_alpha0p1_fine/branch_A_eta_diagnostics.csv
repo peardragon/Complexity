@@ -1,4 +1,0 @@
-branch,radius_count,max_A,mean_A,max_eta,mean_eta,interior_radius_count_A_gt_1e_minus_4,interior_radius_count_eta_gt_1e_minus_3
-boundary_mixed_eta0,42,0.0,0.0,0.0,0.0,0,0
-full_max_envelope,42,0.0651922365511097,0.044166957011978036,0.995,0.9949999999999998,42,42
-full_mixed_maxQ_min_s_eta,42,0.0,0.0,0.0,0.0,0,0

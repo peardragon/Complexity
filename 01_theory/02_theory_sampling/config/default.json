@@ -1,9 +1,24 @@
 ﻿{
     "stage":  "02_theory_sampling",
     "run_name":  "two_pool_perceptron_alpha0p1_dense_qc_final",
-    "source_final":  "two_pool_perceptron_alpha0p1_dense_qc_full_split_pass_merged",
+    "source_final":  "two_pool_perceptron_alpha0p1_default_smc_pmax32768_split0p006",
     "alpha":  0.1,
     "lambda_ref":  1,
     "lambda_shell":  1,
-    "final_sample_units":  16800
+    "final_sample_units":  16800,
+    "shell_sampler":  {
+        "method":  "exact_shell_l2_vmf_adaptive_ce_smc",
+        "target_cess_fraction":  0.85,
+        "resample_ess_fraction":  0.85,
+        "max_steps":  160,
+        "min_delta_t":  0.00005,
+        "bisection_steps":  36,
+        "mh_sweeps":  2,
+        "move_kappa_factor":  80.0,
+        "max_n_particles":  32768
+    },
+    "qc":  {
+        "max_split_logZ_per_N_diff":  0.006,
+        "smc_min_cess_fraction_min":  0.8
+    }
 }

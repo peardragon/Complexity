@@ -1,0 +1,36 @@
+{
+  "fallback_unit_count": 0,
+  "final_unit_count": 16800,
+  "full_default_smc_pass": true,
+  "max_n_particles": 32768,
+  "max_split_logZ_per_N_diff": 0.0059277203723576,
+  "method_counts": {
+    "exact_shell_l2_vmf_adaptive_ce_smc": 16800
+  },
+  "min_smc_cess_fraction": 0.8500000000000005,
+  "missing_payload_path_count": 0,
+  "missing_payload_path_examples": [],
+  "nondefault_method_count": 0,
+  "original_unit_count": 16800,
+  "over_particle_cap_count": 0,
+  "particle_counts": {
+    "2048": 13200,
+    "32768": 3600
+  },
+  "qc_cell_count": 168,
+  "reference_count_max": 100,
+  "reference_count_min": 100,
+  "replacement_reason_counts": {
+    "cap_particles_32768": 15,
+    "n40_default_smc_tempered_path": 4200,
+    "nondefault_direct_is": 5731
+  },
+  "replacement_unit_count": 4200,
+  "smc_cess_threshold": 0.8,
+  "smc_fail_cell_count": 0,
+  "split_fail_cell_count": 0,
+  "split_threshold_per_N": 0.006,
+  "target_nondefault_method_count": 0,
+  "target_over_particle_cap_count": 0,
+  "target_unit_count": 4200
+}

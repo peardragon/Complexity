@@ -1,0 +1,25 @@
+{
+  "stage": "04_sampling",
+  "axis_policy": "manual_rule",
+  "raw_output_root": "04_sampling/raw_outputs",
+  "shell_pool_layout": "04_sampling/raw_outputs/shell_pool/rule_*/ref_*/r_*/samples.npz",
+  "unit_summary_layout": "04_sampling/raw_outputs/shell_pool/rule_*/ref_*/r_*/unit_summary.json",
+  "unit_index": "04_sampling/raw_outputs/shell_pool/unit_index.csv",
+  "method": "importance_sampling_with_tempered_path",
+  "sampler_method": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+  "tempered_path_default": true,
+  "fallback_policies_enabled": false,
+  "ess_policy": "handled inside the tempered SMC path; final QC reports split-logZ and reference variability only",
+  "rules": [
+    "rule_001",
+    "rule_002",
+    "rule_003",
+    "rule_004"
+  ],
+  "references_per_rule": 30,
+  "radii_per_reference": 100,
+  "radius_grid": "0.01..1.00 step 0.01",
+  "samples_per_unit": 1024,
+  "unit_count": 12000,
+  "retained_sampling_figures": []
+}

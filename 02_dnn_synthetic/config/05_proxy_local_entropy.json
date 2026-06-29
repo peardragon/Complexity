@@ -1,0 +1,11 @@
+{
+  "stage": "05_proxy_local_entropy",
+  "method_names": ["PLE", "E-PLE"],
+  "method_full_names": ["Proxy Local Entropy", "Energetic Proxy Local Entropy"],
+  "production_run": "18 beta-cell x 90 dataset x 30 reference dense TPIS shell",
+  "source_sampling_root": "02_dnn_synthetic/04_sampling/raw_outputs/shell_pool/cell_beta_*",
+  "model": {"parameter_count": 2545, "lambda_reg": 1.0},
+  "retained_figures": ["phi_d_curve.png", "phi_energetic_d_curve.png", "derivative_phi_d_curve.png", "derivative_phi_energetic_d_curve.png", "phase_like_A_by_beta.png", "phase_like_A_by_complexity.png"],
+  "phase_like_A_definition": "Total variation of the energetic dphi/dd curve along log-distance.",
+  "source": "src/build_six_figures.py"
+}

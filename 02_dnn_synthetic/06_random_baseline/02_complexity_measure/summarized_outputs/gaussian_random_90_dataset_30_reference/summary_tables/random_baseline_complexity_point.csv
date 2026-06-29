@@ -1,0 +1,2 @@
+baseline,beta_role,source_beta_tag,dataset_count,complexity_metric,complexity_mean,complexity_std,complexity_sem,nearest_spin_beta,nearest_spin_complexity_mean,abs_gap_to_nearest_spin_complexity
+gaussian_random_90_dataset,source_tag_only_not_a_sweep_axis,0.05,90,3nn_label_disagreement,0.5017650462962963,0.01739312162861195,0.0018333959988917012,0.05,0.4708333333333333,0.03093171296296293

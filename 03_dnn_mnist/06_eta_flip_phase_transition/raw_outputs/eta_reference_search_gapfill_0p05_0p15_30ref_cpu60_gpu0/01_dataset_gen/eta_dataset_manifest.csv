@@ -1,3 +1,0 @@
-split_id,rule,eta,n_train,n_test,train_pos_fraction,dataset_path,flip_rate_train,flip_rate_test,reused
-0,eta_0p05,0.05,512,2048,0.484375,/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_gapfill_0p05_0p15_30ref_cpu60_gpu0/01_dataset_gen/split_000/eta_0p05/rep_000/dataset.npz,0.05078125,0.05224609375,False
-0,eta_0p15,0.15,512,2048,0.53125,/home/bjyong/Complexity/local_project/03_dnn_mnist/06_eta_flip_phase_transition/raw_outputs/eta_reference_search_gapfill_0p05_0p15_30ref_cpu60_gpu0/01_dataset_gen/split_000/eta_0p15/rep_000/dataset.npz,0.1484375,0.16064453125,False

@@ -1,0 +1,32 @@
+{
+  "stage": "01_dataset",
+  "axis_policy": "manual_rule",
+  "raw_output_root": "01_dataset/raw_outputs",
+  "summarized_output_root": "01_dataset/summarized_outputs",
+  "retained_figures": [
+    "01_dataset/figures/sample_figure.png"
+  ],
+  "rules": [
+    {
+      "rule_id": "rule_001",
+      "rule_name": "very_low_tv_spectral_teacher",
+      "raw_dataset": "01_dataset/raw_outputs/rule_001/dataset.npz"
+    },
+    {
+      "rule_id": "rule_002",
+      "rule_name": "real_even_odd",
+      "raw_dataset": "01_dataset/raw_outputs/rule_002/dataset.npz"
+    },
+    {
+      "rule_id": "rule_003",
+      "rule_name": "teacher_nn",
+      "raw_dataset": "01_dataset/raw_outputs/rule_003/dataset.npz"
+    },
+    {
+      "rule_id": "rule_004",
+      "rule_name": "random_label",
+      "raw_dataset": "01_dataset/raw_outputs/rule_004/dataset.npz"
+    }
+  ],
+  "index": "01_dataset/summarized_outputs/dataset_index.csv"
+}

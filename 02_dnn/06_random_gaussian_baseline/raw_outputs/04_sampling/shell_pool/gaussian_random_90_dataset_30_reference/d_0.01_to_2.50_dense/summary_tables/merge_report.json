@@ -1,9 +1,0 @@
-{
-  "failed_units": 0,
-  "loss_gap_rows": 10125000,
-  "rh_rows": 4050000,
-  "run_root": "02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/shell_pool/gaussian_random_90_dataset_30_reference/d_0.01_to_2.50_dense",
-  "summary_root": "02_dnn/06_random_gaussian_baseline/raw_outputs/04_sampling/shell_pool/gaussian_random_90_dataset_30_reference/d_0.01_to_2.50_dense/summary_tables",
-  "timestamp": "2026-06-23T05:33:27+09:00",
-  "unit_rows": 675000
-}

@@ -1,0 +1,30 @@
+{
+  "axis_policy": "manual_rule",
+  "canonical_unit_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/manual_rules/05_proxy_local_entropy/summarized_outputs/canonical_refpool1024_dense30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/shell_summary_by_unit_with_phi_derivatives.csv",
+  "derivative_curve_policy": "Standalone derivative and A-measure panels use sampling-time direct radial score derivative from dlogZ_inf_full_dr / P.",
+  "direct_radial_derivative_payload_present": true,
+  "radial_derivative_methodology": [
+    "mnist10_exact_shell_l2_vmf_ce_tempered_smc_radial_score_derivative_v1"
+  ],
+  "radii_count_per_reference": 100,
+  "retained_figures": [
+    "phi_d_curve.png",
+    "phi_energetic_d_curve.png",
+    "derivative_phi_d_curve.png",
+    "derivative_phi_energetic_d_curve.png",
+    "phase_like_A_by_rule.png",
+    "phase_like_A_by_complexity.png",
+    "logZ_split_qc_results.png",
+    "reference_variability_results.png"
+  ],
+  "rule_axis": "rule_001..rule_004",
+  "sampler_methods": [
+    "exact_shell_l2_vmf_adaptive_ce_tempered_smc"
+  ],
+  "source_unit_table": "/home/bjyong/Complexity/local_project/03_dnn_mnist/manual_rules/04_sampling/summarized_outputs/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0/01_active_rules_sampling/05_pool2_pm_sais_sampling/shell_summary_by_unit_with_phi_derivatives.csv",
+  "split_logZ_threshold": 0.004,
+  "stage": "05_proxy_local_entropy",
+  "target_ref_count_per_rule": 30,
+  "tempered_path_default": true,
+  "unit_count": 12000
+}

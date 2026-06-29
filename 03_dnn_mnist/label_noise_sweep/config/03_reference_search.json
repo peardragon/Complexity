@@ -1,0 +1,9 @@
+{
+  "stage": "03_reference_search",
+  "production_run": "eta_reference_search_gapfill_0p02_0p05_0p15_0p25_30ref_cpu60_gpu0",
+  "raw_output_root": "03_reference_search/raw_outputs/noise_eta_*/ref_*/reference_metadata.json",
+  "provenance_root": "03_reference_search/raw_outputs/provenance/eta_reference_search_gapfill_0p02_0p05_0p15_0p25_30ref_cpu60_gpu0",
+  "canonical_index": "03_reference_search/raw_outputs/reference_index_canonical.csv",
+  "theta_payload_status": "theta.npy paths in provenance are not present in the current local payload",
+  "references_per_case": 30
+}

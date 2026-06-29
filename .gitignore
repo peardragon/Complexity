@@ -42,6 +42,8 @@ logs/
 *.h5
 *.hdf5
 *.parquet
+**/raw_outputs/**
+**/notebook_regenerated/**
 
 # Legacy result contracts
 **/results_raw/**

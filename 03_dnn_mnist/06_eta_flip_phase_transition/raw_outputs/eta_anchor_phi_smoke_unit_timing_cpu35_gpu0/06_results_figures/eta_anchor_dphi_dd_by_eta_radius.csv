@@ -1,2 +1,0 @@
-eta,rule,radius,n_units,phi_energy_raw_mean,phi_energy_raw_sd,delta_phi_energy_mean,ess_fraction_min,ess_fraction_mean,split_logZ_per_P_diff_max,weighted_ce_mean,weighted_error_mean,elapsed_s_mean,d_phi_energy_raw_dd
-0.0,eta_0p00,1.0,1,-0.07470312222134362,,,0.6928434015127417,0.6928434015127417,0.01050659602110887,0.2855590385907996,0.11230142995676384,2.794675827026367,

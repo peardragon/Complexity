@@ -1,9 +1,0 @@
-rule,radius,phi_energy_raw,n_units,target_ref_count,sampling_status
-random_label,0.1,,0,1,partial_missing_units
-random_label,0.2,,0,1,partial_missing_units
-real_even_odd,0.1,,0,1,partial_missing_units
-real_even_odd,0.2,,0,1,partial_missing_units
-teacher_nn,0.1,,0,1,partial_missing_units
-teacher_nn,0.2,,0,1,partial_missing_units
-very_low_tv_spectral_teacher,0.1,-0.0048525319713936714,1,1,complete
-very_low_tv_spectral_teacher,0.2,-0.013926144696637523,1,1,complete

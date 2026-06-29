@@ -1,0 +1,19 @@
+{
+  "stage": "04_sampling",
+  "method": "TPIS",
+  "production_run": "eta label-noise direct-derivative dense 30-reference sweep",
+  "noise_eta_values": ["noise_eta_0p05", "noise_eta_0p15", "noise_eta_0p25"],
+  "reference_pool": "../03_reference_search/raw_outputs/reference_index_canonical.csv",
+  "shell_pool": "raw_outputs/shell_pool/noise_eta_*/ref_*/r_*/samples.npz",
+  "run_config": "raw_outputs/shell_pool/run_config.json",
+  "sampling_unit_index": "raw_outputs/sampling_unit_index.csv",
+  "figure_summary_root": "../05_proxy_local_entropy/summarized_outputs/direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0",
+  "radius_range": {"start": 0.01, "stop": 1.0, "step": 0.01},
+  "samples_per_ref_radius": 1024,
+  "unit_count": 9000,
+  "sampler_method": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+  "tempered_path_default": true,
+  "derivative_curve_policy": "Sampling-time direct radial score derivative is retained in each unit_summary.json as dlogZ_inf_full_dr and d_phi_energy_direct_dd_unit.",
+  "active_figure_policy": "No sampling-stage figures are retained.",
+  "note": "The direct-derivative final proxy-local-entropy run contains eta=0.05, 0.15, 0.25. The older eta=0.02 finite-difference proxy payload is not part of the final PLE policy."
+}

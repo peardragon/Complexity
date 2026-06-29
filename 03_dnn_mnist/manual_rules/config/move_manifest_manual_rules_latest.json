@@ -1,0 +1,21 @@
+{
+  "manifest_type": "manual_rules_reorganization_summary",
+  "final_root": "Complexity/03_dnn_mnist/manual_rules",
+  "move_policy": "large shell-pool payloads were moved by directory rename inside the local project; only small source dataset/reference metadata payloads required cross-device move fallback",
+  "final_counts": {
+    "datasets": 4,
+    "references": 120,
+    "sampling_units": 12000,
+    "samples_npz": 12000,
+    "unit_summary_json": 12000
+  },
+  "strict_layouts": {
+    "dataset": "01_dataset/raw_outputs/rule_*/dataset.npz",
+    "reference": "03_reference_search/raw_outputs/rule_*/ref_*/theta.npy",
+    "sampling": "04_sampling/raw_outputs/shell_pool/rule_*/ref_*/r_*/samples.npz",
+    "figure_inputs": "05_proxy_local_entropy/summarized_outputs/figure_inputs/<figure_name>/<figure_name>.csv"
+  },
+  "rule_mapping": "config/rule_mapping.csv",
+  "sampler_method": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+  "tempered_path_default": true
+}

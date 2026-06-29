@@ -10,6 +10,27 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
+PROJECT_ROOT = Path(__file__).resolve().parents[3]
+DEFAULT_INPUT_CSV = (
+    PROJECT_ROOT
+    / "01_theory"
+    / "01_theory_analytic"
+    / "summarized_outputs"
+    / "fig01_phi_by_analytic_solution_alpha0p1.csv"
+)
+DEFAULT_OUTPUT_PNG = (
+    PROJECT_ROOT
+    / "01_theory"
+    / "01_theory_analytic"
+    / "figures"
+    / "fig01_phi_by_analytic_solution_alpha0p1.png"
+)
+
+
+def project_path(path: Path) -> Path:
+    return path if path.is_absolute() else PROJECT_ROOT / path
+
+
 def make_figure(input_csv: Path, output_png: Path) -> None:
     df = pd.read_csv(input_csv).sort_values("r")
     y_col = "phi_rel" if "phi_rel" in df.columns else "phi"
@@ -31,16 +52,17 @@ def main() -> None:
     parser.add_argument(
         "--input-csv",
         type=Path,
-        default=Path("01_theory/01_theory_analytic/raw_outputs/theory_full_rs_alpha0p1.csv"),
+        default=DEFAULT_INPUT_CSV,
     )
     parser.add_argument(
         "--output-png",
         type=Path,
-        default=Path("01_theory/01_theory_analytic/figures/fig01_phi_by_analytic_solution_alpha0p1.png"),
+        default=DEFAULT_OUTPUT_PNG,
     )
     args = parser.parse_args()
-    make_figure(args.input_csv, args.output_png)
-    print(args.output_png)
+    output_png = project_path(args.output_png)
+    make_figure(project_path(args.input_csv), output_png)
+    print(output_png)
 
 
 if __name__ == "__main__":

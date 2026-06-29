@@ -1,9 +1,0 @@
-{
-  "dataset_count": 90,
-  "existing_detail": "02_dnn/05_proxy_local_entropy/figures/high_beta_energy_derivatives_ci_30_60_90/energy_phi_d1_d2_ci_detail.csv",
-  "figure": "02_dnn/06_random_gaussian_baseline/figures/gaussian_overlay/phi_energy_high_beta_spin_90_with_gaussian_baseline_dmax_0p3.png",
-  "gaussian_curve": "02_dnn/06_random_gaussian_baseline/raw_outputs/05_proxy_local_entropy/gaussian_random_90_dataset_30_reference/d_0.01_to_2.50_dense/summary_tables/high_beta_curve_comparison.csv",
-  "max_radius": 0.3,
-  "note": "Gaussian baseline is averaged over its synthetic baseline tag(s); spin comparison rows still come from the requested dataset_count slice.",
-  "timestamp": "2026-06-23T05:35:22+09:00"
-}

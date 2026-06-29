@@ -1,9 +1,0 @@
-rule,radius,d0,target_ref_count,observed_ref_count,missing_ref_count,finite_unit_count,finite_unit_fraction,q05_ess_fraction,max_split_logZ_per_P_diff,max_split_dlogZ_dr_per_P_diff,max_ce_replay_abs_diff,bootstrap_sd_delta_phi_energy,qc_diagnostic_pass,sampling_status,missing_ref_ids
-random_label,0.1,0.1,1,0,1,0,0.0,,,,,,False,partial_missing_units,0
-random_label,0.2,0.1,1,0,1,0,0.0,,,,,,False,partial_missing_units,0
-real_even_odd,0.1,0.1,1,0,1,0,0.0,,,,,,False,partial_missing_units,0
-real_even_odd,0.2,0.1,1,0,1,0,0.0,,,,,,False,partial_missing_units,0
-teacher_nn,0.1,0.1,1,0,1,0,0.0,,,,,,False,partial_missing_units,0
-teacher_nn,0.2,0.1,1,0,1,0,0.0,,,,,,False,partial_missing_units,0
-very_low_tv_spectral_teacher,0.1,0.1,1,1,0,1,1.0,0.905931875349422,0.0009933536832943757,0.015265284034041341,0.0,0.0,True,complete,
-very_low_tv_spectral_teacher,0.2,0.1,1,1,0,1,1.0,0.741055418917869,0.0008592097209159029,0.01605806290254624,0.0,0.0,True,complete,
