@@ -1,8 +1,0 @@
-{
-  "stage": "03_reference_search",
-  "production_run": "18_beta_cell_90_dataset_30_reference",
-  "references_per_dataset": 30,
-  "raw_outputs": ["raw_outputs/18_beta_cell_90_dataset_30_reference/raw_attempts", "raw_outputs/18_beta_cell_90_dataset_30_reference/selected_references", "raw_outputs/18_beta_cell_90_dataset_30_reference/logs"],
-  "superhard_examples_note": "superhard_examples records datasets where the reference search did not reach 30 exact references after 200 attempts. Those units were replaced before the final selected reference pool was used downstream.",
-  "active_summary_policy": "No summarized_outputs directory is retained in the final reference-search stage."
-}

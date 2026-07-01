@@ -1,0 +1,117 @@
+{
+  "stage": "04_sampling",
+  "stage_detail": "04_sampling.exact_shell_l2_vmf_ce_smc",
+  "method_name": "TPIS",
+  "method_full_name": "Tempered-Path Importance Sampling",
+  "method": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+  "sampler": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+  "production_run": "18 beta x 90 dataset x 30 reference dense TPIS shell",
+  "reference_pool": "03_reference_search/raw_outputs/beta_*/dataset_*/ref_*",
+  "shell_pool": "raw_outputs/shell_pool/beta_*",
+  "upstream": {
+    "dataset_raw_root": "01_dataset/raw_outputs",
+    "reference_search_root": "03_reference_search/raw_outputs",
+    "reference_search_layout": "03_reference_search/raw_outputs/beta_*/dataset_*/ref_*"
+  },
+  "run": {
+    "id_suffix": "SMC_18d90r30_dense_gpu23",
+    "name": "exact_shell_ce_smc_18cell_90dataset_30reference_dense_to2p5_lambda1_gamma1",
+    "preset": "candidate",
+    "resume_missing_units": true,
+    "seed": 20260528
+  },
+  "model": {
+    "architecture": "2-48-48-1-tanh",
+    "parameter_count": 2545,
+    "P": 2545,
+    "lambda_reg": 1.0
+  },
+  "target": {
+    "gamma_ce": 1.0,
+    "lambda_reg": 1.0
+  },
+  "ensemble": {
+    "beta_cells": 18,
+    "datasets_per_beta": 90,
+    "references_per_dataset": 30
+  },
+  "compute": {
+    "chunk_size": 1024,
+    "device": "auto",
+    "dtype": "float32",
+    "workers": 1
+  },
+  "sampling": {
+    "radius_start": 0.01,
+    "radius_stop": 2.5,
+    "radius_step": 0.01,
+    "r0": 0.01,
+    "radius_range": {
+      "decimals": 2,
+      "start": 0.01,
+      "stop": 2.5,
+      "step": 0.01
+    },
+    "samples_per_ref_radius": 1024,
+    "samples_per_ref_radius_constant": 1024,
+    "samples_per_ref_radius_mode": "constant",
+    "h_ladder": [
+      1,
+      2,
+      4,
+      6,
+      8,
+      "inf"
+    ],
+    "proposal": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+    "proposal_alias": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+    "proposal_original_label": "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
+    "tempered_path_default": true,
+    "tempered_path_definition": "adaptive CE SMC temperature path chosen by target CESS; unit summaries use the tempered-path method label"
+  },
+  "smc": {
+    "target_cess_fraction": 0.75,
+    "resample_ess_fraction": 0.75,
+    "max_steps": 120,
+    "bisection_steps": 32,
+    "mh_sweeps": 1,
+    "min_delta_t": 0.0001,
+    "move_kappa_factor": 80.0
+  },
+  "tpis_controls": {
+    "target_cess_fraction": 0.75,
+    "resample_ess_fraction": 0.75,
+    "max_steps": 120
+  },
+  "derivative": {
+    "enabled": true
+  },
+  "aggregation": {
+    "bootstrap_replicates": 400
+  },
+  "claim_policy": {
+    "failed_radius": "no_claim"
+  },
+  "policy_notes": {
+    "importance_sampling_default": "tempered_path_pm_sais"
+  },
+  "qc": {
+    "aggregate_ref_level_ess_min": 691200,
+    "bootstrap_sd_phi_max": 0.012,
+    "finite_references_per_beta_radius": 2700,
+    "max_split_logZ_per_P_diff": 0.004,
+    "q05_ess_fraction_min": 0.2,
+    "smc_max_tempering_steps": 120,
+    "smc_min_cess_fraction_min": 0.6
+  },
+  "derivative_qc": {
+    "bootstrap_sd_dphi_full_dr_max": 0.012,
+    "ce_replay_max_abs_diff_allowed": 0.001,
+    "max_split_dlogZ_dr_per_P_diff": 0.004
+  },
+  "qc_contract": {
+    "average_level_stability": "reference/dataset standard error",
+    "unit_level_stability": "split logZ per parameter"
+  },
+  "active_summary_policy": "summarized_outputs retains unit_summary/beta_*.csv and figure_inputs/logZ_split/beta_*.csv; raw reference_pool and shell_pool traces remain under raw_outputs."
+}

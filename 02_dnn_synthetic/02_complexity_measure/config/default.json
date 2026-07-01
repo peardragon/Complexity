@@ -1,0 +1,10 @@
+{
+  "stage": "02_complexity_measure",
+  "input_dataset_glob": "01_dataset/raw_outputs/beta_0p*/dataset_*/dataset.npz",
+  "measure_name": "3NN label-disagreement complexity",
+  "definition": "For each dataset, fit a 3-nearest-neighbor graph in X_train and average the fraction of directed neighbor edges with different labels.",
+  "raw_outputs_policy": "No separate raw output is retained for this stage; the measure is computed once from 01_dataset/raw_outputs.",
+  "summary_outputs": ["summarized_outputs/beta_complexity_summary.csv"],
+  "retained_figure": "figures/beta_complexity_figure.png",
+  "source": ["src/make_summarized_outputs.py", "src/make_figures.py"]
+}

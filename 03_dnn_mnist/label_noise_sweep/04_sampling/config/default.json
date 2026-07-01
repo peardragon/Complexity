@@ -1,0 +1,39 @@
+{
+  "stage": "04_sampling",
+  "method_name": "PM-SAIS",
+  "method_full_name": "Exact-shell L2 vMF adaptive CE tempered SMC",
+  "production_run": "label_noise_sweep eta-specific dense30ref r0.01 to r1.00",
+  "raw_outputs": {
+    "shell_pool": "raw_outputs/shell_pool/noise_eta_*"
+  },
+  "summarized_outputs": {
+    "unit_summary": "summarized_outputs/unit_summary",
+    "figure_inputs": "summarized_outputs/figure_inputs"
+  },
+  "model": {
+    "architecture": "100-20-20-1-tanh",
+    "parameter_count": 2461
+  },
+  "ensemble": {
+    "condition_name": "eta",
+    "condition_values": [0.05, 0.15, 0.25],
+    "references_per_condition": 30
+  },
+  "sampling": {
+    "radius_start": 0.01,
+    "radius_stop": 1.0,
+    "radius_step": 0.01,
+    "r0": 0.1,
+    "samples_per_ref_radius": 1024,
+    "save_unit_samples_npz": true,
+    "radial_derivative_enabled": true,
+    "seed_offset": 2026062600
+  },
+  "qc_contract": {
+    "finite_unit_fraction_min": 0.95,
+    "q05_ess_fraction_min": 0.04,
+    "max_split_logZ_per_P_diff": 0.004,
+    "bootstrap_sd_phi_max": 0.012
+  },
+  "active_summary_policy": "raw_outputs mirrors the label-noise sampling stage and keeps only shell_pool unit-level samples.npz and unit_summary.json; summarized_outputs mirrors the label-noise stage with condition-wise unit_summary CSVs and logZ_split figure-input CSVs."
+}

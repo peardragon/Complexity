@@ -14,6 +14,7 @@ julia_env/
 # Literature vault stays local.
 00_literature_search/
 00_literature_search/**
+/00_literature_search/
 
 # Local tool/session state
 .lh/
@@ -31,6 +32,7 @@ GIT_HELPER.md
 *.swp
 logs/
 **/logs/
+.DS_Store
 
 # Binary and raw data payloads stay local unless explicitly promoted.
 *.npy
@@ -43,6 +45,8 @@ logs/
 *.hdf5
 *.parquet
 **/raw_outputs/**
+!**/raw_outputs/
+!**/raw_outputs/README.md
 **/notebook_regenerated/**
 
 # Legacy result contracts
@@ -100,6 +104,9 @@ logs/
 **/summary_tables/sample_unit_summary.csv
 **/summary_tables/rh_by_ref_radius_h.csv
 **/summary_tables/logs/progress.jsonl
+**/summarized_outputs/unit_summary/
+**/summarized_outputs/unit_summary/**
+**/summarized_outputs/sample_unit_summary.csv
 **/shell_summary_by_unit*.csv
 **/unit_summary_long.csv
 **/overlay_unit_summary_long.csv
@@ -141,6 +148,18 @@ logs/
 99_backup/**
 !99_backup/.gitkeep
 **/99_backup/**
+99_backups/
+99_backups/**
+/99_backups/
+99_codex_miscellaneous/
+99_codex_miscellaneous/**
+/99_codex_miscellaneous/
+99_codex_miscellanoues/
+99_codex_miscellanoues/**
+99_codex_miscellaneuous/
+99_codex_miscellaneuous/**
+99_codex_smokes/
+99_codex_smokes/**
 99_codex_bin/**
 !99_codex_bin/.gitkeep
 **/backup/**

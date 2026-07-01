@@ -1,0 +1,31 @@
+{
+  "stage": "01_dataset",
+  "production_run": "18_beta_90_dataset",
+  "raw_output_layout": "raw_outputs/beta_*/dataset_*",
+  "entrypoints": [
+    "src/make_dataset.py",
+    "src/make_summarized_outputs.py",
+    "src/make_figures.py"
+  ],
+  "dataset_family": "2D synthetic 3-NN / Ising-label sweep",
+  "beta_values": [0.05, 0.07, 0.09, 0.11, 0.13, 0.15, 0.17, 0.19, 0.21, 0.23, 0.25, 0.27, 0.29, 0.31, 0.33, 0.35, 0.37, 0.39],
+  "datasets_per_beta": 90,
+  "generated_datasets_per_beta": 60,
+  "reused_datasets_per_beta": 30,
+  "total_datasets": 1620,
+  "n_points_per_dataset": 512,
+  "input_dim": 2,
+  "rewire_p": 0.0,
+  "ising_sweeps": 2000,
+  "source_dataset_run": "36_beta_cell_30_dataset",
+  "seed_formula": "1000 * source_sorted_index + 100000 * dataset_id + 1234",
+  "retained_figures": [
+    "figures/sample_figure.png",
+    "figures/spin_dynamics_phase_transition.png"
+  ],
+  "summary_outputs": [
+    "summarized_outputs/figure_inputs/sample_figures/selected_sample_indices.csv",
+    "summarized_outputs/figure_inputs/spin_dynamics/spin_alignment_by_beta.csv",
+    "summarized_outputs/figure_inputs/spin_dynamics/spin_alignment_by_dataset.csv"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "05_proxy_local_entropy",
+  "method_names": ["PLE", "E-PLE"],
+  "method_full_names": ["Proxy Local Entropy", "Energetic Proxy Local Entropy"],
+  "production_run": "MNIST label-noise direct radial derivative sweep, 30 references, r=0.01..1.00 step 0.01, n=1024",
+  "source_sampling_root": "../04_sampling/raw_outputs/shell_pool/noise_eta_*",
+  "source_summary_root": null,
+  "source_summary_note": "05_proxy_local_entropy retains only summarized_outputs/figure_inputs. Pass --source-summary-root with an external retained direct-derivative source when regeneration is needed.",
+  "model": {"parameter_count": 2461, "lambda_reg": 1.0},
+  "retained_figures": [
+    "phi_d_curve.png",
+    "phi_energetic_d_curve.png",
+    "derivative_phi_d_curve.png",
+    "derivative_phi_energetic_d_curve.png",
+    "phase_like_A_by_eta.png",
+    "phase_like_A_by_complexity.png"
+  ],
+  "phase_like_A_definition": "Positive curvature mass of the energetic direct dphi/dd curve along linear sampled radius.",
+  "source": ["src/make_summarized_outputs.py", "src/make_figures.py"]
+}

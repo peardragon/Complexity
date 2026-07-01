@@ -1,0 +1,5 @@
+rule_id,rule_name,label,rule_order,dataset_count,complexity_mean,complexity_sd,complexity_se
+rule_001,very_low_tv_spectral_teacher,very low tv,1,1,0.09765625,0.0,0.0
+rule_002,real_even_odd,even odd,2,1,0.1328125,0.0,0.0
+rule_003,teacher_nn,teacher nn,3,1,0.27734375,0.0,0.0
+rule_004,random_label,random,4,1,0.509765625,0.0,0.0

@@ -1,0 +1,35 @@
+{
+  "stage": "03_reference_search",
+  "entrypoint": "src/reference_search.py",
+  "pipeline_id": "mnist10_eta_reference_search",
+  "methodology_id": "mnist10_adam_exact_reference_v1",
+  "run_name": "eta_reference_search_gapfill_0p02_0p05_0p15_0p25_30ref_cpu60_gpu0",
+  "etas": [0.02, 0.05, 0.15, 0.25],
+  "selected_refs_per_eta": 30,
+  "max_attempts_per_eta": 240,
+  "batch_size": 10,
+  "max_epochs": 4200,
+  "lr": 0.022,
+  "device": "auto",
+  "base_seed": 2026062500,
+  "attempt_seed_starts": {
+    "0.02": 2026164500,
+    "0.05": 2026167500,
+    "0.15": 2026277500,
+    "0.25": 2026187500
+  },
+  "canonical_ref_offset": 1,
+  "source_layout": {
+    "entrypoint": "src/reference_search.py",
+    "utils": "src/utils",
+    "programmatic_api": "reference_search.run_pipeline"
+  },
+  "figure_inputs": [
+    "summarized_outputs/figure_inputs/reference_quality/reference_quality_by_eta.csv",
+    "summarized_outputs/figure_inputs/reference_quality/reference_quality_by_ref.csv"
+  ],
+  "retained_figures": [
+    "figures/reference_quality_by_eta.png"
+  ],
+  "run_modes": ["run", "summarize-existing", "check"]
+}

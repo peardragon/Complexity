@@ -1,8 +1,0 @@
-{
-  "stage": "01_dataset",
-  "production_scope": "MNIST label-noise eta sweep",
-  "rules": ["very_low", "even_odd", "teacher_nn", "random"],
-  "eta_values": [0.02, 0.05, 0.15, 0.25],
-  "summary_spec": "01_dataset/summarized_outputs/eta_dataset_spec.json",
-  "raw_policy": "No duplicated raw MNIST payload is retained in this stage."
-}

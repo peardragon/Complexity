@@ -1,0 +1,54 @@
+{
+  "stage": "01_dataset",
+  "production_scope": "MNIST manual-rule datasets",
+  "raw_output_layout": "raw_outputs/rule_*",
+  "entrypoints": [
+    "src/make_dataset.py",
+    "src/make_summarized_outputs.py",
+    "src/make_figures.py"
+  ],
+  "dataset_family": "MNIST 10x10 manual rules",
+  "dataset_policy": "Validates promoted MNIST manual-rule payloads and rebuilds local metadata, summaries, and figures; no large raw MNIST source copy is retained in this stage.",
+  "rules": [
+    {
+      "rule_id": "rule_001",
+      "rule_name": "very_low_tv_spectral_teacher",
+      "label": "very low tv",
+      "raw_dataset": "raw_outputs/rule_001/dataset.npz"
+    },
+    {
+      "rule_id": "rule_002",
+      "rule_name": "real_even_odd",
+      "label": "even odd",
+      "raw_dataset": "raw_outputs/rule_002/dataset.npz"
+    },
+    {
+      "rule_id": "rule_003",
+      "rule_name": "teacher_nn",
+      "label": "teacher nn",
+      "raw_dataset": "raw_outputs/rule_003/dataset.npz"
+    },
+    {
+      "rule_id": "rule_004",
+      "rule_name": "random_label",
+      "label": "random",
+      "raw_dataset": "raw_outputs/rule_004/dataset.npz"
+    }
+  ],
+  "n_train": 512,
+  "n_test": 2048,
+  "input_shape": "10x10",
+  "sample_figure": {
+    "source_array": "X_train_raw10",
+    "samples_per_rule": 8
+  },
+  "retained_figures": [
+    "figures/sample_figure.png"
+  ],
+  "summary_outputs": [
+    "summarized_outputs/figure_inputs/sample_figure/selected_sample_indices.csv"
+  ],
+  "metadata_outputs": [
+    "raw_outputs/rule_*/dataset_meta.json"
+  ]
+}

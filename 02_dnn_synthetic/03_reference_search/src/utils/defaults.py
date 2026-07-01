@@ -1,0 +1,31 @@
+from __future__ import annotations
+
+
+DEFAULT_CONFIG = {
+    "pipeline_id": "simple_reference_search",
+    "methodology_id": "batched_adam_lbfgsb_simple_v1",
+    "run_name": "reference_search_advanced_canonical",
+    "seed": 0,
+    "widths": [48],
+    "sampling_device": "cuda",
+    "activation": "tanh",
+    "ref_loss_name": "logistic",
+    "margin": 1.0,
+    "train_lr": 0.03,
+    "train_weight_decay": 1.0e-4,
+    "train_momentum": 0.9,
+    "init_scale_multiplier": 1.0,
+    "attempts_per_dataset": 200,
+    "adam_epochs_ref": 4000,
+    "lbfgs_max_iter": 4000,
+    "target_series": ["beta"],
+    "target_beta_values": [],
+    "selected_refs_per_dataset": 30,
+    "require_exact_selected_refs": True,
+    "fail_on_insufficient_selected_refs": True,
+    "fallback_reference_min_train_accuracy": 0.95,
+    "selection_topk": 30,
+    "selection_dedup_scale": 0.25,
+    "start_dataset_index": 0,
+    "max_datasets": 0,
+}

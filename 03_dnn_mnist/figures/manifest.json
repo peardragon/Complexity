@@ -1,0 +1,312 @@
+{
+  "copied_asset_count": 25,
+  "figure_count": 31,
+  "figures": [
+    {
+      "inputs": [
+        "label_noise_sweep/01_dataset/figures/sample_figure.png"
+      ],
+      "path": "figures/01_dataset/label_noise_sweep/sample_figure.png",
+      "section": "01_dataset",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep sample figure"
+    },
+    {
+      "inputs": [
+        "manual_rules/01_dataset/figures/sample_figure.png"
+      ],
+      "path": "figures/01_dataset/manual_rules/sample_figure.png",
+      "section": "01_dataset",
+      "series": "manual_rules",
+      "title": "manual rules sample figure"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/02_complexity_measure/figures/eta_complexity_figure.png"
+      ],
+      "path": "figures/02_complexity_measure/label_noise_sweep/eta_complexity_figure.png",
+      "section": "02_complexity_measure",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep eta complexity figure"
+    },
+    {
+      "inputs": [
+        "manual_rules/02_complexity_measure/figures/manual_rule_complexity_figure.png"
+      ],
+      "path": "figures/02_complexity_measure/manual_rules/manual_rule_complexity_figure.png",
+      "section": "02_complexity_measure",
+      "series": "manual_rules",
+      "title": "manual rules manual rule complexity figure"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/03_reference_search/figures/reference_quality_by_eta.png"
+      ],
+      "path": "figures/03_reference_search/label_noise_sweep/reference_quality_by_eta.png",
+      "section": "03_reference_search",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep reference quality by eta"
+    },
+    {
+      "inputs": [
+        "manual_rules/03_reference_search/figures/reference_quality_by_rule.png"
+      ],
+      "path": "figures/03_reference_search/manual_rules/reference_quality_by_rule.png",
+      "section": "03_reference_search",
+      "series": "manual_rules",
+      "title": "manual rules reference quality by rule"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/04_sampling/figures/logZ_split_distributions/eta_0p05.png"
+      ],
+      "path": "figures/04_sampling/label_noise_sweep/logZ_split_distributions/eta_0p05.png",
+      "section": "04_sampling",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep logZ split distributions eta 0p05"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/04_sampling/figures/logZ_split_distributions/eta_0p15.png"
+      ],
+      "path": "figures/04_sampling/label_noise_sweep/logZ_split_distributions/eta_0p15.png",
+      "section": "04_sampling",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep logZ split distributions eta 0p15"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/04_sampling/figures/logZ_split_distributions/eta_0p25.png"
+      ],
+      "path": "figures/04_sampling/label_noise_sweep/logZ_split_distributions/eta_0p25.png",
+      "section": "04_sampling",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep logZ split distributions eta 0p25"
+    },
+    {
+      "inputs": [
+        "manual_rules/04_sampling/figures/logZ_split_distributions/rule_001.png"
+      ],
+      "path": "figures/04_sampling/manual_rules/logZ_split_distributions/rule_001.png",
+      "section": "04_sampling",
+      "series": "manual_rules",
+      "title": "manual rules logZ split distributions rule 001"
+    },
+    {
+      "inputs": [
+        "manual_rules/04_sampling/figures/logZ_split_distributions/rule_002.png"
+      ],
+      "path": "figures/04_sampling/manual_rules/logZ_split_distributions/rule_002.png",
+      "section": "04_sampling",
+      "series": "manual_rules",
+      "title": "manual rules logZ split distributions rule 002"
+    },
+    {
+      "inputs": [
+        "manual_rules/04_sampling/figures/logZ_split_distributions/rule_003.png"
+      ],
+      "path": "figures/04_sampling/manual_rules/logZ_split_distributions/rule_003.png",
+      "section": "04_sampling",
+      "series": "manual_rules",
+      "title": "manual rules logZ split distributions rule 003"
+    },
+    {
+      "inputs": [
+        "manual_rules/04_sampling/figures/logZ_split_distributions/rule_004.png"
+      ],
+      "path": "figures/04_sampling/manual_rules/logZ_split_distributions/rule_004.png",
+      "section": "04_sampling",
+      "series": "manual_rules",
+      "title": "manual rules logZ split distributions rule 004"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/figures/derivative_phi_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/label_noise_sweep/derivative_phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep derivative phi d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/figures/derivative_phi_energetic_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/label_noise_sweep/derivative_phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep derivative phi energetic d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/figures/phase_like_A_by_complexity.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/label_noise_sweep/phase_like_A_by_complexity.png",
+      "section": "05_proxy_local_entropy",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep phase like A by complexity"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/figures/phase_like_A_by_eta.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/label_noise_sweep/phase_like_A_by_eta.png",
+      "section": "05_proxy_local_entropy",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep phase like A by eta"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/figures/phi_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/label_noise_sweep/phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep phi d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/figures/phi_energetic_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/label_noise_sweep/phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "label_noise_sweep",
+      "title": "label noise sweep phi energetic d curve"
+    },
+    {
+      "inputs": [
+        "manual_rules/05_proxy_local_entropy/figures/derivative_phi_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/manual_rules/derivative_phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "manual_rules",
+      "title": "manual rules derivative phi d curve"
+    },
+    {
+      "inputs": [
+        "manual_rules/05_proxy_local_entropy/figures/derivative_phi_energetic_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/manual_rules/derivative_phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "manual_rules",
+      "title": "manual rules derivative phi energetic d curve"
+    },
+    {
+      "inputs": [
+        "manual_rules/05_proxy_local_entropy/figures/phase_like_A_by_complexity.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/manual_rules/phase_like_A_by_complexity.png",
+      "section": "05_proxy_local_entropy",
+      "series": "manual_rules",
+      "title": "manual rules phase like A by complexity"
+    },
+    {
+      "inputs": [
+        "manual_rules/05_proxy_local_entropy/figures/phase_like_A_by_rule.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/manual_rules/phase_like_A_by_rule.png",
+      "section": "05_proxy_local_entropy",
+      "series": "manual_rules",
+      "title": "manual rules phase like A by rule"
+    },
+    {
+      "inputs": [
+        "manual_rules/05_proxy_local_entropy/figures/phi_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/manual_rules/phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "manual_rules",
+      "title": "manual rules phi d curve"
+    },
+    {
+      "inputs": [
+        "manual_rules/05_proxy_local_entropy/figures/phi_energetic_d_curve.png"
+      ],
+      "path": "figures/05_proxy_local_entropy/manual_rules/phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "manual_rules",
+      "title": "manual rules phi energetic d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/phi_d_curve/phi_d_curve.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/phi_d_curve/phi_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/merged/phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "merged",
+      "title": "merged phi d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/phi_energetic_d_curve/phi_energetic_d_curve.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/phi_energetic_d_curve/phi_energetic_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/merged/phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "merged",
+      "title": "merged phi energetic d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/derivative_phi_d_curve/derivative_phi_d_curve.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/derivative_phi_d_curve/derivative_phi_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/merged/derivative_phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "merged",
+      "title": "merged derivative phi d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/derivative_phi_energetic_d_curve/derivative_phi_energetic_d_curve.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/derivative_phi_energetic_d_curve/derivative_phi_energetic_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/merged/derivative_phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "series": "merged",
+      "title": "merged derivative phi energetic d curve"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_eta/phase_like_A_by_eta.csv",
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_eta/phase_derivative_curves.csv",
+        "label_noise_sweep/02_complexity_measure/summarized_outputs/eta_complexity_summary.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_rule/phase_like_A_by_rule.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_rule/phase_derivative_curves.csv",
+        "manual_rules/02_complexity_measure/summarized_outputs/manual_rule_complexity_summary.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/merged/phase_like_A_by_eta.png",
+      "section": "05_proxy_local_entropy",
+      "series": "merged",
+      "title": "merged phase like A by eta"
+    },
+    {
+      "inputs": [
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_complexity/phase_like_A_by_complexity.csv",
+        "label_noise_sweep/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_complexity/phase_derivative_curves.csv",
+        "label_noise_sweep/02_complexity_measure/summarized_outputs/eta_complexity_summary.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_complexity/phase_like_A_by_complexity.csv",
+        "manual_rules/05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_complexity/phase_derivative_curves.csv",
+        "manual_rules/02_complexity_measure/summarized_outputs/manual_rule_complexity_summary.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/merged/phase_like_A_by_complexity.png",
+      "section": "05_proxy_local_entropy",
+      "series": "merged",
+      "title": "merged phase like A by complexity"
+    }
+  ],
+  "generated_figure_count": 6,
+  "policy": "Top-level figures are copied from current stage figure outputs; merged proxy-local-entropy figures are regenerated from summarized outputs.",
+  "root": "figures",
+  "sources": [
+    {
+      "root": "label_noise_sweep",
+      "series": "label_noise_sweep"
+    },
+    {
+      "root": "manual_rules",
+      "series": "manual_rules"
+    }
+  ]
+}

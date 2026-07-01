@@ -1,0 +1,5 @@
+eta,noise_eta,dataset_count,complexity_mean,complexity_sd,complexity_se
+0.02,noise_eta_0p02,1,0.16080729166666666,0.0,0.0
+0.05,noise_eta_0p05,1,0.19401041666666666,0.0,0.0
+0.15,noise_eta_0p15,1,0.32421875,0.0,0.0
+0.25,noise_eta_0p25,1,0.4212239583333333,0.0,0.0

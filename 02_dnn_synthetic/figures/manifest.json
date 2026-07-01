@@ -1,0 +1,225 @@
+{
+  "figure_count": 27,
+  "figures": [
+    {
+      "inputs": [
+        "01_dataset/summarized_outputs/figure_inputs/sample_figures/selected_sample_indices.csv"
+      ],
+      "path": "figures/01_dataset/sample_figure.png",
+      "section": "01_dataset",
+      "title": "sample figure"
+    },
+    {
+      "inputs": [
+        "01_dataset/summarized_outputs/figure_inputs/spin_dynamics/spin_alignment_by_beta.csv"
+      ],
+      "path": "figures/01_dataset/spin_dynamics_phase_transition.png",
+      "section": "01_dataset",
+      "title": "spin dynamics phase transition"
+    },
+    {
+      "inputs": [
+        "02_complexity_measure/summarized_outputs/beta_complexity_summary.csv"
+      ],
+      "path": "figures/02_complexity_measure/beta_complexity_figure.png",
+      "section": "02_complexity_measure",
+      "title": "beta complexity figure"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p05.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p05.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.05"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p07.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p07.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.07"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p09.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p09.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.09"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p11.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p11.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.11"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p13.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p13.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.13"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p15.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p15.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.15"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p17.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p17.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.17"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p19.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p19.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.19"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p21.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p21.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.21"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p23.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p23.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.23"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p25.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p25.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.25"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p27.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p27.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.27"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p29.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p29.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.29"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p31.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p31.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.31"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p33.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p33.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.33"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p35.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p35.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.35"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p37.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p37.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.37"
+    },
+    {
+      "inputs": [
+        "04_sampling/summarized_outputs/figure_inputs/logZ_split/beta_0p39.csv"
+      ],
+      "path": "figures/04_sampling/logZ_split_distributions/beta_0p39.png",
+      "section": "04_sampling",
+      "title": "logZ split beta=0.39"
+    },
+    {
+      "inputs": [
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/phi_d_curve/phi_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "title": "phi_d_curve"
+    },
+    {
+      "inputs": [
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/phi_energetic_d_curve/phi_energetic_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "title": "phi_energetic_d_curve"
+    },
+    {
+      "inputs": [
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/derivative_phi_d_curve/derivative_phi_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/derivative_phi_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "title": "derivative_phi_d_curve"
+    },
+    {
+      "inputs": [
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/derivative_phi_energetic_d_curve/derivative_phi_energetic_d_curve.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/derivative_phi_energetic_d_curve.png",
+      "section": "05_proxy_local_entropy",
+      "title": "derivative_phi_energetic_d_curve"
+    },
+    {
+      "inputs": [
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_beta/phase_like_A_by_beta.csv",
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_beta/phase_derivative_curves.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/phase_like_A_by_beta.png",
+      "section": "05_proxy_local_entropy",
+      "title": "phase_like_A_by_beta"
+    },
+    {
+      "inputs": [
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_complexity/phase_like_A_by_complexity.csv",
+        "05_proxy_local_entropy/summarized_outputs/figure_inputs/phase_like_A_by_complexity/phase_derivative_curves.csv"
+      ],
+      "path": "figures/05_proxy_local_entropy/phase_like_A_by_complexity.png",
+      "section": "05_proxy_local_entropy",
+      "title": "phase_like_A_by_complexity"
+    }
+  ],
+  "policy": "All images under figures/ are redrawn from current summarized outputs or figure-input CSVs.",
+  "root": "figures"
+}

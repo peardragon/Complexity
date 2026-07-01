@@ -9,7 +9,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from scipy.optimize import brentq
-from scipy.special import ndtr, roots_hermitenorm
+from scipy.special import gammaln, ive, logsumexp, ndtr, roots_hermitenorm
 
 
 DEFAULT_RADII = tuple(round(0.15 + 0.05 * idx, 10) for idx in range(42))
@@ -20,12 +20,35 @@ DEFAULT_OUTPUT_CSV = (
     / "01_theory"
     / "01_theory_analytic"
     / "summarized_outputs"
-    / "fig01_phi_by_analytic_solution_alpha0p1.csv"
+    / "phi_by_analytic_solution_alpha0p1.csv"
 )
 
 
 def project_path(path: Path) -> Path:
     return path if path.is_absolute() else PROJECT_ROOT / path
+
+
+def stable_ce_sum(h: np.ndarray) -> np.ndarray:
+    return np.logaddexp(0.0, -h).sum(axis=-1)
+
+
+def log_M_sphere(dim: int, kappa: float) -> float:
+    if kappa < 1.0e-10:
+        return 0.0
+    nu = dim / 2.0 - 1.0
+    val = ive(nu, kappa)
+    if val <= 0 or not np.isfinite(val):
+        log_i = kappa - 0.5 * np.log(2.0 * np.pi * kappa)
+    else:
+        log_i = np.log(val) + kappa
+    return float(gammaln(dim / 2.0) + nu * np.log(2.0 / kappa) + log_i)
+
+
+def logmeanexp(values: np.ndarray) -> float:
+    values = np.asarray(values, dtype=np.float64)
+    if values.size == 0:
+        return float("-inf")
+    return float(logsumexp(values) - np.log(values.size))
 
 
 def gh_norm(n: int) -> tuple[np.ndarray, np.ndarray]:

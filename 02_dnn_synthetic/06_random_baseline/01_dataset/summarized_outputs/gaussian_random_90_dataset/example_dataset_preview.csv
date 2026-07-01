@@ -1,2 +1,0 @@
-figure,dataset,dataset_path,n_points,input_dim,negative_label_count,positive_label_count
-gaussian_random_dataset_001_example.png,dataset_001,02_dnn_synthetic/06_random_baseline/01_dataset/raw_outputs/gaussian_random_90_dataset/raw_datasets/dataset_001/dataset.npz,512,2,256,256

@@ -7,7 +7,7 @@
     "lambda_shell":  1,
     "final_sample_units":  16800,
     "shell_sampler":  {
-        "method":  "exact_shell_l2_vmf_adaptive_ce_smc",
+        "method":  "exact_shell_l2_vmf_adaptive_ce_tempered_smc",
         "target_cess_fraction":  0.85,
         "resample_ess_fraction":  0.85,
         "max_steps":  160,

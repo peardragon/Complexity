@@ -1,5 +1,0 @@
-rule_id,rule_name,rule_label,rule_order,nmstv_mean,n_refs,A_kappa_mean,A_kappa_sd,A_kappa_sem,derivative_source
-rule_001,very_low_tv_spectral_teacher,very low tv,1,0.3245703473792008,30,0.15500839903402827,0.015471425848925033,0.002824682978074918,sampling_time_direct_radial_score_derivative
-rule_002,real_even_odd,even odd,2,0.4932864276461805,30,0.20982555453801807,0.021716916971660002,0.003964948434948321,sampling_time_direct_radial_score_derivative
-rule_003,teacher_nn,teacher nn,3,0.6843772639598127,30,0.278467335409536,0.022202709079936492,0.004053641533601996,sampling_time_direct_radial_score_derivative
-rule_004,random_label,random,4,0.985558573825462,30,0.9377050858390785,0.08144163937747502,0.014869141002414687,sampling_time_direct_radial_score_derivative

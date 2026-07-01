@@ -1,0 +1,13 @@
+{
+  "stage": "05_proxy_local_entropy",
+  "method_names": ["PLE", "E-PLE"],
+  "method_full_names": ["Proxy Local Entropy", "Energetic Proxy Local Entropy"],
+  "production_run": "18 beta x 90 dataset x 30 reference dense TPIS shell",
+  "source_sampling_root": "04_sampling/raw_outputs/shell_pool/beta_*",
+  "summary_inputs": "summarized_outputs/figure_inputs",
+  "active_summary_policy": "This curated stage retains figure-ready proxy-local-entropy inputs under summarized_outputs/figure_inputs; it does not retain a separate raw_outputs tree.",
+  "model": {"parameter_count": 2545, "lambda_reg": 1.0},
+  "retained_figures": ["phi_d_curve.png", "phi_energetic_d_curve.png", "derivative_phi_d_curve.png", "derivative_phi_energetic_d_curve.png", "phase_like_A_by_beta.png", "phase_like_A_by_complexity.png"],
+  "phase_like_A_definition": "Total variation of the energetic dphi/dd curve along linear sampled radius.",
+  "source": ["src/make_summarized_outputs.py", "src/make_figures.py"]
+}

@@ -1,0 +1,34 @@
+{
+  "stage": "01_dataset",
+  "production_scope": "MNIST label-noise eta sweep",
+  "raw_output_layout": "raw_outputs/noise_eta_*",
+  "entrypoints": [
+    "src/make_dataset.py",
+    "src/make_summarized_outputs.py",
+    "src/make_figures.py"
+  ],
+  "dataset_family": "MNIST 10x10 label-noise eta sweep",
+  "dataset_policy": "Uses the promoted MNIST rule datasets and eta-flip variants generated in upstream provenance; no large raw MNIST image copy is retained in this local stage.",
+  "rules": [
+    "very_low_tv_spectral_teacher",
+    "real_even_odd",
+    "teacher_nn",
+    "random_label"
+  ],
+  "eta_values": [0.02, 0.05, 0.15, 0.25],
+  "n_train": 512,
+  "n_test": 2048,
+  "input_shape": "10x10",
+  "sample_figure": {
+    "source_array": "X_train_raw10",
+    "samples_per_eta": 8
+  },
+  "retained_figures": [
+    "figures/sample_figure.png"
+  ],
+  "summary_outputs": [
+    "summarized_outputs/figure_inputs/sample_figure/selected_sample_indices.csv"
+  ],
+  "downstream_reference_search": "03_reference_search/raw_outputs/eta_reference_search_gapfill_0p02_0p05_0p15_0p25_30ref_cpu60_gpu0",
+  "downstream_sampling": "04_sampling/raw_outputs/shell_pool/eta_*"
+}

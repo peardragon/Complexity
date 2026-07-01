@@ -1,2 +1,0 @@
-beta,A_transition_total_variation,A_transition_signed_variation,radius_count,complexity_mean,series,beta_role,source_beta_tag,complexity_metric
-0.05,0.010151219753424043,-0.0015200688608354481,250,0.5017650462962963,gaussian_random_baseline,source_tag_only_not_sweep_axis,0.05,3nn_label_disagreement

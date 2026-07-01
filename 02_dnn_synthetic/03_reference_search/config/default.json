@@ -1,0 +1,17 @@
+{
+  "stage": "03_reference_search",
+  "entrypoint": "src/reference_search.py",
+  "production_run": "18_beta_90_dataset_30_reference",
+  "references_per_dataset": 30,
+  "selected_refs_per_dataset": 30,
+  "run_modes": ["run", "check"],
+  "source_layout": {
+    "entrypoint": "src/reference_search.py",
+    "utils": "src/utils",
+    "programmatic_api": "reference_search.run_pipeline"
+  },
+  "raw_output_layout": "raw_outputs/beta_*/dataset_*/ref_*",
+  "raw_outputs": ["raw_outputs/beta_*/dataset_*/ref_*/theta.npy", "raw_outputs/beta_*/dataset_*/ref_*/theta_init.npy"],
+  "superhard_examples_note": "superhard_examples records datasets where the reference search did not reach 30 exact references after 200 attempts. Those units were replaced before the final selected reference pool was used downstream.",
+  "active_output_policy": "Reference-search selected reference payloads are retained under raw_outputs only."
+}

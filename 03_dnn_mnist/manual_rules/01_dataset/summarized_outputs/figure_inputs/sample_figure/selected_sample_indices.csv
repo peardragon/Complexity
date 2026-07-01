@@ -1,0 +1,33 @@
+panel_order,rule_id,rule_name,rule_label,sample_order,sample_index,train_index,digit,sample_label,source_array,source_dataset_path
+1,rule_001,very_low_tv_spectral_teacher,very low tv,1,0,11930,4,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,2,1,24598,8,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,3,2,14720,4,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,4,3,19592,7,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,5,4,996,6,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,6,5,10383,6,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,7,6,4883,3,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+1,rule_001,very_low_tv_spectral_teacher,very low tv,8,7,46661,0,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_001/dataset.npz
+2,rule_002,real_even_odd,even odd,1,0,11930,4,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,2,1,24598,8,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,3,2,14720,4,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,4,3,19592,7,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,5,4,996,6,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,6,5,10383,6,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,7,6,4883,3,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+2,rule_002,real_even_odd,even odd,8,7,46661,0,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_002/dataset.npz
+3,rule_003,teacher_nn,teacher nn,1,0,11930,4,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,2,1,24598,8,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,3,2,14720,4,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,4,3,19592,7,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,5,4,996,6,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,6,5,10383,6,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,7,6,4883,3,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+3,rule_003,teacher_nn,teacher nn,8,7,46661,0,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_003/dataset.npz
+4,rule_004,random_label,random,1,0,11930,4,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,2,1,24598,8,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,3,2,14720,4,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,4,3,19592,7,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,5,4,996,6,1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,6,5,10383,6,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,7,6,4883,3,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
+4,rule_004,random_label,random,8,7,46661,0,-1,X_train_raw10,Complexity/03_dnn_mnist/manual_rules/01_dataset/raw_outputs/rule_004/dataset.npz
