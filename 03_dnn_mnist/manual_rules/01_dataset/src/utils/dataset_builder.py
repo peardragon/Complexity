@@ -1,18 +1,12 @@
 from __future__ import annotations
 
-import sys
 from typing import Any
 
 import numpy as np
 
 from .io_utils import load_json, save_json
-from .layout import CONFIG_PATH, DNN_ROOT, RAW_ROOT, dataset_path, rule_dirs, source_dataset_path
-
-
-if str(DNN_ROOT) not in sys.path:
-    sys.path.insert(0, str(DNN_ROOT))
-
-from _shared.mnist10_standalone import (  # noqa: E402
+from .layout import CONFIG_PATH, RAW_ROOT, dataset_path, rule_dirs, source_dataset_path
+from .mnist10_standalone import (
     DEFAULT_SPLIT_SEED,
     build_mnist10_base_payload,
     ensure_original_mnist,
