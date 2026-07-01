@@ -80,10 +80,8 @@ def _resolve_recorded_path(part_root: Path, path: str | Path) -> Path:
 
 def _beta_slug(value: str | float) -> str:
     text = str(value).strip()
-    for prefix in ("cell_beta_", "beta_"):
-        if text.startswith(prefix):
-            text = text[len(prefix) :]
-            break
+    if text.startswith("beta_"):
+        text = text.removeprefix("beta_")
     return f"{float(text.replace('p', '.')):.2f}".replace(".", "p")
 
 
@@ -308,7 +306,8 @@ def _postprocess_selection(part_root: Path, run_root: Path, config: dict[str, An
     dedup_scale = float(config.get("selection_dedup_scale", 0.25))
     coverage_rows: list[dict[str, Any]] = []
     insufficient_rows: list[dict[str, Any]] = []
-    for width_dir in sorted(path for path in run_root.glob("*/*/width_*") if path.parent.parent.name.startswith(("cell_beta_", "beta_"))):
+    selected_payload_paths: set[str] = set()
+    for width_dir in sorted(path for path in run_root.glob("beta_*/*/width_*")):
         attempt_records = _load_attempt_records(part_root, width_dir)
         if not attempt_records:
             continue
@@ -330,11 +329,10 @@ def _postprocess_selection(part_root: Path, run_root: Path, config: dict[str, An
             rescue_policy_name="none",
         )
         retained_rows: list[dict[str, Any]] = []
-        payload_root = width_dir / "selected_ref_payloads"
         for selected_row in selection["selected_rows"]:
             retained_row = dict(selected_row)
             ref_id = int(retained_row["ref_id"])
-            ref_dir = payload_root / f"ref_{ref_id:03d}"
+            ref_dir = Path(part_root) / "raw_outputs" / cell_id / dataset_tag / f"ref_{ref_id:03d}"
             ref_dir.mkdir(parents=True, exist_ok=True)
             theta_path = ref_dir / "theta.npy"
             theta_init_path = ref_dir / "theta_init.npy"
@@ -351,6 +349,13 @@ def _postprocess_selection(part_root: Path, run_root: Path, config: dict[str, An
             retained_row["theta_path"] = _repo_relative(part_root, theta_path)
             retained_row["theta_init_path"] = _repo_relative(part_root, theta_init_path)
             retained_row["summary_path"] = _repo_relative(part_root, summary_path)
+            selected_payload_paths.update(
+                {
+                    retained_row["theta_path"],
+                    retained_row["theta_init_path"],
+                    retained_row["summary_path"],
+                }
+            )
             retained_rows.append(retained_row)
         save_json(
             width_dir / "selected_refs.json",
@@ -433,6 +438,7 @@ def _postprocess_selection(part_root: Path, run_root: Path, config: dict[str, An
     for path in run_root.rglob("*"):
         if path.is_file() and path.name not in {"manifest.json", "run_config.json", *EXCLUDED_SUMMARY_OUTPUT_NAMES}:
             raw_outputs.add(_repo_relative(part_root, path))
+    raw_outputs.update(selected_payload_paths)
     manifest["raw_outputs"] = sorted(
         path for path in raw_outputs if _resolve_recorded_path(part_root, str(path)).name not in EXCLUDED_SUMMARY_OUTPUT_NAMES
     )
@@ -460,8 +466,7 @@ def _run_training(
     from _reference_search_utils.training import train_reference_solutions_simple_batched
 
     started_at = now_iso()
-    run_name = str(config.get("run_name", f"reference_search_{_hash_config(config)}"))
-    run_root = Path(part_root) / "raw_outputs" / run_name
+    run_root = Path(part_root) / "raw_outputs" / "training_attempts"
     ensure_dir(run_root)
     log_capture = start_verbose_print_capture(run_root, enabled=verbose)
     completed = 0
@@ -565,9 +570,7 @@ def check_layout(part_root: Path = STAGE_ROOT) -> dict[str, Any]:
     utility_files = sorted(path.relative_to(part_root).as_posix() for path in (part_root / "src" / "utils").glob("*.py"))
     raw_root = part_root / "raw_outputs"
     cell_dirs = sorted(raw_root.glob("beta_*")) if raw_root.exists() else []
-    legacy_cell_dirs = sorted(raw_root.glob("cell_beta_*")) if raw_root.exists() else []
-    flat_dataset_dirs = sorted(raw_root.glob("dataset_*")) if raw_root.exists() else []
-    cell_dataset_counts = {path.name: len(list(path.glob("dataset_*"))) for path in [*cell_dirs, *legacy_cell_dirs]}
+    cell_dataset_counts = {path.name: len(list(path.glob("dataset_*"))) for path in cell_dirs}
     return {
         "stage_root": str(part_root),
         "entrypoint": "src/reference_search.py",
@@ -578,9 +581,6 @@ def check_layout(part_root: Path = STAGE_ROOT) -> dict[str, Any]:
         "raw_cell_count": len(cell_dirs),
         "raw_dataset_count": sum(cell_dataset_counts.values()),
         "raw_ref_count": sum(1 for _ in raw_root.glob("beta_*/dataset_*/ref_*")) if raw_root.exists() else 0,
-        "legacy_raw_cell_count": len(legacy_cell_dirs),
-        "legacy_raw_ref_count": sum(1 for _ in raw_root.glob("cell_beta_*/dataset_*/ref_*")) if raw_root.exists() else 0,
-        "flat_dataset_dir_count": len(flat_dataset_dirs),
         "cell_dataset_counts": cell_dataset_counts,
     }
 

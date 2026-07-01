@@ -413,7 +413,6 @@ def build_sampling_figures(max_scatter_per_radius: int) -> list[FigureRecord]:
     out_root = FIGURE_ROOT / "04_sampling" / "logZ_split_distributions"
     clear_outputs(out_root, "*.png", "manifest.csv")
     files = sorted(SAMPLING_INPUT_ROOT.glob("beta_*.csv"), key=beta_from_name)
-    files.extend(path for path in sorted(SAMPLING_INPUT_ROOT.glob("cell_beta_*.csv"), key=beta_from_name) if path not in files)
     if not files:
         raise FileNotFoundError(f"no beta_*.csv files found under {SAMPLING_INPUT_ROOT}")
 

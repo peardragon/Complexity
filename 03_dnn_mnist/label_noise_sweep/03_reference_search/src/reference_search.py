@@ -168,9 +168,10 @@ def _write_report(run_root: Path, status: dict[str, Any], reference_rows: list[d
         "",
         "Primary files:",
         "",
-        "- `04_exact_reference_search/reference_index.csv`",
-        "- `04_exact_reference_search/selected_reference_pool/`",
-        "- `04_exact_reference_search/attempt_logs/attempts.csv`",
+        "- `reference_index.csv`",
+        "- `noise_eta_*/ref_*/theta.npy`",
+        "- `noise_eta_*/ref_*/reference_metadata.json`",
+        "- `attempt_logs/attempts.csv`",
     ]
     if reference_rows:
         lines.extend(["", "Selected references:", ""])
@@ -195,9 +196,8 @@ def run_pipeline(
     part_root = Path(part_root).resolve()
     config_path = config_path or part_root / "config" / "default.json"
     config = merged_config(config_path, force=force)
-    run_root = part_root / "raw_outputs" / str(config["run_name"])
-    exact_root = ensure_dir(run_root / "04_exact_reference_search")
-    reference_index = exact_root / "reference_index.csv"
+    run_root = ensure_dir(part_root / "raw_outputs")
+    reference_index = _find_reference_index(part_root, config, require_exists=False)
     if reference_index.exists() and not bool(config.get("force", False)):
         if materialize_canonical:
             materialize_canonical_layout(part_root=part_root, config=config, reference_index_path=reference_index)
@@ -214,6 +214,8 @@ def run_pipeline(
     max_attempts = int(config.get("max_attempts_per_eta", 240))
     batch_size = int(config.get("batch_size", 10))
     expected = len(config.get("etas", [])) * target_refs
+    offset = int(config.get("canonical_ref_offset", 1))
+    attempt_log = run_root / "attempt_logs" / "attempts.csv"
 
     save_json(run_root / "run_config_resolved.json", config)
     for dataset_id, eta_value in enumerate(config.get("etas", [])):
@@ -268,7 +270,7 @@ def run_pipeline(
                         "selected": bool(selected_flag),
                     }
                 )
-            save_csv(exact_root / "attempt_logs" / "attempts.csv", attempt_rows)
+            save_csv(attempt_log, attempt_rows)
             print(
                 f"[mnist-eta-reference] eta={eta:.2f} attempts={attempts_used} selected={len(selected)}/{target_refs}",
                 flush=True,
@@ -279,7 +281,7 @@ def run_pipeline(
             )
         for ref_id, result in enumerate(selected[:target_refs]):
             theta = np.asarray(result["theta"], dtype=np.float64).reshape(-1)
-            ref_dir = ensure_dir(exact_root / "selected_reference_pool" / "split_000" / eta_token(eta) / f"ref_{ref_id:03d}")
+            ref_dir = ensure_dir(_stage_raw_root(part_root) / noise_eta_token(eta) / f"ref_{ref_id + offset:03d}")
             theta_path = ref_dir / "theta.npy"
             np.save(theta_path, theta)
             ce_train, err_train = ce_and_error_np(theta, ds["X_train"], ds["y_train"])
@@ -318,21 +320,22 @@ def run_pipeline(
         "elapsed_s": float(time.time() - started),
     }
     save_json(run_root / "REFERENCE_SEARCH_STATUS.json", status)
-    save_json(exact_root / "REFERENCE_SEARCH_STATUS.json", status)
     _write_report(run_root, status, reference_rows)
     if materialize_canonical:
         materialize_canonical_layout(part_root=part_root, config=config, reference_index_path=reference_index)
     return reference_index
 
 
-def _find_reference_index(part_root: Path, config: dict[str, Any]) -> Path:
-    run_name = str(config.get("run_name", ""))
-    candidates = [
-        _stage_raw_root(part_root) / run_name / "04_exact_reference_search" / "reference_index.csv",
-    ]
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate
+def _find_reference_index(
+    part_root: Path,
+    config: dict[str, Any],
+    *,
+    require_exists: bool = True,
+) -> Path:
+    del config
+    candidate = _stage_raw_root(part_root) / "reference_index.csv"
+    if candidate.exists() or not require_exists:
+        return candidate
     raise FileNotFoundError("Could not locate reference_index.csv under 03_reference_search/raw_outputs")
 
 

@@ -116,7 +116,6 @@ def render_figures(
     if not files:
         raise FileNotFoundError(f"no beta_*.csv files found under {input_root}")
     output_root.mkdir(parents=True, exist_ok=True)
-    clear_outputs(output_root, "cell_beta_*.png")
     clear_outputs(output_root, "beta_*.png")
 
     outputs: list[Path] = []

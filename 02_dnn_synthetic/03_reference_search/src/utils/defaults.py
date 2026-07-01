@@ -4,7 +4,6 @@ from __future__ import annotations
 DEFAULT_CONFIG = {
     "pipeline_id": "simple_reference_search",
     "methodology_id": "batched_adam_lbfgsb_simple_v1",
-    "run_name": "reference_search_advanced_canonical",
     "seed": 0,
     "widths": [48],
     "sampling_device": "cuda",

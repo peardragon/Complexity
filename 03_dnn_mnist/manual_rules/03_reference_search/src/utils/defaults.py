@@ -4,7 +4,6 @@ from __future__ import annotations
 DEFAULT_CONFIG = {
     "pipeline_id": "mnist10_manual_rule_reference_search",
     "methodology_id": "mnist10_adam_exact_reference_manual_rules_v1",
-    "run_name": "manual_rule_reference_search_4rule_30ref_cpu60_gpu0",
     "rules": [
         "very_low_tv_spectral_teacher",
         "real_even_odd",
@@ -36,4 +35,3 @@ DEFAULT_CONFIG = {
     },
     "force": False,
 }
-

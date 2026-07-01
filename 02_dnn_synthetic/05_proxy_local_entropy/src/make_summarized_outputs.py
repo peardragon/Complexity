@@ -13,14 +13,6 @@ DNN_ROOT = Path(__file__).resolve().parents[2]
 STAGE_ROOT = DNN_ROOT / "05_proxy_local_entropy"
 SUMMARY_ROOT = STAGE_ROOT / "summarized_outputs"
 FIGURE_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs"
-ARCHIVED_SUMMARY_RELS = (
-    Path("18_beta_cell_90_dataset_30_reference")
-    / "d_0.01_to_2.50_dense"
-    / "summary_tables",
-    Path("18_beta_90_dataset_30_reference")
-    / "d_0.01_to_2.50_dense"
-    / "summary_tables",
-)
 COMPLEXITY_SUMMARY = (
     DNN_ROOT / "02_complexity_measure" / "summarized_outputs" / "beta_complexity_summary.csv"
 )
@@ -69,10 +61,13 @@ def _beta_case_id(beta: float) -> str:
 
 
 def _find_source_summary_root(source_summary_root: Path | None) -> Path:
-    if source_summary_root is not None:
-        candidates = [source_summary_root]
-    else:
-        candidates = [SUMMARY_ROOT / rel for rel in reversed(ARCHIVED_SUMMARY_RELS)]
+    if source_summary_root is None:
+        raise FileNotFoundError(
+            "source summary tables are not retained under an automatic default path; pass --source-summary-root "
+            "or keep the retained figure_inputs already present in this stage."
+        )
+
+    candidates = [source_summary_root]
 
     for candidate in candidates:
         if (
@@ -81,7 +76,7 @@ def _find_source_summary_root(source_summary_root: Path | None) -> Path:
         ):
             return candidate
     searched = "\n".join(str(path) for path in candidates)
-    raise FileNotFoundError(f"could not find archived source summary tables. searched:\n{searched}")
+    raise FileNotFoundError(f"could not find source summary tables. searched:\n{searched}")
 
 
 def _retained_figure_inputs_complete() -> bool:
@@ -377,7 +372,7 @@ def main() -> None:
         "--source-summary-root",
         type=Path,
         default=None,
-        help="Archived source summary_tables directory. Defaults to retained in-repo figure inputs when source tables are absent.",
+        help="Source summary_tables directory. Defaults to retained in-repo figure inputs when omitted.",
     )
     args = parser.parse_args()
     build(args.source_summary_root)

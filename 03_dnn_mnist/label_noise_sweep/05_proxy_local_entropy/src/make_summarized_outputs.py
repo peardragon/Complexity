@@ -13,7 +13,6 @@ STAGE_ROOT = Path(__file__).resolve().parents[1]
 SWEEP_ROOT = STAGE_ROOT.parent
 SUMMARY_ROOT = STAGE_ROOT / "summarized_outputs"
 FIGURE_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs"
-SOURCE_SUMMARY_REL = Path("direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0")
 DERIVATIVE_SOURCE = "sampling_time_direct_radial_score_derivative"
 COMPLEXITY_SUMMARY_PATH = SWEEP_ROOT / "02_complexity_measure" / "summarized_outputs" / "eta_complexity_summary.csv"
 SAMPLING_UNIT_SUMMARY_ROOT = SWEEP_ROOT / "04_sampling" / "summarized_outputs" / "unit_summary"
@@ -95,10 +94,12 @@ def _eta_complexity_lookup() -> dict[float, float]:
 
 
 def _find_source_summary_root(source_summary_root: Path | None) -> Path:
-    if source_summary_root is not None:
-        candidates = [source_summary_root]
-    else:
-        candidates = [SUMMARY_ROOT / SOURCE_SUMMARY_REL]
+    if source_summary_root is None:
+        raise FileNotFoundError(
+            "source summary tables were not provided; build will fall back to current sampling unit summaries if available."
+        )
+
+    candidates = [source_summary_root]
 
     required = (
         "eta_reference_phi_by_eta_radius.csv",
@@ -537,7 +538,7 @@ def main() -> None:
         "--source-summary-root",
         type=Path,
         default=None,
-        help="Retained source summary directory. Defaults to this stage's direct-derivative summary.",
+        help="Optional source summary directory. When omitted, current sampling unit summaries are used if available.",
     )
     args = parser.parse_args()
     build(args.source_summary_root)

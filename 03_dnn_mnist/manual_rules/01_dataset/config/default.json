@@ -8,7 +8,34 @@
     "src/make_figures.py"
   ],
   "dataset_family": "MNIST 10x10 manual rules",
-  "dataset_policy": "Validates promoted MNIST manual-rule payloads and rebuilds local metadata, summaries, and figures; no large raw MNIST source copy is retained in this stage.",
+  "dataset_policy": "Builds or validates MNIST manual-rule payloads from a stage-local OpenML MNIST cache at raw_outputs/original_mnist/mnist_openml_uint8.npz, then rebuilds local metadata, summaries, and figures.",
+  "source": {
+    "original_mnist": "raw_outputs/original_mnist/mnist_openml_uint8.npz",
+    "openml_dataset": "mnist_784",
+    "split_seed": 20260610,
+    "download_if_missing": true
+  },
+  "generation": {
+    "downscale": "PIL.Image.resize((10, 10), Image.Resampling.BOX)",
+    "standardization": "train mean/std on X_train_raw10, std floor 1e-6 -> 1.0",
+    "teacher_nn": {
+      "seed": 31001,
+      "architecture": "100-20-20-1-tanh",
+      "threshold": "median teacher logit on train split"
+    },
+    "random_label": {
+      "train_seed": 41001,
+      "test_seed": 42001,
+      "class_balance": "exact 50/50 +/-1"
+    },
+    "very_low_tv_spectral_teacher": {
+      "graph_k_values": [8, 16, 32],
+      "selection_graph_k": 16,
+      "spectral_ks": [3, 4, 6, 8, 12],
+      "max_draws_per_basis": 25000,
+      "rng_seed": 20260618
+    }
+  },
   "rules": [
     {
       "rule_id": "rule_001",

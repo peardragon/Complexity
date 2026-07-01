@@ -122,7 +122,6 @@ class WHAMResult:
 class RunConfig:
     stage: str
     budget: str
-    run_name: str
     results_dir: str
     cells: List[str]
     widths: List[int]

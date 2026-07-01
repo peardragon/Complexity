@@ -1,7 +1,7 @@
 {
   "stage": "03_reference_search",
   "entrypoint": "src/reference_search.py",
-  "production_run": "18_beta_90_dataset_30_reference",
+  "production_run": "synthetic_beta_reference_search",
   "references_per_dataset": 30,
   "selected_refs_per_dataset": 30,
   "run_modes": ["run", "check"],

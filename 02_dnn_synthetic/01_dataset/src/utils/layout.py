@@ -6,7 +6,6 @@ from pathlib import Path
 
 STAGE_ROOT = Path(__file__).resolve().parents[2]
 REPO_ROOT = STAGE_ROOT.parents[1]
-RUN_NAME = "18_beta_90_dataset"
 
 RAW_ROOT = STAGE_ROOT / "raw_outputs"
 FIGURE_ROOT = STAGE_ROOT / "figures"

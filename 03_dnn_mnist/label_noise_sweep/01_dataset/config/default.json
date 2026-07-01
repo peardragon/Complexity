@@ -8,7 +8,19 @@
     "src/make_figures.py"
   ],
   "dataset_family": "MNIST 10x10 label-noise eta sweep",
-  "dataset_policy": "Uses the promoted MNIST rule datasets and eta-flip variants generated in upstream provenance; no large raw MNIST image copy is retained in this local stage.",
+  "dataset_policy": "Builds or validates MNIST eta-noise payloads from a stage-local OpenML MNIST cache at raw_outputs/original_mnist/mnist_openml_uint8.npz; eta variants are generated from the real_even_odd rule with deterministic flip masks.",
+  "source": {
+    "original_mnist": "raw_outputs/original_mnist/mnist_openml_uint8.npz",
+    "openml_dataset": "mnist_784",
+    "split_seed": 20260610,
+    "download_if_missing": true
+  },
+  "generation": {
+    "base_rule": "real_even_odd",
+    "downscale": "PIL.Image.resize((10, 10), Image.Resampling.BOX)",
+    "standardization": "train mean/std on X_train_raw10, std floor 1e-6 -> 1.0",
+    "flip_mask_order": "rng.random(n_train) then rng.random(n_test), each compared to eta"
+  },
   "rules": [
     "very_low_tv_spectral_teacher",
     "real_even_odd",
@@ -16,6 +28,12 @@
     "random_label"
   ],
   "eta_values": [0.02, 0.05, 0.15, 0.25],
+  "eta_seed_map": {
+    "0.02": 2026062700,
+    "0.05": 2026063000,
+    "0.15": 2026065000,
+    "0.25": 2026065000
+  },
   "n_train": 512,
   "n_test": 2048,
   "input_shape": "10x10",

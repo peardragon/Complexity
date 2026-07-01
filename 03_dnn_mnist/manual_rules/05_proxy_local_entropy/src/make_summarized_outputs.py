@@ -14,7 +14,6 @@ MANUAL_ROOT = STAGE_ROOT.parent
 DNN_ROOT = MANUAL_ROOT.parent
 SUMMARY_ROOT = STAGE_ROOT / "summarized_outputs"
 FIGURE_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs"
-DIRECT_RUN_TAG = "direct_derivative_methodology_30ref_r0p01_to_1p0_step0p01_n1024_cpu60_gpu0"
 DIRECT_UNIT_TABLE = (
     MANUAL_ROOT
     / "04_sampling"

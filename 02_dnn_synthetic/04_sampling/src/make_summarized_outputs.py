@@ -58,7 +58,7 @@ def beta_slug(beta: float) -> str:
 
 
 def beta_from_name(path: Path) -> float:
-    match = re.search(r"beta_(\d+p\d+)", path.stem)
+    match = re.fullmatch(r"beta_(\d+p\d+)", path.stem)
     if not match:
         raise ValueError(f"cannot parse beta from {path.name}")
     return float(match.group(1).replace("p", "."))
@@ -68,16 +68,11 @@ def beta_part_from_path(path: Path) -> str:
     for part in path.parts:
         if part.startswith("beta_"):
             return part
-        if part.startswith("cell_beta_"):
-            return "beta_" + part.removeprefix("cell_beta_")
     raise ValueError(f"cannot parse beta directory from {path}")
 
 
 def beta_summary_files(root: Path) -> list[Path]:
-    files = {path.resolve(): path for path in root.glob("beta_*.csv")}
-    for path in root.glob("cell_beta_*.csv"):
-        files.setdefault(path.resolve(), path)
-    return sorted(files.values(), key=beta_from_name)
+    return sorted(root.glob("beta_*.csv"), key=beta_from_name)
 
 
 def tagged_float(name: str, prefix: str) -> float:
@@ -168,12 +163,10 @@ def unit_summary_row(path: Path) -> dict[str, object]:
 
 def build_unit_summaries_from_raw(raw_root: Path, output_root: Path) -> list[Path]:
     beta_dirs = sorted(raw_root.glob("beta_*"), key=lambda path: tagged_float(path.name, "beta_"))
-    beta_dirs.extend(path for path in sorted(raw_root.glob("cell_beta_*"), key=lambda path: tagged_float(path.name, "cell_beta_")) if path not in beta_dirs)
     if not beta_dirs:
         raise FileNotFoundError(f"no unit_summary.json files found under {raw_root}")
 
     output_root.mkdir(parents=True, exist_ok=True)
-    clear_outputs(output_root, "cell_beta_*.csv")
     clear_outputs(output_root, "beta_*.csv")
 
     outputs: list[Path] = []
@@ -216,7 +209,6 @@ def link_beta_summaries(source_root: Path, output_root: Path) -> list[Path]:
     output_root.mkdir(parents=True, exist_ok=True)
     same_root = source_root.resolve() == output_root.resolve()
     if not same_root:
-        clear_outputs(output_root, "cell_beta_*.csv")
         clear_outputs(output_root, "beta_*.csv")
 
     outputs: list[Path] = []
@@ -252,7 +244,6 @@ def write_figure_inputs_from_selected_points(
     if not selected_points_csv.exists():
         raise FileNotFoundError(selected_points_csv)
     output_root.mkdir(parents=True, exist_ok=True)
-    clear_outputs(output_root, "cell_beta_*.csv")
     clear_outputs(output_root, "beta_*.csv")
 
     frame = pd.read_csv(selected_points_csv)
@@ -284,7 +275,6 @@ def write_figure_inputs_from_beta_summaries(
     scale_value: int,
 ) -> list[Path]:
     output_root.mkdir(parents=True, exist_ok=True)
-    clear_outputs(output_root, "cell_beta_*.csv")
     clear_outputs(output_root, "beta_*.csv")
     outputs: list[Path] = []
     usecols = ["condition_value", "radius", "signed_split_logZ_per_scale", "split_logZ_per_scale_diff"]

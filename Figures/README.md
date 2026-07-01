@@ -6,13 +6,13 @@ Top-level PNG duplicates and stale legacy groups are intentionally removed by `r
 
 ## Groups
 
-- `dnn_mnist/`: 43 figures.
+- `dnn_mnist/`: 31 figures.
 - `dnn_synthetic/`: 27 figures.
 - `theory/`: 7 figures.
 
 ## Sections
 
-- `dnn_mnist/`: 43 figures.
+- `dnn_mnist/`: 31 figures.
 - `dnn_synthetic/`: 27 figures.
 - `theory/01_theory_analytic/`: 1 figures.
 - `theory/02_theory_sampling/`: 5 figures.
@@ -26,4 +26,4 @@ The script first refreshes the stage galleries under `01_theory/figures`, `02_dn
 
 `manifest.csv` records the grouped output, source image, and source summarized inputs when a stage manifest exposes them.
 
-`rebuild_all_figures_from_summaries.ipynb` is an executable one-PNG-per-cell notebook. Each figure cell refreshes one source PNG, copies that single image into `Figures/`, prints the source/output paths, and displays that one image inline.
+`rebuild_all_figures_from_summaries.ipynb` is an executable one-PNG-per-cell notebook. Each figure cell contains the concrete CSV/image loading and plotting code for one PNG, saves directly into `Figures/`, and displays that image inline.
