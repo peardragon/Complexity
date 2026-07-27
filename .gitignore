@@ -145,6 +145,7 @@ logs/
 00_literature_search/tools/scholar-megasearch/**
 
 # Local backup and one-off helper bins. Preserve explicit placeholders only.
+99_check_standalone/
 99_backup/**
 !99_backup/.gitkeep
 **/99_backup/**

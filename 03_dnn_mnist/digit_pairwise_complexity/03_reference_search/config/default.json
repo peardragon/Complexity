@@ -1,0 +1,55 @@
+{
+  "stage": "03_reference_search",
+  "entrypoint": "src/reference_search.py",
+  "pipeline_id": "mnist10_digit_pairwise_reference_search",
+  "methodology_id": "mnist10_adam_exact_reference_digit_pairs_v1",
+  "candidate_pairs_source": "../02_complexity_measure/summarized_outputs/digit_pairwise_complexity_summary.csv",
+  "selected_pairs": [
+    "pair_7_9",
+    "pair_4_8",
+    "pair_2_4",
+    "pair_2_9",
+    "pair_6_7"
+  ],
+  "selected_refs_per_pair": 30,
+  "max_attempts_per_pair": 240,
+  "batch_size": 10,
+  "max_epochs": 4200,
+  "lr": 0.022,
+  "device": "auto",
+  "canonical_ref_offset": 1,
+  "base_seed": 2710000,
+  "attempt_seed_starts": {
+    "pair_7_9": 2717900,
+    "pair_4_8": 2714800,
+    "pair_2_4": 2712400,
+    "pair_2_9": 2712900,
+    "pair_6_7": 2716700
+  },
+  "resample_seed_offsets": {
+    "pair_7_9": 2026077900,
+    "pair_4_8": 2026074800,
+    "pair_2_4": 2026072400,
+    "pair_2_9": 2026072900,
+    "pair_6_7": 2026076700
+  },
+  "model": {
+    "architecture": "100-20-20-1-tanh",
+    "parameter_count": 2461
+  },
+  "source_layout": {
+    "entrypoint": "src/reference_search.py",
+    "utils": "src/utils",
+    "programmatic_api": "reference_search.run_pipeline"
+  },
+  "figure_inputs": [
+    "summarized_outputs/figure_inputs/reference_quality/reference_quality_by_pair.csv",
+    "summarized_outputs/figure_inputs/reference_quality/reference_quality_by_ref.csv"
+  ],
+  "retained_figures": [
+    "figures/reference_quality_by_pair.png"
+  ],
+  "run_modes": ["run", "summarize-existing", "check"],
+  "force": false,
+  "deferred_until_user_selection": false
+}

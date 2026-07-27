@@ -1,0 +1,44 @@
+{
+  "stage": "01_dataset",
+  "production_scope": "MNIST digit pairwise datasets",
+  "raw_output_layout": "raw_outputs/pair_*",
+  "entrypoints": [
+    "src/make_dataset.py",
+    "src/make_summarized_outputs.py",
+    "src/make_figures.py"
+  ],
+  "dataset_family": "MNIST 10x10 digit pairwise one-vs-one",
+  "dataset_policy": "Builds or validates all 45 MNIST digit-pair payloads from a stage-local OpenML MNIST cache at raw_outputs/original_mnist/mnist_openml_uint8.npz. Each pair is balanced 50/50 by digit for train and test.",
+  "source": {
+    "original_mnist": "raw_outputs/original_mnist/mnist_openml_uint8.npz",
+    "openml_dataset": "mnist_784",
+    "split_seed": 20260610,
+    "download_if_missing": true
+  },
+  "generation": {
+    "digit_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "pair_id_policy": "pair_{digit_a}_{digit_b}, digit_a < digit_b",
+    "label_policy": "digit_a -> +1, digit_b -> -1",
+    "pair_seed_policy": "split_seed + 100 * digit_a + digit_b",
+    "downscale": "PIL.Image.resize((10, 10), Image.Resampling.BOX)",
+    "standardization": "per-pair train mean/std on X_train_raw10, std floor 1e-6 -> 1.0"
+  },
+  "n_train": 512,
+  "n_test": 2048,
+  "input_shape": "10x10",
+  "sample_figure": {
+    "source_array": "X_train_raw10",
+    "representative_examples_per_digit": 1
+  },
+  "retained_figures": [
+    "figures/sample_figure.png"
+  ],
+  "summary_outputs": [
+    "summarized_outputs/digit_pairwise_dataset_summary.csv",
+    "summarized_outputs/figure_inputs/sample_figure/selected_sample_indices.csv"
+  ],
+  "metadata_outputs": [
+    "raw_outputs/pair_*/dataset_meta.json"
+  ],
+  "downstream_selection_policy": "After 02_complexity_measure, user selects selected_pairs for 03_reference_search/config/default.json."
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "04_sampling",
+  "method_name": "PM-SAIS",
+  "method_full_name": "Exact-shell L2 vMF adaptive CE tempered SMC",
+  "production_run": "digit_pairwise selected5 dense30ref r0.01 to r1.00",
+  "raw_outputs": {
+    "shell_pool": "raw_outputs/shell_pool/pair_*"
+  },
+  "summarized_outputs": {
+    "unit_summary": "summarized_outputs/unit_summary",
+    "figure_inputs": "summarized_outputs/figure_inputs"
+  },
+  "model": {
+    "architecture": "100-20-20-1-tanh",
+    "parameter_count": 2461
+  },
+  "ensemble": {
+    "condition_name": "digit_pair",
+    "condition_values": [
+      "pair_7_9",
+      "pair_4_8",
+      "pair_2_4",
+      "pair_2_9",
+      "pair_6_7"
+    ],
+    "condition_labels": {
+      "pair_7_9": "7/9",
+      "pair_4_8": "4/8",
+      "pair_2_4": "2/4",
+      "pair_2_9": "2/9",
+      "pair_6_7": "6/7"
+    },
+    "references_per_condition": 30
+  },
+  "sampling": {
+    "radius_start": 0.01,
+    "radius_stop": 1.0,
+    "radius_step": 0.01,
+    "r0": 0.1,
+    "samples_per_ref_radius": 1024,
+    "save_unit_samples_npz": true,
+    "radial_derivative_enabled": true,
+    "seed_offset": 2026070100
+  },
+  "compute": {
+    "device": "auto",
+    "dtype": "float32",
+    "chunk_size": 256,
+    "derivative_chunk_size": 64,
+    "cpu_thread_fraction": 0.8,
+    "parallel_workers": 24
+  },
+  "reference_search": {
+    "reference_index": "../03_reference_search/raw_outputs/reference_index.csv",
+    "selected_refs_per_dataset": 30
+  },
+  "qc_contract": {
+    "finite_unit_fraction_min": 0.95,
+    "q05_ess_fraction_min": 0.04,
+    "max_split_logZ_per_P_diff": 0.004,
+    "bootstrap_sd_phi_max": 0.012
+  }
+}

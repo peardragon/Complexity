@@ -14,6 +14,7 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 SUMMARY_ROOT = PROJECT_ROOT / "01_theory" / "02_theory_sampling" / "summarized_outputs"
 DEFAULT_PHI_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs" / "phi_by_sampling"
+DEFAULT_PHI_ENERGETIC_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs" / "phi_energetic_by_sampling"
 DEFAULT_PHI_OUTPUT_PNG = (
     PROJECT_ROOT
     / "01_theory"
@@ -21,6 +22,14 @@ DEFAULT_PHI_OUTPUT_PNG = (
     / "figures"
     / "phi_by_sampling"
     / "phi_by_sampling.png"
+)
+DEFAULT_PHI_ENERGETIC_OUTPUT_PNG = (
+    PROJECT_ROOT
+    / "01_theory"
+    / "02_theory_sampling"
+    / "figures"
+    / "phi_energetic_by_sampling"
+    / "phi_energetic_by_sampling.png"
 )
 DEFAULT_LOGZ_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs" / "logZ_split"
 DEFAULT_LOGZ_SOURCE_CSV = SUMMARY_ROOT / "sample_unit_summary.csv"
@@ -51,7 +60,16 @@ def clear_pngs(path: Path, pattern: str = "N_*.png") -> None:
         png_path.unlink()
 
 
-def _series_value(frame: pd.DataFrame) -> pd.Series:
+def _series_value(frame: pd.DataFrame, *, energetic_only: bool = False) -> pd.Series:
+    if energetic_only:
+        if "phi_energy_emp_rel" in frame.columns:
+            return frame["phi_energy_emp_rel"]
+        if "phi_energy_emp" in frame.columns:
+            return frame["phi_energy_emp"]
+        radius_ratio = frame["r"] / float(frame["r"].iloc[0])
+        n_value = float(frame["N"].iloc[0])
+        radius_term = ((n_value - 1.0) / n_value) * np.log(radius_ratio)
+        return _series_value(frame) - radius_term
     if "phi_emp_rel" in frame.columns:
         return frame["phi_emp_rel"]
     base = frame.sort_values("r")["phi_emp"].iloc[0]
@@ -67,17 +85,27 @@ def load_phi_inputs(input_path: Path) -> pd.DataFrame:
     return pd.concat((pd.read_csv(path) for path in files), ignore_index=True, sort=False)
 
 
-def make_phi_figure(input_path: Path, output_png: Path) -> None:
+def make_phi_figure(input_path: Path, output_png: Path, *, energetic_only: bool = False) -> None:
     df = load_phi_inputs(input_path).sort_values(["N", "r"])
     output_png.parent.mkdir(parents=True, exist_ok=True)
 
     plt.figure(figsize=(7.4, 4.8))
     for n_value, group in df.groupby("N", sort=True):
         group = group.sort_values("r")
-        plt.plot(group["r"], _series_value(group), marker="o", linewidth=1.7, label=f"N={int(n_value)}")
+        plt.plot(
+            group["r"],
+            _series_value(group, energetic_only=energetic_only),
+            marker="o",
+            linewidth=1.7,
+            label=f"N={int(n_value)}",
+        )
     plt.xlabel("d")
-    plt.ylabel("empirical phi(d) - phi(d0)")
-    plt.title("Two-pool shell sampling, alpha=0.1")
+    if energetic_only:
+        plt.ylabel("empirical energetic phi(d) - energetic phi(d0)")
+        plt.title("Two-pool shell sampling energetic part, alpha=0.1")
+    else:
+        plt.ylabel("empirical phi(d) - phi(d0)")
+        plt.title("Two-pool shell sampling, alpha=0.1")
     plt.grid(True, alpha=0.28)
     plt.legend(title="system size", fontsize=8)
     plt.tight_layout()
@@ -360,10 +388,17 @@ def render_logz_split_figures(input_root: Path, output_root: Path, *, split_thre
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build theory figures from N-wise figure-input CSVs.")
-    parser.add_argument("--which", choices=["all", "phi", "logz"], default="all")
+    parser.add_argument("--which", choices=["all", "phi", "energetic", "logz"], default="all")
     parser.add_argument("--phi-input", "--input", dest="phi_input", type=Path, default=DEFAULT_PHI_INPUT_ROOT)
     parser.add_argument("--phi-input-csv", "--input-csv", dest="phi_input_csv", type=Path, default=None)
     parser.add_argument("--phi-output-png", "--output-png", dest="phi_output_png", type=Path, default=DEFAULT_PHI_OUTPUT_PNG)
+    parser.add_argument("--phi-energetic-input", type=Path, default=DEFAULT_PHI_ENERGETIC_INPUT_ROOT)
+    parser.add_argument("--phi-energetic-input-csv", type=Path, default=None)
+    parser.add_argument(
+        "--phi-energetic-output-png",
+        type=Path,
+        default=DEFAULT_PHI_ENERGETIC_OUTPUT_PNG,
+    )
     parser.add_argument("--logz-source-csv", "--source-csv", dest="logz_source_csv", type=Path, default=None)
     parser.add_argument("--split-source-csv", type=Path, default=None)
     parser.add_argument("--logz-input-root", "--input-root", dest="logz_input_root", type=Path, default=DEFAULT_LOGZ_INPUT_ROOT)
@@ -379,6 +414,16 @@ def main() -> None:
         phi_output = project_path(args.phi_output_png)
         make_phi_figure(project_path(phi_input), phi_output)
         outputs.append(phi_output)
+
+    if args.which in {"all", "energetic"}:
+        energetic_input = (
+            args.phi_energetic_input_csv
+            if args.phi_energetic_input_csv is not None
+            else args.phi_energetic_input
+        )
+        energetic_output = project_path(args.phi_energetic_output_png)
+        make_phi_figure(project_path(energetic_input), energetic_output, energetic_only=True)
+        outputs.append(energetic_output)
 
     if args.which in {"all", "logz"}:
         input_root = project_path(args.logz_input_root)

@@ -1,0 +1,6 @@
+pair_id,pair_label,pair_order,pair_rank_complexity_desc,complexity_mean,n_refs,A_kappa_mean,A_kappa_sd,A_kappa_sem,derivative_source
+pair_7_9,7/9,1,1,0.10546875,30,0.1555165930117291,0.01713831993317863,0.0031290148083807892,sampling_time_direct_radial_score_derivative
+pair_4_8,4/8,2,12,0.0390625,30,0.062158170288642914,0.007830388967627132,0.0014296268905363233,sampling_time_direct_radial_score_derivative
+pair_2_4,2/4,3,23,0.0247395833333333,30,0.06215660240929332,0.0078227570785983,0.0014282335046105008,sampling_time_direct_radial_score_derivative
+pair_2_9,2/9,4,34,0.015625,30,0.04810056734161918,0.005064812431866017,0.0009247040061552049,sampling_time_direct_radial_score_derivative
+pair_6_7,6/7,5,45,0.00390625,30,0.022955382847723468,0.002775997357881141,0.0005068254574954142,sampling_time_direct_radial_score_derivative

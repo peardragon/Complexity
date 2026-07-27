@@ -13,6 +13,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 SUMMARY_ROOT = PROJECT_ROOT / "01_theory" / "02_theory_sampling" / "summarized_outputs"
 FIGURE_INPUT_ROOT = SUMMARY_ROOT / "figure_inputs"
 PHI_FIGURE_INPUT_ROOT = FIGURE_INPUT_ROOT / "phi_by_sampling"
+PHI_ENERGETIC_FIGURE_INPUT_ROOT = FIGURE_INPUT_ROOT / "phi_energetic_by_sampling"
 LOGZ_FIGURE_INPUT_ROOT = FIGURE_INPUT_ROOT / "logZ_split"
 DEFAULT_METHOD = "exact_shell_l2_vmf_adaptive_ce_tempered_smc"
 
@@ -56,7 +57,9 @@ def build_phi_summary(units: pd.DataFrame, *, split_threshold: float, smc_cess_t
         for radius, group in by_n.groupby("radius", sort=True):
             radius = float(radius)
             logz = float(group["logZ_shell_full"].mean())
-            phi_emp = ((n_int - 1.0) / n_int) * math.log(radius / r0) + (logz - base_logz) / n_int
+            phi_radius_emp = ((n_int - 1.0) / n_int) * math.log(radius / r0)
+            phi_energy_emp = (logz - base_logz) / n_int
+            phi_emp = phi_radius_emp + phi_energy_emp
             fallback = bool_series(group["fallback_used"]) if "fallback_used" in group.columns else pd.Series(False, index=group.index)
             min_cess = float(group["smc_min_cess_fraction"].min(skipna=True))
             if math.isnan(min_cess):
@@ -69,6 +72,8 @@ def build_phi_summary(units: pd.DataFrame, *, split_threshold: float, smc_cess_t
                     "r": radius,
                     "N": n_int,
                     "phi_emp": float(phi_emp),
+                    "phi_radius_emp": float(phi_radius_emp),
+                    "phi_energy_emp": float(phi_energy_emp),
                     "weighted_CE": float(group["weighted_ce"].mean()),
                     "weighted_err": float(group["weighted_error"].mean()),
                     "reference_count": int(len(group)),
@@ -202,6 +207,13 @@ def write_phi_figure_inputs(phi: pd.DataFrame, output_root: Path = PHI_FIGURE_IN
         group.to_csv(out, index=False)
         outputs.append(out)
     return outputs
+
+
+def write_phi_energetic_figure_inputs(
+    phi: pd.DataFrame,
+    output_root: Path = PHI_ENERGETIC_FIGURE_INPUT_ROOT,
+) -> list[Path]:
+    return write_phi_figure_inputs(phi, output_root)
 
 
 def write_logz_figure_inputs(logz_split: pd.DataFrame, output_root: Path = LOGZ_FIGURE_INPUT_ROOT) -> list[Path]:
@@ -351,6 +363,7 @@ def main() -> None:
     units.to_csv(sample_summary_path, index=False)
     logz_split = build_logz_split_frame(units, source_path=sample_summary_path)
     write_phi_figure_inputs(phi, output_root / "figure_inputs" / "phi_by_sampling")
+    write_phi_energetic_figure_inputs(phi, output_root / "figure_inputs" / "phi_energetic_by_sampling")
     write_logz_figure_inputs(logz_split, output_root / "figure_inputs" / "logZ_split")
     print(json.dumps(validation, indent=2, sort_keys=True))
 

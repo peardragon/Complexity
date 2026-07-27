@@ -1,0 +1,80 @@
+{
+  "stage": "03_reference_search",
+  "entrypoint": "src/reference_search.py",
+  "pipeline_id": "mnist10_digit_pairwise_dense_reference_search",
+  "methodology_id": "mnist10_adam_exact_reference_digit_pairs_dense12_v1",
+  "candidate_pairs_source": "../02_complexity_measure/summarized_outputs/digit_pairwise_complexity_summary.csv",
+  "selected_pairs": [
+    "pair_7_9",
+    "pair_3_8",
+    "pair_8_9",
+    "pair_4_5",
+    "pair_3_9",
+    "pair_0_2",
+    "pair_1_4",
+    "pair_5_7",
+    "pair_1_5",
+    "pair_3_6",
+    "pair_0_4",
+    "pair_6_7"
+  ],
+  "selected_refs_per_pair": 30,
+  "max_attempts_per_pair": 240,
+  "batch_size": 10,
+  "max_epochs": 4200,
+  "lr": 0.022,
+  "device": "auto",
+  "canonical_ref_offset": 1,
+  "base_seed": 2710000,
+  "attempt_seed_starts": {
+    "pair_7_9": 2717900,
+    "pair_3_8": 2713800,
+    "pair_8_9": 2718900,
+    "pair_4_5": 2714500,
+    "pair_3_9": 2713900,
+    "pair_0_2": 2710200,
+    "pair_1_4": 2711400,
+    "pair_5_7": 2715700,
+    "pair_1_5": 2711500,
+    "pair_3_6": 2713600,
+    "pair_0_4": 2710400,
+    "pair_6_7": 2716700
+  },
+  "resample_seed_offsets": {
+    "pair_7_9": 2026077900,
+    "pair_3_8": 2026073800,
+    "pair_8_9": 2026078900,
+    "pair_4_5": 2026074500,
+    "pair_3_9": 2026073900,
+    "pair_0_2": 2026070200,
+    "pair_1_4": 2026071400,
+    "pair_5_7": 2026075700,
+    "pair_1_5": 2026071500,
+    "pair_3_6": 2026073600,
+    "pair_0_4": 2026070400,
+    "pair_6_7": 2026076700
+  },
+  "model": {
+    "architecture": "100-20-20-1-tanh",
+    "parameter_count": 2461
+  },
+  "source_layout": {
+    "entrypoint": "src/reference_search.py",
+    "utils": "src/utils",
+    "programmatic_api": "reference_search.run_pipeline"
+  },
+  "figure_inputs": [
+    "summarized_outputs/figure_inputs/reference_quality/reference_quality_by_pair.csv",
+    "summarized_outputs/figure_inputs/reference_quality/reference_quality_by_ref.csv"
+  ],
+  "retained_figures": [
+    "figures/reference_quality_by_pair.png"
+  ],
+  "run_modes": [
+    "run",
+    "summarize-existing",
+    "check"
+  ],
+  "force": false,
+  "deferred_until_user_selection": false
+}

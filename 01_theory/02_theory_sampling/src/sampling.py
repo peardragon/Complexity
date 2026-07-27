@@ -613,6 +613,7 @@ def rebuild_tables(
     units.to_csv(sample_summary_path, index=False)
     logz_split = final_tables.build_logz_split_frame(units, source_path=sample_summary_path)
     final_tables.write_phi_figure_inputs(phi, output_root / "figure_inputs" / "phi_by_sampling")
+    final_tables.write_phi_energetic_figure_inputs(phi, output_root / "figure_inputs" / "phi_energetic_by_sampling")
     final_tables.write_logz_figure_inputs(logz_split, output_root / "figure_inputs" / "logZ_split")
     return validation
 

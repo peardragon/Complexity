@@ -1,0 +1,35 @@
+{
+  "stage": "05_proxy_local_entropy",
+  "axis_policy": "digit_pair",
+  "method_names": [
+    "PLE",
+    "E-PLE"
+  ],
+  "method_full_names": [
+    "Proxy Local Entropy",
+    "Energetic Proxy Local Entropy"
+  ],
+  "production_run": "MNIST digit-pair dense12 direct radial derivative sweep, 12 pairs, 30 references, r=0.01..1.00 step 0.01, n=1024",
+  "source_sampling_root": "../04_sampling/raw_outputs/shell_pool/pair_*",
+  "source_unit_table": "../04_sampling/summarized_outputs/unit_summary/shell_summary_by_unit_with_phi_derivatives.csv",
+  "figure_input_root": "summarized_outputs/figure_inputs",
+  "model": {
+    "parameter_count": 2461,
+    "lambda_reg": 1.0
+  },
+  "retained_figures": [
+    "phi_d_curve.png",
+    "phi_energetic_d_curve.png",
+    "derivative_phi_d_curve.png",
+    "derivative_phi_energetic_d_curve.png",
+    "phase_like_A_by_pair.png",
+    "phase_like_A_by_complexity.png"
+  ],
+  "phase_like_A_definition": "Positive curvature mass of the energetic direct dphi/dd curve along linear sampled radius.",
+  "derivative_curve_policy": "Standalone derivative and A-measure panels use sampling-time direct radial score derivative from dlogZ_inf_full_dr / P.",
+  "source": [
+    "src/make_summarized_outputs.py",
+    "src/make_figures.py"
+  ],
+  "deferred_until_user_selection": false
+}

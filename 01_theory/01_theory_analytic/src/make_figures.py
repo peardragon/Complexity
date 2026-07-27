@@ -28,6 +28,13 @@ DEFAULT_OUTPUT_PNG = (
     / "figures"
     / "phi_by_analytic_solution_alpha0p1.png"
 )
+DEFAULT_ENERGETIC_OUTPUT_PNG = (
+    PROJECT_ROOT
+    / "01_theory"
+    / "01_theory_analytic"
+    / "figures"
+    / "phi_energetic_by_analytic_solution_alpha0p1.png"
+)
 
 
 @dataclass(frozen=True)
@@ -81,16 +88,40 @@ def find_crossings(
     return rows
 
 
-def make_phi_figure(input_csv: Path, output_png: Path) -> None:
+def _relative_phi(frame: pd.DataFrame) -> pd.Series:
+    if "phi_rel" in frame.columns:
+        return frame["phi_rel"]
+    return frame["phi"] - frame["phi"].iloc[0]
+
+
+def _relative_energetic_phi(frame: pd.DataFrame) -> pd.Series:
+    if "phi_energy_rel" in frame.columns:
+        return frame["phi_energy_rel"]
+    if "phi_energy" in frame.columns:
+        return frame["phi_energy"] - frame["phi_energy"].iloc[0]
+    radius_ratio = frame["r"] / float(frame["r"].iloc[0])
+    return _relative_phi(frame) - np.log(radius_ratio)
+
+
+def make_phi_figure(input_csv: Path, output_png: Path, *, energetic_only: bool = False) -> None:
     df = pd.read_csv(input_csv).sort_values("r")
-    y_col = "phi_rel" if "phi_rel" in df.columns else "phi"
+    if energetic_only:
+        y_values = _relative_energetic_phi(df)
+        y_label = "energetic phi(d) - energetic phi(d0)"
+        title = "Analytic energetic full-RS solution, alpha=0.1"
+        color = "#9a4d12"
+    else:
+        y_values = _relative_phi(df)
+        y_label = "phi(d) - phi(d0)"
+        title = "Analytic full-RS solution, alpha=0.1"
+        color = "#2457a7"
 
     output_png.parent.mkdir(parents=True, exist_ok=True)
     plt.figure(figsize=(7.0, 4.4))
-    plt.plot(df["r"], df[y_col], marker="o", linewidth=2.0, color="#2457a7")
+    plt.plot(df["r"], y_values, marker="o", linewidth=2.0, color=color)
     plt.xlabel("d")
-    plt.ylabel("phi(d) - phi(d0)" if y_col == "phi_rel" else "phi(d)")
-    plt.title("Analytic full-RS solution, alpha=0.1")
+    plt.ylabel(y_label)
+    plt.title(title)
     plt.grid(True, alpha=0.28)
     plt.tight_layout()
     plt.savefig(output_png, dpi=180)
@@ -169,6 +200,7 @@ def render_phase_reference_views(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Render analytic phi(d) figure from the canonical full-RS CSV.")
+    parser.add_argument("--which", choices=["full", "energetic", "all"], default="all")
     parser.add_argument(
         "--input-csv",
         type=Path,
@@ -179,10 +211,24 @@ def main() -> None:
         type=Path,
         default=DEFAULT_OUTPUT_PNG,
     )
+    parser.add_argument(
+        "--energetic-output-png",
+        type=Path,
+        default=DEFAULT_ENERGETIC_OUTPUT_PNG,
+    )
     args = parser.parse_args()
-    output_png = project_path(args.output_png)
-    make_phi_figure(project_path(args.input_csv), output_png)
-    print(output_png)
+    input_csv = project_path(args.input_csv)
+    outputs: list[Path] = []
+    if args.which in {"full", "all"}:
+        output_png = project_path(args.output_png)
+        make_phi_figure(input_csv, output_png)
+        outputs.append(output_png)
+    if args.which in {"energetic", "all"}:
+        energetic_output_png = project_path(args.energetic_output_png)
+        make_phi_figure(input_csv, energetic_output_png, energetic_only=True)
+        outputs.append(energetic_output_png)
+    for output in outputs:
+        print(output)
 
 
 if __name__ == "__main__":

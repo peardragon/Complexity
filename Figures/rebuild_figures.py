@@ -88,16 +88,24 @@ def _figure_input_paths(category_path: str) -> list[str]:
     parts = path.parts
     stem = path.stem
 
-    if category_path == "theory/01_theory_analytic/phi_by_analytic_solution_alpha0p1.png":
+    if category_path in {
+        "theory/01_theory_analytic/phi_by_analytic_solution_alpha0p1.png",
+        "theory/01_theory_analytic/phi_energetic_by_analytic_solution_alpha0p1.png",
+    }:
         return ["01_theory/01_theory_analytic/summarized_outputs/phi_by_analytic_solution_alpha0p1.csv"]
     if category_path == "theory/02_theory_sampling/phi_by_sampling/phi_by_sampling.png":
         return ["01_theory/02_theory_sampling/summarized_outputs/figure_inputs/phi_by_sampling"]
     if category_path.startswith("theory/02_theory_sampling/logZ_split_distributions/"):
         return [f"01_theory/02_theory_sampling/summarized_outputs/figure_inputs/logZ_split/{stem}.csv"]
     if category_path.startswith("theory/summary/"):
+        sampling_directory = (
+            "phi_energetic_by_sampling"
+            if "energetic" in Path(category_path).stem
+            else "phi_by_sampling"
+        )
         return [
             "01_theory/01_theory_analytic/summarized_outputs/phi_by_analytic_solution_alpha0p1.csv",
-            "01_theory/02_theory_sampling/summarized_outputs/figure_inputs/phi_by_sampling",
+            f"01_theory/02_theory_sampling/summarized_outputs/figure_inputs/{sampling_directory}",
         ]
 
     if category_path == "dnn_synthetic/01_dataset/sample_figure.png":
@@ -416,24 +424,18 @@ def _join_cell(*parts: str) -> str:
 
 def _theory_analytic_cell(category_path: str) -> str:
     input_csv = "01_theory/01_theory_analytic/summarized_outputs/phi_by_analytic_solution_alpha0p1.csv"
+    energetic_only = "energetic" in Path(category_path).stem
     return _join_cell(
         _cell_preamble(),
         _path_assignments(category_path, [input_csv]),
+        _source_blocks(
+            "01_theory/01_theory_analytic/src/make_figures.py",
+            ("_relative_phi", "_relative_energetic_phi", "make_phi_figure"),
+        ),
         (
             "input_csv = input_paths[0]\n"
-            "df = pd.read_csv(input_csv).sort_values('r')\n"
-            "y_col = 'phi_rel' if 'phi_rel' in df.columns else 'phi'\n\n"
-            "output_png.parent.mkdir(parents=True, exist_ok=True)\n"
-            "plt.figure(figsize=(7.0, 4.4))\n"
-            "plt.plot(df['r'], df[y_col], marker='o', linewidth=2.0, color='#2457a7')\n"
-            "plt.xlabel('d')\n"
-            "plt.ylabel('phi(d) - phi(d0)' if y_col == 'phi_rel' else 'phi(d)')\n"
-            "plt.title('Analytic full-RS solution, alpha=0.1')\n"
-            "plt.grid(True, alpha=0.28)\n"
-            "plt.tight_layout()\n"
-            "plt.savefig(output_png, dpi=180)\n"
-            "plt.show()\n"
-            "plt.close()"
+            "with plt.rc_context(plt.rcParamsDefault):\n"
+            f"    make_phi_figure(input_csv, output_png, energetic_only={energetic_only!r})"
         ),
         _display_tail(),
     )
@@ -490,45 +492,38 @@ def _theory_logz_cell(category_path: str) -> str:
 
 
 def _theory_combined_cell(category_path: str) -> str:
+    energetic_only = "energetic" in Path(category_path).stem
+    sampling_directory = (
+        "phi_energetic_by_sampling" if energetic_only else "phi_by_sampling"
+    )
     inputs = [
         "01_theory/01_theory_analytic/summarized_outputs/phi_by_analytic_solution_alpha0p1.csv",
-        "01_theory/02_theory_sampling/summarized_outputs/figure_inputs/phi_by_sampling",
+        f"01_theory/02_theory_sampling/summarized_outputs/figure_inputs/{sampling_directory}",
     ]
     return _join_cell(
         _cell_preamble(),
         _path_assignments(category_path, inputs),
+        _source_blocks(
+            "01_theory/figures/src/make_figures.py",
+            (
+                "read_required_csv",
+                "read_sampling_input",
+                "analytic_relative_phi",
+                "analytic_relative_energetic_phi",
+                "sampling_relative_phi",
+                "sampling_relative_energetic_phi",
+                "write_combined_figure",
+            ),
+        ),
         (
             "analytic_csv, sampling_root = input_paths\n"
-            "analytic = pd.read_csv(analytic_csv).sort_values('r')\n"
-            "sampling_files = sorted(sampling_root.glob('N_*.csv'))\n"
-            "if not sampling_files:\n"
-            "    raise FileNotFoundError(f'no N_*.csv files found under {sampling_root}')\n"
-            "sampling = pd.concat((pd.read_csv(path) for path in sampling_files), ignore_index=True, sort=False).sort_values(['N', 'r'])\n\n"
-            "def analytic_relative_phi(frame: pd.DataFrame) -> pd.Series:\n"
-            "    if 'phi_rel' in frame.columns:\n"
-            "        return frame['phi_rel']\n"
-            "    ordered = frame.sort_values('r')\n"
-            "    return ordered['phi'] - ordered['phi'].iloc[0]\n\n"
-            "def sampling_relative_phi(frame: pd.DataFrame) -> pd.Series:\n"
-            "    if 'phi_emp_rel' in frame.columns:\n"
-            "        return frame['phi_emp_rel']\n"
-            "    ordered = frame.sort_values('r')\n"
-            "    return ordered['phi_emp'] - ordered['phi_emp'].iloc[0]\n\n"
-            "plt.figure(figsize=(8.5, 5.1))\n"
-            "plt.plot(analytic['r'], analytic_relative_phi(analytic), color='black', linewidth=2.4, label='analytic full-RS')\n"
-            "for n_value, group in sampling.groupby('N', sort=True):\n"
-            "    group = group.sort_values('r')\n"
-            "    plt.plot(group['r'], sampling_relative_phi(group), marker='o', markersize=3.2, linewidth=1.55, label=f'N={int(n_value)} sampling')\n"
-            "plt.xlabel('d')\n"
-            "plt.ylabel('phi(d) - phi(d0)')\n"
-            "plt.title('Analytic vs shell sampling, alpha=0.1')\n"
-            "plt.grid(True, alpha=0.28)\n"
-            "plt.legend(fontsize=8)\n"
-            "plt.tight_layout()\n"
-            "output_png.parent.mkdir(parents=True, exist_ok=True)\n"
-            "plt.savefig(output_png, dpi=300)\n"
-            "plt.show()\n"
-            "plt.close()"
+            "with plt.rc_context(plt.rcParamsDefault):\n"
+            "    write_combined_figure(\n"
+            "        read_required_csv(analytic_csv),\n"
+            "        read_sampling_input(sampling_root),\n"
+            "        output_png,\n"
+            f"        energetic_only={energetic_only!r},\n"
+            "    )"
         ),
         _display_tail(),
     )
@@ -1137,7 +1132,10 @@ def _figure_code(row: dict[str, str]) -> str:
     path = Path(category_path)
     parts = path.parts
 
-    if category_path == "theory/01_theory_analytic/phi_by_analytic_solution_alpha0p1.png":
+    if category_path in {
+        "theory/01_theory_analytic/phi_by_analytic_solution_alpha0p1.png",
+        "theory/01_theory_analytic/phi_energetic_by_analytic_solution_alpha0p1.png",
+    }:
         return _theory_analytic_cell(category_path)
     if category_path == "theory/02_theory_sampling/phi_by_sampling/phi_by_sampling.png":
         return _theory_sampling_phi_cell(category_path)

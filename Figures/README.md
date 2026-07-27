@@ -8,15 +8,15 @@ Top-level PNG duplicates and stale legacy groups are intentionally removed by `r
 
 - `dnn_mnist/`: 31 figures.
 - `dnn_synthetic/`: 27 figures.
-- `theory/`: 7 figures.
+- `theory/`: 9 figures.
 
 ## Sections
 
 - `dnn_mnist/`: 31 figures.
 - `dnn_synthetic/`: 27 figures.
-- `theory/01_theory_analytic/`: 1 figures.
+- `theory/01_theory_analytic/`: 2 figures.
 - `theory/02_theory_sampling/`: 5 figures.
-- `theory/summary/`: 1 figures.
+- `theory/summary/`: 2 figures.
 
 ## Rebuild
 
