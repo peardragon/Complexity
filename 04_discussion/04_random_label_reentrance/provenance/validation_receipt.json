@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "condition_count": 5,
+    "interpretation_does_not_claim_accuracy_recovery": true,
+    "radial_row_count": 500,
+    "reentrant_conditions": [
+      "noise_eta_0p25",
+      "noise_eta_0p50"
+    ],
+    "topologies_match_canonical_round2_result": true
+  },
+  "code": [
+    {
+      "path": "04_discussion/src/utils/discussion_pipeline.py",
+      "rows": null
+    },
+    {
+      "path": "04_discussion/04_random_label_reentrance/src/make_summarized_outputs.py",
+      "rows": null
+    }
+  ],
+  "config": {
+    "path": "04_discussion/04_random_label_reentrance/config/default.json",
+    "rows": null
+  },
+  "inputs": [
+    {
+      "path": "04_discussion/01_frozen_inputs/summarized_outputs/input_inventory.csv",
+      "rows": 7
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 500
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04_discussion/04_random_label_reentrance/summarized_outputs/label_noise_radial_signs.csv",
+      "rows": 500
+    },
+    {
+      "path": "04_discussion/04_random_label_reentrance/summarized_outputs/reentrant_intervals.csv",
+      "rows": 5
+    }
+  ],
+  "post_hoc_only": true,
+  "schema_version": "complexity.discussion.stage_receipt.v1",
+  "stage_id": "04_random_label_reentrance"
+}

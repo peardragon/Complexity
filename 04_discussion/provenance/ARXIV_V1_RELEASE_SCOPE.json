@@ -1,0 +1,194 @@
+{
+  "schema_version": "complexity.arxiv-v1.processed-release.v1",
+  "paper": {
+    "arxiv_id": "2608.22361v1",
+    "title": "Dataset Complexity Shapes Finite-Distance Loss Geometry in Neural Networks",
+    "submitted_utc": "2026-08-23T11:01:09Z",
+    "figure_numbers": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "appendices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "supplement_sections": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5",
+      "S6",
+      "S7",
+      "S8"
+    ]
+  },
+  "release_kind": "code_and_processed_numerical_authorities",
+  "release_roots": [
+    "01_theory",
+    "02_dnn_synthetic",
+    "03_dnn_mnist",
+    "04_discussion"
+  ],
+  "rendered_manuscript_assets_in_scope": false,
+  "raw_payloads_required_for_scope_validation": false,
+  "known_exclusions": [
+    "01_theory/02_theory_sampling/summarized_outputs/energetic_profiles.csv",
+    "04_discussion/05_cross_domain_summary"
+  ],
+  "authorities": [
+    {
+      "path": "01_theory/01_theory_analytic/summarized_outputs/phi_by_analytic_solution_alpha0p1.csv",
+      "sha256": "f3ec595d5601d45db1d3a0ab81698445697083d1063f1f7f6c3565b478640cf4",
+      "rows": 42,
+      "paper_role": "Figure 2 replica-symmetric perceptron curve; Appendix B"
+    },
+    {
+      "path": "01_theory/02_theory_sampling/summarized_outputs/phi_by_sampling.csv",
+      "sha256": "86640c22d0c2ee82f6a12ed275427801c5a269967ccc9f5734a0640d6215bba2",
+      "rows": 336,
+      "paper_role": "Figure 2 finite-size SMC curves and particle-count numerical controls",
+      "source_snapshot_sha256": "5fce15e7934a2b6ea824e63b1726b52362a36f34cfe96244de0de9bce0272bf4",
+      "corrected_columns": [
+        "phi_shell_rel",
+        "dphi_shell_dr_direct"
+      ],
+      "correction": "squared-distance delta: (N-2)/N; measured energetic values and paper Figure 2 unchanged"
+    },
+    {
+      "path": "02_dnn_synthetic/02_complexity_measure/summarized_outputs/cms_by_dataset.csv",
+      "sha256": "db0dc6e7a7ef65b79b6205e2ccbed178a609e0530f89399a17566f0801353099",
+      "rows": 1080,
+      "paper_role": "Figures 3 and 4 synthetic multiscale complexity"
+    },
+    {
+      "path": "02_dnn_synthetic/04_sampling/summarized_outputs/logz_sampling_quality.csv",
+      "sha256": "3092488e016a3ae92d9cd4801df6dc4d55787eaeaa41381e38655ffd45a56725",
+      "rows": 18,
+      "paper_role": "Appendix A synthetic SMC numerical quality"
+    },
+    {
+      "path": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "sha256": "04dba486b1ba9adae71c64cb839dad5614f65c3b1cd4f09767a6bca96e5d1c39",
+      "rows": 4500,
+      "paper_role": "Figure 4 synthetic local entropy and direct radial derivative"
+    },
+    {
+      "path": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/condition_metrics.csv",
+      "sha256": "9a706a3e6f4870923b5ab38d07fb9628369bb477de16cb5676e0f5e7f47a1566",
+      "rows": 18,
+      "paper_role": "Figure 4 weighted accuracy and total radial variation"
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/02_complexity_measure/summarized_outputs/cms_by_dataset.csv",
+      "sha256": "2ac1d64ee28b7763f53290838d0d4a810c7fbcb78be0bc1ad239751edfd28f53",
+      "rows": 50,
+      "paper_role": "Figures 5 and 6 MNIST label-noise complexity"
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/04_sampling/summarized_outputs/logz_sampling_quality.csv",
+      "sha256": "9cacba43cdb8c610843a03470849a16a553e751a461498a5a5eb6061cca19254",
+      "rows": 50,
+      "paper_role": "Appendix A label-noise SMC numerical quality"
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "sha256": "18aa02047cc122409048e888e7fd86f31f53a46a0d3d2d1129fe78d209b69939",
+      "rows": 500,
+      "paper_role": "Figure 6 local entropy, radial derivative, and Figure 9 input"
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/condition_metrics.csv",
+      "sha256": "53771a823df893ab6bcb22f441c6bd6d2017791c568efb96bdc47d5848d8552a",
+      "rows": 5,
+      "paper_role": "Figure 6 weighted accuracy and total radial variation"
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/02_complexity_measure/summarized_outputs/cms_by_dataset.csv",
+      "sha256": "105f38382ffd4e7845e08c7489ebc5b764b9888b0aa88dbddf5d344608151b2b",
+      "rows": 120,
+      "paper_role": "Figure 7 selected-pair complexity"
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/04_sampling/summarized_outputs/logz_sampling_quality.csv",
+      "sha256": "bcac4000e3bdcef91d23ba55c1f621228817cded45330e4b08d6abce9c8c6084",
+      "rows": 120,
+      "paper_role": "Appendix A digit-pair SMC numerical quality"
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "sha256": "652603d38efbb107e7d424092545c2d116dd8cd8733af05519671c201b4a2fa5",
+      "rows": 1200,
+      "paper_role": "Figure 8 local entropy, radial derivative, and Figure 9 input"
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/condition_metrics.csv",
+      "sha256": "287f19d0c5bc6cea5c767380fbb5b0c78275c4c2a4f6a28dc3b64db69591fc9d",
+      "rows": 12,
+      "paper_role": "Figure 8 total radial variation"
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/r1_weighted_accuracy_authority.csv",
+      "sha256": "7380143ec0473ef775b3ed535b679c4fa863f12ebc12efde1a532f9c644b31ae",
+      "rows": 12,
+      "paper_role": "Figure 8 particle-weighted accuracy at radius one"
+    },
+    {
+      "path": "04_discussion/02_normalized_radial_geometry/summarized_outputs/normalized_radial_profiles.csv",
+      "sha256": "b49b597596ae15aec0584727f2965016f3fb702c3005ac1168d2ad5ec5e71fe3",
+      "rows": 6200,
+      "paper_role": "Figure 9 rescaled radial response and Discussion"
+    },
+    {
+      "path": "04_discussion/02_normalized_radial_geometry/summarized_outputs/radial_phase_metrics.csv",
+      "sha256": "3ea2ef134fcbc3792f49c1f9c798ac6bac346105bec541a047499fa2f8c480c5",
+      "rows": 35,
+      "paper_role": "Discussion radial turning and hardening metrics"
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_radius_profiles.csv",
+      "sha256": "bc4ba37aef725c7330dba3dfb896a5abd88255bade410e2642ad855f50ba6dc8",
+      "rows": 14,
+      "paper_role": "Results reference-tilt check and Appendix D radius profiles"
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_summary.csv",
+      "sha256": "9834d5078316f2a03c12409fc9534f0183122f83e1ab84f6dbe593783ba6404d",
+      "rows": 12,
+      "paper_role": "Appendix D clean 0.417 and random-label 3.508 maxima"
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_random_minus_clean.csv",
+      "sha256": "7f0d99d5e03ab905bff98d3d679d2bdef65ead5932e3f77abbc4fd59646743e4",
+      "rows": 6,
+      "paper_role": "Appendix D paired clean/random contrast"
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_peak_contrast.csv",
+      "sha256": "867b906d1fb51322d3b2c8ed4436932a414f322c15b5e456efc2eb6ea3515592",
+      "rows": 3,
+      "paper_role": "Appendix D inward peak shift under randomized labels"
+    },
+    {
+      "path": "04_discussion/04_random_label_reentrance/summarized_outputs/label_noise_radial_signs.csv",
+      "sha256": "1d9d89b2ecfcabe5d1b8eaa592ef9570dd51f8bcd6d1b805583764138b2d6142",
+      "rows": 500,
+      "paper_role": "Results and Discussion label-noise derivative signs"
+    },
+    {
+      "path": "04_discussion/04_random_label_reentrance/summarized_outputs/reentrant_intervals.csv",
+      "sha256": "8d55eb465c646d1be0160786b5b69670a733b1756de0c8e02f53465146be3d5f",
+      "rows": 5,
+      "paper_role": "Results and Discussion negative-positive-negative intervals"
+    }
+  ]
+}

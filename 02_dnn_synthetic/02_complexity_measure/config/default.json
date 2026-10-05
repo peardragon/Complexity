@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "protocol_id": "synthetic_dataset_complexity_c_ms_v1",
+  "domain": "synthetic",
+  "dataset_coordinate": "data_beta",
+  "datasets_per_condition": 60,
+  "n_train": 512,
+  "measure": {
+    "id": "chance_normalized_multiscale_directed_knn_k22",
+    "neighbor_count": 22,
+    "neighbor_count_rule": "floor(sqrt(n_train - 1))",
+    "self_neighbor_excluded": true,
+    "rank_weights": "equal over cumulative directed-kNN disagreement C_k, k=1,...,22",
+    "chance_normalization": "q_D = [n^2 - sum_c n_c^2] / [n(n-1)]",
+    "formula": "C_MS = mean_{k=1,...,22} C_k(D) / q_D"
+  },
+  "output": "summarized_outputs/cms_by_dataset.csv",
+  "beta_values": [
+    0.05,
+    0.07,
+    0.09,
+    0.11,
+    0.13,
+    0.15,
+    0.17,
+    0.19,
+    0.21,
+    0.23,
+    0.25,
+    0.27,
+    0.29,
+    0.31,
+    0.33,
+    0.35,
+    0.37,
+    0.39
+  ],
+  "input_root": "../01_dataset/raw_outputs"
+}

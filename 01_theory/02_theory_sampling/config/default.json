@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "stage": "02_theory_sampling",
+  "run_name": "perceptron_pool_convergence_revised",
+  "method": "l2_matched_overlap_controlled_pool_smc",
+  "objective": {
+    "domain": "perceptron_theory",
+    "reference_measure": "hard_feasible_truncated_gaussian",
+    "reference_density": "exp(-||w_ref||^2/2) product_mu Theta(h_mu)",
+    "shell_energy": "CE_sum(w;D)+||w||^2/2",
+    "ce_reduction": "sum",
+    "beta": 1.0,
+    "lambda_ref": 1.0,
+    "lambda_shell": 1.0,
+    "dnn_h_0p01_applies": false
+  },
+  "problem": {
+    "alpha": 0.1,
+    "dimensions": [40, 80, 160, 320],
+    "datasets_per_dimension": 10,
+    "references_per_dataset": 10,
+    "radius_start": 0.15,
+    "radius_stop": 2.20,
+    "radius_step": 0.05,
+    "radius_count": 42
+  },
+  "pool_design": {
+    "split_count": 2,
+    "thermodynamic_total_particles": 32768,
+    "convergence_dimension": 320,
+    "convergence_total_particles": [2048, 4096, 8192, 16384, 32768],
+    "equal_split_required": true,
+    "deduplicate_identical_units": true,
+    "expected_thermodynamic_units": 16800,
+    "expected_convergence_units_before_dedup": 21000,
+    "expected_overlap_units": 4200,
+    "expected_unique_units": 33600
+  },
+  "smc": {
+    "target_step_overlap": 0.85,
+    "resample_pool_overlap": 0.85,
+    "max_temperature_events": 160,
+    "minimum_temperature_increment": 0.00005,
+    "bisection_iterations": 36,
+    "mh_sweeps_per_event": 2,
+    "move_kappa_factor": 80.0,
+    "direct_transition_first": true,
+    "mutation_after_every_event": true,
+    "systematic_resampling": true
+  },
+  "seeding": {
+    "scheme": "injective_mixed_radix_v1",
+    "base_seed": 202607280100000,
+    "keys": [
+      "dimension_index",
+      "dataset_id",
+      "reference_id",
+      "radius_index",
+      "particle_ladder_index",
+      "split_id"
+    ]
+  },
+  "artifacts": {
+    "task_manifest": "01_theory/02_theory_sampling/raw_outputs/manifests/sampling_schedule.jsonl",
+    "task_manifest_summary": "01_theory/02_theory_sampling/raw_outputs/manifests/sampling_schedule_summary.json",
+    "input_sha256_manifest": "01_theory/02_theory_sampling/raw_outputs/manifests/input_files.sha256",
+    "shard_output_directory": "01_theory/02_theory_sampling/raw_outputs/shell_pool",
+    "summary_output_directory": "01_theory/02_theory_sampling/summarized_outputs",
+    "default_shard_count": 336,
+    "scalar_outputs_only_by_default": true
+  },
+  "qc": {
+    "strict_reference_margin": true,
+    "max_split_logZ_per_dimension_difference": 0.006,
+    "minimum_observed_step_overlap": 0.80,
+    "require_smc_completion": true,
+    "require_direct_radial_derivative": true,
+    "finite_difference_is_diagnostic_only": true
+  }
+}

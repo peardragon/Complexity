@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "artifact_id": "synthetic_r1_weighted_accuracy_shell_beta_100_v1",
+  "method": "SMC-particle weighted training accuracy at r=1; split log-normalizer mixture, reference mean within dataset, equal-weight mean and sample-SE across 60 datasets",
+  "radius": 1.0,
+  "dataset_count": 60,
+  "references_per_dataset": 10,
+  "sealed_source_sha256": "fb625ffaac28baa17fe8617697c39ef1dcc58283f1c41fb78b48f232b4e95565",
+  "rows": [
+    {
+      "data_beta": 0.05,
+      "mean": 0.5983504055900307,
+      "se_across_datasets": 0.001297318069024946
+    },
+    {
+      "data_beta": 0.07,
+      "mean": 0.6060150264634232,
+      "se_across_datasets": 0.0014733684926511617
+    },
+    {
+      "data_beta": 0.09,
+      "mean": 0.6260924530503603,
+      "se_across_datasets": 0.0018962663200018724
+    },
+    {
+      "data_beta": 0.11,
+      "mean": 0.6499937233099478,
+      "se_across_datasets": 0.0022063951271358057
+    },
+    {
+      "data_beta": 0.13,
+      "mean": 0.6819455655292607,
+      "se_across_datasets": 0.002589959233253259
+    },
+    {
+      "data_beta": 0.15,
+      "mean": 0.7228863849003612,
+      "se_across_datasets": 0.0031888929814988635
+    },
+    {
+      "data_beta": 0.17,
+      "mean": 0.7797748196164224,
+      "se_across_datasets": 0.0031274700340396997
+    },
+    {
+      "data_beta": 0.19,
+      "mean": 0.8258322779204216,
+      "se_across_datasets": 0.0035712420880852176
+    },
+    {
+      "data_beta": 0.21,
+      "mean": 0.8767415681852009,
+      "se_across_datasets": 0.003633476266811487
+    },
+    {
+      "data_beta": 0.23,
+      "mean": 0.9065828749309333,
+      "se_across_datasets": 0.0024918110311003033
+    },
+    {
+      "data_beta": 0.25,
+      "mean": 0.9208291990792392,
+      "se_across_datasets": 0.0023856643420506088
+    },
+    {
+      "data_beta": 0.27,
+      "mean": 0.9357819255414409,
+      "se_across_datasets": 0.0019890136110553907
+    },
+    {
+      "data_beta": 0.29,
+      "mean": 0.9307607094311237,
+      "se_across_datasets": 0.0024069614874885612
+    },
+    {
+      "data_beta": 0.31,
+      "mean": 0.9331732895597604,
+      "se_across_datasets": 0.0026117933530462882
+    },
+    {
+      "data_beta": 0.33,
+      "mean": 0.9349301308352853,
+      "se_across_datasets": 0.0030204749514769307
+    },
+    {
+      "data_beta": 0.35,
+      "mean": 0.9336876014259677,
+      "se_across_datasets": 0.0024589360338613535
+    },
+    {
+      "data_beta": 0.37,
+      "mean": 0.9290947934716091,
+      "se_across_datasets": 0.0030606152078278175
+    },
+    {
+      "data_beta": 0.39,
+      "mean": 0.9274464316403915,
+      "se_across_datasets": 0.0027986344213964823
+    }
+  ]
+}

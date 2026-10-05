@@ -1,0 +1,439 @@
+{
+  "all_pair_count": 45,
+  "dataset_count": 10,
+  "dataset_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "metric": "C_MS",
+  "ranking": [
+    {
+      "C_MS": 0.2773336809696322,
+      "digit_a": 4,
+      "digit_b": 9,
+      "pair_id": "pair_4_9",
+      "rank": 1
+    },
+    {
+      "C_MS": 0.26642821344607803,
+      "digit_a": 7,
+      "digit_b": 9,
+      "pair_id": "pair_7_9",
+      "rank": 2
+    },
+    {
+      "C_MS": 0.265662993768245,
+      "digit_a": 5,
+      "digit_b": 8,
+      "pair_id": "pair_5_8",
+      "rank": 3
+    },
+    {
+      "C_MS": 0.26423256063413825,
+      "digit_a": 3,
+      "digit_b": 5,
+      "pair_id": "pair_3_5",
+      "rank": 4
+    },
+    {
+      "C_MS": 0.24412137964053268,
+      "digit_a": 3,
+      "digit_b": 8,
+      "pair_id": "pair_3_8",
+      "rank": 5
+    },
+    {
+      "C_MS": 0.19027685475006126,
+      "digit_a": 2,
+      "digit_b": 3,
+      "pair_id": "pair_2_3",
+      "rank": 6
+    },
+    {
+      "C_MS": 0.16954305120851343,
+      "digit_a": 2,
+      "digit_b": 8,
+      "pair_id": "pair_2_8",
+      "rank": 7
+    },
+    {
+      "C_MS": 0.11863785472760888,
+      "digit_a": 4,
+      "digit_b": 7,
+      "pair_id": "pair_4_7",
+      "rank": 8
+    },
+    {
+      "C_MS": 0.1167947412325743,
+      "digit_a": 5,
+      "digit_b": 9,
+      "pair_id": "pair_5_9",
+      "rank": 9
+    },
+    {
+      "C_MS": 0.1149592652272244,
+      "digit_a": 4,
+      "digit_b": 8,
+      "pair_id": "pair_4_8",
+      "rank": 10
+    },
+    {
+      "C_MS": 0.11455107163158607,
+      "digit_a": 8,
+      "digit_b": 9,
+      "pair_id": "pair_8_9",
+      "rank": 11
+    },
+    {
+      "C_MS": 0.11269312667713036,
+      "digit_a": 5,
+      "digit_b": 6,
+      "pair_id": "pair_5_6",
+      "rank": 12
+    },
+    {
+      "C_MS": 0.10019736621920525,
+      "digit_a": 2,
+      "digit_b": 7,
+      "pair_id": "pair_2_7",
+      "rank": 13
+    },
+    {
+      "C_MS": 0.09794439711482715,
+      "digit_a": 3,
+      "digit_b": 9,
+      "pair_id": "pair_3_9",
+      "rank": 14
+    },
+    {
+      "C_MS": 0.09667126610242957,
+      "digit_a": 0,
+      "digit_b": 8,
+      "pair_id": "pair_0_8",
+      "rank": 15
+    },
+    {
+      "C_MS": 0.0964635993428133,
+      "digit_a": 1,
+      "digit_b": 2,
+      "pair_id": "pair_1_2",
+      "rank": 16
+    },
+    {
+      "C_MS": 0.09571249112468119,
+      "digit_a": 4,
+      "digit_b": 5,
+      "pair_id": "pair_4_5",
+      "rank": 17
+    },
+    {
+      "C_MS": 0.09331405824809866,
+      "digit_a": 0,
+      "digit_b": 5,
+      "pair_id": "pair_0_5",
+      "rank": 18
+    },
+    {
+      "C_MS": 0.0928806007093144,
+      "digit_a": 2,
+      "digit_b": 6,
+      "pair_id": "pair_2_6",
+      "rank": 19
+    },
+    {
+      "C_MS": 0.09277527695654385,
+      "digit_a": 2,
+      "digit_b": 4,
+      "pair_id": "pair_2_4",
+      "rank": 20
+    },
+    {
+      "C_MS": 0.08485608599685648,
+      "digit_a": 0,
+      "digit_b": 2,
+      "pair_id": "pair_0_2",
+      "rank": 21
+    },
+    {
+      "C_MS": 0.08413817305701832,
+      "digit_a": 1,
+      "digit_b": 8,
+      "pair_id": "pair_1_8",
+      "rank": 22
+    },
+    {
+      "C_MS": 0.08098500796064452,
+      "digit_a": 0,
+      "digit_b": 6,
+      "pair_id": "pair_0_6",
+      "rank": 23
+    },
+    {
+      "C_MS": 0.07893562421603348,
+      "digit_a": 6,
+      "digit_b": 8,
+      "pair_id": "pair_6_8",
+      "rank": 24
+    },
+    {
+      "C_MS": 0.07621064771036654,
+      "digit_a": 2,
+      "digit_b": 9,
+      "pair_id": "pair_2_9",
+      "rank": 25
+    },
+    {
+      "C_MS": 0.07574202711552724,
+      "digit_a": 2,
+      "digit_b": 5,
+      "pair_id": "pair_2_5",
+      "rank": 26
+    },
+    {
+      "C_MS": 0.0741641306481862,
+      "digit_a": 3,
+      "digit_b": 7,
+      "pair_id": "pair_3_7",
+      "rank": 27
+    },
+    {
+      "C_MS": 0.07306415654177156,
+      "digit_a": 1,
+      "digit_b": 4,
+      "pair_id": "pair_1_4",
+      "rank": 28
+    },
+    {
+      "C_MS": 0.06947750042266784,
+      "digit_a": 7,
+      "digit_b": 8,
+      "pair_id": "pair_7_8",
+      "rank": 29
+    },
+    {
+      "C_MS": 0.06787158438430763,
+      "digit_a": 1,
+      "digit_b": 3,
+      "pair_id": "pair_1_3",
+      "rank": 30
+    },
+    {
+      "C_MS": 0.06421343669143686,
+      "digit_a": 0,
+      "digit_b": 3,
+      "pair_id": "pair_0_3",
+      "rank": 31
+    },
+    {
+      "C_MS": 0.06332373469756412,
+      "digit_a": 3,
+      "digit_b": 4,
+      "pair_id": "pair_3_4",
+      "rank": 32
+    },
+    {
+      "C_MS": 0.06017148159903933,
+      "digit_a": 4,
+      "digit_b": 6,
+      "pair_id": "pair_4_6",
+      "rank": 33
+    },
+    {
+      "C_MS": 0.05880122521913508,
+      "digit_a": 1,
+      "digit_b": 7,
+      "pair_id": "pair_1_7",
+      "rank": 34
+    },
+    {
+      "C_MS": 0.057535802394216615,
+      "digit_a": 5,
+      "digit_b": 7,
+      "pair_id": "pair_5_7",
+      "rank": 35
+    },
+    {
+      "C_MS": 0.05608131138659174,
+      "digit_a": 1,
+      "digit_b": 5,
+      "pair_id": "pair_1_5",
+      "rank": 36
+    },
+    {
+      "C_MS": 0.04202567964202274,
+      "digit_a": 1,
+      "digit_b": 6,
+      "pair_id": "pair_1_6",
+      "rank": 37
+    },
+    {
+      "C_MS": 0.04051921915722621,
+      "digit_a": 3,
+      "digit_b": 6,
+      "pair_id": "pair_3_6",
+      "rank": 38
+    },
+    {
+      "C_MS": 0.04013263436000513,
+      "digit_a": 1,
+      "digit_b": 9,
+      "pair_id": "pair_1_9",
+      "rank": 39
+    },
+    {
+      "C_MS": 0.036198102184771715,
+      "digit_a": 0,
+      "digit_b": 4,
+      "pair_id": "pair_0_4",
+      "rank": 40
+    },
+    {
+      "C_MS": 0.03542505992467554,
+      "digit_a": 0,
+      "digit_b": 9,
+      "pair_id": "pair_0_9",
+      "rank": 41
+    },
+    {
+      "C_MS": 0.02256685990132453,
+      "digit_a": 6,
+      "digit_b": 9,
+      "pair_id": "pair_6_9",
+      "rank": 42
+    },
+    {
+      "C_MS": 0.019338531536884536,
+      "digit_a": 6,
+      "digit_b": 7,
+      "pair_id": "pair_6_7",
+      "rank": 43
+    },
+    {
+      "C_MS": 0.019080804319513697,
+      "digit_a": 0,
+      "digit_b": 7,
+      "pair_id": "pair_0_7",
+      "rank": 44
+    },
+    {
+      "C_MS": 0.01326598759150222,
+      "digit_a": 0,
+      "digit_b": 1,
+      "pair_id": "pair_0_1",
+      "rank": 45
+    }
+  ],
+  "schema_version": "mnist.digit-pair-mean-ranking.v1",
+  "selected_pairs": [
+    {
+      "C_MS": 0.2773336809696322,
+      "digit_a": 4,
+      "digit_b": 9,
+      "pair_id": "pair_4_9",
+      "rank": 1
+    },
+    {
+      "C_MS": 0.24412137964053268,
+      "digit_a": 3,
+      "digit_b": 8,
+      "pair_id": "pair_3_8",
+      "rank": 5
+    },
+    {
+      "C_MS": 0.1167947412325743,
+      "digit_a": 5,
+      "digit_b": 9,
+      "pair_id": "pair_5_9",
+      "rank": 9
+    },
+    {
+      "C_MS": 0.10019736621920525,
+      "digit_a": 2,
+      "digit_b": 7,
+      "pair_id": "pair_2_7",
+      "rank": 13
+    },
+    {
+      "C_MS": 0.09571249112468119,
+      "digit_a": 4,
+      "digit_b": 5,
+      "pair_id": "pair_4_5",
+      "rank": 17
+    },
+    {
+      "C_MS": 0.08485608599685648,
+      "digit_a": 0,
+      "digit_b": 2,
+      "pair_id": "pair_0_2",
+      "rank": 21
+    },
+    {
+      "C_MS": 0.07621064771036654,
+      "digit_a": 2,
+      "digit_b": 9,
+      "pair_id": "pair_2_9",
+      "rank": 25
+    },
+    {
+      "C_MS": 0.06947750042266784,
+      "digit_a": 7,
+      "digit_b": 8,
+      "pair_id": "pair_7_8",
+      "rank": 29
+    },
+    {
+      "C_MS": 0.06017148159903933,
+      "digit_a": 4,
+      "digit_b": 6,
+      "pair_id": "pair_4_6",
+      "rank": 33
+    },
+    {
+      "C_MS": 0.04202567964202274,
+      "digit_a": 1,
+      "digit_b": 6,
+      "pair_id": "pair_1_6",
+      "rank": 37
+    },
+    {
+      "C_MS": 0.03542505992467554,
+      "digit_a": 0,
+      "digit_b": 9,
+      "pair_id": "pair_0_9",
+      "rank": 41
+    },
+    {
+      "C_MS": 0.01326598759150222,
+      "digit_a": 0,
+      "digit_b": 1,
+      "pair_id": "pair_0_1",
+      "rank": 45
+    }
+  ],
+  "selection_ranks_one_based": [
+    1,
+    5,
+    9,
+    13,
+    17,
+    21,
+    25,
+    29,
+    33,
+    37,
+    41,
+    45
+  ],
+  "tie_break": [
+    "digit_a_ascending",
+    "digit_b_ascending"
+  ]
+}

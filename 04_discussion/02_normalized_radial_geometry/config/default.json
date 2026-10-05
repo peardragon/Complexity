@@ -1,0 +1,21 @@
+{
+  "schema_version": "complexity.discussion.normalized_radial.v1",
+  "stage_id": "02_normalized_radial_geometry",
+  "input_stage": "01_frozen_inputs",
+  "canonical_profile_source_ids": [
+    "synthetic_energetic_profiles",
+    "label_noise_energetic_profiles",
+    "digit_pair_energetic_profiles"
+  ],
+  "definition": "h(r)=-g_E(r)/r",
+  "phase_rules": {
+    "baseline": "smallest available radius",
+    "peak": "largest condition-mean h on the measured grid",
+    "recovery": "first post-peak grid radius with h <= baseline h",
+    "positive_g_interval": "maximal consecutive grid rows with g_E > 0"
+  },
+  "outputs": [
+    "summarized_outputs/normalized_radial_profiles.csv",
+    "summarized_outputs/radial_phase_metrics.csv"
+  ]
+}

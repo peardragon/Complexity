@@ -1,0 +1,55 @@
+{
+  "schema_version": "complexity-revised.mnist.pair-freeze.v3-cms-mean10-ranked",
+  "selection_source": {
+    "dataset_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "split_seeds": [20260610, 20260611, 20260612, 20260613, 20260614, 20260615, 20260616, 20260617, 20260618, 20260619],
+    "aggregation": "arithmetic_mean",
+    "metric": "C_MS",
+    "all_pair_count": 45,
+    "replicas_per_pair": 10,
+    "policy": "rank_all_45_by_arithmetic_mean_C_MS_over_fixed_replicas_0_to_9",
+    "source_all45_csv_sha256": "d438abb8250fa79225c4337ce22387f46d076e574f6d6ed37d6c35e7d46f75d9",
+    "source_summary_csv_sha256": "4e0bb802e5af862d605e283d96188aa4f6a35f39ac946207c97947d153b50a55",
+    "source_selection_json_sha256": "594f0aa4101ef11843f3d0bb66d76ef09f5bb59891da41d7152fbc62dcaf4bfd",
+    "source_ranking_array_sha256_by_dataset": {
+      "dataset_000": "75974bdf40380017c2616e55270ad60eddcfa038c234fe0b0a176279f9aebca9",
+      "dataset_001": "c56622468c854da97bbb2f09ca59012e84b84e1f6b8e9f1b4a8b44294a5d4b12",
+      "dataset_002": "0c6e5a22f827b4b15b2bd20a42c4c0833a2c688a3060ac9d8973ec5769cbd226",
+      "dataset_003": "fe01f8efb16f984063ee82a168c2b0060d06f4f30677ff0570f617cccaf67773",
+      "dataset_004": "85c3830758bf9984c763a3f80c6030c4ec9be889e6d5a14b116a59fadd3576b3",
+      "dataset_005": "9d63d962926be53cd16a4ded5fb2f596943c469f6c90bec281811f7226e6298f",
+      "dataset_006": "3b96777a9443d3c5f13412879bebd488bd49829cc9813d76960c096a15ceb2a0",
+      "dataset_007": "c090d94406895d98c1207154d1c9189e38a35e52ed329fbcf3b02d277b93dd8b",
+      "dataset_008": "08402f102ef951840de039bbf688e6c28c4214dbe7b52383d6b7e2b65ee0999f",
+      "dataset_009": "0923eb2ff1e0865a517d2197d554c228c9c16cfa94a426624280e75812ec9056"
+    },
+    "selection_payload_sha256": "84f0860a312c868104bb30d42e5363a874ff64f89703285fbdab4299a14367e0"
+  },
+  "complexity_measure": {
+    "name": "chance_normalized_multiscale_knn_label_disagreement",
+    "symbol": "C_MS",
+    "neighbor_audit_max": 64,
+    "selected_scales": 22,
+    "formula": "mean_{k=1..22}[(1/q)(1/k)sum_{j=1..k} mean_i 1(y_i != y_N_j(i))]",
+    "chance_normalization": "q=(n^2-sum_c n_c^2)/(n(n-1))"
+  },
+  "complexity_sort": {
+    "primary": "C_MS_selection_score_descending",
+    "tie_break": ["digit_a_ascending", "digit_b_ascending"]
+  },
+  "selected_ranks_one_based": [1, 5, 9, 13, 17, 21, 25, 29, 33, 37, 41, 45],
+  "expected_selected_pairs": [
+    {"rank": 1, "digit_a": 4, "digit_b": 9, "pair_id": "pair_4_9", "mean_complexity": 0.2773336809696321, "C_MS_selection_score": 0.2773336809696321},
+    {"rank": 5, "digit_a": 3, "digit_b": 8, "pair_id": "pair_3_8", "mean_complexity": 0.24412137964053268, "C_MS_selection_score": 0.24412137964053268},
+    {"rank": 9, "digit_a": 5, "digit_b": 9, "pair_id": "pair_5_9", "mean_complexity": 0.1167947412325743, "C_MS_selection_score": 0.1167947412325743},
+    {"rank": 13, "digit_a": 2, "digit_b": 7, "pair_id": "pair_2_7", "mean_complexity": 0.10019736621920525, "C_MS_selection_score": 0.10019736621920525},
+    {"rank": 17, "digit_a": 4, "digit_b": 5, "pair_id": "pair_4_5", "mean_complexity": 0.09571249112468119, "C_MS_selection_score": 0.09571249112468119},
+    {"rank": 21, "digit_a": 0, "digit_b": 2, "pair_id": "pair_0_2", "mean_complexity": 0.08485608599685648, "C_MS_selection_score": 0.08485608599685648},
+    {"rank": 25, "digit_a": 2, "digit_b": 9, "pair_id": "pair_2_9", "mean_complexity": 0.07621064771036654, "C_MS_selection_score": 0.07621064771036654},
+    {"rank": 29, "digit_a": 7, "digit_b": 8, "pair_id": "pair_7_8", "mean_complexity": 0.06947750042266784, "C_MS_selection_score": 0.06947750042266784},
+    {"rank": 33, "digit_a": 4, "digit_b": 6, "pair_id": "pair_4_6", "mean_complexity": 0.06017148159903933, "C_MS_selection_score": 0.06017148159903933},
+    {"rank": 37, "digit_a": 1, "digit_b": 6, "pair_id": "pair_1_6", "mean_complexity": 0.04202567964202274, "C_MS_selection_score": 0.04202567964202274},
+    {"rank": 41, "digit_a": 0, "digit_b": 9, "pair_id": "pair_0_9", "mean_complexity": 0.03542505992467554, "C_MS_selection_score": 0.03542505992467554},
+    {"rank": 45, "digit_a": 0, "digit_b": 1, "pair_id": "pair_0_1", "mean_complexity": 0.013265987591502224, "C_MS_selection_score": 0.013265987591502224}
+  ]
+}

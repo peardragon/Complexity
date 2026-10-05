@@ -1,0 +1,11 @@
+# Preserve paper inputs and executed notebooks byte-for-byte across checkout.
+# Ordinary Git objects; no LFS filter and no line-ending conversion.
+* -text
+
+# CSV's original CRLF is part of the frozen numerical snapshot.
+*.csv whitespace=cr-at-eol
+# Exported assets are inspected visually, not as generated text diffs.
+*.pdf -diff
+*.png -diff
+*.svg -diff
+*.npz -diff

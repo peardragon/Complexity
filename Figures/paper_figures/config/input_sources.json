@@ -1,0 +1,93 @@
+{
+  "schema_version": "complexity-paper-figure-input-map-v1",
+  "sources": [
+    {
+      "staged": "figure_inputs/static_assets/fig01_dataset_to_landscape.png",
+      "source": "Figures/paper_figures/figure_inputs/static_assets/fig01_dataset_to_landscape.png"
+    },
+    {
+      "staged": "figure_inputs/theory/phi_by_analytic_solution_alpha0p1.csv",
+      "source": "01_theory/01_theory_analytic/summarized_outputs/phi_by_analytic_solution_alpha0p1.csv"
+    },
+    {
+      "staged": "figure_inputs/theory/phi_by_sampling.csv",
+      "source": "01_theory/02_theory_sampling/summarized_outputs/phi_by_sampling.csv"
+    },
+    {
+      "staged": "figure_inputs/synthetic/cms_by_dataset.csv",
+      "source": "02_dnn_synthetic/02_complexity_measure/summarized_outputs/cms_by_dataset.csv"
+    },
+    {
+      "staged": "figure_inputs/synthetic/energetic_profiles.csv",
+      "source": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv"
+    },
+    {
+      "staged": "figure_inputs/synthetic/condition_metrics.csv",
+      "source": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/condition_metrics.csv"
+    },
+    {
+      "staged": "figure_inputs/synthetic/dataset_000/data_beta_0p05.npz",
+      "source": "02_dnn_synthetic/01_dataset/raw_outputs/data_beta_0p05/dataset_000/dataset.npz"
+    },
+    {
+      "staged": "figure_inputs/synthetic/dataset_000/data_beta_0p15.npz",
+      "source": "02_dnn_synthetic/01_dataset/raw_outputs/data_beta_0p15/dataset_000/dataset.npz"
+    },
+    {
+      "staged": "figure_inputs/synthetic/dataset_000/data_beta_0p27.npz",
+      "source": "02_dnn_synthetic/01_dataset/raw_outputs/data_beta_0p27/dataset_000/dataset.npz"
+    },
+    {
+      "staged": "figure_inputs/synthetic/dataset_000/data_beta_0p39.npz",
+      "source": "02_dnn_synthetic/01_dataset/raw_outputs/data_beta_0p39/dataset_000/dataset.npz"
+    },
+    {
+      "staged": "figure_inputs/mnist_label_noise/cms_by_dataset.csv",
+      "source": "03_dnn_mnist/label_noise_sweep/02_complexity_measure/summarized_outputs/cms_by_dataset.csv"
+    },
+    {
+      "staged": "figure_inputs/mnist_label_noise/energetic_profiles.csv",
+      "source": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv"
+    },
+    {
+      "staged": "figure_inputs/mnist_label_noise/condition_metrics.csv",
+      "source": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/condition_metrics.csv"
+    },
+    {
+      "staged": "figure_inputs/mnist_digit_pair/cms_by_dataset.csv",
+      "source": "03_dnn_mnist/digit_pairwise_complexity/02_complexity_measure/summarized_outputs/cms_by_dataset.csv"
+    },
+    {
+      "staged": "figure_inputs/mnist_digit_pair/energetic_profiles.csv",
+      "source": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv"
+    },
+    {
+      "staged": "figure_inputs/mnist_digit_pair/condition_metrics.csv",
+      "source": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/condition_metrics.csv"
+    },
+    {
+      "staged": "figure_inputs/mnist_digit_pair/frozen_pair_manifest.json",
+      "source": "03_dnn_mnist/digit_pairwise_complexity/02_complexity_measure/config/frozen_pair_manifest.json"
+    },
+    {
+      "staged": "figure_inputs/static_assets/label_noise_eta_0p0_composed.pdf",
+      "source": "Figures/paper_figures/figure_inputs/static_assets/label_noise_eta_0p0_composed.pdf"
+    },
+    {
+      "staged": "figure_inputs/static_assets/label_noise_eta_0p5_composed.pdf",
+      "source": "Figures/paper_figures/figure_inputs/static_assets/label_noise_eta_0p5_composed.pdf"
+    },
+    {
+      "staged": "figure_inputs/static_assets/digit_pair_lowest_complexity_pair_0_1_composed.pdf",
+      "source": "Figures/paper_figures/figure_inputs/static_assets/digit_pair_lowest_complexity_pair_0_1_composed.pdf"
+    },
+    {
+      "staged": "figure_inputs/static_assets/digit_pair_highest_complexity_pair_4_9_composed.pdf",
+      "source": "Figures/paper_figures/figure_inputs/static_assets/digit_pair_highest_complexity_pair_4_9_composed.pdf"
+    },
+    {
+      "staged": "figure_inputs/discussion/normalized_radial_profiles.csv",
+      "source": "04_discussion/02_normalized_radial_geometry/summarized_outputs/normalized_radial_profiles.csv"
+    }
+  ]
+}

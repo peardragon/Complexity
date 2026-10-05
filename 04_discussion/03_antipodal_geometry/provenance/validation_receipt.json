@@ -1,0 +1,68 @@
+{
+  "checks": {
+    "adaptation_only": true,
+    "near_radius_clean_positive_dataset_count": 10,
+    "near_radius_random_minus_clean_positive_dataset_count": 10,
+    "near_radius_random_positive_dataset_count": 10,
+    "new_shell_smc": false,
+    "new_training": false,
+    "paper_facing_inputs_are_vendored_within_stage": true
+  },
+  "code": [
+    {
+      "path": "04_discussion/src/utils/discussion_pipeline.py",
+      "rows": null
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/src/make_summarized_outputs.py",
+      "rows": null
+    }
+  ],
+  "config": {
+    "path": "04_discussion/03_antipodal_geometry/config/default.json",
+    "rows": null
+  },
+  "inputs": [
+    {
+      "path": "04_discussion/01_frozen_inputs/summarized_outputs/input_inventory.csv",
+      "rows": 7
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_radius_profiles.csv",
+      "rows": 14
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_summary.csv",
+      "rows": 12
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_random_minus_clean.csv",
+      "rows": 6
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_peak_contrast.csv",
+      "rows": 3
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04_discussion/03_antipodal_geometry/summarized_outputs/matched_antipodal_profiles.csv",
+      "rows": 14
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/summarized_outputs/matched_antipodal_near_radius_summary.csv",
+      "rows": 2
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/summarized_outputs/matched_antipodal_random_minus_clean.csv",
+      "rows": 1
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/summarized_outputs/matched_antipodal_peak_contrast.csv",
+      "rows": 3
+    }
+  ],
+  "post_hoc_only": true,
+  "schema_version": "complexity.discussion.stage_receipt.v1",
+  "stage_id": "03_antipodal_geometry"
+}

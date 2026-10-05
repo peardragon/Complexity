@@ -1,0 +1,20 @@
+{
+  "schema_version": "mnist.complexity-summary.v1",
+  "protocol": "label_noise_sweep",
+  "dataset_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "n_train": 512,
+  "complexity": {
+    "selected_scales": 22,
+    "neighbor_audit_max": 64,
+    "finite_range": [0.0, 2.0]
+  },
+  "conditions": [
+    {"condition": "noise_eta_0p00", "noise_eta": 0.0},
+    {"condition": "noise_eta_0p05", "noise_eta": 0.05},
+    {"condition": "noise_eta_0p15", "noise_eta": 0.15},
+    {"condition": "noise_eta_0p25", "noise_eta": 0.25},
+    {"condition": "noise_eta_0p50", "noise_eta": 0.5}
+  ],
+  "paths": {"dataset_root": "01_dataset/raw_outputs/datasets"},
+  "outputs": {"cms_by_dataset": "summarized_outputs/cms_by_dataset.csv"}
+}

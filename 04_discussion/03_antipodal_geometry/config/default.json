@@ -1,0 +1,52 @@
+{
+  "schema_version": "complexity.discussion.antipodal.v1",
+  "stage_id": "03_antipodal_geometry",
+  "input_stage": "01_frozen_inputs",
+  "source_study": "arxiv_2608.22361v1_appendix_d",
+  "source_ids": [
+    "study22_fresh_label_K_profiles",
+    "study22_fresh_label_K_summary",
+    "study22_fresh_label_K_random_minus_clean",
+    "study22_fresh_label_K_peak_contrast"
+  ],
+  "design": {
+    "new_training": false,
+    "new_shell_smc": false,
+    "objective_evaluations_on_retained_references": true,
+    "datasets_per_condition": 10,
+    "references_per_dataset": 10,
+    "matched_antipodal_directions_per_reference": 256,
+    "conditions": [
+      "noise_eta_0p00",
+      "noise_eta_0p50"
+    ]
+  },
+  "near_radius_contrast": {
+    "baseline_radius": 0.01,
+    "comparison_radius": 0.03
+  },
+  "outputs": [
+    "summarized_outputs/matched_antipodal_profiles.csv",
+    "summarized_outputs/matched_antipodal_near_radius_summary.csv",
+    "summarized_outputs/matched_antipodal_random_minus_clean.csv",
+    "summarized_outputs/matched_antipodal_peak_contrast.csv"
+  ],
+  "evaluation": {
+    "parameter_count": 2461,
+    "shell_inverse_temperature": 100.0,
+    "regularization_coefficient_after_shell_scaling": 1.0,
+    "radii": [
+      0.01,
+      0.03,
+      0.07,
+      0.1,
+      0.12,
+      0.2,
+      0.4
+    ],
+    "base_seed": 2026082201,
+    "dataset_seed_stride": 1000,
+    "directions": 256,
+    "chunk_size": 64
+  }
+}

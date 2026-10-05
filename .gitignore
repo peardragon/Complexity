@@ -1,0 +1,98 @@
+# Release roots
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/requirements.txt
+!/CITATION.cff
+!/RELEASE_MANIFEST.json
+!/01_theory/
+!/02_dnn_synthetic/
+!/03_dnn_mnist/
+!/04_discussion/
+!/Figures/
+
+# Raw or recomputable experiment payloads
+**/raw_outputs/
+**/raw_datasets/
+**/sample_payloads/
+**/transfer_logs/
+**/source_cache/
+**/openml_cache/
+
+# Binary datasets, reference states, and model checkpoints
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.arrow
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+
+# Small inputs used by the paper figure notebook
+!/Figures/paper_figures/figure_inputs/synthetic/dataset_000/data_beta_0p05.npz
+!/Figures/paper_figures/figure_inputs/synthetic/dataset_000/data_beta_0p15.npz
+!/Figures/paper_figures/figure_inputs/synthetic/dataset_000/data_beta_0p27.npz
+!/Figures/paper_figures/figure_inputs/synthetic/dataset_000/data_beta_0p39.npz
+
+# Runtime state and generated worker shards
+**/run_state/
+**/execution_state/
+**/shards/
+**/sampling_shards/
+*.jsonl.gz
+**/raw/
+
+# Local archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+*.tar.xz
+*.7z
+
+# Keep notebooks, including executed notebooks with embedded figures.
+!/01_theory/**/*.ipynb
+!/02_dnn_synthetic/**/*.ipynb
+!/03_dnn_mnist/**/*.ipynb
+!/04_discussion/**/*.ipynb
+!/Figures/**/*.ipynb
+
+# Python and notebook caches
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.ipynb_checkpoints/
+
+# Local environments, build products, and editor state
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+
+# Transient process state
+*.log
+*.tmp
+*.lock
+*.pid
+*.sock
+
+# Local credentials and machine-specific overrides
+.env
+.env.*
+!.env.example

@@ -1,0 +1,64 @@
+{
+  "checks": {
+    "all_sources_exist": true,
+    "source_count": 7,
+    "upstream_files_modified": 0
+  },
+  "code": [
+    {
+      "path": "04_discussion/src/utils/discussion_pipeline.py",
+      "rows": null
+    },
+    {
+      "path": "04_discussion/01_frozen_inputs/src/make_summarized_outputs.py",
+      "rows": null
+    }
+  ],
+  "config": {
+    "path": "04_discussion/01_frozen_inputs/config/default.json",
+    "rows": null
+  },
+  "inputs": [
+    {
+      "path": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 4500
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 500
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 1200
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_radius_profiles.csv",
+      "rows": 14
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_summary.csv",
+      "rows": 12
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_random_minus_clean.csv",
+      "rows": 6
+    },
+    {
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_peak_contrast.csv",
+      "rows": 3
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04_discussion/01_frozen_inputs/summarized_outputs/input_inventory.csv",
+      "rows": 7
+    },
+    {
+      "path": "04_discussion/01_frozen_inputs/summarized_outputs/input_receipt.json",
+      "rows": null
+    }
+  ],
+  "post_hoc_only": true,
+  "schema_version": "complexity.discussion.stage_receipt.v1",
+  "stage_id": "01_frozen_inputs"
+}

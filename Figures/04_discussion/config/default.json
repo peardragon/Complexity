@@ -1,0 +1,6 @@
+{
+  "formats": ["pdf", "png", "svg"],
+  "dpi": 300,
+  "antipodal_radius_limits": [0.0, 0.42],
+  "reentrance_radius_limits": [0.01, 1.0]
+}

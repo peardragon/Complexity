@@ -1,0 +1,29 @@
+{
+  "schema_version": "mnist.proxy-local-entropy-summary.v1",
+  "protocol": "digit_pairwise_sweep",
+  "parameter_count": 2461,
+  "dataset_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "references_per_dataset": 10,
+  "scale_id": "shell_beta_100",
+  "shell_inv_temp_beta": 100.0,
+  "radius_grid": {
+    "start": 0.01,
+    "stop": 1.0,
+    "count": 100,
+    "decimals": 2
+  },
+  "pair_selection": {"frozen_manifest": "config/frozen_pair_manifest.json"},
+  "aggregation": {
+    "order": ["reference", "dataset"],
+    "uncertainty": "dataset_sem",
+    "derivative": "direct_autograd"
+  },
+  "paths": {
+    "sampling_root": "04_sampling/raw_outputs/shell_beta_100",
+    "accuracy_authority": "05_proxy_local_entropy/summarized_outputs/r1_weighted_accuracy.json"
+  },
+  "outputs": {
+    "energetic_profiles": "summarized_outputs/energetic_profiles.csv",
+    "condition_metrics": "summarized_outputs/condition_metrics.csv"
+  }
+}

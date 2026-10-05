@@ -1,0 +1,58 @@
+{
+  "aggregation_order": "SMC-particle-weighted, split-logZ-mixture, reference-mean-within-dataset, equal-dataset-mean-and-SE",
+  "conditions": {
+    "pair_0_1": {
+      "mean": 0.9787974354252228,
+      "se_across_datasets": 0.0004915751200777466
+    },
+    "pair_0_2": {
+      "mean": 0.95091458427212,
+      "se_across_datasets": 0.0008771561291343028
+    },
+    "pair_0_9": {
+      "mean": 0.9667125542465197,
+      "se_across_datasets": 0.0009819715925750907
+    },
+    "pair_1_6": {
+      "mean": 0.9658676182667566,
+      "se_across_datasets": 0.0009211414815432959
+    },
+    "pair_2_7": {
+      "mean": 0.9506270320795613,
+      "se_across_datasets": 0.0010278022125550742
+    },
+    "pair_2_9": {
+      "mean": 0.9534547055409941,
+      "se_across_datasets": 0.0010630481092218757
+    },
+    "pair_3_8": {
+      "mean": 0.9024750450264843,
+      "se_across_datasets": 0.0022265096873694133
+    },
+    "pair_4_5": {
+      "mean": 0.9363718481183365,
+      "se_across_datasets": 0.0011388127341671903
+    },
+    "pair_4_6": {
+      "mean": 0.9518526855736098,
+      "se_across_datasets": 0.0017222881947142608
+    },
+    "pair_4_9": {
+      "mean": 0.8930789942874406,
+      "se_across_datasets": 0.0029701090337086013
+    },
+    "pair_5_9": {
+      "mean": 0.9416085904337181,
+      "se_across_datasets": 0.0022209047167099454
+    },
+    "pair_7_8": {
+      "mean": 0.9503022140982266,
+      "se_across_datasets": 0.0011961372226784765
+    }
+  },
+  "dataset_count": 10,
+  "radius": 1.0,
+  "references_per_dataset": 10,
+  "scale_id": "shell_beta_100",
+  "schema_version": "complexity-revised.mnist.r1-weighted-accuracy-seal.v1"
+}

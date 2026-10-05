@@ -1,0 +1,53 @@
+{
+  "schema_version": "complexity-paper-figure-style-v1",
+  "active_page_profile": "aps_revtex_a4",
+  "units": {
+    "tex_points_per_inch": 72.27,
+    "millimetres_per_inch": 25.4
+  },
+  "page_profiles": {
+    "aps_revtex_letter": {
+      "description": "Dimensions measured from the current RevTeX manuscript without the a4paper option.",
+      "paper_width_tex_pt": 614.295,
+      "paper_width_mm": 215.9,
+      "text_width_tex_pt": 510.0,
+      "one_column_width_tex_pt": 246.0,
+      "column_separation_tex_pt": 18.0
+    },
+    "aps_revtex_a4": {
+      "description": "A4 page width with the RevTeX content widths used by the manuscript.",
+      "paper_width_tex_pt": 597.50787,
+      "paper_width_mm": 210.0,
+      "text_width_tex_pt": 510.0,
+      "one_column_width_tex_pt": 246.0,
+      "column_separation_tex_pt": 18.0
+    }
+  },
+  "typography": {
+    "font_family": "DejaVu Sans",
+    "base_font_size_pt": 8.0,
+    "axes_label_size_pt": 8.4,
+    "axes_title_size_pt": 8.5,
+    "tick_label_size_pt": 7.4,
+    "legend_size_pt": 7.1,
+    "annotation_size_pt": 6.7,
+    "panel_label_size_pt": 8.5,
+    "mathtext_fontset": "dejavusans"
+  },
+  "strokes": {
+    "axes_line_width_pt": 0.75,
+    "line_width_pt": 1.25,
+    "minor_line_width_pt": 0.65,
+    "grid_line_width_pt": 0.45,
+    "marker_edge_width_pt": 0.7,
+    "errorbar_line_width_pt": 0.75
+  },
+  "export": {
+    "formats": ["pdf", "png", "svg"],
+    "png_dpi": 400,
+    "transparent": false,
+    "pdf_fonttype": 42,
+    "ps_fonttype": 42,
+    "svg_fonttype": "none"
+  }
+}

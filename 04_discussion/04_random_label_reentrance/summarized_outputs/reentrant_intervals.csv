@@ -1,0 +1,6 @@
+domain,condition,condition_order,noise_eta,g_sign_sequence,interval_index,entry_zero_crossing_linear,first_positive_grid_radius,last_positive_grid_radius,exit_zero_crossing_linear,positive_grid_count,max_g_in_interval,max_g_radius
+mnist_label_noise,noise_eta_0p00,0,0.0,negative,,,,,,0,,
+mnist_label_noise,noise_eta_0p05,1,0.05,negative,,,,,,0,,
+mnist_label_noise,noise_eta_0p15,2,0.15,negative,,,,,,0,,
+mnist_label_noise,noise_eta_0p25,3,0.25,negative/positive/negative,0,0.40714607577752654,0.41,0.61,0.6120229942869326,21,0.007610984555738059,0.46
+mnist_label_noise,noise_eta_0p50,4,0.5,negative/positive/negative,0,0.359136762677336,0.36,0.71,0.7126470336612964,36,0.02286018759569667,0.45

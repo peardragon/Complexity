@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper."
+title: "Dataset Complexity Shapes Finite-Distance Loss Geometry in Neural Networks"
+type: software
+authors:
+  - family-names: Bae
+    given-names: Jaeyong
+  - family-names: Jeong
+    given-names: Hawoong
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2608.22361
+url: "https://arxiv.org/abs/2608.22361v1"

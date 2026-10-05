@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "protocol_id": "synthetic_shell_beta_100_full_resolution_summary_v1",
+  "domain": "synthetic",
+  "dataset_coordinate": "data_beta",
+  "shell_inv_temp_beta": 100.0,
+  "selection": {
+    "conditions": 18,
+    "datasets_per_condition": 60,
+    "references_per_dataset": 10
+  },
+  "radius_grid": {
+    "start": 0.01,
+    "stop": 2.5,
+    "step": 0.01,
+    "count": 250,
+    "baseline_radius": 0.01,
+    "raw_passes": [
+      "odd_radius",
+      "even_radius"
+    ]
+  },
+  "aggregation": {
+    "order": [
+      "reference",
+      "dataset"
+    ],
+    "uncertainty": "dataset_sem",
+    "derivative": "direct_autograd",
+    "atv_max_radius": 1.0
+  },
+  "outputs": [
+    "summarized_outputs/energetic_profiles.csv",
+    "summarized_outputs/condition_metrics.csv"
+  ],
+  "beta_values": [
+    0.05,
+    0.07,
+    0.09,
+    0.11,
+    0.13,
+    0.15,
+    0.17,
+    0.19,
+    0.21,
+    0.23,
+    0.25,
+    0.27,
+    0.29,
+    0.31,
+    0.33,
+    0.35,
+    0.37,
+    0.39
+  ],
+  "parameter_count": 2545
+}

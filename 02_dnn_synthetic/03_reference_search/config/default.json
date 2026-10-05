@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "protocol_id": "synthetic_shell_beta_100_full_radius_production_v1",
+  "dataset": {
+    "generator_id": "ws_ising_balanced_v2_fresh_only",
+    "beta_values": [
+      0.05,
+      0.07,
+      0.09,
+      0.11,
+      0.13,
+      0.15,
+      0.17,
+      0.19,
+      0.21,
+      0.23,
+      0.25,
+      0.27,
+      0.29,
+      0.31,
+      0.33,
+      0.35,
+      0.37,
+      0.39
+    ],
+    "datasets_per_beta": 60,
+    "n_train": 512,
+    "input_dim": 2,
+    "k_graph": 10,
+    "ising_sweeps": 2000,
+    "normalization": "per_dataset_feature_zscore",
+    "label_values": [
+      -1,
+      1
+    ],
+    "class_count_each": 256,
+    "reuse_old_datasets": false,
+    "replacement_enabled": false
+  },
+  "model": {
+    "architecture": "2-48-48-1",
+    "input_dim": 2,
+    "hidden_widths": [
+      48,
+      48
+    ],
+    "output_dim": 1,
+    "activation": "tanh",
+    "parameter_count": 2545,
+    "include_biases_in_regularizer": true,
+    "parameter_order": [
+      "W1",
+      "b1",
+      "W2",
+      "b2",
+      "W3",
+      "b3"
+    ]
+  },
+  "objective": {
+    "contract_path": "config/objective.json",
+    "expected_objective_id": "dnn_binary_logistic_ce_mean_l2_shell_beta_100_v1",
+    "shell_inv_temp_beta": 100.0,
+    "effective_gamma_ce": 100.0,
+    "effective_lambda_reg": 1.0,
+    "multiply_shell_beta_inside_sampler": false
+  },
+  "reference_search": {
+    "references_per_dataset": 10,
+    "max_attempts_per_dataset": 200,
+    "attempt_batch_size": 64,
+    "device": "cuda",
+    "dtype": "float64",
+    "replay_scalar_abs_tolerance": 1e-09,
+    "endpoint_duplicate_relative_l2_tolerance": 1e-10,
+    "initialization": {
+      "name": "scaled_normal_weights_zero_biases",
+      "weight_scale_multiplier": 1.0,
+      "base_scale": 0.2
+    },
+    "adam": {
+      "learning_rate": 0.001,
+      "max_epochs": 6000,
+      "min_epochs": 500,
+      "patience": 500,
+      "relative_improvement_tolerance": 1e-10,
+      "gradient_clip_norm": 10.0,
+      "beta1": 0.9,
+      "beta2": 0.999,
+      "epsilon": 1e-08
+    },
+    "lbfgs": {
+      "max_iterations": 3000,
+      "max_line_search_iterations": 40,
+      "gradient_tolerance": 1e-10,
+      "function_tolerance": 1e-15,
+      "history_size": 100,
+      "diagnostic_gradient_norm_threshold": 1e-06
+    },
+    "exact_solution": {
+      "wrong_definition": "signed_margin <= 0",
+      "required_wrong_count": 0,
+      "required_min_signed_margin_strictly_greater_than": 0.0,
+      "evaluate_after_optimizer_update": true,
+      "full_training_replay": true
+    },
+    "stop_on_first_exact": true,
+    "convergence_is_diagnostic_only": true,
+    "warm_start_from_existing_reference": false,
+    "alternate_objective_rescue": false,
+    "historical_import": false,
+    "replacement_enabled": false
+  },
+  "shell": {
+    "radii": {
+      "start": 0.01,
+      "stop": 2.5,
+      "step": 0.01,
+      "count": 250,
+      "baseline_r0": 0.01
+    },
+    "execution": {
+      "pass_order": [
+        "odd",
+        "even"
+      ],
+      "radii_per_pass": 125,
+      "explicit_shell_pass_required": true
+    },
+    "particles": {
+      "total": 1024,
+      "independent_splits": 2,
+      "per_split": 512
+    },
+    "tempering": {
+      "step_overlap_threshold": 0.75,
+      "pool_overlap_threshold": 0.75,
+      "direct_transition_first": true,
+      "bisection_iterations": 32,
+      "minimum_temperature_increment": 0.0001,
+      "maximum_temperature_events": 120
+    },
+    "mutation": {
+      "proposal": "symmetric_local_vmf_random_walk",
+      "sweeps_after_every_temperature_event": 1,
+      "move_kappa_factor_times_parameter_count": 80.0,
+      "also_mutate_after_final_transition": true
+    },
+    "engine": {
+      "id": "cuda_resident_two_split_c2_v1",
+      "resident_directions": true,
+      "combine_independent_splits": true,
+      "combined_particle_batch_size": 1024,
+      "direction_dtype": "float64",
+      "rng": {
+        "scheme_id": "domain_separated_three_stream_v1",
+        "namespace": "complexity_revised.synthetic_shell.resident_c2_v1",
+        "seed_derivation": "shared.provenance.stable_seed_v1_bits63",
+        "axial": "numpy_pcg64_wood_beta_rejection_only",
+        "tangent": "torch_device_generator_float64_normal_only",
+        "decision": "numpy_pcg64_systematic_resampling_and_mh_uniform_only"
+      }
+    },
+    "derivative": {
+      "method": "direct_autograd_radial_score",
+      "finite_difference_fallback": false,
+      "store_split_values": true,
+      "store_ce_and_l2_components": true,
+      "ce_replay_max_abs_tolerance": 5e-05,
+      "split_dlogz_per_parameter_acceptance_gate": false
+    },
+    "evaluation": {
+      "device": "cuda",
+      "dtype": "float32",
+      "particle_chunk_size": 1024,
+      "single_forward_ce": true,
+      "resident_dataset_tensors": true,
+      "deterministic_algorithms": true,
+      "cudnn_deterministic": true,
+      "cudnn_benchmark": false,
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "float32_matmul_precision": "highest"
+    },
+    "output": {
+      "units_per_atomic_gzip_jsonl_shard": 1250,
+      "atomic_shards_per_dataset": 2,
+      "store_particle_arrays_by_default": false
+    }
+  },
+  "seeds": {
+    "scheme": "injective_stage_block_mixed_radix_uint63_v1",
+    "global_seed": 2026072801,
+    "coordinate_universe_datasets_per_beta": 90
+  },
+  "expected_counts": {
+    "betas": 18,
+    "datasets": 1080,
+    "selected_references": 10800,
+    "radii": 250,
+    "shell_units": 2700000
+  }
+}

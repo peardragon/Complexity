@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "all_condition_means_have_positive_hardening_amplitude": true,
+    "canonical_arxiv_v1_profiles_used_directly": true,
+    "condition_count": 35,
+    "h_definition_checked": true,
+    "profile_row_count": 6200
+  },
+  "code": [
+    {
+      "path": "04_discussion/src/utils/discussion_pipeline.py",
+      "rows": null
+    },
+    {
+      "path": "04_discussion/02_normalized_radial_geometry/src/make_summarized_outputs.py",
+      "rows": null
+    }
+  ],
+  "config": {
+    "path": "04_discussion/02_normalized_radial_geometry/config/default.json",
+    "rows": null
+  },
+  "inputs": [
+    {
+      "path": "04_discussion/01_frozen_inputs/summarized_outputs/input_inventory.csv",
+      "rows": 7
+    },
+    {
+      "path": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 4500
+    },
+    {
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 500
+    },
+    {
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "rows": 1200
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04_discussion/02_normalized_radial_geometry/summarized_outputs/normalized_radial_profiles.csv",
+      "rows": 6200
+    },
+    {
+      "path": "04_discussion/02_normalized_radial_geometry/summarized_outputs/radial_phase_metrics.csv",
+      "rows": 35
+    }
+  ],
+  "post_hoc_only": true,
+  "schema_version": "complexity.discussion.stage_receipt.v1",
+  "stage_id": "02_normalized_radial_geometry"
+}

@@ -1,0 +1,253 @@
+{
+  "schema_version": "complexity-revised.mnist.phase1.v4-cms-mean10-ranked",
+  "protocol": "digit_pairwise_sweep",
+  "thermodynamic_scale": {
+    "scale_id": "shell_beta_100",
+    "shell_inverse_temperature_beta": 100.0,
+    "base_objective": {
+      "gamma_ce": 1.0,
+      "lambda_reg": 0.01
+    },
+    "effective_objective_consumed_by_reference_and_sampling": {
+      "gamma_ce": 100.0,
+      "lambda_reg": 1.0
+    },
+    "identity": "shell_beta_100 * H_0.01",
+    "apply_shell_beta_exactly_once": true,
+    "double_scaling_forbidden": true,
+    "synthetic_dataset_beta_is_a_distinct_coordinate": true
+  },
+  "production_replicates": {
+    "dataset_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "references_per_condition_per_dataset": 10,
+    "radius_grid": {
+      "start": 0.01,
+      "stop": 1.0,
+      "step": 0.01,
+      "count": 100
+    }
+  },
+  "dataset": {
+    "source": "openml_mnist_784",
+    "openml_name": "mnist_784",
+    "openml_version": 1,
+    "openml_cache_root": "digit_pairwise_complexity/01_dataset/raw_outputs/source_cache",
+    "split_seed": 20260610,
+    "n_train": 512,
+    "n_test": 2048,
+    "input_shape": [
+      1,
+      10,
+      10
+    ],
+    "downscale": "PIL.Image.resize((10, 10), Image.Resampling.BOX)",
+    "standardization": "per_pair_train_feature_mean_std",
+    "standardization_std_floor": 1e-06,
+    "standardization_floor_replacement": 1.0,
+    "all_pair_count": 45,
+    "class_balance_train": [
+      256,
+      256
+    ],
+    "class_balance_test": [
+      1024,
+      1024
+    ],
+    "pair_seed_policy": "split_seed + 100 * digit_a + digit_b",
+    "complexity": {
+      "name": "chance_normalized_multiscale_knn_label_disagreement",
+      "neighbor_audit_max": 64,
+      "selected_scales": 22,
+      "aggregation": "mean_over_cumulative_scales_1_through_22",
+      "selection_dataset_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "selection_aggregation": "arithmetic_mean",
+      "selection_policy": "rank_all_45_by_arithmetic_mean_C_MS_over_fixed_replicas_0_to_9",
+      "sort": "descending",
+      "tie_break": [
+        "digit_a_ascending",
+        "digit_b_ascending"
+      ]
+    },
+    "selected_ranks_one_based": [
+      1,
+      5,
+      9,
+      13,
+      17,
+      21,
+      25,
+      29,
+      33,
+      37,
+      41,
+      45
+    ],
+    "selected_pair_count": 12,
+    "frozen_manifest": "config/frozen_pair_manifest.json",
+    "fail_on_frozen_manifest_mismatch": true,
+    "replica_index": 0
+  },
+  "model": {
+    "input_dim": 100,
+    "hidden_dims": [
+      20,
+      20
+    ],
+    "output_dim": 1,
+    "activation": "tanh",
+    "parameter_count": 2461,
+    "adam_compute_dtype": "float32",
+    "lbfgs_compute_dtype": "float64",
+    "sampling_compute_dtype": "float32",
+    "theta_storage_dtype": "float64",
+    "summary_dtype": "float64"
+  },
+  "objective": {
+    "contract_path": "config/objective.json",
+    "objective_id": "dnn_binary_logistic_ce_mean_l2_all_parameters_gamma_100_lambda_1_dense_extension_v1",
+    "loss": "binary_logistic",
+    "ce_reduction": "mean_over_training_examples",
+    "gamma_ce": 100.0,
+    "lambda_reg": 1.0,
+    "regularized_parameters": "all_trainable_parameters_including_biases",
+    "parameter_count": 2461,
+    "forbid_n_train_multiplier": true
+  },
+  "reference_search": {
+    "references_per_condition": 10,
+    "max_attempts_per_condition": 240,
+    "execution_mode": "sequential_attempts_condition_parallel",
+    "initialization": "fresh_deterministic_fan_in_normal_zero_bias",
+    "seed_namespace": "mnist-pair-reference-v1",
+    "acceptance_policy": "first_manifest_order_authoritative_float64_exact_replay_unique",
+    "first_authoritative_exact_is_endpoint": true,
+    "acceptance_requires_optimizer_convergence": false,
+    "adam": {
+      "learning_rate": 0.022,
+      "max_steps": 4200,
+      "check_every": 10
+    },
+    "lbfgs": {
+      "outer_steps": 50,
+      "max_iter_per_outer": 20,
+      "history_size": 100,
+      "line_search_fn": "strong_wolfe",
+      "tolerance_grad": 1e-09,
+      "tolerance_change": 1e-12
+    },
+    "convergence_diagnostics": {
+      "role": "diagnostic_only_not_acceptance_gate",
+      "objective_change": 1e-11,
+      "gradient_inf_norm": 1e-07
+    },
+    "exact_replay": {
+      "n_wrong": 0,
+      "classification_margin_tolerance": 0.0,
+      "min_margin_strictly_greater_than_tolerance": true,
+      "float64_replay_logit_atol": 1e-05
+    },
+    "deduplication": {
+      "metric": "parameter_l2_distance",
+      "minimum_l2_distance": 1e-06
+    },
+    "allow_fallback": false,
+    "allow_replacement": false,
+    "expected_attempt_count": 2880,
+    "expected_reference_count": 120
+  },
+  "sampling": {
+    "method": "exact_shell_l2_vmf_ce_tempered_smc",
+    "backend": {
+      "backend_id": "cuda_resident_split_batched_c2_v1",
+      "particle_geometry_dtype": "float64",
+      "loss_forward_dtype": "float32",
+      "vmf_axial_sampler": "numpy_wood_exact_float64",
+      "vmf_tangent_sampler": "torch_cuda_normal_float64",
+      "particle_location": "cuda_resident",
+      "split_forward_batching": true,
+      "persistent_dataset_tensors": true,
+      "persistent_reference_across_radii": true,
+      "torch_deterministic_algorithms": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": false,
+      "float32_matmul_precision": "highest",
+      "rng_derivation": "shared.provenance.stable_seed.v1.sha256.63bit",
+      "rng_namespace": "mnist-shell-cuda-c2-v1",
+      "rng_domains": [
+        "wood_axial",
+        "cuda_tangent",
+        "smc_decision"
+      ]
+    },
+    "particles_total": 1024,
+    "independent_splits": 2,
+    "particles_per_split": 512,
+    "step_overlap_threshold": 0.95,
+    "step_overlap_reference": "current_weighted_pool_inverse_chi_squared_overlap",
+    "pool_overlap_threshold": 0.5,
+    "pool_overlap_reference": "uniform_pool_inverse_chi_squared_overlap",
+    "max_tempering_steps": 180,
+    "min_delta_t": 0.0001,
+    "bisection_steps": 32,
+    "mh_sweeps": 2,
+    "move_kappa_factor_per_parameter": 80.0,
+    "radii_start": 0.01,
+    "radii_stop": 1.0,
+    "radii_count": 100,
+    "baseline_radius": 0.01,
+    "seed_namespace": "mnist-pair-shell-v1",
+    "radial_derivative": "direct_autograd",
+    "ce_radial_derivative": "direct_autograd_float32",
+    "l2_radial_derivative_authority": "exact_fp64_shell_algebra",
+    "l2_autograd_role": "float32_diagnostic_check_only",
+    "l2_autograd_check_relative_scale_tolerance": 2e-05,
+    "allow_finite_difference_first_derivative": false,
+    "jacobian_convention": "squared_distance_delta",
+    "sentinel_particle_count_per_split": 4,
+    "sentinel_coordinate_count": 16,
+    "units_per_shard": 1000,
+    "compact_atomic_shards": true,
+    "expected_unit_count": 12000
+  },
+  "summary": {
+    "output": "summarized_outputs/logz_sampling_quality.csv",
+    "finite_ranges": {
+      "minimum_step_overlap_min": [0.0, 1.0],
+      "minimum_pool_overlap_pre_resample_min": [0.0, 1.0],
+      "mean_mh_acceptance": [0.0, 1.0],
+      "direct_derivative_finite_fraction": [1.0, 1.0]
+    }
+  },
+  "paths": {
+    "dataset_root": "digit_pairwise_complexity/01_dataset/raw_outputs/datasets/dataset_000",
+    "complexity_root": "digit_pairwise_complexity/02_complexity_measure/summarized_outputs",
+    "reference_root": "digit_pairwise_complexity/03_reference_search/raw_outputs/references/dataset_000",
+    "manifest_root": "digit_pairwise_complexity/03_reference_search/raw_outputs/manifests/dataset_000",
+    "sampling_shard_root": "digit_pairwise_complexity/04_sampling/raw_outputs/shell_beta_100/dataset_000",
+    "summary_root": "digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs"
+  }
+}

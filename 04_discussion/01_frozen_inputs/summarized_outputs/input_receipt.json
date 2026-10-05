@@ -1,0 +1,65 @@
+{
+  "repository_root": ".",
+  "schema_version": "complexity.discussion.input_receipt.v1",
+  "scope": "read-only post-hoc summaries and frozen Study-22 audit",
+  "source_count": 7,
+  "sources": [
+    {
+      "bytes": 722474,
+      "format": "csv",
+      "path": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "role": "canonical_direct_radial_derivative",
+      "row_count": 4500,
+      "source_id": "synthetic_energetic_profiles"
+    },
+    {
+      "bytes": 83932,
+      "format": "csv",
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "role": "canonical_direct_radial_derivative",
+      "row_count": 500,
+      "source_id": "label_noise_energetic_profiles"
+    },
+    {
+      "bytes": 197738,
+      "format": "csv",
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv",
+      "role": "arxiv_v1_mean10_direct_radial_derivative",
+      "row_count": 1200,
+      "source_id": "digit_pair_energetic_profiles"
+    },
+    {
+      "bytes": 1405,
+      "format": "csv",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_radius_profiles.csv",
+      "role": "arxiv_v1_appendix_d_matched_antipodal_evaluation",
+      "row_count": 14,
+      "source_id": "study22_fresh_label_K_profiles"
+    },
+    {
+      "bytes": 2933,
+      "format": "csv",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_summary.csv",
+      "role": "arxiv_v1_appendix_d_matched_antipodal_summary",
+      "row_count": 12,
+      "source_id": "study22_fresh_label_K_summary"
+    },
+    {
+      "bytes": 958,
+      "format": "csv",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_random_minus_clean.csv",
+      "role": "arxiv_v1_appendix_d_paired_condition_contrast",
+      "row_count": 6,
+      "source_id": "study22_fresh_label_K_random_minus_clean"
+    },
+    {
+      "bytes": 584,
+      "format": "csv",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_peak_contrast.csv",
+      "role": "arxiv_v1_appendix_d_paired_peak_contrast",
+      "row_count": 3,
+      "source_id": "study22_fresh_label_K_peak_contrast"
+    }
+  ],
+  "stage_id": "01_frozen_inputs"
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": "mnist.proxy-local-entropy-summary.v1",
+  "protocol": "label_noise_sweep",
+  "parameter_count": 2461,
+  "dataset_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "references_per_dataset": 10,
+  "scale_id": "shell_beta_100",
+  "shell_inv_temp_beta": 100.0,
+  "radius_grid": {
+    "start": 0.01,
+    "stop": 1.0,
+    "count": 100,
+    "decimals": 2
+  },
+  "conditions": [
+    {"condition": "noise_eta_0p00", "noise_eta": 0.0},
+    {"condition": "noise_eta_0p05", "noise_eta": 0.05},
+    {"condition": "noise_eta_0p15", "noise_eta": 0.15},
+    {"condition": "noise_eta_0p25", "noise_eta": 0.25},
+    {"condition": "noise_eta_0p50", "noise_eta": 0.5}
+  ],
+  "aggregation": {
+    "order": ["reference", "dataset"],
+    "uncertainty": "dataset_sem",
+    "derivative": "direct_autograd"
+  },
+  "paths": {
+    "sampling_root": "04_sampling/raw_outputs/shell_beta_100",
+    "accuracy_authority": "05_proxy_local_entropy/summarized_outputs/r1_weighted_accuracy.json"
+  },
+  "outputs": {
+    "energetic_profiles": "summarized_outputs/energetic_profiles.csv",
+    "condition_metrics": "summarized_outputs/condition_metrics.csv"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": "complexity-paper-figures-current-layout-v1",
+  "paper_authority": "https://arxiv.org/abs/2608.22361v1",
+  "style_config": "../../config/paper_figure_style.json",
+  "figures": [
+    {
+      "id": "fig01_dataset_to_landscape",
+      "manuscript_location": "Fig. 1; Introduction",
+      "renderer": "stage_static_assets.py",
+      "width_mode": "one_column",
+      "height_to_width": 0.5,
+      "output": "00_overview/fig01_dataset_to_landscape/fig01_dataset_to_landscape",
+      "inputs": [
+        "figure_inputs/static_assets/fig01_dataset_to_landscape.png"
+      ],
+      "asset_kind": "author_supplied_png"
+    },
+    {
+      "id": "fig02_perceptron_full_shell",
+      "manuscript_location": "Fig. 2; Results--perceptron",
+      "renderer": "render_quantitative.py",
+      "width_mode": "one_column",
+      "height_to_width": 0.6,
+      "output": "01_theory/fig02_perceptron_full_shell/fig02_perceptron_full_shell",
+      "inputs": [
+        "figure_inputs/theory/phi_by_analytic_solution_alpha0p1.csv",
+        "figure_inputs/theory/phi_by_sampling.csv"
+      ]
+    },
+    {
+      "id": "fig03_synthetic_data_complexity",
+      "manuscript_location": "Fig. 3; Results--synthetic",
+      "renderer": "render_quantitative.py",
+      "width_mode": "one_column",
+      "height_to_width": 1.35,
+      "output": "02_dnn_synthetic/fig03_data_complexity/fig03_synthetic_data_complexity",
+      "inputs": [
+        "figure_inputs/synthetic/dataset_000/data_beta_0p05.npz",
+        "figure_inputs/synthetic/dataset_000/data_beta_0p15.npz",
+        "figure_inputs/synthetic/dataset_000/data_beta_0p27.npz",
+        "figure_inputs/synthetic/dataset_000/data_beta_0p39.npz",
+        "figure_inputs/synthetic/cms_by_dataset.csv"
+      ]
+    },
+    {
+      "id": "fig04_synthetic_landscape",
+      "manuscript_location": "Fig. 4; Results--synthetic",
+      "renderer": "render_quantitative.py",
+      "width_mode": "two_column",
+      "height_to_width": 0.3,
+      "output": "02_dnn_synthetic/fig04_landscape/fig04_synthetic_landscape",
+      "inputs": [
+        "figure_inputs/synthetic/energetic_profiles.csv",
+        "figure_inputs/synthetic/condition_metrics.csv",
+        "figure_inputs/synthetic/cms_by_dataset.csv"
+      ]
+    },
+    {
+      "id": "fig05_label_noise_data_complexity",
+      "manuscript_location": "Fig. 5; Results--MNIST label noise",
+      "renderer": "render_quantitative.py",
+      "width_mode": "one_column",
+      "height_to_width": 1.06,
+      "output": "03_dnn_mnist/label_noise_sweep/fig05_data_complexity/fig05_label_noise_data_complexity",
+      "inputs": [
+        "figure_inputs/static_assets/label_noise_eta_0p0_composed.pdf",
+        "figure_inputs/static_assets/label_noise_eta_0p5_composed.pdf",
+        "figure_inputs/mnist_label_noise/cms_by_dataset.csv"
+      ]
+    },
+    {
+      "id": "fig06_label_noise_landscape",
+      "manuscript_location": "Fig. 6; Results--MNIST label noise",
+      "renderer": "render_quantitative.py",
+      "width_mode": "two_column",
+      "height_to_width": 0.3,
+      "output": "03_dnn_mnist/label_noise_sweep/fig06_landscape/fig06_label_noise_landscape",
+      "inputs": [
+        "figure_inputs/mnist_label_noise/energetic_profiles.csv",
+        "figure_inputs/mnist_label_noise/condition_metrics.csv",
+        "figure_inputs/mnist_label_noise/cms_by_dataset.csv"
+      ]
+    },
+    {
+      "id": "fig07_digit_pair_data_complexity",
+      "manuscript_location": "Fig. 7; Results--MNIST digit pairs",
+      "renderer": "render_quantitative.py",
+      "width_mode": "one_column",
+      "height_to_width": 1.1,
+      "output": "03_dnn_mnist/digit_pairwise_complexity/fig07_data_complexity/fig07_digit_pair_data_complexity",
+      "inputs": [
+        "figure_inputs/static_assets/digit_pair_lowest_complexity_pair_0_1_composed.pdf",
+        "figure_inputs/static_assets/digit_pair_highest_complexity_pair_4_9_composed.pdf",
+        "figure_inputs/mnist_digit_pair/cms_by_dataset.csv",
+        "figure_inputs/mnist_digit_pair/frozen_pair_manifest.json"
+      ]
+    },
+    {
+      "id": "fig08_digit_pair_landscape",
+      "manuscript_location": "Fig. 8; Results--MNIST digit pairs",
+      "renderer": "render_quantitative.py",
+      "width_mode": "two_column",
+      "height_to_width": 0.3,
+      "output": "03_dnn_mnist/digit_pairwise_complexity/fig08_landscape/fig08_digit_pair_landscape",
+      "inputs": [
+        "figure_inputs/mnist_digit_pair/energetic_profiles.csv",
+        "figure_inputs/mnist_digit_pair/condition_metrics.csv",
+        "figure_inputs/mnist_digit_pair/cms_by_dataset.csv"
+      ]
+    },
+    {
+      "id": "fig09_hardening_3d_composite",
+      "manuscript_location": "Fig. 9; Discussion",
+      "renderer": "render_discussion.py",
+      "width_mode": "two_column",
+      "height_to_width": 0.3,
+      "output": "04_discussion/fig09_hardening_3d_composite/fig09_hardening_3d_composite",
+      "inputs": [
+        "figure_inputs/discussion/normalized_radial_profiles.csv"
+      ]
+    }
+  ]
+}

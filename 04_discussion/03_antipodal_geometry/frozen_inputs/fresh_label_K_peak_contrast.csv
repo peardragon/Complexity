@@ -1,0 +1,4 @@
+contrast,metric,mean_difference,se_difference,ci95_low,ci95_high,positive_dataset_count,negative_dataset_count,exact_two_sided_sign_flip_p
+noise_eta_0p50_minus_noise_eta_0p00,peak_radius,-0.08000000000000003,4.625929269271485e-18,-0.08000000000000004,-0.08000000000000002,0,10,0.001953125
+noise_eta_0p50_minus_noise_eta_0p00,peak_absolute_K,3.7177476016071287,0.15369061604922032,3.3700752736479256,4.065419929566332,10,0,0.001953125
+noise_eta_0p50_minus_noise_eta_0p00,peak_hardening_delta_K,3.090654883308276,0.13460672082595096,2.786153325623549,3.395156440993003,10,0,0.001953125

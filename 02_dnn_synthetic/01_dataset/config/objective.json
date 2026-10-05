@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "objective_id": "dnn_binary_logistic_ce_mean_l2_shell_beta_100_v1",
+  "loss": "binary_logistic",
+  "label_encoding": "minus_one_plus_one",
+  "ce_reduction": "mean_over_training_examples",
+  "gamma_ce": 100.0,
+  "regularizer": "l2",
+  "regularized_parameters": "all_trainable_parameters_including_biases",
+  "lambda_reg": 1.0,
+  "l2_formula": "lambda_reg * squared_l2_norm / (2 * parameter_count)",
+  "inverse_temperature": 1.0,
+  "base_objective": {
+    "gamma_ce": 1.0,
+    "lambda_reg": 0.01,
+    "formula": "CE_mean(theta;D) + 0.01 * squared_l2_norm / (2 * parameter_count)"
+  },
+  "shell_inv_temp_beta": 100.0,
+  "effective_coefficients": {
+    "gamma_ce": 100.0,
+    "lambda_reg": 1.0
+  },
+  "coefficient_application": "gamma_ce and lambda_reg above are beta-expanded exactly once; inverse_temperature=1 is the numerical target convention and no second beta multiplication is allowed",
+  "exact_reference": {
+    "classification_rule": "signed_margin_strictly_positive",
+    "required_wrong_count": 0,
+    "required_min_signed_margin_strictly_greater_than": 0.0,
+    "checkpoint_policy": "first_full_data_exact_post_optimizer_update",
+    "first_exact_is_production_endpoint": true,
+    "optimizer_convergence_is_diagnostic_only": true
+  },
+  "first_radial_derivative": {
+    "method": "direct_autograd_radial_score",
+    "finite_difference_fallback": false
+  }
+}

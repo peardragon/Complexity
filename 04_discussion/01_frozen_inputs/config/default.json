@@ -1,0 +1,45 @@
+{
+  "schema_version": "complexity.discussion.inputs.v1",
+  "stage_id": "01_frozen_inputs",
+  "repository_relative_sources": [
+    {
+      "source_id": "synthetic_energetic_profiles",
+      "role": "canonical_direct_radial_derivative",
+      "path": "02_dnn_synthetic/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv"
+    },
+    {
+      "source_id": "label_noise_energetic_profiles",
+      "role": "canonical_direct_radial_derivative",
+      "path": "03_dnn_mnist/label_noise_sweep/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv"
+    },
+    {
+      "source_id": "digit_pair_energetic_profiles",
+      "role": "arxiv_v1_mean10_direct_radial_derivative",
+      "path": "03_dnn_mnist/digit_pairwise_complexity/05_proxy_local_entropy/summarized_outputs/energetic_profiles.csv"
+    },
+    {
+      "source_id": "study22_fresh_label_K_profiles",
+      "role": "arxiv_v1_appendix_d_matched_antipodal_evaluation",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_radius_profiles.csv"
+    },
+    {
+      "source_id": "study22_fresh_label_K_summary",
+      "role": "arxiv_v1_appendix_d_matched_antipodal_summary",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_summary.csv"
+    },
+    {
+      "source_id": "study22_fresh_label_K_random_minus_clean",
+      "role": "arxiv_v1_appendix_d_paired_condition_contrast",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_random_minus_clean.csv"
+    },
+    {
+      "source_id": "study22_fresh_label_K_peak_contrast",
+      "role": "arxiv_v1_appendix_d_paired_peak_contrast",
+      "path": "04_discussion/03_antipodal_geometry/frozen_inputs/fresh_label_K_peak_contrast.csv"
+    }
+  ],
+  "outputs": [
+    "summarized_outputs/input_inventory.csv",
+    "summarized_outputs/input_receipt.json"
+  ]
+}

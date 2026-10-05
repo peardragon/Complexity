@@ -1,0 +1,28 @@
+{
+  "active_pngs": [
+    "00_overview/fig01_dataset_to_landscape/fig01_dataset_to_landscape.png",
+    "01_theory/fig02_perceptron_full_shell/fig02_perceptron_full_shell.png",
+    "02_dnn_synthetic/fig03_data_complexity/fig03_synthetic_data_complexity.png",
+    "02_dnn_synthetic/fig04_landscape/fig04_synthetic_landscape.png",
+    "03_dnn_mnist/label_noise_sweep/fig05_data_complexity/fig05_label_noise_data_complexity.png",
+    "03_dnn_mnist/label_noise_sweep/fig06_landscape/fig06_label_noise_landscape.png",
+    "03_dnn_mnist/digit_pairwise_complexity/fig07_data_complexity/fig07_digit_pair_data_complexity.png",
+    "03_dnn_mnist/digit_pairwise_complexity/fig08_landscape/fig08_digit_pair_landscape.png",
+    "04_discussion/fig09_hardening_3d_composite/fig09_hardening_3d_composite.png"
+  ],
+  "checks": [
+    "all active figures are present in manifest order",
+    "Current Fig. 1, squared-distance Fig. 2, and composite Fig. 9 are active"
+  ],
+  "contact_sheet": {
+    "height_pixels": 6829,
+    "path": "receipts/visual_audit_contact_sheet.png",
+    "sha256": "86faf078464e83e9e973a965db6c62bc6af9d6e353740a6217c9ee93183b3c29",
+    "width_pixels": 2096
+  },
+  "figure_count": 9,
+  "manual_review": "Legibility, clipping, and panel overlap require visual inspection.",
+  "paper_authority": "https://arxiv.org/abs/2608.22361v1",
+  "schema_version": "complexity-paper-figures-visual-audit-current-v1",
+  "status": "contact_sheet_ready"
+}

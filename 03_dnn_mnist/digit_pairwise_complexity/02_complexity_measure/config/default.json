@@ -1,0 +1,22 @@
+{
+  "schema_version": "mnist.complexity-summary.v1",
+  "protocol": "digit_pairwise_sweep",
+  "dataset_indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "n_train": 512,
+  "complexity": {
+    "selected_scales": 22,
+    "neighbor_audit_max": 64,
+    "finite_range": [0.0, 2.0]
+  },
+  "pair_selection": {
+    "all_pair_count": 45,
+    "frozen_manifest": "config/frozen_pair_manifest.json",
+    "mean_atol": 1e-12,
+    "sort": "C_MS_mean_descending_then_digit_a_digit_b_ascending"
+  },
+  "paths": {"dataset_root": "01_dataset/raw_outputs/datasets"},
+  "outputs": {
+    "cms_by_dataset": "summarized_outputs/cms_by_dataset.csv",
+    "pair_ranking_summary": "summarized_outputs/digit_pairwise_complexity_summary.json"
+  }
+}

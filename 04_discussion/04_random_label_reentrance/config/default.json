@@ -1,0 +1,13 @@
+{
+  "schema_version": "complexity.discussion.random_label_reentrance.v1",
+  "stage_id": "04_random_label_reentrance",
+  "input_stage": "01_frozen_inputs",
+  "canonical_profile_source_id": "label_noise_energetic_profiles",
+  "strict_positive_rule": "g_E > 0",
+  "zero_crossing_rule": "linear interpolation between adjacent measured radii with opposite signs",
+  "interpretation_boundary": "a positive local-entropy derivative is radial reorganization; it does not alone establish recovery of accuracy or exact solutions",
+  "outputs": [
+    "summarized_outputs/label_noise_radial_signs.csv",
+    "summarized_outputs/reentrant_intervals.csv"
+  ]
+}

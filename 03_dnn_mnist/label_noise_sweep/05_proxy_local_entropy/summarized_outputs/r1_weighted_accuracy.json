@@ -1,0 +1,30 @@
+{
+  "schema_version": "complexity-revised.mnist.r1-weighted-accuracy-seal.v1",
+  "scale_id": "shell_beta_100",
+  "radius": 1.0,
+  "dataset_count": 10,
+  "references_per_dataset": 10,
+  "aggregation_order": "SMC-particle-weighted, split-logZ-mixture, reference-mean-within-dataset, equal-dataset-mean-and-SE",
+  "conditions": {
+    "noise_eta_0p00": {
+      "mean": 0.8072379197542,
+      "se_across_datasets": 0.005343163841378538
+    },
+    "noise_eta_0p05": {
+      "mean": 0.7634534705649397,
+      "se_across_datasets": 0.006421591876546353
+    },
+    "noise_eta_0p15": {
+      "mean": 0.6797891262530074,
+      "se_across_datasets": 0.005951605504731309
+    },
+    "noise_eta_0p25": {
+      "mean": 0.6169316462295104,
+      "se_across_datasets": 0.0038138887876880785
+    },
+    "noise_eta_0p50": {
+      "mean": 0.5486949618540182,
+      "se_across_datasets": 0.0013252882928718361
+    }
+  }
+}

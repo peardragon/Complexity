@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "max_cpu_threads": 24,
+  "max_concurrent_gpus": 2,
+  "worker_environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  }
+}

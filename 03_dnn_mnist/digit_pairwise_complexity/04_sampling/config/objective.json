@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "objective_id": "dnn_binary_logistic_ce_mean_l2_all_parameters_gamma_100_lambda_1_dense_extension_v1",
+  "loss": "binary_logistic",
+  "label_encoding": "minus_one_plus_one",
+  "ce_reduction": "mean_over_training_examples",
+  "gamma_ce": 100.0,
+  "regularizer": "l2",
+  "regularized_parameters": "all_trainable_parameters_including_biases",
+  "lambda_reg": 1.0,
+  "l2_formula": "lambda_reg * squared_l2_norm / (2 * parameter_count)",
+  "inverse_temperature": 1.0,
+  "exact_reference": {
+    "classification_rule": "signed_margin_strictly_positive",
+    "required_wrong_count": 0,
+    "required_min_signed_margin_strictly_greater_than": 0.0,
+    "checkpoint_policy": "first_full_data_exact_post_optimizer_update",
+    "first_exact_is_production_endpoint": true,
+    "optimizer_convergence_is_diagnostic_only": true
+  },
+  "first_radial_derivative": {
+    "method": "direct_autograd_radial_score",
+    "finite_difference_fallback": false
+  }
+}

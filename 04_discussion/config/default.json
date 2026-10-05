@@ -1,0 +1,17 @@
+{
+  "schema_version": "complexity.discussion.pipeline.v1",
+  "pipeline_id": "paper_round2_discussion_posthoc_v1",
+  "post_hoc_only": true,
+  "stages": [
+    "01_frozen_inputs",
+    "02_normalized_radial_geometry",
+    "03_antipodal_geometry",
+    "04_random_label_reentrance"
+  ],
+  "forbidden_actions": [
+    "dataset_generation",
+    "reference_training",
+    "shell_smc",
+    "upstream_artifact_mutation"
+  ]
+}
