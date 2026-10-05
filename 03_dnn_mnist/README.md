@@ -41,3 +41,9 @@ Digit-pair는 경로를 바꾸고 `--shard-count 12` 사용.
 raw 자료가 별도로 제공되면 02/04/05의 `--execute --output-dir ...`로 compact
 결과를 독립적으로 재생성할 수 있다. 기존 파일은 내용 hash가 아니라 파일명으로
 건너뛰되, condition/dataset/reference/radius 중복·누락과 유한값·범위를 검사한다.
+
+각 실험의 05/src/make_r1_accuracy.py --execute로 정확도 JSON 재생성.
+--check-only는 보존 JSON과 평균·SEM을 대조. 기존 JSON은 건너뛰고 --force로 재생성.
+05/frozen_inputs에 원래 reference 관측값 포함: label-noise 500행, digit-pair 1,200행.
+GPU·SMC 실행 없이 집계하며, JSON이 없으면 05 요약도 같은 입력을 사용.
+원래 계산·집계 코드와 입력 내역은 각 frozen_inputs/README.md.

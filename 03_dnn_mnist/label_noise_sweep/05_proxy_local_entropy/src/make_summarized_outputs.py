@@ -137,7 +137,11 @@ def read_curves(path: Path, condition: str, config: Mapping[str, Any]) -> tuple[
 
 def load_accuracy_authority(config: Mapping[str, Any], expected_conditions: set[str]) -> dict[str, Any]:
     path = protocol_path(config["paths"]["accuracy_authority"])
-    payload = json.loads(path.read_text(encoding="utf-8"))
+    if path.is_file():
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    else:
+        from utils.r1_accuracy import from_capture
+        payload = from_capture(config, STAGE_ROOT)
     if payload.get("scale_id") != config["scale_id"] or int(payload["dataset_count"]) != len(config["dataset_indices"]) or int(payload["references_per_dataset"]) != int(config["references_per_dataset"]):
         raise ValueError("archival accuracy authority contract drift")
     if set(payload.get("conditions", {})) != expected_conditions: raise ValueError("archival accuracy authority condition coverage drift")
@@ -168,7 +172,8 @@ def build_outputs(config: Mapping[str, Any]) -> tuple[list[dict[str, object]], l
         elif not any(availability):
             if authority is None:
                 authority = load_accuracy_authority(config, condition_names)
-            row = authority["conditions"][condition]; accuracy_mean = np.asarray(float(row["mean"])); accuracy_se = np.asarray(float(row["se_across_datasets"])); sources[condition] = "archival_r1_weighted_accuracy"
+            row = authority["conditions"][condition]; accuracy_mean = np.asarray(float(row["mean"])); accuracy_se = np.asarray(float(row["se_across_datasets"]))
+            sources[condition] = ("archival_r1_weighted_accuracy" if protocol_path(config["paths"]["accuracy_authority"]).is_file() else "saved_r1_reference_capture")
         else:
             raise ValueError(f"{condition}: refusing mixed fresh and archival accuracy sources")
         phi_mean, phi_se = mean_and_se(np.asarray(dataset_phi), dataset_count); direct_mean, direct_se = mean_and_se(np.asarray(dataset_direct), dataset_count)

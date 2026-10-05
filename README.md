@@ -41,6 +41,10 @@ Theory는 `--aggregate --output-dir <dir>` 사용.
 
 이전 scalar raw에 r=1 terminal accuracy가 없으면 보존된 accuracy JSON을 사용하며
 실행 로그에 archival source를 표시함. 새 sampling은 weighted training accuracy를 저장.
+각 DNN의 05/src/make_r1_accuracy.py는 원래 reference별 정확도 입력에서 JSON을 재집계.
+작은 입력 CSV는 05/frozen_inputs에 포함. JSON이 없어도 --execute로 복원 가능.
+Reference → dataset 순서로 평균·SEM을 계산하며 GPU·SMC를 다시 실행하지 않음.
+05 요약도 JSON이 없으면 같은 입력을 메모리에서 집계해 사용함.
 Theory의 고정 input pool 생성은 별도 준비가 필요하며, 이 repo의 확인 명령은 기존 pool을 검사함.
 
 Figure 9(b,c)는 개념도. 측정된 loss slice나 Hessian spectrum이 아님.

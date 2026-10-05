@@ -1,4 +1,5 @@
 {
+  "accuracy_capture_input": "frozen_inputs/r1_accuracy_per_reference.csv",
   "schema_version": "mnist.proxy-local-entropy-summary.v1",
   "protocol": "digit_pairwise_sweep",
   "parameter_count": 2461,

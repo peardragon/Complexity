@@ -36,3 +36,13 @@ python 02_dnn_synthetic/04_sampling/src/sampling.py --dataset-job 0 --shell-pass
 Raw가 별도로 있으면 `--execute --output-dir <dir>`로 독립 재생성.
 Raw dataset·reference·shard는 배포 제외. 요약 CSV와 작은 그림 입력은 포함.
 코드·환경 hash는 식별 기록이며 기존 결과 재사용을 막는 조건이 아님.
+
+r=1 JSON 재생성:
+
+```bash
+python 02_dnn_synthetic/05_proxy_local_entropy/src/make_r1_accuracy.py --check-only
+python 02_dnn_synthetic/05_proxy_local_entropy/src/make_r1_accuracy.py --execute
+```
+
+05/frozen_inputs의 원래 10,800개 reference 관측을 재집계. GPU·SMC 실행 없음.
+JSON이 없으면 05 요약에서도 이 표를 사용. 원래 계산·집계 코드 위치는 frozen_inputs/README.md.

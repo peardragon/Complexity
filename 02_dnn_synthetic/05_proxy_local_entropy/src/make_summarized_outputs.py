@@ -115,7 +115,14 @@ def _atomic_csv(
 
 
 def _accuracy_map() -> dict[float, tuple[float, float]]:
-    payload = json.loads(ACCURACY_CONFIG.read_text(encoding="utf-8"))
+    global ACCURACY_SOURCE
+    if ACCURACY_CONFIG.is_file():
+        payload = json.loads(ACCURACY_CONFIG.read_text(encoding="utf-8"))
+        ACCURACY_SOURCE = "archival_r1_authority_for_retained_raw"
+    else:
+        from utils.r1_accuracy import from_capture
+        payload = from_capture(json.loads(CONFIG_PATH.read_text()), STAGE_ROOT)
+        ACCURACY_SOURCE = "saved_r1_reference_capture"
     if (
         payload.get("artifact_id")
         != "synthetic_r1_weighted_accuracy_shell_beta_100_v1"
@@ -281,7 +288,6 @@ def _build_from_raw(workers: int) -> tuple[list[dict[str, object]], list[dict[st
         if all(value is None for value in fresh):
             archival_accuracy = archival_accuracy or _accuracy_map()
             accuracy_mean, accuracy_se = archival_accuracy[data_beta]
-            ACCURACY_SOURCE = "archival_r1_authority_for_retained_raw"
         else:
             values = np.asarray(fresh,dtype=float)
             if np.any((values < 0) | (values > 1)): raise ValueError("accuracy outside [0,1]")

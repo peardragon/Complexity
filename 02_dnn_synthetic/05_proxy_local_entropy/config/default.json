@@ -1,4 +1,5 @@
 {
+  "accuracy_capture_input": "frozen_inputs/r1_accuracy_per_reference.csv",
   "schema_version": 1,
   "protocol_id": "synthetic_shell_beta_100_full_resolution_summary_v1",
   "domain": "synthetic",
