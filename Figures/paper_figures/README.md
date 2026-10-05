@@ -1,32 +1,53 @@
-# Paper figures
+# Paper Figures
 
-arXiv:2608.22361v1, Fig. 1–9.
+Main Figs. 1–9 for arXiv:2608.22361v1.
 
-| 번호 | 내용 |
-|---|---|
-| 1 | Dataset-to-landscape 개념도 |
-| 2 | Perceptron benchmark |
-| 3–4 | Synthetic |
-| 5–6 | MNIST label noise |
-| 7–8 | MNIST digit pairs |
-| 9 | Normalized radial response와 corridor 개념도 |
+## Project Overview
+
+- **Fig. 1**: Dataset-to-landscape schematic.
+- **Fig. 2**: Perceptron benchmark.
+- **Figs. 3–4**: Synthetic experiment.
+- **Figs. 5–6**: MNIST label noise.
+- **Figs. 7–8**: MNIST digit pairs.
+- **Fig. 9**: Normalized radial response and corridor sketches.
+
+## Playground
+
+The executed [figure notebook](releases/rebuild_all_paper_figures.ipynb) contains a setup cell, one cell per figure, and an output audit. Edit each `conf` for layout, spacing, legends, and annotations.
+
+All cell outputs and embedded images are retained. The notebook rebuilds figures, not the underlying training or sampling experiments.
+
+## Workflow & Dependencies
 
 ```bash
 python Figures/paper_figures/src/build_all.py
 python Figures/paper_figures/src/build_all.py --check-only
+python Figures/paper_figures/src/validate_release.py
 ```
 
-기존 출력은 파일별로 건너뜀. 누락 형식만 생성.
-`build_all.py --force`는 notebook의 현재 설정으로 전부 다시 그림.
-원본 요약이 바뀌면 staged 입력과 해당 그림을 함께 갱신.
-크기·간격·범례는 `releases/rebuild_all_paper_figures.ipynb`의 `conf`에서 수정.
-Notebook은 실행 출력과 그림을 포함해 그대로 배포.
+- **build_all.py**
+  - **Utils Dependencies**: `paper_style`, `notebook_runner`.
+  - **Purpose**: Synchronize numerical inputs and rebuild missing figures with the notebook settings.
+- **render_quantitative.py**
+  - **Purpose**: Render the perceptron, synthetic, and MNIST numerical panels.
+- **render_discussion.py**
+  - **Purpose**: Render the empirical hardening panel and corridor sketches.
+- **stage_static_assets.py**
+  - **Purpose**: Export the supplied overview image.
+- **validate_release.py**
+  - **Purpose**: Read-only validation of numerical authorities, r=1 reconstruction, staged inputs, notebook images, and figure exports.
 
-- `config/figure_manifest.json`: 번호, renderer, 입력, 출력 경로.
-- `config/input_sources.json`: 원본 → 그림 입력 대응. 기본 build에서 동기화.
-- `../config/paper_figure_style.json`: 공통 스타일.
-- `src/utils`: 스타일 및 notebook 보조 함수.
+Missing output formats are generated individually. Existing companion files are preserved. Source-summary changes update the staged inputs and affected figures. `--force` explicitly redraws all figures.
 
-Fig. 9는 04 Discussion에서 동기화한 요약을 읽음.
-전체 확인은 `src/validate_release.py`. Raw 없이도 검증·그림 생성 가능.
-원고 수정·원격 배포는 하지 않음.
+## Configuration
+
+- **figure_manifest.json**: Figure IDs, renderers, inputs, and outputs.
+- **input_sources.json**: Source-to-staged input mapping.
+- **../config/paper_figure_style.json**: Common typography and physical widths.
+- **Notebook conf**: Per-figure settings used by the build.
+
+## Results Storage
+
+Inputs are in `figure_inputs/`; exports follow the figure manifest and include PDF, PNG, and SVG. Build records are in `receipts/`, and the inventory is in `summarized_outputs/`.
+
+Raw files are not required to rebuild the supplied figures. Fig. 1 and MNIST UMAP panels are retained visual inputs; this figure build does not generate new UMAP embeddings from MNIST.

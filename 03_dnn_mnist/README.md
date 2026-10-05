@@ -1,15 +1,30 @@
-# 03_dnn_mnist
+# MNIST: Label Noise and Digit-Pair Experiments
 
-10×10 MNIST, train 512개. 100–20–20–1 tanh, P=2461.
-조건별 dataset 10개 × reference 10개. r=.01–1.00, SMC 512 particles × 2 pools.
+MNIST comparisons for Figs. 5–8.
 
-| 실험 | 조건 | 논문 |
-|---|---|---|
-| label_noise_sweep | 같은 이미지에서 eta=0,.05,.15,.25,.5 | Figs. 5–6 |
-| digit_pairwise_complexity | 45쌍의 평균 C_MS 순위 중 1,5,…,45위 | Figs. 7–8 |
+## Project Overview
 
-두 실험 모두 02와 같은 5단계: dataset → complexity → reference → sampling → entropy.
-실행은 `src/*.py`, 보조 함수는 `src/utils/*.py`.
+- **Preprocessing**: 28×28 images reduced to 10×10 by box averaging, with training-set standardization.
+- **Model**: 100–20–20–1 tanh network, P=2461.
+- **Replicas**: Ten datasets and ten references per condition.
+- **Sampling**: r=0.01–1.00; two independent pools of 512 particles.
+
+## Directory Structure
+
+```text
+03_dnn_mnist/
+├── label_noise_sweep/           # Eta=0,.05,.15,.25,.5
+└── digit_pairwise_complexity/   # Twelve selected digit pairs
+    ├── 01_dataset/
+    ├── 02_complexity_measure/
+    ├── 03_reference_search/
+    ├── 04_sampling/
+    └── 05_proxy_local_entropy/
+```
+
+Both experiments use the five-stage structure of the synthetic experiment.
+
+## Workflow & Dependencies
 
 ```bash
 python 03_dnn_mnist/label_noise_sweep/01_dataset/src/make_dataset.py --dataset-index 0
@@ -17,33 +32,47 @@ python 03_dnn_mnist/label_noise_sweep/03_reference_search/src/reference_search.p
 python 03_dnn_mnist/label_noise_sweep/04_sampling/src/sampling.py --dataset-index 0 --shard-index 0 --shard-count 5
 ```
 
-실제 계산은 `--execute`. 기존 파일은 건너뜀. `--resume`는 생략 가능.
-Digit-pair는 경로를 바꾸고 `--shard-count 12` 사용.
-요약은 `--check-only`로 기존 compact 결과를 읽기 전용 검증하고,
-`--execute`로 누락 파일만 생성하며, `--force`로 명시적으로 재계산한다.
-세 요약 단계는 `--config PATH`와 `--output-dir DIR`를 지원한다. 설정 안의
-입력 경로는 실험 root 기준, 출력 경로는 해당 stage 기준이며
-`--output-dir`를 주면 설정된 파일의 basename만 그 디렉터리에 쓴다.
+These commands are dry runs. Add `--execute` for calculation. Digit-pair sampling uses the corresponding path and `--shard-count 12`.
 
-- `default.json`: 실제 실행 또는 요약에서 읽는 수치·조건·입출력 설정.
-  Seed/RNG·정규화·미분 방식의 문자열은 계산 관례를 식별하는 값.
-  별도 승인·promotion·설명문 일치 검사는 사용하지 않음.
-- `objective.json`: 기본 loss (1,.01)에 beta=100을 반영한 (100,1).
-- `resources.json`: CPU 최대 24 threads, GPU 최대 2개. GPU 선택은
-  `CUDA_VISIBLE_DEVICES` 또는 `--device`로 실행 환경에서 지정한다.
-- `frozen_pair_manifest.json`: 논문에서 사용한 12쌍과 순위.
-- `summarized_outputs/r1_weighted_accuracy.json`: 기존 raw shard용 보존 정확도.
-  새로 생성한 r=1 shard에는 terminal particle의
-  `weighted_training_accuracy`가 들어가며 05는 한 condition 전체에 이 필드가
-  있을 때만 이를 사용한다. condition 안에서 새 값과 보존 값을 섞지 않는다.
+- **Dataset generation**
+  - **Utils Dependencies**: `datasets`.
+  - **Purpose**: Construct paired label-noise data or balanced digit-pair tasks.
+- **Complexity**
+  - **Purpose**: Calculate C_MS and validate the frozen pair selection.
+- **Reference search**
+  - **Utils Dependencies**: `reference_training`.
+  - **Purpose**: Retain zero-error references under the fixed loss.
+- **Sampling**
+  - **Utils Dependencies**: `shell_smc`.
+  - **Purpose**: Estimate local entropy and direct radial derivatives.
+- **Summary**
+  - **Purpose**: Calculate reference-then-dataset profiles and condition metrics.
 
-`raw_outputs/`는 대용량 재생성 입력이라 release Git에는 포함하지 않는다.
-raw 자료가 별도로 제공되면 02/04/05의 `--execute --output-dir ...`로 compact
-결과를 독립적으로 재생성할 수 있다. 기존 파일은 내용 hash가 아니라 파일명으로
-건너뛰되, condition/dataset/reference/radius 중복·누락과 유한값·범위를 검사한다.
+Summary scripts support `--config`, `--output-dir`, `--check-only`, `--execute`, and `--force`. Input paths are relative to the experiment root; configured outputs are relative to the stage root.
 
-각 실험의 05/src/make_r1_accuracy.py --execute로 정확도 JSON 재생성.
---check-only는 보존 JSON과 평균·SEM을 대조. 기존 JSON은 건너뛰고 --force로 재생성.
-05/frozen_inputs에 원래 reference 관측값 포함: label-noise 500행, digit-pair 1,200행.
-GPU·SMC 실행 없이 집계하며, JSON이 없으면 05 요약도 같은 입력을 사용.
-원래 계산·집계 코드와 입력 내역은 각 frozen_inputs/README.md.
+## Configuration
+
+- **default.json**: Actual numerical settings and paths.
+- **objective.json**: Loss (1,.01) with shell beta=100 applied once.
+- **resources.json**: At most 24 CPU threads and two GPUs; device choice is made at execution.
+- **frozen_pair_manifest.json**: Selected pairs and ranks.
+- **r1_weighted_accuracy.json**: Accuracy summary used by legacy sampling shards.
+
+Existing files are reused by filename. Numerical checks cover missing/duplicate coordinates, finite values, and the required grids.
+
+## Training Accuracy at r=1
+
+Each experiment has `05_proxy_local_entropy/src/make_r1_accuracy.py`.
+
+- **Utils Dependencies**: `r1_accuracy`.
+- **Purpose**: Rebuild the JSON from 500 label-noise or 1,200 digit-pair reference observations.
+- **Input**: `05_proxy_local_entropy/frozen_inputs/r1_accuracy_per_reference.csv`.
+- **Execution**: `--execute` creates missing outputs; `--check-only` compares means/SEM; `--force` explicitly rebuilds.
+
+No GPU or resampling is needed. If the JSON is absent, the entropy summary can aggregate the same input in memory.
+
+New sampling records r=1 terminal accuracy directly. Fresh and archived values are not mixed within a condition. QC sentinel coordinates in legacy shards are partial snapshots, not complete particle pools.
+
+## Results Storage
+
+Numerical results are stored in `summarized_outputs/`; compact accuracy observations are in `05/frozen_inputs/`. Large MNIST caches, dataset NPZ files, references, and sampling shards are excluded.

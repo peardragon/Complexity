@@ -1,6 +1,7 @@
 # Tested with Linux / Python 3.12.
 numpy==1.26.4
 scipy==1.13.1
+numba==0.65.1
 torch==2.3.1
 scikit-learn==1.9.0
 pandas==2.2.2
