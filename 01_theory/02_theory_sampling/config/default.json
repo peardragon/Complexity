@@ -1,6 +1,17 @@
 {
   "schema_version": 1,
   "stage": "02_theory_sampling",
+  "input_generation": {
+    "dataset_seed_base": 20274541,
+    "dataset_dimension_stride": 1000003,
+    "dataset_index_stride": 9176,
+    "reference_seed_base": 91337219,
+    "reference_dimension_stride": 1000033,
+    "reference_index_stride": 19937,
+    "reference_burn": 5000,
+    "reference_thin": 200,
+    "margin_epsilon": 1e-10
+  },
   "run_name": "perceptron_pool_convergence_revised",
   "method": "l2_matched_overlap_controlled_pool_smc",
   "objective": {

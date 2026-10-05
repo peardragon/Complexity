@@ -4,6 +4,8 @@ scipy==1.13.1
 numba==0.65.1
 torch==2.3.1
 scikit-learn==1.9.0
+umap-learn==0.5.12
+pynndescent==0.6.0
 pandas==2.2.2
 matplotlib==3.9.0
 pillow==10.3.0

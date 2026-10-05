@@ -20,8 +20,8 @@ python 01_theory/02_theory_sampling/src/make_summarized_outputs.py --check-only
   - **Utils Dependencies**: `rs_refinement_core`.
   - **Purpose**: Calculate the analytic curve; existing results are skipped unless `--force` is used.
 - **sampling.py**
-  - **Utils Dependencies**: `schedule`, `smc`, `perceptron`.
-  - **Purpose**: Run a selected sampling shard from the fixed input pools.
+  - **Utils Dependencies**: `schedule`, `smc`, `perceptron`, `input_generation`.
+  - **Purpose**: Run a selected shard, generating missing required inputs first.
 - **make_summarized_outputs.py**
   - **Utils Dependencies**: `aggregate`.
   - **Purpose**: Rebuild `phi_by_sampling.csv` from complete scalar shards.
@@ -34,7 +34,16 @@ python 01_theory/02_theory_sampling/src/make_summarized_outputs.py --aggregate -
 
 ## Input Requirements
 
-The current `make_datasets.py` and `make_references.py` validate the original 40 datasets and 400 references. They are not pool generators. New sampling requires these inputs to be supplied separately.
+The original pool recipes are recovered from the pre-revision source. Existing NPZ files are reused without replacement. Missing inputs are written to `raw_outputs/dataset_pool/N_*/dataset_*/dataset.npz` and `raw_outputs/reference_pool/N_*/dataset_*/ref_*/reference.npz`.
+
+```bash
+python 01_theory/02_theory_sampling/src/make_datasets.py --execute
+python 01_theory/02_theory_sampling/src/make_references.py --execute
+```
+
+Without `--execute`, the commands report the existing/missing files. `--check-only` requires the selected files to exist without writing. `--n-values` and `--dataset-index` select a subset; `--output-root` supports a separate comparison directory.
+
+Dataset and reference seeds, reference burn/thin, and numerical margin epsilon are read from `config/default.json/input_generation`. The reference target is exp(-||theta||²/2) times the hard-feasibility indicator, not the DNN training objective. New reference draws need not be identical to the original saved vectors.
 
 Settings are stored in each `config/default.json`. Executable scripts are in `src/`; numerical helpers are in `src/utils/`.
 

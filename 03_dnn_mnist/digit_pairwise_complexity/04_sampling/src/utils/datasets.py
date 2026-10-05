@@ -549,7 +549,8 @@ def generate_digit_pairs(
     dataset_cfg = config["dataset"]
     output_root = resolve_project_path(config["paths"]["dataset_root"])
     conditions_to_generate = [row["pair_id"] for row in load_json(STAGE_ROOT / dataset_cfg["frozen_manifest"])["expected_selected_pairs"]]
-    if all((output_root / name / "dataset.npz").is_file() for name in conditions_to_generate):
+    manifest_path = output_root / "pair_manifest.json"
+    if manifest_path.is_file() and all((output_root / name / "dataset.npz").is_file() for name in conditions_to_generate):
         return {"status": "skipped_existing", "conditions": conditions_to_generate}
     images, digits = fetch_openml_mnist(dataset_cfg)
     split_seed = int(dataset_cfg["split_seed"])
@@ -599,6 +600,20 @@ def generate_digit_pairs(
             digit_a=key[0],
             digit_b=key[1],
         )
+        path = output_root / str(row["pair_id"]) / "dataset.npz"
+        if path.is_file():
+            retained, metadata, stored_hash = _payload_from_path(path, config)
+            if any(not np.array_equal(retained[name], payload[name])
+                   for name in ("x_train", "y_train", "x_test", "y_test")):
+                raise ValueError(f"{path}: saved arrays differ from the deterministic dataset reconstruction")
+            if metadata.get("pair_id") != row["pair_id"] or int(metadata["rank"]) != int(row["rank"]):
+                raise ValueError(f"{path}: saved pair identity/rank differs from the frozen selection")
+            row["dataset_hash"] = stored_hash
+            conditions.append({
+                **metadata, "dataset_hash": stored_hash,
+                "dataset_path": str(path.relative_to(MNIST_ROOT)),
+            })
+            continue
         metadata = {
             **row,
             "selected_for_production": True,
@@ -675,12 +690,9 @@ def generate_digit_pairs(
             "pair_seed_policy": str(dataset_cfg["pair_seed_policy"]),
         },
     )
-    atomic_write_json(output_root / "pair_manifest.json", manifest)
-    atomic_write_json(
-        resolve_project_path(config["paths"]["complexity_root"])
-        / "digit_pairwise_complexity_summary.json",
-        {"ranking": ranked, "selected_conditions": conditions},
-    )
+    if manifest_path.is_file():
+        return load_json(manifest_path)
+    atomic_write_json(manifest_path, manifest)
     return manifest
 
 

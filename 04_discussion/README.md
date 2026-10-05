@@ -35,12 +35,26 @@ python 04_discussion/src/validate_all.py --output-dir /path/to/comparison
 
 ## Appendix D Evaluation
 
+For a raw-free checkout, first create the ten MNIST datasets and the clean/random reference ensembles:
+
 ```bash
-python 04_discussion/03_antipodal_geometry/src/evaluate_antipodal.py --condition noise_eta_0p50 --device cuda:0 --execute
+for index in {0..9}; do
+  python 03_dnn_mnist/label_noise_sweep/01_dataset/src/make_dataset.py --dataset-index "$index" --execute
+  for condition in noise_eta_0p00 noise_eta_0p50; do
+    python 03_dnn_mnist/label_noise_sweep/03_reference_search/src/reference_search.py --dataset-index "$index" --condition "$condition" --device cuda:0 --execute
+  done
+done
+for condition in noise_eta_0p00 noise_eta_0p50; do
+  python 04_discussion/03_antipodal_geometry/src/evaluate_antipodal.py --condition "$condition" --device cuda:0 --execute
+done
 python 04_discussion/03_antipodal_geometry/src/make_summarized_outputs.py --force
 ```
 
+Run these commands from the repository root with Bash. Select an available device instead of `cuda:0` if needed. MNIST is fetched from public OpenML when its source cache is absent. Existing dataset and reference outputs are reused by filename. No shell SMC is needed for this evaluation.
+
 The evaluation uses ten datasets, ten references, 256 direction pairs, radii {.01,.03,.07,.10,.12,.20,.40}, and seed=2026082201. It evaluates the retained references; it does not train or run SMC.
+
+The default Discussion build uses the included tables and does not run this fresh evaluation. `--force` explicitly replaces summaries with the newly evaluated results; new training realizations need not reproduce the saved paper values exactly.
 
 Objective scale, parameter count, radii, seed/stride, directions, and chunks are read from the stage config. `--device` selects the evaluation device. Evaluation and summary scripts support `--output-dir` and `--force`.
 

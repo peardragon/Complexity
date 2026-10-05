@@ -14,8 +14,8 @@
     "Figures/paper_figures/figure_inputs/synthetic/dataset_000/data_beta_0p27.npz",
     "Figures/paper_figures/figure_inputs/synthetic/dataset_000/data_beta_0p39.npz"
   ],
-  "file_count": 369,
-  "total_bytes": 47252123,
+  "file_count": 372,
+  "total_bytes": 47288977,
   "python": "3.12.2",
   "tested_packages": {
     "numpy": "1.26.4",
@@ -23,6 +23,8 @@
     "numba": "0.65.1",
     "torch": "2.3.1",
     "scikit-learn": "1.9.0",
+    "umap-learn": "0.5.12",
+    "pynndescent": "0.6.0",
     "pandas": "2.2.2",
     "matplotlib": "3.9.0",
     "pillow": "10.3.0",
@@ -44,13 +46,13 @@
     },
     {
       "path": "01_theory/01_theory_analytic/config/default.json",
-      "bytes": 1325,
-      "sha256": "c592235fc0641f14571279be3028cc223ac09a675954d9978c417f88b1feda0b"
+      "bytes": 1284,
+      "sha256": "66b2c8db812df9df3b3ce55a7463043d8e160c149725585a35ce4216184e3757"
     },
     {
       "path": "01_theory/01_theory_analytic/src/theory_full_rs.py",
-      "bytes": 33564,
-      "sha256": "94d96a4b7c9f18c7c986534a7a0a1f07b14583dc332ca902451c433538027840"
+      "bytes": 33495,
+      "sha256": "4d1abd8063f9de6a585583b27148dfe6df0ad6ab8a42d93e28a28d121348e421"
     },
     {
       "path": "01_theory/01_theory_analytic/src/utils/__init__.py",
@@ -69,18 +71,18 @@
     },
     {
       "path": "01_theory/02_theory_sampling/config/default.json",
-      "bytes": 2685,
-      "sha256": "a93160e60ed0adf735ce188b8368c61f7824003caf96f986411a4b0e0e0eea8f"
+      "bytes": 3024,
+      "sha256": "2099c62ff981f168c847fc67d040a0ff02fcc624f729700d9c73941bf93044c4"
     },
     {
       "path": "01_theory/02_theory_sampling/src/make_datasets.py",
-      "bytes": 838,
-      "sha256": "48cf655774b29e1038bc054ce3bb4242253ce70f770f7ef5bc8c944720aacd77"
+      "bytes": 189,
+      "sha256": "4f1eba9b43b0dafc07b0f8c9054c11a5c4af5a358b7ba756409cd750eca4f5fe"
     },
     {
       "path": "01_theory/02_theory_sampling/src/make_references.py",
-      "bytes": 971,
-      "sha256": "35b106bbee488113bdb7641a5d838124a3b8b6cd328dc67bc44d29aec2fbd328"
+      "bytes": 193,
+      "sha256": "450439636a8be78c6891188a96cf5ba1f620a58add7792a3981f29d9edeae3bc"
     },
     {
       "path": "01_theory/02_theory_sampling/src/make_summarized_outputs.py",
@@ -103,6 +105,11 @@
       "sha256": "bd1dcb5587a13b06b3a6f1056f9b07374121b4745d28fa087d83c9a015104804"
     },
     {
+      "path": "01_theory/02_theory_sampling/src/utils/input_generation.py",
+      "bytes": 10395,
+      "sha256": "36cbc88a1aa5c8eea2b2fb1389105f149b26edabc40517f243e5847ac1f6b835"
+    },
+    {
       "path": "01_theory/02_theory_sampling/src/utils/input_manifest.py",
       "bytes": 8308,
       "sha256": "59e4044b7f20dc8e597f90041d20a670e250a23d63c9fe2b654e574b0d42f3ce"
@@ -114,8 +121,8 @@
     },
     {
       "path": "01_theory/02_theory_sampling/src/utils/run_sampling_shard.py",
-      "bytes": 3728,
-      "sha256": "7512b7fcb65d872aab3f715106422a8c1d0254594811fbe54173bb1ca3e916c4"
+      "bytes": 3825,
+      "sha256": "39aff96f1fbfcd3d44d7cb7759aed1a8c12a8c77308423d91f7b7c1a8cd6390c"
     },
     {
       "path": "01_theory/02_theory_sampling/src/utils/schedule.py",
@@ -134,8 +141,8 @@
     },
     {
       "path": "01_theory/README.md",
-      "bytes": 1972,
-      "sha256": "73e68639068b163be13b6408d961f6b3bec7517859b7c9bd472955f7864ce160"
+      "bytes": 2787,
+      "sha256": "7f666c438f3aa2e9f0a9df44f4a2930be8a5396c96900ce71f7a36fffa18a52d"
     },
     {
       "path": "02_dnn_synthetic/01_dataset/config/default.json",
@@ -544,8 +551,8 @@
     },
     {
       "path": "03_dnn_mnist/digit_pairwise_complexity/01_dataset/src/utils/datasets.py",
-      "bytes": 29459,
-      "sha256": "ce8d35cfcd859bf9f3ca3dcac887202ce4454e639125702682e6c2ea475c9152"
+      "bytes": 30465,
+      "sha256": "03c1179af9c6a8f8a030f0a948d99f12fec08e0bb7a43ea1a49beb1107bbd7e5"
     },
     {
       "path": "03_dnn_mnist/digit_pairwise_complexity/01_dataset/src/utils/fingerprints.py",
@@ -659,8 +666,8 @@
     },
     {
       "path": "03_dnn_mnist/digit_pairwise_complexity/03_reference_search/src/utils/datasets.py",
-      "bytes": 29669,
-      "sha256": "e4cfc2aec7f4c7e9fe9c02100293520192b39d48da163f566a1ceb6f13ef4a52"
+      "bytes": 30465,
+      "sha256": "03c1179af9c6a8f8a030f0a948d99f12fec08e0bb7a43ea1a49beb1107bbd7e5"
     },
     {
       "path": "03_dnn_mnist/digit_pairwise_complexity/03_reference_search/src/utils/fingerprints.py",
@@ -764,8 +771,8 @@
     },
     {
       "path": "03_dnn_mnist/digit_pairwise_complexity/04_sampling/src/utils/datasets.py",
-      "bytes": 29669,
-      "sha256": "e4cfc2aec7f4c7e9fe9c02100293520192b39d48da163f566a1ceb6f13ef4a52"
+      "bytes": 30465,
+      "sha256": "03c1179af9c6a8f8a030f0a948d99f12fec08e0bb7a43ea1a49beb1107bbd7e5"
     },
     {
       "path": "03_dnn_mnist/digit_pairwise_complexity/04_sampling/src/utils/fingerprints.py",
@@ -1404,8 +1411,8 @@
     },
     {
       "path": "04_discussion/README.md",
-      "bytes": 2836,
-      "sha256": "7c05a6f19f971a7a195c87c89e5a3bfe18daa5bd3c3dc5d4a379fffc2f18359b"
+      "bytes": 3889,
+      "sha256": "eebad5d6c9284ca5765e214f506dc5c5280a1936d99807fac59026a144fdd061"
     },
     {
       "path": "04_discussion/config/default.json",
@@ -1654,8 +1661,8 @@
     },
     {
       "path": "Figures/paper_figures/README.md",
-      "bytes": 2415,
-      "sha256": "4a9625cc9c903a430097aeb1af16cfea6cda6d75313aa43222f73cbfb3007dec"
+      "bytes": 2770,
+      "sha256": "b5756cfbc96ccdcc69741b553fbd086c188ce00e9443c0e8b20fad432257a3dc"
     },
     {
       "path": "Figures/paper_figures/config/figure_manifest.json",
@@ -1669,8 +1676,8 @@
     },
     {
       "path": "Figures/paper_figures/figure_inputs/README.md",
-      "bytes": 583,
-      "sha256": "42d0bbea7be45581bba707adaccf064ca7d459f05a24fb356b335932f58f6d8c"
+      "bytes": 826,
+      "sha256": "99d6763851f2b784b89e5b282fe0e9a10919dcf715cbf1dfe2ccc8c96f49e5e5"
     },
     {
       "path": "Figures/paper_figures/figure_inputs/discussion/normalized_radial_profiles.csv",
@@ -1804,8 +1811,13 @@
     },
     {
       "path": "Figures/paper_figures/src/build_all.py",
-      "bytes": 9656,
-      "sha256": "a2d58a2a6db4da0646249a7ae9025fe43786cd1b53a02c97eead036ffdab8549"
+      "bytes": 9819,
+      "sha256": "9f10044597901b27300d2428e261bad7bf43922decdd0c2e7aba31a682297ee6"
+    },
+    {
+      "path": "Figures/paper_figures/src/build_mnist_umap_assets.py",
+      "bytes": 3715,
+      "sha256": "021fea69822e0ae82e4ea5f9802ed31dddbb6d67b0fe848ea8b7b9a4c530ad82"
     },
     {
       "path": "Figures/paper_figures/src/make_visual_audit_sheet.py",
@@ -1814,8 +1826,8 @@
     },
     {
       "path": "Figures/paper_figures/src/prepare_release.py",
-      "bytes": 3591,
-      "sha256": "ddf7d3d046372d4766bddca168585729baa5b881d685cb262c6e830e799640f1"
+      "bytes": 3618,
+      "sha256": "8a992ce2f5ab9dea25060848bbd54acfbbf971d34333af6c675eebbcaa01ca57"
     },
     {
       "path": "Figures/paper_figures/src/refresh_inputs.py",
@@ -1843,6 +1855,11 @@
       "sha256": "4ab088b9dc358284a22548087660ea601aab070f1a83a8869310ddab4227b998"
     },
     {
+      "path": "Figures/paper_figures/src/utils/mnist_umap_assets.py",
+      "bytes": 15987,
+      "sha256": "b7c512b0fef5570100e227fa42df67ba708a146923da9f41b8fec40e7f3e7c9c"
+    },
+    {
       "path": "Figures/paper_figures/src/utils/notebook_api.py",
       "bytes": 14336,
       "sha256": "32c0cb09c681f675719546c4ef3d18583d5607bac04a217720b7d716b26f7465"
@@ -1859,8 +1876,8 @@
     },
     {
       "path": "Figures/paper_figures/src/validate_release.py",
-      "bytes": 6688,
-      "sha256": "ce33ed49028f91795fcc6d18df51f3027e0729acdf883d60124b5cecbefb93fb"
+      "bytes": 7685,
+      "sha256": "8c97e899edbe0cffb206258587e884e9ed7da354830e5dd4dd95dedd73b2128d"
     },
     {
       "path": "Figures/paper_figures/summarized_outputs/figure_inventory.csv",
@@ -1869,13 +1886,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 9288,
-      "sha256": "a89587f78778eb52276d63db077618855e39fa226e2dfbabf627e43bdc6fa973"
+      "bytes": 10857,
+      "sha256": "4077b90693acd6d8cc10bfeffd2ee96ae457c5f9eeda3e6d64075aaf5c662db8"
     },
     {
       "path": "requirements.txt",
-      "bytes": 225,
-      "sha256": "3f05e1ccb8b74b6762e864e5cc7b343d733389ae9ca98e38aa59c6a26ab873d1"
+      "bytes": 263,
+      "sha256": "f75f1b0edef8fd3e0bbf80566d991a31b2af381bdff78afc798511685887668d"
     }
   ],
   "source_validation": {
@@ -1891,9 +1908,10 @@
     "numerical_authorities": 23,
     "figure_inputs": 22,
     "main_figures": 9,
-    "python_sources": 200,
+    "python_sources": 203,
     "executed_notebook_cells": 11,
     "r1_accuracy_reconstruction": "three original capture tables validated",
+    "missing_input_entrypoints": "theory planning and four MNIST visual inputs checked read-only",
     "raw_required_for_checks": false
   }
 }

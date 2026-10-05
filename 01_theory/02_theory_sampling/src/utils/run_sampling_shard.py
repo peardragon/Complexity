@@ -13,6 +13,7 @@ SOURCE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(SOURCE_DIR))
 from schedule import DEFAULT_CONFIG, build_rows, project_path, validate_config
 from smc import run_unit
+from input_generation import ensure_row_inputs
 
 PROJECT_ROOT = Path(__file__).resolve().parents[4]
 
@@ -42,6 +43,7 @@ def execute_shard(*, config_path: Path, shard_index: int, shard_count: int, resu
         return {"status": "skipped_existing", "output": str(destination)}
     validate_config(config)
     rows = selected_rows(config, shard_index, shard_count)
+    ensure_row_inputs(config, rows, PROJECT_ROOT)
     destination.parent.mkdir(parents=True, exist_ok=True)
     descriptor, name = tempfile.mkstemp(prefix=f".{destination.name}.", dir=destination.parent)
     os.close(descriptor)

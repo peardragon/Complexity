@@ -19,6 +19,7 @@ from utils.paper_style import (
     MANIFEST,
     MANIFEST_PATH,
     PACKAGE_ROOT,
+    REPO_ROOT,
     STYLE,
     STYLE_PATH,
     all_declared_inputs,
@@ -202,6 +203,9 @@ def main() -> None:
     args = parser.parse_args()
     if args.check_only and (args.force or args.refresh_inputs): parser.error("--check-only is read-only")
     os.environ["PYTHONDONTWRITEBYTECODE"] = "1"
+    if not args.check_only:
+        from build_mnist_umap_assets import prepare_inputs
+        prepare_inputs(project_root=REPO_ROOT, execute=True)
     from refresh_inputs import sync_inputs
     changed = set(sync_inputs(refresh=not args.check_only))
     previous_path = PACKAGE_ROOT / "receipts/build_receipt.json"

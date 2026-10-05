@@ -3,7 +3,6 @@
   "stage": "01_theory_analytic",
   "run_name": "corrected_full_A_alpha0p1_release",
   "solver_mode": "corrected_full_A",
-  "promotion_state": "audited_promoted",
   "quadrature_method": "conditional_CDF_GH_GL",
   "alpha": 0.1,
   "beta": 1.0,

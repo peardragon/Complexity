@@ -38,6 +38,14 @@ def validate(*, check_figures=True):
         for path in (ROOT/name).rglob("*.py"):
             if "raw_outputs" in path.parts: continue
             ast.parse(path.read_text(),filename=str(path)); python_count += 1
+    theory_stage=ROOT/"01_theory/02_theory_sampling"
+    theory_config=json.loads((theory_stage/"config/default.json").read_text())
+    dataset_count=len(theory_config["problem"]["dimensions"])*int(theory_config["problem"]["datasets_per_dimension"])
+    for script,expected in (("make_datasets.py",dataset_count),("make_references.py",dataset_count*int(theory_config["problem"]["references_per_dataset"]))):
+        probe=subprocess.run([sys.executable,str(theory_stage/"src"/script)],cwd=ROOT,check=True,capture_output=True,text=True)
+        report=json.loads(probe.stdout)
+        if report["written"]!=0 or report["missing"]+report["skipped_existing"]!=expected:raise ValueError(f"invalid read-only input generation plan: {script}")
+    subprocess.run([sys.executable,str(ROOT/"Figures/paper_figures/src/build_mnist_umap_assets.py"),"--check-only"],cwd=ROOT,check=True,capture_output=True,text=True)
     for name in ("02_dnn_synthetic", "03_dnn_mnist/label_noise_sweep", "03_dnn_mnist/digit_pairwise_complexity"):
         subprocess.run([sys.executable,str(ROOT/name/"05_proxy_local_entropy/src/make_r1_accuracy.py"),"--check-only"],cwd=ROOT,check=True,capture_output=True,text=True)
         for stage in ("02_complexity_measure", "04_sampling", "05_proxy_local_entropy"):
@@ -82,7 +90,7 @@ def validate(*, check_figures=True):
                 path=companion/name/f"{name}.{suffix}"
                 if not path.is_file() or path.stat().st_size==0:raise FileNotFoundError(path)
                 if name=="fig09_hardening_3d_composite" and path.read_bytes()!=(package/figures[-1]["output"]).with_suffix(f".{suffix}").read_bytes():raise ValueError(f"Discussion Fig. 9 copy differs: {suffix}")
-    return {"status":"pass","paper":"arXiv:2608.22361v1","release_roots":list(ROOTS),"numerical_authorities":len(scope["authorities"]),"figure_inputs":len(sources),"main_figures":9,"python_sources":python_count,"executed_notebook_cells":len(cells),"r1_accuracy_reconstruction":"three original capture tables validated","raw_required_for_checks":False}
+    return {"status":"pass","paper":"arXiv:2608.22361v1","release_roots":list(ROOTS),"numerical_authorities":len(scope["authorities"]),"figure_inputs":len(sources),"main_figures":9,"python_sources":python_count,"executed_notebook_cells":len(cells),"r1_accuracy_reconstruction":"three original capture tables validated","missing_input_entrypoints":"theory planning and four MNIST visual inputs checked read-only","raw_required_for_checks":False}
 
 
 def main():

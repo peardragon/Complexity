@@ -8,9 +8,8 @@ the ``(32, 32, 24, 48)`` confirmation tier; the reported action and analytic
 gradient use the ``(96, 96, 64, 144)`` final tier and are independently
 validated at ``(128, 128, 96, 192)``.
 
-There is deliberately no masked-grid ``A=0`` compatibility facade, legacy
-mode, or silent fallback in this revised production module.  A separate
-full-feasible-domain audit must approve the staged curve before promotion.
+The production solver covers the full feasible ``A >= 0`` domain. Numerical
+stationarity, curvature, and quadrature checks are part of the calculation.
 """
 from __future__ import annotations
 

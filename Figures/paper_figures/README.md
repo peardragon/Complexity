@@ -34,6 +34,9 @@ python Figures/paper_figures/src/validate_release.py
   - **Purpose**: Render the empirical hardening panel and corridor sketches.
 - **stage_static_assets.py**
   - **Purpose**: Export the supplied overview image.
+- **build_mnist_umap_assets.py**
+  - **Utils Dependencies**: `mnist_umap_assets`.
+  - **Purpose**: Create missing endpoint datasets and UMAP panels with the original visual configuration. Existing PDFs skip before heavy imports.
 - **validate_release.py**
   - **Purpose**: Read-only validation of numerical authorities, r=1 reconstruction, staged inputs, notebook images, and figure exports.
 
@@ -50,4 +53,4 @@ Missing output formats are generated individually. Existing companion files are 
 
 Inputs are in `figure_inputs/`; exports follow the figure manifest and include PDF, PNG, and SVG. Build records are in `receipts/`, and the inventory is in `summarized_outputs/`.
 
-Raw files are not required to rebuild the supplied figures. Fig. 1 and MNIST UMAP panels are retained visual inputs; this figure build does not generate new UMAP embeddings from MNIST.
+Raw files are not required to rebuild the supplied figures. If a MNIST panel is missing, the normal build bootstraps its dataset and UMAP visual input before synchronization. The retained PDFs are always preferred; `--check-only` never creates inputs. Fig. 1 is an authored schematic included with the release.

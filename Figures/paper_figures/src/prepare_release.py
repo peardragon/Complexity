@@ -49,7 +49,7 @@ def main():
         relative=source.relative_to(ROOT)
         target=destination/relative;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
         inventory.append({"path":relative.as_posix(),"bytes":target.stat().st_size,"sha256":hashlib.sha256(target.read_bytes()).hexdigest()})
-    packages=("numpy","scipy","numba","torch","scikit-learn","pandas","matplotlib","pillow","pymupdf","nbformat","nbconvert","ipykernel")
+    packages=("numpy","scipy","numba","torch","scikit-learn","umap-learn","pynndescent","pandas","matplotlib","pillow","pymupdf","nbformat","nbconvert","ipykernel")
     manifest={"paper":"arXiv:2608.22361v1","release_roots":list(ROOTS),"raw_excluded":True,"small_visual_snapshots":sorted(SNAPSHOTS),"file_count":len(inventory),"total_bytes":sum(x["bytes"] for x in inventory),"python":sys.version.split()[0],"tested_packages":{p:importlib.metadata.version(p) for p in packages},"files":inventory,"source_validation":source_report}
     (destination/"RELEASE_MANIFEST.json").write_text(json.dumps(manifest,indent=2)+"\n")
     subprocess.run([sys.executable,str(destination/"Figures/paper_figures/src/validate_release.py")],cwd=destination,check=True)
