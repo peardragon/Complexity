@@ -167,11 +167,23 @@ class SMCSettings:
         )
 
 
-def normalise_log_weights(log_weights: np.ndarray) -> np.ndarray:
+def _as_finite_log_weights(log_weights: np.ndarray) -> np.ndarray:
     values = np.asarray(log_weights, dtype=np.float64).reshape(-1)
     if values.size == 0 or not np.all(np.isfinite(values)):
         raise ValueError("log weights must be finite and non-empty")
+    return values
+
+
+def normalise_log_weights(log_weights: np.ndarray) -> np.ndarray:
+    values = _as_finite_log_weights(log_weights)
     return values - logsumexp(values)
+
+
+def _logsumexp_1d(values: np.ndarray) -> float:
+    maximum = float(np.max(values))
+    if not math.isfinite(maximum):
+        return maximum
+    return maximum + math.log(float(np.sum(np.exp(values - maximum))))
 
 
 def step_overlap(
@@ -180,13 +192,14 @@ def step_overlap(
     *,
     delta_temperature: float,
 ) -> float:
-    log_weights = normalise_log_weights(log_weights_normalized)
+    log_weights = _as_finite_log_weights(log_weights_normalized)
+    log_weights = log_weights - _logsumexp_1d(log_weights)
     ce = np.asarray(ce_values, dtype=np.float64).reshape(-1)
     if ce.shape != log_weights.shape or not np.all(np.isfinite(ce)):
         raise ValueError("CE and log weights must share a finite shape")
     incremental = -float(delta_temperature) * CONTRACT.gamma_ce * ce
-    log_numerator = 2.0 * logsumexp(log_weights + incremental)
-    log_denominator = logsumexp(log_weights + 2.0 * incremental)
+    log_numerator = 2.0 * _logsumexp_1d(log_weights + incremental)
+    log_denominator = _logsumexp_1d(log_weights + 2.0 * incremental)
     return float(np.exp(log_numerator - log_denominator))
 
 
